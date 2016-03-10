@@ -22,7 +22,6 @@ import com.sammyun.service.attendance.TimeCardService;
 import com.sammyun.service.dict.PatriarchStudentMapService;
 import com.sammyun.service.impl.BaseServiceImpl;
 import com.sammyun.service.json.JsonFamilyMapService;
-import com.sammyun.util.ImUserUtil;
 import com.sammyun.util.SpringUtils;
 
 /**
@@ -67,105 +66,7 @@ public class JsonFamilyMapServiceImpl extends BaseServiceImpl<JsonFamilyMap, Lon
     @Override
     public void createData(List<Long> memberIds)
     {
-        ImUserUtil imUserUtil = new ImUserUtil();
-        for (Long memberId : memberIds)
-        {
-            Member member = memberService.find(memberId);
-            JSONObject outData = new JSONObject();
-            Long familyId = null;
-
-            if (member == null)
-            {
-                continue;
-            }
-
-            MemberType memberType = member.getMemberType();
-            if (memberType == null)
-            {
-                continue;
-            }
-            
-            if (memberType.equals(MemberType.patriarch))
-            {
-                for (PatriarchStudentMap patriarchStudentMap : member.getPatriarchStudentMap())
-                {
-                    DictStudent dictStudent = patriarchStudentMap.getDictStudent();
-                    List<TimeCard> timeCards = timeCardService.findByMember(member, dictStudent, null);
-                    List<PatriarchStudentMap> patriarchStudentMaps = patriarchStudentMapService.findByStudent(dictStudent);
-
-                    if (timeCards != null && timeCards.size() != 0)
-                    {
-                        // 获取卡号
-                        JSONArray cardNumbers = new JSONArray(); 
-                        for (TimeCard timeCard : timeCards)
-                        {
-                            JSONObject cardNumber = new JSONObject();
-                            cardNumber.put("cardNumber",timeCard.getCardNumber());
-                            cardNumber.put("cardStatus",timeCard.getCardStatus());
-                            cardNumbers.put(cardNumber);
-                        }
-
-                        // 查找家庭成员
-                        JSONArray familyMembers = new JSONArray(); 
-                        for (PatriarchStudentMap item : patriarchStudentMaps)
-                        {
-                            if (item.equals(patriarchStudentMap))
-                            {
-                                continue;
-                            }
-                            else
-                            {
-                                JSONObject familyMember = new JSONObject();
-                                familyMember.put("realName", item.getMember().getRealName());  
-                                familyMember.put("iconPhoto", imUserUtil.getDefaultImageUrl(item.getMember().getIconPhoto()));  
-                                familyMembers.put(familyMember);
-                            }
-                        }
-                        if (patriarchStudentMap.getType() != null)
-                        {
-                            outData.put("typeName", SpringUtils.getMessage("PatriarchStudentMap."
-                                    + patriarchStudentMap.getType()));
-                        }
-                        outData.put("id", dictStudent.getId());
-                        outData.put("cardNumbers", cardNumbers);
-                        outData.put("dictClassName", dictStudent.getDictClass().getName());
-                        outData.put("iconPhoto", imUserUtil.getDefaultImageUrl(member.getIconPhoto()));
-                        outData.put("memberType", member.getMemberType());
-                        outData.put("realName", member.getRealName());
-                        outData.put("studentIconPhoto", imUserUtil.getDefaultImageUrl(dictStudent.getIconPhoto()));
-                        outData.put("studentName",dictStudent.getStudentName());
-                        outData.put("familyMembers", familyMembers);
-                        familyId = dictStudent.getId();
-                        createJsonFamilyMap(familyId,outData.toString(),member);
-                    }
-                }
-            }
-            else if (memberType.equals(MemberType.teacher))
-            {
-                List<TimeCard> timeCards = timeCardService.findByMember(member, null,null);
-                if (timeCards != null && timeCards.size() != 0)
-                {
-                 // 获取卡号
-                    JSONArray cardNumbers = new JSONArray(); 
-                    for (TimeCard timeCard : timeCards)
-                    {
-                        JSONObject cardNumber = new JSONObject();
-                        cardNumber.put("cardNumber",timeCard.getCardNumber());
-                        cardNumber.put("cardStatus",timeCard.getCardStatus());
-                        cardNumbers.put(cardNumber);
-                    }
-
-                    outData.put("cardNumbers", cardNumbers);
-                    outData.put("id", member.getId());
-                    outData.put("iconPhoto", imUserUtil.getDefaultImageUrl(member.getIconPhoto()));
-                    outData.put("memberType", member.getMemberType());
-                    outData.put("realName", member.getRealName());
-                    familyId = member.getId();
-                    createJsonFamilyMap(familyId,outData.toString(),member);
-                }
-            }
-        }
-        
+       
     }
     
     /**

@@ -27,7 +27,6 @@ import com.sammyun.entity.dict.DictSchool;
 import com.sammyun.service.AdminService;
 import com.sammyun.service.RoleService;
 import com.sammyun.service.dict.DictSchoolService;
-import com.sammyun.util.ImUserUtil;
 
 /**
  * Controller - 管理员
@@ -110,12 +109,6 @@ public class AdminController extends BaseController
         model.addAttribute("menuId", Admin.class.getSimpleName());
         addFlashMessage(redirectAttributes, SUCCESS_MESSAGE);
         
-        //生成默认班次
-        ImUserUtil imUserUtil = new ImUserUtil();
-        imUserUtil.getDefalutWorkSetting(dictSchool);
-        
-        //生成默认发件人
-        imUserUtil.getSystemMember(dictSchool);
         return "redirect:list.ct";
     }
 

@@ -15,7 +15,6 @@ import com.sammyun.entity.dict.ClassTeacherMap;
 import com.sammyun.entity.dict.DictClass;
 import com.sammyun.entity.dict.DictStudent;
 import com.sammyun.entity.dict.PatriarchStudentMap;
-import com.sammyun.util.ImUserUtil;
 
 public class DictClassListener
 {
@@ -40,7 +39,6 @@ public class DictClassListener
     
     public void getJsonFamilyMap(DictClass dictClass)
     {
-        ImUserUtil imUserUtil = new ImUserUtil();
         List<Long>memberIds = new LinkedList<Long>();
         Set<Long> tempMemberIds  = new  LinkedHashSet<Long>();
         for (DictStudent dictStudent : dictClass.getDictStudents())
@@ -62,6 +60,5 @@ public class DictClassListener
 //            
 //        }
         memberIds.addAll(tempMemberIds);
-        imUserUtil.getJsonFamilyMap(memberIds,"dictClass");
     }
 }

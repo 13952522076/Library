@@ -42,7 +42,6 @@ import com.sammyun.entity.Member;
 import com.sammyun.entity.Member.Gender;
 import com.sammyun.entity.Member.MemberType;
 import com.sammyun.entity.dict.DictSchool;
-import com.sammyun.huanxin.EasemobIMUsers;
 import com.sammyun.service.AdminService;
 import com.sammyun.service.AreaService;
 import com.sammyun.service.ExcelService;
@@ -83,8 +82,7 @@ public class MemberController extends BaseController
     @Resource(name = "excelServiceImpl")
     private ExcelService excelService;
 
-    @Resource(name = "easemobIMUsers")
-    private EasemobIMUsers easemobIMUsers;
+    
 
     /**
      * 检查用户名是否被禁用或已存在
@@ -404,31 +402,7 @@ public class MemberController extends BaseController
         // member.setIsUpdate(true);
         member.setIsAcceptLeaveInfo(true);
         memberService.save(member);
-
-        /**
-         * 注册IM用户[单个]
-         */
-        ObjectNode createNewIMUserSingleNode = easemobIMUsers.createUserSingle(member.getUsername(),
-                member.getPassword().toLowerCase());
-        if (null != createNewIMUserSingleNode)
-        {
-            if (createNewIMUserSingleNode.get("statusCode").asText().equalsIgnoreCase("200"))
-            {
-                model.addAttribute("menuId", Member.class.getSimpleName());
-                addFlashMessage(redirectAttributes, SUCCESS_MESSAGE);
-                return "redirect:list.ct";
-            }
-            else
-            {
-                memberService.delete(member);
-                return ERROR_VIEW;
-            }
-        }
-        else
-        {
-            memberService.delete(member);
-            return ERROR_VIEW;
-        }
+        return "redirect:list.ct";
     }
 
     /**
@@ -539,78 +513,11 @@ public class MemberController extends BaseController
         preMember.setIsEnabled(member.getIsEnabled());
         // preMember.setIsUpdate(true);
         // DigestUtils.md5Hex(member.getPassword())
-        if (preMember.getMobile().equals(member.getMobile()))
-        {
-            // 手机号不变，需要修改环信的密码
-            if ((member.getPassword() != null) && (!member.getPassword().equals("")))
-            {
-                String md5Password = DigestUtils.md5Hex(member.getPassword());
-                ObjectNode modifyIMUserPasswordWithAdminTokenNode = easemobIMUsers.modifyUserPassword(
-                        preMember.getUsername(), md5Password.toLowerCase());
-                if ((null != modifyIMUserPasswordWithAdminTokenNode)
-                        && (modifyIMUserPasswordWithAdminTokenNode.get("statusCode").asText().equalsIgnoreCase("200")))
-                {
-                    preMember.setPassword(md5Password);
-                    memberService.update(preMember);
-                    model.addAttribute("menuId", Member.class.getSimpleName());
-                    addFlashMessage(redirectAttributes, SUCCESS_MESSAGE);
-                    return "redirect:list.ct";
-                }
-                else
-                {
-                    model.addAttribute("menuId", Member.class.getSimpleName());
-                    addFlashMessage(redirectAttributes, ERROR_MESSAGE);
-                    return ERROR_VIEW;
-                }
-            }
-            else
-            {
-                memberService.update(preMember);
-                addFlashMessage(redirectAttributes, SUCCESS_MESSAGE);
-                model.addAttribute("menuId", Member.class.getSimpleName());
-                return "redirect:list.ct";
-            }
-        }
-        // 手机号改变，环信需要删除，重新建用户
-        else
-        {
-            String preUserName = preMember.getUsername();
-            String password = preMember.getPassword();
-            preMember.setMobile(member.getMobile());
-            preMember.setUsername(member.getMobile());
-            if (member.getPassword() != null)
-            {
-                preMember.setPassword(DigestUtils.md5Hex(member.getPassword()));
-                password = DigestUtils.md5Hex(member.getPassword());
-            }
-            // // 获取原号码的好友列表
-            // ObjectNode friendNode = EasemobIMUsers.getFriends(preUserName);
-            // List<String> friendList = new ArrayList<String>();
-            // JsonNode arrNode = friendNode.get("data");
-            // if (arrNode.isArray())
-            // {
-            // for (final JsonNode objNode : arrNode)
-            // {
-            // friendList.add(objNode.asText());
-            // }
-            // }
-            // 删除im用户
-            easemobIMUsers.deleteUserByUserPrimaryKey(preUserName);
-            // 新建环信用户
-            easemobIMUsers.createUserSingle(preMember.getUsername(), password.toLowerCase());
-            memberService.update(preMember);
-            // // 好友不为空－》环信添加好友
-            // if (friendList.size() > 0)
-            // {
-            // for (String friend : friendList)
-            // {
-            // easemobIMUsers.addFriend(preMember.getUsername(), friend);
-            // }
-            // }
-            model.addAttribute("menuId", Member.class.getSimpleName());
-            addFlashMessage(redirectAttributes, SUCCESS_MESSAGE);
-            return "redirect:list.ct";
-        }
+       
+        model.addAttribute("menuId", Member.class.getSimpleName());
+        addFlashMessage(redirectAttributes, SUCCESS_MESSAGE);
+        return "redirect:list.ct";
+        
     }
 
     /**
@@ -629,7 +536,7 @@ public class MemberController extends BaseController
             }
             for (Member member : members)
             {
-                easemobIMUsers.deleteUserByUserPrimaryKey(member.getUsername());
+               
                 memberService.delete(member);
             }
         }
@@ -673,7 +580,7 @@ public class MemberController extends BaseController
             }
             Setting setting = SettingUtils.get();
             String initPassword = setting.getInitPassword();
-            easemobIMUsers.createUserBatch(usernames, DigestUtils.md5Hex(initPassword));
+           
             try
             {
                 memberService.batchUpdate(members);

@@ -55,7 +55,6 @@ import com.sammyun.service.stu.HealthFileService;
 import com.sammyun.service.stu.StudentWorksService;
 import com.sammyun.util.EduUtil;
 import com.sammyun.util.ExcelImportUtil;
-import com.sammyun.util.ImUserUtil;
 import com.sammyun.util.JsonUtils;
 
 /**
@@ -112,7 +111,6 @@ public class DictStudentController extends BaseController
     @Resource(name = "graduationCertificateServiceImpl")
     private GraduationCertificateService graduationCertificateService;
 
-    ImUserUtil imUserUtil = new ImUserUtil();
 
     /**
      * 检查学号是否唯一

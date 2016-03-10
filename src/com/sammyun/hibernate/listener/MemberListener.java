@@ -8,7 +8,6 @@ import javax.persistence.PreRemove;
 import javax.persistence.PreUpdate;
 
 import com.sammyun.entity.Member;
-import com.sammyun.util.ImUserUtil;
 
 public class MemberListener
 {
@@ -32,9 +31,7 @@ public class MemberListener
     
     public void getJsonFamilyMap(Member member)
     {
-        ImUserUtil imUserUtil = new ImUserUtil();
         List<Long> memberIds  = new  LinkedList<Long>();
         memberIds.add(member.getId());
-        imUserUtil.getJsonFamilyMap(memberIds,"member");
     }
 }

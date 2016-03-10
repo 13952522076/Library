@@ -28,7 +28,6 @@ import com.sammyun.service.MemberService;
 import com.sammyun.service.announcement.AnnouncementService;
 import com.sammyun.service.message.MessageService;
 import com.sammyun.util.DateUtil;
-import com.sammyun.util.ImUserUtil;
 
 /**
  * 通知公告
@@ -97,17 +96,6 @@ public class AnnouncementController extends BaseController
         }
         announcementService.save(announcement);
 
-        List<com.sammyun.entity.message.Message> messages = new LinkedList<com.sammyun.entity.message.Message>();
-        ImUserUtil imUserUtil = new ImUserUtil();
-        Member sender = memberService.findSystemMember(MemberType.system,dictSchool).get(0);
-        String subject = announcement.getTitle();
-        String body = announcement.getSummary();
-        for (Member member : dictSchool.getMembers())
-        {
-            messages.add(imUserUtil.saveMessage(sender, member, subject, body, MessageCategory.ANNOUNCEMENT,
-                    dictSchool, announcement.getId().toString(), request));
-        }
-        messageService.batchUpdate(messages);
         addFlashMessage(redirectAttributes, SUCCESS_MESSAGE);
         model.addAttribute("menuId", Announcement.class.getSimpleName());
         return "redirect:list.ct";

@@ -11,7 +11,7 @@ import com.sammyun.entity.Member;
 import com.sammyun.entity.MemberDeviceInfo;
 import com.sammyun.entity.friendship.Friendship;
 import com.sammyun.entity.message.Message;
-import com.sammyun.huanxin.EasemobIMUsers;
+
 import com.sammyun.plugin.MessagePushPlugin;
 import com.sammyun.service.friendship.FriendshipService;
 import com.sammyun.service.impl.BaseServiceImpl;
@@ -27,8 +27,6 @@ import com.tencent.xinge.XingeApp;
 public class FriendshipServiceImpl extends BaseServiceImpl<Friendship, Long> implements FriendshipService
 {
     
-    @Resource(name = "easemobIMUsers")
-    private EasemobIMUsers easemobIMUsers;
     
     @Resource(name = "friendshipDaoImpl")
     private FriendshipDao friendshipDao;
@@ -49,7 +47,6 @@ public class FriendshipServiceImpl extends BaseServiceImpl<Friendship, Long> imp
             {
                  String ownerUserPrimaryKey = friendship.getOwnerUserPrimaryKey();
                  String friendUserPrimaryKey = friendship.getFriendUserPrimaryKey();
-                 easemobIMUsers.addFriend(ownerUserPrimaryKey, friendUserPrimaryKey);
                  friendship.setHasCreated(true);
                  this.update(friendship);
             }

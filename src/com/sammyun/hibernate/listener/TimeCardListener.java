@@ -8,7 +8,6 @@ import javax.persistence.PreRemove;
 import javax.persistence.PreUpdate;
 
 import com.sammyun.entity.attendance.TimeCard;
-import com.sammyun.util.ImUserUtil;
 
 public class TimeCardListener
 {
@@ -32,9 +31,7 @@ public class TimeCardListener
     
     public void getJsonFamilyMap(TimeCard timeCard)
     {
-        ImUserUtil imUserUtil = new ImUserUtil();
         List<Long> memberIds  = new  LinkedList<Long>();
          memberIds.add(timeCard.getMember().getId());
-        imUserUtil.getJsonFamilyMap(memberIds,"timeCard");
     }
 }

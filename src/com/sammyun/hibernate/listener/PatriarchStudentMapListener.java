@@ -8,7 +8,6 @@ import javax.persistence.PreRemove;
 import javax.persistence.PreUpdate;
 
 import com.sammyun.entity.dict.PatriarchStudentMap;
-import com.sammyun.util.ImUserUtil;
 
 public class PatriarchStudentMapListener
 {
@@ -33,9 +32,7 @@ public class PatriarchStudentMapListener
     
     public void getJsonFamilyMap(PatriarchStudentMap patriarchStudentMap)
     {
-        ImUserUtil imUserUtil = new ImUserUtil();
         List<Long> memberIds  = new  LinkedList<Long>();
          memberIds.add(patriarchStudentMap.getMember().getId());
-        imUserUtil.getJsonFamilyMap(memberIds,"patriarchStudentMap");
     }
 }
