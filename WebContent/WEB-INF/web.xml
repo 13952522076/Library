@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<display-name>PRESCHOOLEDU</display-name>
+	<description>PRESCHOOLEDU网上商城系统 V3.0</description>
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+			classpath*:/applicationContext.xml,
+			classpath*:/applicationContext-shiro.xml,
+			classpath*:/applicationContext-rest.xml
+		</param-value>
+	</context-param>
+
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+
+	<filter>
+		<filter-name>encodingConvertFilter</filter-name>
+		<filter-class>com.sammyun.filter.EncodingConvertFilter</filter-class>
+		<init-param>
+			<param-name>fromEncoding</param-name>
+			<param-value>ISO-8859-1</param-value>
+		</init-param>
+		<init-param>
+			<param-name>toEncoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+
+	<filter>
+		<filter-name>siteStatusFilter</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+
+	<filter>
+		<filter-name>accessDeniedFilter</filter-name>
+		<filter-class>com.sammyun.filter.AccessDeniedFilter</filter-class>
+	</filter>
+
+	<filter>
+		<filter-name>shiroFilter</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+
+	<filter>
+		<filter-name>areaCacheFilter</filter-name>
+		<filter-class>net.sf.ehcache.constructs.web.filter.SimplePageCachingFilter</filter-class>
+		<init-param>
+			<param-name>cacheName</param-name>
+			<param-value>area</param-value>
+		</init-param>
+	</filter>
+
+	<filter>
+		<filter-name>friendLinkCacheFilter</filter-name>
+		<filter-class>net.sf.ehcache.constructs.web.filter.SimplePageCachingFilter</filter-class>
+		<init-param>
+			<param-name>cacheName</param-name>
+			<param-value>friendLink</param-value>
+		</init-param>
+	</filter>
+
+	<filter>
+		<filter-name>compressingFilter</filter-name>
+		<filter-class>com.planetj.servlet.filter.compression.CompressingFilter</filter-class>
+	</filter>
+	
+	<filter>
+		<filter-name>serviceFilter</filter-name>
+		<filter-class>com.sammyun.filter.ServiceFilter</filter-class>
+	</filter>
+	
+	<!-- 进行缓存 ，开发时可去掉该缓存配置-->
+	<filter>
+		<filter-name>cacheForWeek</filter-name>
+		<filter-class>
+			com.sammyun.filter.ResponseHeaderFilter
+		</filter-class>
+		<init-param>
+			<param-name>Cache-Control</param-name>
+			<param-value>max-age=604800, public</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>cacheForWeek</filter-name>
+		<url-pattern>*.css</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>cacheForWeek</filter-name>
+		<url-pattern>*.js</url-pattern>
+	</filter-mapping>
+
+
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>*.ct</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>siteStatusFilter</filter-name>
+		<url-pattern>*.html</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>siteStatusFilter</filter-name>
+		<url-pattern>*.jsp</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>siteStatusFilter</filter-name>
+		<url-pattern>*.ct</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>accessDeniedFilter</filter-name>
+		<url-pattern>/install/data/*</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>accessDeniedFilter</filter-name>
+		<url-pattern>/install/sample/*</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>accessDeniedFilter</filter-name>
+		<url-pattern>*.properties</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>accessDeniedFilter</filter-name>
+		<url-pattern>*.conf</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>shiroFilter</filter-name>
+		<url-pattern>/console/*</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>areaCacheFilter</filter-name>
+		<url-pattern>/common/area.ct</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>areaCacheFilter</filter-name>
+		<url-pattern>/console/common/area.ct</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>friendLinkCacheFilter</filter-name>
+		<url-pattern>/friend_link.ct</url-pattern>
+	</filter-mapping>
+
+
+	<filter-mapping>
+		<filter-name>compressingFilter</filter-name>
+		<url-pattern>*.css</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>compressingFilter</filter-name>
+		<url-pattern>*.js</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>compressingFilter</filter-name>
+		<url-pattern>*.html</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>compressingFilter</filter-name>
+		<url-pattern>*.jsp</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>compressingFilter</filter-name>
+		<url-pattern>*.ct</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>serviceFilter</filter-name>
+		<url-pattern>/router/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>Spring OpenEntityManagerInViewFilter</filter-name>
+		<filter-class>org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>Spring OpenEntityManagerInViewFilter</filter-name>
+		<url-pattern>/rest/*</url-pattern>
+	</filter-mapping> 
+
+
+	<servlet>
+		<servlet-name>springmvc</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath*:/applicationContext-mvc.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>springmvc</servlet-name>
+		<url-pattern>*.ct</url-pattern>
+	</servlet-mapping>
+	
+    <servlet-mapping>
+		<servlet-name>springmvc</servlet-name>
+		<url-pattern>/router/*</url-pattern>
+	</servlet-mapping>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+	</listener>
+
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/common/resource_not_found.ct</location>
+	</error-page>
+	
+	
+<!-- 	<servlet> 
+	<servlet-name>Jersey REST Service</servlet-name>
+		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+		
+ 		<servlet-class>com.sun.jersey.spi.spring.container.servlet.SpringServlet</servlet-class>
+		<init-param>
+			<param-name>com.sun.jersey.config.property.packages</param-name>
+			<param-value>com.sammyun.controller.api;org.codehaus.jackson.jaxrs</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup> 
+	</servlet> 
+	
+	<servlet-mapping>
+	    <servlet-name>Jersey REST Service</servlet-name>
+	     <url-pattern>/rest/*</url-pattern>
+    </servlet-mapping>  -->
+    
+  <servlet>
+	<servlet-name>JerseyServlet</servlet-name>
+		<servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+		<init-param>
+			<param-name>javax.ws.rs.Application</param-name>
+			<param-value>com.sammyun.controller.api.ApplicationResourceConfig</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JerseyServlet</servlet-name>
+		<url-pattern>/rest/*</url-pattern>
+	</servlet-mapping> 
+
+</web-app>

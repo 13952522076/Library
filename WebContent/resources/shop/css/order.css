@@ -1,0 +1,124 @@
+@charset "utf-8";
+div.order .step{height:28px;margin-bottom:10px;text-align: center;}
+div.order .step li{font-size: 20px;}
+div.order .step .current{color:#fff}
+div.order .info {font-size: 12px;}
+div.order .info .sendMode{margin-bottom:10px;border-top:solid 1px #000;overflow: hidden;}
+div.order .info .sendMode .title{line-height:36px;padding-left:0;font-size:14px;font-weight:bold;text-align:left;width:800px;border-bottom:0;padding-bottom:0;margin:auto 0px}
+div.order .info .sendMode .helpTitle{margin: 30px auto 0;font-size: 12px;font-weight: normal;}
+div.order .info .sendMode .sendModeContent{line-height:36px}
+div.order .info .sendMode table{width:100%;margin-bottom:10px;border:solid 1px #000}
+div.order .info .sendMode p{padding-top:0;font-size:12px}
+div.order .info .receiver{margin-bottom:10px;text-align:left;border-top: 1px dotted rgb(0, 0, 0);}
+div.order .info .receiver .title{line-height:36px;padding-left:0;font-size:15px;font-weight:bold;text-align:left;width:800px;border-bottom:0;padding-bottom:0;margin:30px auto 0}
+div.order .info .receiver .receiverInfo{padding-left:0;font-size:12px;text-align:left;width:800px;padding-top:5px}
+div.order .info .receiver .receiverInfo table{border:0;text-align:left}
+div.order .info .receiver .receiverInfo table td{line-height:30px;padding:0}
+div.order .info .receiver li{margin-right:6px;margin-bottom:6px;overflow:hidden;}
+div.order .info .receiver li div{line-height:22px;color:#888}
+div.order .info .receiver li span{color:#666;cursor: text;margin-left: 10px;}
+div.order .info .receiver li a{color:#666;margin-left: 10px;text-decoration: underline;}
+
+.acctButton{margin-left: 5px;padding:2px;border:0px;}
+
+div.order .info .paymentMethod{margin-bottom:10px;text-align:left;border-top: 1px dotted rgb(0, 0, 0);}
+div.order .info .paymentMethod .title{line-height:36px;padding-left:0;font-size:15px;font-weight:bold;text-align:left;width:800px;border-bottom:0;padding-bottom:0;margin:30px auto 0}
+div.order .info .paymentMethod .paymentMethodInfo{padding-left:0;font-size:12px;text-align:left;width:800px;padding-top:5px;overflow: hidden;}
+div.order .info .paymentMethod .paymentMethodInfo table{border:0;text-align:left}
+div.order .info .paymentMethod .paymentMethodInfo table td{line-height:30px;padding:0}
+div.order .info .paymentMethod li{padding:15px;margin-right:6px;overflow:hidden;margin-bottom:0;text-align:center;width:110px;height:45px}
+div.order .info .paymentMethod .chosenBank li{width:100%;text-align:left;height: 1px;padding-left: 0px;}
+div.order .info .paymentMethod li div{line-height:22px;color:#888}
+div.order .info .paymentMethod li span{line-height:18px;color:#000;visibility:hidden}
+div.order .info .paymentMethod p{clear:both}
+div.order .info .paymentMethod .cyberBank li{margin-bottom:6px;overflow:hidden;cursor:pointer;margin-bottom:0;height:45px;float:left;text-align:center;width:110px;height:30px}
+
+.paymentGroupWrapper{}
+.paymentGroupWrapper li.formControl{margin-bottom:0;height:45px;margin-top: 0px;}
+
+.paymentImageSection{border:2px #000 solid}
+
+
+div.order .info .invoiceInfo{margin-bottom:40px;overflow: hidden;border-top: 1px dotted rgb(0, 0, 0);}
+div.order .info .invoiceInfo .title{padding-left:0;font-size:15px;font-weight:bold;text-align:left;width:800px;border-bottom:0;padding-bottom:0;margin: 30px auto 0;}
+div.order .info .invoiceInfo .invoiceInfoContent{line-height:36px;margin: 15px auto 0;}
+div.order .info .invoiceInfo .invoiceType{margin-left: 0px; width: 204px;}
+div.order .info .invoiceInfo .invoiceTitle{margin-top: 15px;border: 1px solid #000;width: 200px;height: 25px;}
+div.order .info .invoiceInfo table{width:100%;margin-bottom:10px;border:solid 1px #000}
+div.order .info .invoiceInfo p{padding-top:0;font-size:12px}
+div.order .info .invoiceInfo ul li{margin-top: 8px;}
+
+
+div.order .info .productList{margin-bottom:40px;overflow: hidden;border-top: 1px dotted rgb(0, 0, 0);}
+div.order .info .productList .title{padding-left:0;font-size:15px;font-weight:bold;text-align:left;width:800px;border-bottom:0;padding-bottom:0;margin: 30px auto 0;}
+div.order .info .productList .product{border-collapse: collapse;border-color: #000000;margin-top: 25px;}
+
+.buyRules{border-top: 1px dotted rgb(0, 0, 0);}
+.buyRules .buyRulesRadioGroup{margin-top: 10px;}
+.checked{background:url(../images/checkbox_on.png) no-repeat 0 0;padding-left:20px;height:13px;display:inline-block;line-height:13px;background-repeat:no-repeat;background-position:0 0;cursor:pointer;margin:5px 5px auto auto;font-size:11px}
+.unchecked{background:url(../images/checkbox_off.png) no-repeat 0 0;padding-left:20px;height:13px;display:inline-block;line-height:13px;background-repeat:no-repeat;background-position:0 0;cursor:pointer;margin:5px 5px auto auto;font-size:11px}
+div.order .info .newReceiver{width:950px;position:absolute;z-index:100;border:solid 1px #c1c1c1;background-color:#fff}
+div.order .info .newReceiver th{font-weight:normal;text-align:right;background-color:#fff}
+div.order .info table{width:100%;margin-bottom:10px;border:solid 1px #000}
+div.order .info th{line-height:36px;padding:0 6px;font-weight:normal;text-align:center;border-color: #000;}
+div.order .info td{line-height:24px;padding:6px}
+div.order .info .select{margin-bottom:8px}
+div.order .info .select dt{line-height:36px;padding-left:6px;font-size:14px;font-weight:bold;border-top:solid 1px #e8e8e8}
+div.order .info .select dd{padding:4px;margin-bottom:2px;border-top:solid 1px #f2f2f2;border-right:solid 1px #fff;border-bottom:solid 1px #fff;border-left:solid 1px #fff}
+div.order .info .select dd label{height:30px;line-height:30px;display:block;padding:8px;cursor:pointer;border:solid 3px #fff}
+div.order .info .select dd:hover{padding:0;border:solid 5px #f3f3f3}
+div.order .info .select dd:hover label{border:solid 3px #ddd}
+div.order .info .select dd.selected{padding:0;border:solid 5px #fff0db}
+div.order .info .select dd.selected label{border:solid 3px #ffcd88}
+div.order .info .select dd input{width:15px;height:15px;float:left;margin-right:6px;margin-top:9px}
+div.order .info .select dd span{display:block;float:left;margin-right:10px;color:#888}
+div.order .info .select dd em{width:30px;height:30px;display:block;float:left;border:solid 1px #e5e5e5}
+div.order .info .select dd strong{width:100px;height:30px;display:block;float:left;padding:0 8px;font-weight:normal;overflow:hidden;border:solid 1px #e5e5e5;background-color:#f8f8f8}
+div.order .info .product td{padding:6px;border:solid 1px #000}
+div.order .info .product img{width: 50px;height: 75px;}
+div.order .info .memo{height:29px;margin-bottom:10px}
+div.order .info .memo dt{line-height:20px;float:left;margin-right:10px;}
+div.order .info .memo dd{float:left;-webkit-margin-start: 5px;}
+div.order .info .memo input{width:300px;height:26px;line-height:20px;border:1px solid #000}
+div.order .info .coupon{height:24px;margin-bottom:10px}
+div.order .info .coupon dt{line-height:24px;float:left;margin-right:22px;}
+div.order .info .coupon dd{float: left;-webkit-margin-start: 5px;}
+div.order .info .coupon span{width:122px;height:20px;line-height:20px;padding:0 4px;display:none;position:absolute;color:#000;overflow:hidden;display: none;}
+div.order .info .coupon input{border:1px solid #000;height:26px;width:260px;border-right: 0px;float: left;}
+.span24{margin-top: 20px;}
+.span12{overflow: hidden;}
+div.order .info .coupon button{width:40px;height:30px;line-height:20px;float:right;margin:0;font-size:12px;position:relative;color:#fff;cursor:pointer;outline:0;blr:expression(this.hideFocus = true);border:0;background-color: #000;}
+div.order .info .statistic{line-height:24px;text-align:right;border: 0px;width: 250px;float: right;}
+div.order .info .statistic td{padding: 0px;}
+
+div.order .info .statistic li{line-height:25px;}
+div.order .info .statistic span{margin-left:10px}
+div.order .info .statistic em{font-style:normal}
+div.order .info .statistic strong{font-size: 12px;font-weight: bold;text-transform: uppercase;}
+div.order .info .bottom{height:35px;line-height:35px;margin-bottom:10px;text-align:right;overflow:hidden;}
+div.order .info .back{margin-right:10px}
+div.order .info .submit{padding:70px;color:#fff;background-color:#000}
+div.order .dialog{width:300px;height:200px;line-height:24px;padding:10px 60px;margin-left:-216px;display:none;position:absolute;top:25%;left:50%;z-index:100;color:#888;border:solid 6px #ededed;background-color:#fff}
+div.order .dialog dt{line-height:60px;text-align:center;color:#000;font-size:16px;font-family:"Microsoft YaHei"}
+div.order .dialog div{height:34px;padding:10px 0}
+div.order .dialog div a{height:34px;line-height:34px;display:inline-block;display:-moz-inline-stack;float:left;padding:0 14px;margin-right:30px;font-size:14px;font-weight:bold;text-align:center;color:#fff;outline:0;blr:expression(this.hideFocus = true);background:url(../images/order.gif) -10px -30px no-repeat}
+div.order .dialog div a:hover{color:#ffead0}
+div.order .result{padding:20px;margin-bottom:10px;border:1px solid #fecf97;background-color:#fef7e4}
+div.order .result .title{height:52px;line-height:52px;color:#c00;text-align:center;font-size:24px;font-family:"Microsoft YaHei"}
+div.order .result table{width:100%;line-height:30px;margin-bottom:10px}
+div.order .result th{text-align:left}
+div.order .result td{padding:0 4px;border:1px solid #dbdbdb;background-color:#fdf9ee}
+div.order .result strong{color:#f60;font-weight:bold}
+div.order .result .paymentPlugin td{padding:4px;border:0;background-color:#fef7e4}
+div.order .result .paymentPlugin input{width:15px;height:15px;float:left;margin-right:6px;margin-top:9px}
+div.order .result .paymentPlugin em{width:100px;height:30px;display:block;float:left;padding:2px 8px;font-style:normal;overflow:hidden;cursor:pointer;border:solid 1px #ddd;background-color:#fff;background-position:center;background-repeat:no-repeat}
+div.order .result .paymentPlugin em:hover{border:solid 1px #fa3}
+div.order .result .paymentButton{width:150px;height:37px;line-height:37px;display:inline-block;display:-moz-inline-stack;font-size:14px;font-weight:bold;text-align:center;color:#fff;cursor:pointer;overflow:visible;outline:0;blr:expression(this.hideFocus = true);border:0;background:url(../images/order.gif) 0 -30px no-repeat}
+div.order .result .paymentButton:hover{color:#ffead0}
+.orderContainer{
+margin: 0 auto;
+margin-top: 128px;
+margin-bottom: 50px;
+width: 800px;
+padding-left: 100px;
+}

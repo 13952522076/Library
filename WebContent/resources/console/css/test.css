@@ -1,0 +1,9 @@
+.text_table{
+	width:500px;
+	height:500px;
+	border:1px solid red;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	
+}

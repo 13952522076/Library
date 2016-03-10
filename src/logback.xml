@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+scan:
+    当此属性设置为true时，配置文件如果发生改变，将会被重新加载，默认值为true。
+scanPeriod:
+    设置监测配置文件是否有修改的时间间隔，如果没有给出时间单位，默认单位是毫秒。当scan为true时，此属性生效。默认的时间间隔为1分钟。
+debug:
+    当此属性设置为true时，将打印出logback内部日志信息，实时查看logback运行状态。默认值为false。
+ -->
+<configuration scan="true" scanPeriod="60 seconds" debug="false">  
+    <property name="LOG_HOME" value="${catalina.base}/logs" />  
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">  
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">  
+            <Pattern>%d{HH:mm:ss.SSS} %-5level %logger{80} - %msg%n</Pattern>  
+        </encoder>  
+    </appender>  
+    <appender name="ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">  
+        <file>${LOG_HOME}/preschoolEdu.log</file>  
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+            <!-- 非当天的Log文件压缩备份为 archive/preschoolEdu.2014-08-10.zip -->
+            <fileNamePattern>${LOG_HOME}/archive/preschoolEdu.%d{yyyy-MM-dd}.zip</fileNamePattern>
+            <!-- rollover daily 
+            <fileNamePattern>${LOG_HOME}/preschoolEdu-%d{yyyy-MM-dd_HH-mm}.%i.log</fileNamePattern>  
+            -->  
+            <!-- 超过30天的备份文件会被删除 -->
+            <maxHistory>30</maxHistory>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">  
+                <!-- or whenever the file size reaches 100MB -->  
+                <maxFileSize>200MB</maxFileSize>  
+            </timeBasedFileNamingAndTriggeringPolicy>  
+        </rollingPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <!-- 格式说明:http://logback.qos.ch/manual/layouts.html#ClassicPatternLayout -->
+            <Pattern>%d [%thread] %-5level %40logger{40} - %msg%n</Pattern>
+        </layout>
+        <!-- 
+        <encoder>  
+            <pattern>%date %level [%thread] %logger{36} [%file : %line] %msg%n</pattern>  
+        </encoder>  
+         -->
+    </appender>
+  
+    <root>  
+       <!-- <level value="DEBUG" /> -->
+        <level value="ERROR" />
+        <appender-ref ref="STDOUT" />  
+        <appender-ref ref="ROLLING" />  
+    </root> 
+  
+</configuration>  
