@@ -84,7 +84,7 @@
 						     </li>
 						     -->
 							<li>
-							    <a href="${base}/product/list.ct?brandId=18" id="MOCo">小书僮™智慧幼教管理平台</a>
+							    <a href="${base}/product/list.ct?brandId=18" id="MOCo">图书智能管理推荐系统</a>
 							    <ul id="brand_catagory_18" class="brand_catagory">
 									
 						    </ul>
@@ -232,7 +232,7 @@
 				<div class="unit size1of2">
 					<div class="rPadded">
 						<h3>
-							${message("shop.include.rPadded1")} <strong>小书僮™智慧幼教管理平台</strong> ${message("shop.include.rPadded2")}
+							${message("shop.include.rPadded1")} <strong>图书智能管理推荐系统</strong> ${message("shop.include.rPadded2")}
 						</h3>
 							<p>${message("shop.include.rPadded3")}</p>
 
@@ -275,13 +275,13 @@
 				<div class="unit size1of2 lastUnit">
 					<div class="rPadded">
 						<h3>
-							${message("shop.include.lastUnit.rPadded1")} <strong>小书僮™智慧幼教管理平台 </strong>${message("shop.include.rPadded2")}
+							${message("shop.include.lastUnit.rPadded1")} <strong>图书智能管理推荐系统 </strong>${message("shop.include.rPadded2")}
 						</h3>
 						<p>
-							${message("shop.include.lastUnit.rPadded2")} <strong>小书僮™智慧幼教管理平台 </strong> ${message("shop.include.lastUnit.rPadded3")}
+							${message("shop.include.lastUnit.rPadded2")} <strong>图书智能管理推荐系统 </strong> ${message("shop.include.lastUnit.rPadded3")}
 						</p>
 						<p>
-							${message("shop.include.lastUnit.rPadded4")} <strong>小书僮™智慧幼教管理平台</strong> ${message("shop.include.lastUnit.rPadded5")}
+							${message("shop.include.lastUnit.rPadded4")} <strong>图书智能管理推荐系统</strong> ${message("shop.include.lastUnit.rPadded5")}
 						</p>
 						<div class="actions">
 							<button id="registerButton" type="button" value="${message("shop.include.registerButton")}"
@@ -605,7 +605,7 @@
 							<span>${message("shop.include.chatTail1")}</span>
 						</div>
 						<div class="chat-usertxt">
-							<span class="transcripttxt usertxt"><span class="username">小书僮™智慧幼教管理平台
+							<span class="transcripttxt usertxt"><span class="username">图书智能管理推荐系统
 									:</span>&nbsp;${message("shop.include.chatUsertxt")}</span><br>
 						</div>
 					</div>

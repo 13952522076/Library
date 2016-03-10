@@ -75,7 +75,7 @@
 			}
 		}
 %>
-<title>小书僮™智慧幼教管理平台</title>
+<title>图书智能管理推荐系统</title>
 <meta http-equiv="expires" content="0" />
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Cache-Control" content="no-cache" />
@@ -90,11 +90,6 @@
 <script type="text/javascript" src="<%=base%>/resources/console/js/rsa.js"></script>
 <script type="text/javascript" src="<%=base%>/resources/console/js/base64.js"></script>
 <script type="text/javascript" src="<%=base%>/resources/console/js/common.js"></script>
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-<script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
-<script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
 <script>
 	
 	
@@ -182,7 +177,7 @@
 		<div class="wrap">
 			<div class="logo">
 				<img src="<%=base%>/resources/console/images/login_logo2.png"
-					alt="小书僮™智慧幼教管理平台" style="  height: 80px;width: 300px;" />
+					alt="图书智能管理推荐系统" style="  height: 80px;width: 300px;" />
 				<!-- 二维码 start-->
 				<div class="wechatdiv" style="display: none;">
 					<div class="qrcodeImage">
@@ -226,9 +221,6 @@
         <div class="img2" style="display: none;"></div> 
         -->
 		<div class="img3" style="display: block;"></div>
-		<div class="img4" style="display: none;"></div>
-		<div class="img5" style="display: none;"></div>
-		<div class="img6" style="display: none;"></div>
 		<div class="login">
 			<div class="row">
 				<div class="rowLeft">
@@ -279,21 +271,13 @@
 									}
 								%>
 							</fieldset>
-							<footer> <label> <input type="checkbox"
+							<footer>
+							 <label> <input type="checkbox"
 								id="isRememberUsername" value="true" /> <%=SpringUtils
 				.getMessage("console.login.rememberUsername")%>
-							</label> <input type="submit" class="loginButton"
+							</label> 
+							<input type="submit" class="loginButton"
 								value="<%=SpringUtils.getMessage("console.login.login")%>" />
-							<div class="link">
-								强烈建议使用 <a target="_blank"
-									href="http://rj.baidu.com/soft/detail/14744.html?ald"> <img
-									width="18px" height="18px"
-									src="<%=base%>/resources/console/images/Google.png" alt="">谷歌浏览器
-								</a> <a target="_blank" href="http://www.firefox.com.cn/download/">
-									<img width="18px" height="18px"
-									src="<%=base%>/resources/console/images/firefox.png" alt="">火狐浏览器
-								</a>
-							</div>
 							</footer>
 						</form>
 					</div>

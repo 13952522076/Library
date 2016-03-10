@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>小书僮™智慧幼教管理平台</title>
+<title>图书智能管理推荐系统</title>
 <meta name="author" content="福州盛云软件技术有限公司 Team" />
 <meta name="copyright" content="福州盛云软件技术有限公司" />
 [#include "/console/include/resources.ftl" /]
@@ -32,7 +32,7 @@
 		<div class="wrap">
 			<div class="logo">
 				<img src="${base}/resources/console/images/login_logo2.png"
-					alt="小书僮™智慧幼教管理平台" style="  height: 80px;width: 300px;" />
+					alt="图书智能管理推荐系统" style="  height: 80px;width: 300px;" />
 				<!-- 二维码 start-->
 				<div class="wechatdiv" style="display: none;">
 					<div class="qrcodeImage">

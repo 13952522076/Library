@@ -75,7 +75,7 @@
 			}
 		}
 %>
-<title>小书僮™智慧幼教管理平台</title>
+<title>图书智能管理推荐系统</title>
 <meta http-equiv="expires" content="0" />
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Cache-Control" content="no-cache" />
@@ -296,7 +296,7 @@
 		<div class="wrap">
 			<div class="logo">
 				<img src="<%=base%>/resources/console/images/login_logo2.png"
-					alt="小书僮™智慧幼教管理平台" style="  height: 80px;width: 300px;" />
+					alt="图书智能管理推荐系统" style="  height: 80px;width: 300px;" />
 				<!-- 二维码 start-->
 				<div class="wechatdiv" style="display: none;">
 					<div class="qrcodeImage">

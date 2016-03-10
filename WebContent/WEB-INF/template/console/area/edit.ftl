@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${message("console.main.title")} -图书智能管理推荐系统</title>
-<meta name="keywords" content="小书僮™智慧幼教管理平台">
-<meta name="description" content="小书僮™智慧幼教管理平台">
+<meta name="keywords" content="图书智能管理推荐系统">
+<meta name="description" content="图书智能管理推荐系统">
 [#include "/console/include/resources.ftl" /]
 <script type="text/javascript" src="${base}/resources/console/js/jquery.validate.js"></script>
 <script type="text/javascript" src="${base}/resources/console/js/common.js"></script>
