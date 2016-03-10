@@ -111,17 +111,6 @@ public class NewsController extends BaseController
             return ERROR_VIEW;
         }
         newsService.save(news);
-//        List<com.sammyun.entity.message.Message> messages = new LinkedList<com.sammyun.entity.message.Message>();
-//        ImUserUtil imUserUtil = new ImUserUtil();
-//        Member sender = imUserUtil.createSystemMember(dictSchool);
-//        String subject = news.getTitle();
-//        String body = news.getSummary();
-//        for (Member member : dictSchool.getMembers())
-//        {
-//            messages.add(imUserUtil.saveMessage(sender, member, subject, body, MessageCategory.NEWS, dictSchool, news.getId().toString(),
-//                    request));
-//        }
-//        messageService.batchUpdate(messages);
         addFlashMessage(redirectAttributes, SUCCESS_MESSAGE);
         model.addAttribute("menuId", News.class.getSimpleName());
         return "redirect:list.ct";

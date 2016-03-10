@@ -273,16 +273,6 @@ public class ExcelServiceImpl implements ExcelService
                         ret.setError("第" + num + "条纪录的用户名长度超过100！");
                         return ret;
                     }
-                    // 判断是否满足环信的要求[a-zA-Z0-9_\-./ ]
-                    // Pattern pattern = Pattern.compile("[a-zA-Z0-9_-./ ]*");
-                    // Matcher matcher =
-                    // pattern.matcher(member.getUsername());
-                    // boolean b= matcher.matches();
-                    // if(!b){
-                    // ret.setStatus(Status.fail);
-                    // ret.setError("第" + num + "条纪录的用户名不符合环信规范！");
-                    // return ret;
-                    // }
                 }
             }
             else
@@ -768,16 +758,6 @@ public class ExcelServiceImpl implements ExcelService
                         ret.setError("第" + num + "条纪录的用户名长度超过100！");
                         return ret;
                     }
-                    // 判断是否满足环信的要求[a-zA-Z0-9_\-./ ]
-                    // Pattern pattern = Pattern.compile("[a-zA-Z0-9_-./ ]*");
-                    // Matcher matcher =
-                    // pattern.matcher(member.getUsername());
-                    // boolean b= matcher.matches();
-                    // if(!b){
-                    // ret.setStatus(Status.fail);
-                    // ret.setError("第" + num + "条纪录的用户名不符合环信规范！");
-                    // return ret;
-                    // }
                 }
             }
             else

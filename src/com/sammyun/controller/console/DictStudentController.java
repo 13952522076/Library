@@ -229,13 +229,6 @@ public class DictStudentController extends BaseController
 
             }
         }
-        // //调用环信将家长和班级下的所有家长和老师添加成好友。失败回滚
-        //
-        // imUserUtil.twoMemberListAddFriend(addPatriarches, prePatriarches);
-        // // imUserUtil.addFriendInClass(dictClass);
-        // model.addAttribute("menuId", DictStudent.class.getSimpleName());
-        // Date endDate = new Date();
-        // System.out.println("增加单个学生时间："+(endDate.getTime()-startDate.getTime()));
         addFlashMessage(redirectAttributes, SUCCESS_MESSAGE);
         return "redirect:list.ct";
     }
@@ -387,30 +380,6 @@ public class DictStudentController extends BaseController
             }
 
         }
-        // //获得关联的家长————————————start关联关系
-        // List<Member> newPatriarches =
-        // patriarchStudentMapService.findMemberByStudent(dictStudent);
-        // List<Member> addPatriarches = new ArrayList<Member>();
-        // addPatriarches.addAll(newPatriarches);
-        // addPatriarches.removeAll(prepatriarches);//新增的关联家长
-        // List<Member> delPatriarches = new ArrayList<Member>();
-        // delPatriarches.addAll(prepatriarches);
-        // delPatriarches.removeAll(newPatriarches);//删除的家长
-        // //如果没有改变班级
-        // if(dictClass ==preDictClass){
-        // //删除的家长与大家关系删除
-        // imUserUtil.studentDelMember(delPatriarches, dictClass);
-        // //新增家长与大家成为好友
-        // imUserUtil.studentAddMember(addPatriarches, dictClass);
-        // }
-        // //改变班级的操作
-        // else{
-        // //所有原家长删除和原班级的关系
-        // imUserUtil.studentDelMember(prepatriarches, preDictClass);
-        // //所有新家长与新班级大家成为好友
-        // imUserUtil.studentAddMember(newPatriarches, dictClass);
-        // }
-        // //－－－－－－－－－end关联关系
 
         model.addAttribute("menuId", DictStudent.class.getSimpleName());
         addFlashMessage(redirectAttributes, SUCCESS_MESSAGE);
@@ -431,12 +400,6 @@ public class DictStudentController extends BaseController
                 DictStudent dictStudent = dictStudentService.find(id);
                 if (dictStudent != null)
                 {
-                    // //start删除该学生所有的好友
-                    // List<Member> delPatriarches =
-                    // patriarchStudentMapService.findMemberByStudent(dictStudent);
-                    // DictClass dictClass = dictStudent.getDictClass();
-                    // imUserUtil.studentDelMember(delPatriarches, dictClass);
-                    // //end
                     List<PatriarchStudentMap> patriarchStudentMaps = patriarchStudentMapService.findByStudent(dictStudent);
                     if (patriarchStudentMaps != null)
                     {
@@ -493,34 +456,6 @@ public class DictStudentController extends BaseController
                 List<PatriarchStudentMap> patriarchStudentMaps = patriarchStudentMapService.createMapsByStudents(addDictStudents);
                 patriarchStudentMapService.batchUpdate(patriarchStudentMaps);
                 dictStudentService.batchUpdate(addDictStudents);
-                // //循环将导入学生中的相关班级下的学生的家长建立好友
-                // for(DictStudent dictStudent:addDictStudents){
-                // DictClass dictClass =
-                // dictStudentService.find(dictStudent.getId()).getDictClass();
-                // if(dictClass!=null){
-                // List<Member> prePatriarches = new ArrayList<Member>();
-                // Set<DictStudent> students = dictClass.getDictStudents();
-                // if(students!=null&&students.size()!=0){
-                // List<Member> prePatriarchesItem =
-                // patriarchStudentMapService.findMemberByStudent(dictStudent);
-                // prePatriarches.addAll(prePatriarchesItem);
-                // }
-                // List<Member> teachers =
-                // classTeacherMapService.findMemberByClass(dictClass);
-                // prePatriarches.addAll(teachers);//将家长和老师组合在一起
-                // HashSet<Member> hashSet = new
-                // HashSet<Member>(prePatriarches);
-                // prePatriarches.clear();
-                // prePatriarches.addAll(hashSet);
-                // List<Member> addPatriarches =
-                // patriarchStudentMapService.findMemberByStudent(dictStudent);
-                //
-                // imUserUtil.twoMemberListAddFriend(addPatriarches,
-                // prePatriarches);
-                //
-                // //imUserUtil.addFriendInClass(dictClass);
-                // }
-                // }
                 data.put("message", Message.success("导入成功！"));
             }
             catch (Exception e)
