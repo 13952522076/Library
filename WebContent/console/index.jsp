@@ -12,7 +12,7 @@ if (applicationContext != null) {
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>提示信息 - 小书僮™智慧幼教管理平台</title>
+<title>提示信息 -图书智能管理推荐系统</title>
 <meta http-equiv="expires" content="0" />
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Cache-Control" content="no-cache" />

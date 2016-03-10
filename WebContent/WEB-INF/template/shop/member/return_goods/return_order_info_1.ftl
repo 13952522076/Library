@@ -3,7 +3,7 @@
     
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <title>${message("shop.personalCenter.returnGoodsApply")}[#if systemShowPowered] - 小书僮™智慧幼教管理平台 官方网站[/#if]</title>
+        <title>${message("shop.personalCenter.returnGoodsApply")}[#if systemShowPowered] -图书智能管理推荐系统 官方网站[/#if]</title>
         <meta name="author" content="福州盛云软件技术有限公司 Team" />
         <meta name="copyright" content="福州盛云软件技术有限公司" />
         <link href="${base}/resources/shop/css/common.css" rel="stylesheet" type="text/css"/>

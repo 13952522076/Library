@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${message("console.main.curriculumScheduleNav")} - 小书僮™智慧幼教管理平台</title>
+<title>${message("console.main.curriculumScheduleNav")} -图书智能管理推荐系统</title>
 <meta name="author" content="福州盛云软件技术有限公司 Team" />
 <meta name="copyright" content="福州盛云软件技术有限公司" />
 [#include "/console/include/resources.ftl" /]

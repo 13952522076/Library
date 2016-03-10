@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>${message("shop.order.payment")}[#if systemShowPowered] - 小书僮™智慧幼教管理平台[/#if]</title>
+<title>${message("shop.order.payment")}[#if systemShowPowered] -图书智能管理推荐系统[/#if]</title>
 <link href="${base}/resources/shop/css/common.css" rel="stylesheet" type="text/css" />
 <link href="${base}/resources/shop/css/dealorder4pay.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="${base}/resources/shop/js/jquery.js"></script>

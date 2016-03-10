@@ -5,7 +5,7 @@ ${notifyMessage}
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>${message("shop.payment.notify")}[#if systemShowPowered] - 小书僮™智慧幼教管理平台[/#if]</title>
+<title>${message("shop.payment.notify")}[#if systemShowPowered] -图书智能管理推荐系统[/#if]</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no,width=320,target-densitydpi=142">
 <meta name="apple-mobile-web-app-capable" content="yes">

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>${message("shop.member.order.view")}[#if systemShowPowered] - 小书僮™智慧幼教管理平台[/#if]</title>
+<title>${message("shop.member.order.view")}[#if systemShowPowered] -图书智能管理推荐系统[/#if]</title>
 <meta name="author" content="福州盛云软件技术有限公司 Team" />
 <meta name="copyright" content="福州盛云软件技术有限公司" />
 <script type="text/javascript" src="${base}/resources/shop/js/jquery.js"></script>

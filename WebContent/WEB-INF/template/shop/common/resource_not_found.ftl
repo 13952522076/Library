@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${message("shop.resourceNotFound.title")}[#if systemShowPowered] - 小书僮™智慧幼教管理平台[/#if]</title>
+    <title>${message("shop.resourceNotFound.title")}[#if systemShowPowered] -图书智能管理推荐系统[/#if]</title>
     <link href="${base}/resources/console/css/bootstrap.min.css?v=1.7" rel="stylesheet">
     <link href="${base}/resources/console/font-awesome/css/font-awesome.css?v=1.7" rel="stylesheet">
     <link href="${base}/resources/console/css/animate.css" rel="stylesheet">
