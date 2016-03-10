@@ -108,21 +108,7 @@ public class MessageServiceImpl extends BaseServiceImpl<Message, Long> implement
     @Override
     public void sendMessage()
     {
-        MessagePushPlugin xgForIosPlugin = null;
-        MessagePushPlugin xgForAndroidPlugin = null;
         List<MessagePushPlugin> messagePushPlugins = pluginService.getMessagePushPlugins(true);
-        for (MessagePushPlugin messagePushPlugin : messagePushPlugins)
-        {
-            if (messagePushPlugin.getId().equalsIgnoreCase("xgForIosPlugin"))
-            {
-                xgForIosPlugin = messagePushPlugin;
-
-            }
-            else if (messagePushPlugin.getId().equalsIgnoreCase("xgForAndroidPlugin"))
-            {
-                xgForAndroidPlugin = messagePushPlugin;
-            }
-        }
         List<Message> messages = messageDao.findMessage(false, 10);
         if (messages != null && messages.size() != 0)
         {
@@ -145,32 +131,13 @@ public class MessageServiceImpl extends BaseServiceImpl<Message, Long> implement
                             {
                                 if (deviceOs.equalsIgnoreCase("iPhone OS"))
                                 {
-                                    if (xgForIosPlugin != null)
-                                    {
-                                        JSONObject a = xgForIosPlugin.pushSingleDeviceIOS(body, deviceToken);
-//                                        JSONObject a = xgForIosPlugin.pushTokenIos(body, deviceToken, XingeApp.IOSENV_DEV);
-
-                                        message.setXgPush(true);
-                                    }
-                                    else
-                                    {
                                         sendMessageByMobile(reciver.getMobile(), body);
                                         message.setSmsPush(true);
-                                    }
                                 }
                                 else if (deviceOs.equalsIgnoreCase("android"))
                                 {
-                                    if (xgForAndroidPlugin != null)
-                                    {
-                                        xgForAndroidPlugin.pushTokenAndroid(subject, body, deviceToken);
-                                        message.setXgPush(true);
-
-                                    }
-                                    else
-                                    {
                                         sendMessageByMobile(reciver.getMobile(), body);
                                         message.setSmsPush(true);
-                                    }
                                 }
                             }
 
