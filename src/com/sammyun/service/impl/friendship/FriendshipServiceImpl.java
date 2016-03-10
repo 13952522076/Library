@@ -15,7 +15,6 @@ import com.sammyun.entity.message.Message;
 import com.sammyun.plugin.MessagePushPlugin;
 import com.sammyun.service.friendship.FriendshipService;
 import com.sammyun.service.impl.BaseServiceImpl;
-import com.tencent.xinge.XingeApp;
 
 /**
  * Friendship * ServiceImpl - 
