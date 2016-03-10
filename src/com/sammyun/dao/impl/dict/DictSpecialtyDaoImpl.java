@@ -9,7 +9,7 @@ import com.sammyun.entity.dict.DictSpecialty;
  * DictSpecialty * DaoImpl - 专业
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("dictSpecialtyDaoImpl")
 public class DictSpecialtyDaoImpl extends BaseDaoImpl<DictSpecialty, Long> implements DictSpecialtyDao  {

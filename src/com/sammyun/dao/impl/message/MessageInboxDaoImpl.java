@@ -9,7 +9,7 @@ import com.sammyun.entity.message.MessageInbox;
  * MessageInbox * DaoImpl - 站内信(系统消息)
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("messageInboxDaoImpl")
 public class MessageInboxDaoImpl extends BaseDaoImpl<MessageInbox, Long> implements MessageInboxDao 

@@ -14,7 +14,7 @@ import org.hibernate.cfg.NamingStrategy;
  * ImprovedNamingStrategy－ 重写hibernate映射规则
  * 
  * @author xutianlong
- * @version 3.0
+
  */
 public class EduImprovedNamingStrategy extends ImprovedNamingStrategy implements NamingStrategy, Serializable
 {

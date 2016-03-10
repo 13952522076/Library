@@ -9,7 +9,7 @@ package com.sammyun.service;
  * Service - 缓存
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface CacheService {
 

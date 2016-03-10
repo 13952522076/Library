@@ -17,7 +17,7 @@ import org.hibernate.validator.constraints.Length;
  * Entity - 网银支付银行列表
  * 
  * @author xutianlong
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_pay_bank_info")

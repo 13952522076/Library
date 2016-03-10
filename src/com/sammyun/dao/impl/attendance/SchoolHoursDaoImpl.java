@@ -10,7 +10,7 @@ import com.sammyun.entity.attendance.SchoolHours;
  * DaoImpl - 上学放学时间设置
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("schoolHoursDaoImpl")
 public class SchoolHoursDaoImpl extends BaseDaoImpl<SchoolHours, Long> implements SchoolHoursDao

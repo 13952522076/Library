@@ -17,7 +17,7 @@ import com.sammyun.entity.stu.HealthFile;
  * HealthFile * DaoImpl - 健康档案
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("healthFileDaoImpl")
 public class HealthFileDaoImpl extends BaseDaoImpl<HealthFile, Long> implements HealthFileDao

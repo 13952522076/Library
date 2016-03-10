@@ -14,7 +14,7 @@ import com.sammyun.entity.bus.BusHirecar;
  * BusHirecar * ServiceImpl - 租车预约数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("busHirecarServiceImpl")
 public class BusHirecarServiceImpl extends BaseServiceImpl<BusHirecar, Long> implements BusHirecarService {

@@ -29,7 +29,7 @@ import com.sammyun.util.EduUtil;
  * Interceptor - 日志记录
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public class LogInterceptor extends HandlerInterceptorAdapter {
 

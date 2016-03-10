@@ -11,7 +11,7 @@ import com.sammyun.service.BaseService;
  * Service - 教师考勤详情
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface TeacherAttendanceDetailService  extends BaseService<TeacherAttendanceDetail, Long>
 {

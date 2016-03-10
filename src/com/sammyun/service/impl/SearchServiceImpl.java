@@ -22,7 +22,7 @@ import com.sammyun.service.SearchService;
  * Service - 搜索
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("searchServiceImpl")
 @Transactional

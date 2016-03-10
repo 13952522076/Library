@@ -52,7 +52,7 @@ import com.sammyun.uuid.UUIDHexGenerator;
  * Controller - 应用管理
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("appController")
 @RequestMapping("/console/app")

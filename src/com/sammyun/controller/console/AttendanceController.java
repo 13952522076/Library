@@ -42,7 +42,7 @@ import com.sammyun.util.JsonUtils;
  * Controller - 学生考勤管理
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("attendanceController")
 @RequestMapping("/console/attendance")

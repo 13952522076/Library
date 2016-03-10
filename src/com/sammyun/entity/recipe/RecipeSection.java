@@ -21,7 +21,7 @@ import com.sammyun.entity.OrderEntity;
  * Entity - 学生食谱-食谱段
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_recipe_section")

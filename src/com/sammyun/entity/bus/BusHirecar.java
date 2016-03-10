@@ -16,7 +16,7 @@ import com.sammyun.entity.BaseEntity;
  * BusHirecar * Entity - 租车预约数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_bus_hirecar")

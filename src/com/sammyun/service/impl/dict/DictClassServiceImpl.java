@@ -17,7 +17,7 @@ import com.sammyun.entity.dict.DictSchool;
  * Service   - 班级
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("dictClassServiceImpl")
 public class DictClassServiceImpl extends BaseServiceImpl<DictClass, Long> implements DictClassService

@@ -48,7 +48,7 @@ import com.sammyun.util.WebUtils;
  * Controller - 会员登录
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("shopLoginController")
 @RequestMapping("/login")

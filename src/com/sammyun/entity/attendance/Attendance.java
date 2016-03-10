@@ -21,7 +21,7 @@ import com.sammyun.entity.dict.DictStudent;
  * Entity - 学生考勤
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_attendance")

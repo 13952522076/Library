@@ -14,7 +14,7 @@ import com.sammyun.entity.bus.BusDirection;
  * BusDirection * ServiceImpl - 线路方向数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("busDirectionServiceImpl")
 public class BusDirectionServiceImpl extends BaseServiceImpl<BusDirection, Long> implements BusDirectionService {

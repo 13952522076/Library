@@ -15,7 +15,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * DiaryTranspond * ServiceImpl - 
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("diaryTranspondServiceImpl")
 public class DiaryTranspondServiceImpl extends BaseServiceImpl<DiaryTranspond, Long> implements DiaryTranspondService

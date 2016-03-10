@@ -14,7 +14,7 @@ import com.sammyun.entity.dict.DictDeviceModel;
  * DictDeviceModel * ServiceImpl - 设备数据字典
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("dictDeviceModelServiceImpl")
 public class DictDeviceModelServiceImpl extends BaseServiceImpl<DictDeviceModel, Long> implements DictDeviceModelService {

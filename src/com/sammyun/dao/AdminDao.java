@@ -12,7 +12,7 @@ import com.sammyun.entity.dict.DictSchool;
  * Dao - 管理员
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface AdminDao extends BaseDao<Admin, Long>
 {

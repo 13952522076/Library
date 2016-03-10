@@ -17,7 +17,7 @@ import com.sammyun.service.LogService;
  * Service - 日志
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("logServiceImpl")
 public class LogServiceImpl extends BaseServiceImpl<Log, Long> implements LogService {

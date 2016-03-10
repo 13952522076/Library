@@ -13,7 +13,7 @@ import com.sammyun.entity.app.AppScreenshot;
  * DaoImpl - 应用管理
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("appScreenshotDaoImpl")
 public class AppScreenshotDaoImpl extends BaseDaoImpl<AppScreenshot, Long> implements AppScreenshotDao

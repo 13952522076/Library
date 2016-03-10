@@ -34,7 +34,7 @@ import com.sammyun.util.JsonUtils;
  * Controller - 文件处理
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminFileController")
 @RequestMapping("/console/file")

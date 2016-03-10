@@ -14,7 +14,7 @@ import com.sammyun.LogConfig;
  * Service - 日志配置
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface LogConfigService {
 

@@ -26,7 +26,7 @@ import org.hibernate.validator.constraints.NotEmpty;
  * Entity - 角色
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_role")

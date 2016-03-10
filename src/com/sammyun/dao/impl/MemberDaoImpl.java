@@ -33,7 +33,7 @@ import com.sammyun.entity.parenting.Parenting;
  * Dao - 会员
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("memberDaoImpl")
 public class MemberDaoImpl extends BaseDaoImpl<Member, Long> implements MemberDao

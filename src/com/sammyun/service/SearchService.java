@@ -10,7 +10,7 @@ package com.sammyun.service;
  * Service - 搜索
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface SearchService
 {

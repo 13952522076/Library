@@ -29,7 +29,7 @@ import org.springframework.util.Assert;
  * Utils - 图片处理(支持JDK、GraphicsMagick、ImageMagick)
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public final class ImageUtils
 {

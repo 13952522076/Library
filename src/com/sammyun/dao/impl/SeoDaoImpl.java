@@ -18,7 +18,7 @@ import com.sammyun.entity.Seo.Type;
  * Dao - SEO设置
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("seoDaoImpl")
 public class SeoDaoImpl extends BaseDaoImpl<Seo, Long> implements SeoDao {

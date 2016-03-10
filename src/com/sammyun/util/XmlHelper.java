@@ -25,7 +25,7 @@ import com.sammyun.meta.Dto;
  * XML常规格式通用处理器<br>
  * 
  * @author xutianlong
- * @version 3.0
+
  * @since 2014-06-07
  */
 public class XmlHelper

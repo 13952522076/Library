@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Controller - 系统
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("shopSystemController")
 @RequestMapping("/system")

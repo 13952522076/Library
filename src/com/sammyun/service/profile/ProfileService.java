@@ -8,7 +8,7 @@ import com.sammyun.service.BaseService;
  * Profiles * Service - 学校概况数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface ProfileService extends BaseService<Profile, Long> {
     

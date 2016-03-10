@@ -27,7 +27,7 @@ import com.sammyun.entity.parenting.Parenting;
  * GrowthDiary * DaoImpl - 成长记
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("growthDiaryDaoImpl")
 public class GrowthDiaryDaoImpl extends BaseDaoImpl<GrowthDiary, Long> implements GrowthDiaryDao

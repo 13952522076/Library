@@ -11,7 +11,7 @@ import com.sammyun.entity.Log;
  * Dao - 日志
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface LogDao extends BaseDao<Log, Long>
 {

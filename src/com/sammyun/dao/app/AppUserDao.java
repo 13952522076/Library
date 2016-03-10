@@ -12,7 +12,7 @@ import com.sammyun.entity.app.App.OperatingSystem;
  * Dao - 用户应用清单
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface AppUserDao extends BaseDao<AppUser, Long>
 {

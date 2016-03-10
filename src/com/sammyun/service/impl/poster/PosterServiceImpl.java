@@ -19,7 +19,7 @@ import com.sammyun.entity.poster.Poster.PosterPosition;
  * Poster * ServiceImpl - 海报
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("posterServiceImpl")
 public class PosterServiceImpl extends BaseServiceImpl<Poster, Long> implements PosterService {

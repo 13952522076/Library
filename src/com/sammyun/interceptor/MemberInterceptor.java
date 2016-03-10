@@ -26,7 +26,7 @@ import com.sammyun.util.HttpRequestDeviceUtils;
  * Interceptor - 会员权限
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public class MemberInterceptor extends HandlerInterceptorAdapter {
 

@@ -32,7 +32,7 @@ import com.sammyun.service.dict.DictSchoolService;
  * Controller - 管理员
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminAdminController")
 @RequestMapping("/console/admin")

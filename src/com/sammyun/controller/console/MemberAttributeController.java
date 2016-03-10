@@ -30,7 +30,7 @@ import com.sammyun.service.MemberAttributeService;
  * Controller - 会员注册项
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminMemberAttributeController")
 @RequestMapping("/console/member_attribute")

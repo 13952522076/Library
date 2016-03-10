@@ -19,7 +19,7 @@ import com.sammyun.service.parenting.ParentingService;
  * Parenting * ServiceImpl - 育儿数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("parentingServiceImpl")
 public class ParentingServiceImpl extends BaseServiceImpl<Parenting, Long> implements ParentingService

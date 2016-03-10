@@ -19,7 +19,7 @@ import com.sammyun.service.CacheService;
  * Controller - 缓存
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminCacheController")
 @RequestMapping("/console/cache")

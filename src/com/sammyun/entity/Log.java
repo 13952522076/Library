@@ -15,7 +15,7 @@ import javax.persistence.Table;
  * Entity - 日志
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_log")

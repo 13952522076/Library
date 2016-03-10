@@ -14,7 +14,7 @@ import org.jsoup.safety.Whitelist;
  * HTML清理
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public class HtmlCleanEditor extends PropertyEditorSupport
 {

@@ -10,7 +10,7 @@ import com.sammyun.entity.dict.DictStudent;
  * Dao - 请假
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface AskLeaveDao extends BaseDao<AskLeave, Long>
 {

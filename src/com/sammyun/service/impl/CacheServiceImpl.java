@@ -24,7 +24,7 @@ import freemarker.template.TemplateModelException;
  * Service - 缓存
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("cacheServiceImpl")
 public class CacheServiceImpl implements CacheService

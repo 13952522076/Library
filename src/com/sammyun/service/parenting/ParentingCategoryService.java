@@ -11,7 +11,7 @@ import com.sammyun.service.BaseService;
  * ParentingCategory * Service - 育儿类别
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface ParentingCategoryService extends BaseService<ParentingCategory, Long>
 {

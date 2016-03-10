@@ -10,7 +10,7 @@ import com.sammyun.entity.gd.AtUser;
  * AtUser * DaoImpl - 成长记AT用户
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("atUserDaoImpl")
 public class AtUserDaoImpl extends BaseDaoImpl<AtUser, Long> implements AtUserDao

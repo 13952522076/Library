@@ -25,7 +25,7 @@ import com.sammyun.service.NavigationService;
  * Service - 导航
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("navigationServiceImpl")
 public class NavigationServiceImpl extends BaseServiceImpl<Navigation, Long> implements NavigationService {

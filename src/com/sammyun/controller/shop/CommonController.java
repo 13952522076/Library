@@ -37,7 +37,7 @@ import com.sammyun.util.SettingUtils;
  * Controller - 共用
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("shopCommonController")
 @RequestMapping("/common")

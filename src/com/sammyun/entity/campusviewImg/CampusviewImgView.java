@@ -22,7 +22,7 @@ import com.sammyun.entity.Member;
  * Entity - 校园风光查看记录表
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_campusview_img_view")

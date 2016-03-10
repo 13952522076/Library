@@ -16,7 +16,7 @@ import com.sammyun.entity.BaseEntity;
  * BusLineDriver * Entity - 线路车辆司机的关联关系
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_bus_line_driver")

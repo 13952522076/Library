@@ -9,7 +9,7 @@ import com.sammyun.entity.bus.BusCar;
  * BusCar * DaoImpl - 车辆数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("busCarDaoImpl")
 public class BusCarDaoImpl extends BaseDaoImpl<BusCar, Long> implements BusCarDao  {

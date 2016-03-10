@@ -19,7 +19,7 @@ import com.sammyun.service.PluginService;
  * Controller - 支付插件
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminPaymentPluginController")
 @RequestMapping("/console/payment_plugin")

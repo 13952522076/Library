@@ -16,7 +16,7 @@ import org.hibernate.validator.constraints.Length;
  * Entity - SEO设置
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_seo")

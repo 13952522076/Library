@@ -22,7 +22,7 @@ import com.sammyun.entity.dict.DictStudent;
  * DaoImpl - 卡管理
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("timeCardDaoImpl")
 public class TimeCardDaoImpl extends BaseDaoImpl<TimeCard, Long> implements TimeCardDao

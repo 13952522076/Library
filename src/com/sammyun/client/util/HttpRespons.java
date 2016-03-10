@@ -11,7 +11,7 @@ import java.util.Vector;
  * HttpRespons - 响应对象
  * 
  * @author xutianlong
- * @version 3.0
+
  */
 public class HttpRespons
 {

@@ -17,7 +17,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * QualityCourse * ServiceImpl - 精品课程
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 
 @Service("qualityCourseServiceImpl")

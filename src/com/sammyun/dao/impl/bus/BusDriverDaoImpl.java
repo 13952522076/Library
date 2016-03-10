@@ -9,7 +9,7 @@ import com.sammyun.entity.bus.BusDriver;
  * BusDriver * DaoImpl - 驾驶员数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("busDriverDaoImpl")
 public class BusDriverDaoImpl extends BaseDaoImpl<BusDriver, Long> implements BusDriverDao  {

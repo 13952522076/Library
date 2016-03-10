@@ -26,7 +26,7 @@ import com.sammyun.util.SettingUtils;
  * Plugin - 支付宝(双接口)
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Component("alipayDualPlugin")
 public class AlipayDualPlugin extends PaymentPlugin

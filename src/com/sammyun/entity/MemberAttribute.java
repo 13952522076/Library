@@ -23,7 +23,7 @@ import org.hibernate.validator.constraints.NotEmpty;
  * Entity - 会员注册项
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_member_attribute")

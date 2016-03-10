@@ -9,7 +9,7 @@ import com.sammyun.entity.dict.DictCampus;
  * DictCampus * DaoImpl - 校区
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("dictCampusDaoImpl")
 public class DictCampusDaoImpl extends BaseDaoImpl<DictCampus, Long> implements DictCampusDao  {

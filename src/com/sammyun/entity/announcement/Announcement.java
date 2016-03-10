@@ -22,7 +22,7 @@ import com.sammyun.entity.dict.DictSchool;
  * Entity - 通知公告数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_announcement")

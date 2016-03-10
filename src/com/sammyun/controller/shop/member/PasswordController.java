@@ -26,7 +26,7 @@ import com.sammyun.util.SettingUtils;
  * Controller - 会员中心 - 密码
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("shopMemberPasswordController")
 @RequestMapping("/member/password")

@@ -16,7 +16,7 @@ import org.apache.commons.codec.digest.DigestUtils;
  * Utils - MD5
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public class MD5
 {

@@ -28,7 +28,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * ServiceImpl - 考勤
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("attendanceServiceImpl")
 public class AttendanceServiceImpl extends BaseServiceImpl<Attendance, Long> implements AttendanceService

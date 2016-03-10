@@ -31,7 +31,7 @@ import com.sammyun.service.gd.GrowthDiaryService;
  * Controller - 成长记
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("growthDiaryController")
 @RequestMapping("/console/growthDiary")

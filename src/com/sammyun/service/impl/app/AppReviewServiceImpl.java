@@ -15,7 +15,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * AppReview * ServiceImpl - 应用评论
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("appReviewServiceImpl")
 public class AppReviewServiceImpl extends BaseServiceImpl<AppReview, Long> implements AppReviewService{

@@ -57,7 +57,7 @@ import com.sammyun.util.SettingUtils;
  * Controller - 会员
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminMemberController")
 @RequestMapping("/console/member")

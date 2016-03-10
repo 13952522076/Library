@@ -13,7 +13,7 @@ import com.sammyun.entity.stu.OverallMerit;
  * OverallMerit * Dao - 综合评价
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface OverallMeritDao extends BaseDao<OverallMerit, Long> 
 {

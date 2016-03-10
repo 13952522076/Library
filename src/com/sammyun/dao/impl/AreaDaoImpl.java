@@ -19,7 +19,7 @@ import com.sammyun.entity.Area;
  * Dao - 地区
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("areaDaoImpl")
 public class AreaDaoImpl extends BaseDaoImpl<Area, Long> implements AreaDao {

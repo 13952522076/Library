@@ -18,7 +18,7 @@ import com.sammyun.entity.gd.DiaryTag;
  * DiaryTag * DaoImpl - 成长记点赞
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("diaryTagDaoImpl")
 public class DiaryTagDaoImpl extends BaseDaoImpl<DiaryTag, Long> implements DiaryTagDao

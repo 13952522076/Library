@@ -24,7 +24,7 @@ import com.sammyun.entity.message.Message.MessageCategory;
  * Message * DaoImpl - 消息附件
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("messageDaoImpl")
 public class MessageDaoImpl extends BaseDaoImpl<Message, Long> implements MessageDao

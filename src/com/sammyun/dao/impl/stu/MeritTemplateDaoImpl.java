@@ -19,7 +19,7 @@ import com.sammyun.entity.stu.MeritTemplate;
  * MeritTemplate * DaoImpl - 评价等级模板
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("meritTemplateDaoImpl")
 public class MeritTemplateDaoImpl extends BaseDaoImpl<MeritTemplate, Long> implements MeritTemplateDao

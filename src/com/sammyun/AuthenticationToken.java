@@ -11,7 +11,7 @@ import org.apache.shiro.authc.UsernamePasswordToken;
  * 登录令牌
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public class AuthenticationToken extends UsernamePasswordToken
 {

@@ -14,7 +14,7 @@ import com.sammyun.entity.bus.BusReservation;
  * BusReservation * ServiceImpl - 预约数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 
 @Service("busReservationServiceImpl")

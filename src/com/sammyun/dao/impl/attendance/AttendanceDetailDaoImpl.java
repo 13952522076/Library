@@ -29,7 +29,7 @@ import com.sammyun.entity.attendance.WorkScheduling;
  * DaoImpl - 考勤详情
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("attendanceDetailDaoImpl")
 public class AttendanceDetailDaoImpl extends BaseDaoImpl<AttendanceDetail, Long> implements AttendanceDetailDao

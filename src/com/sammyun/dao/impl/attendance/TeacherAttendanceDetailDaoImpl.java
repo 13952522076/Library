@@ -20,7 +20,7 @@ import com.sammyun.entity.attendance.TeacherAttendanceDetail;
  * DaoImpl - 教师考情详情
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("teacherAttendanceDetailDaoImpl")
 public class TeacherAttendanceDetailDaoImpl extends BaseDaoImpl<TeacherAttendanceDetail, Long> implements

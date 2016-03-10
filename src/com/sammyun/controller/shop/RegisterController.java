@@ -53,7 +53,7 @@ import com.sammyun.util.WebUtils;
  * Controller - 会员注册
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("shopRegisterController")
 @RequestMapping("/register")

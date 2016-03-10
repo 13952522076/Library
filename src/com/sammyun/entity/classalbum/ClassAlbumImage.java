@@ -27,7 +27,7 @@ import com.sammyun.entity.dict.DictSchool;
  * Entity - 班级相册
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_class_album_image")

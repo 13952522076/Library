@@ -18,7 +18,7 @@ import com.sammyun.entity.system.SystemDict;
  * Dao - 系统字典
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("systemDictDaoImpl")
 public class SystemDictDaoImpl extends BaseDaoImpl<SystemDict, Long> implements SystemDictDao

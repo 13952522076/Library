@@ -11,7 +11,7 @@ import com.sammyun.entity.Log;
  * Service - 日志
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface LogService extends BaseService<Log, Long> {
 

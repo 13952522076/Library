@@ -11,7 +11,7 @@ import java.io.Serializable;
  * 日志配置
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public class LogConfig implements Serializable
 {

@@ -14,7 +14,7 @@ import com.sammyun.entity.message.MessageHistory;
  * MessageHistory * ServiceImpl - 消息历史
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("messageHistoryServiceImpl")
 public class MessageHistoryServiceImpl extends BaseServiceImpl<MessageHistory, Long> implements MessageHistoryService {

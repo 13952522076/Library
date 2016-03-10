@@ -17,7 +17,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * DiaryAgree * ServiceImpl -
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("diaryAgreeServiceImpl")
 public class DiaryAgreeServiceImpl extends BaseServiceImpl<DiaryAgree, Long> implements DiaryAgreeService

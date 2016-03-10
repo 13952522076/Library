@@ -30,7 +30,7 @@ import com.sammyun.service.SystemSuggestService;
  * Controller - 意见反馈
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminSystemSuggestController")
 @RequestMapping("/console/systemSuggest")

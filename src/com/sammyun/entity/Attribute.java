@@ -24,7 +24,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * Entity - 属性
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_attribute")

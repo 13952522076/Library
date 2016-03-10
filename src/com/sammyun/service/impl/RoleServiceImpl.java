@@ -19,7 +19,7 @@ import com.sammyun.service.RoleService;
  * Service - 角色
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("roleServiceImpl")
 public class RoleServiceImpl extends BaseServiceImpl<Role, Long> implements RoleService {

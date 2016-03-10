@@ -27,7 +27,7 @@ import com.sammyun.entity.recipe.Recipe;
  * ClassTeacherMap * DaoImpl - 学校
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("classTeacherMapDaoImpl")
 public class ClassTeacherMapDaoImpl  extends BaseDaoImpl<ClassTeacherMap, Long> implements ClassTeacherMapDao 

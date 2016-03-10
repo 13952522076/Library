@@ -14,7 +14,7 @@ import com.sammyun.entity.dict.DictSpecialty;
  * DictSpecialty * ServiceImpl - 专业
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("dictSpecialtyServiceImpl")
 public class DictSpecialtyServiceImpl extends BaseServiceImpl<DictSpecialty, Long> implements DictSpecialtyService {

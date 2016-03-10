@@ -20,7 +20,7 @@ import com.sammyun.entity.gd.GrowthDiary;
  * DiaryTranspond * DaoImpl - 成长记转发
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("diaryTranspondDaoImpl")
 public class DiaryTranspondDaoImpl extends BaseDaoImpl<DiaryTranspond, Long> implements DiaryTranspondDao

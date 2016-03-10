@@ -21,7 +21,7 @@ import org.hibernate.validator.constraints.NotEmpty;
  * Entity - 会员设备信息列表
  * 
  * @author xutianlong
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_member_device_info")

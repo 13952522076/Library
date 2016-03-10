@@ -22,7 +22,7 @@ import org.apache.commons.logging.LogFactory;
  * Utils - 时间工具类
  * 
  * @author tianlongxu
- * @version 3.0
+
  */
 public class DateUtil
 {

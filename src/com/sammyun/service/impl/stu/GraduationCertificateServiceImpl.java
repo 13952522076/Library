@@ -13,7 +13,7 @@ import com.sammyun.service.stu.GraduationCertificateService;
  * ServiceImpl - 毕业合影
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("graduationCertificateServiceImpl")
 public class GraduationCertificateServiceImpl extends BaseServiceImpl<GraduationCertificate, Long> implements

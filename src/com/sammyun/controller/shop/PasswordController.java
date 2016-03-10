@@ -37,7 +37,7 @@ import com.sammyun.util.SpringUtils;
  * Controller - 密码
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("shopPasswordController")
 @RequestMapping("/password")

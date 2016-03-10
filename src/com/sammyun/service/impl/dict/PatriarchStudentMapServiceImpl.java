@@ -27,7 +27,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * PatriarchStudentMap * ServiceImpl - 学生家长对应列表
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("patriarchStudentMapServiceImpl")
 public class PatriarchStudentMapServiceImpl extends BaseServiceImpl<PatriarchStudentMap, Long> implements

@@ -19,7 +19,7 @@ import com.sammyun.service.stu.OverallMeritService;
  * Service   - 综合评价
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("overallMeritServiceImpl")
 public class OverallMeritServiceImpl extends BaseServiceImpl<OverallMerit, Long> implements OverallMeritService

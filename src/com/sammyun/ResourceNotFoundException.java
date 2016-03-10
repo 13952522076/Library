@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
  * 资源不存在异常
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @ResponseStatus(value = HttpStatus.NOT_FOUND)
 public class ResourceNotFoundException extends RuntimeException

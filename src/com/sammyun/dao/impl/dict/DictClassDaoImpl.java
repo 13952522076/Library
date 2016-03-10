@@ -20,7 +20,7 @@ import com.sammyun.listener.InitListener;
  * DictClass * DaoImpl - 学校
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("dictClassDaoImpl")
 public class DictClassDaoImpl extends BaseDaoImpl<DictClass, Long> implements DictClassDao

@@ -41,7 +41,7 @@ import com.sammyun.util.RSAUtils;
  * Plugin - 支付宝(手机网站支付)
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Component("alipayWapPlugin")
 public class AlipayWapPlugin extends PaymentPlugin

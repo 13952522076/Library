@@ -13,7 +13,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * DiaryComment * ServiceImpl - 
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("diaryCommentServiceImpl")
 public class DiaryCommentServiceImpl extends BaseServiceImpl<DiaryComment, Long> implements DiaryCommentService

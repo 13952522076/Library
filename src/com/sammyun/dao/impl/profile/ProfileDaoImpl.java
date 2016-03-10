@@ -14,7 +14,7 @@ import com.sammyun.entity.profile.Profile;
  * Profiles * DaoImpl - 学校概况数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("profileDaoImpl")
 public class ProfileDaoImpl extends BaseDaoImpl<Profile, Long> implements ProfileDao

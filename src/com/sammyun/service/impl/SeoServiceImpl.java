@@ -21,7 +21,7 @@ import com.sammyun.service.SeoService;
  * Service - SEO设置
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("seoServiceImpl")
 public class SeoServiceImpl extends BaseServiceImpl<Seo, Long> implements SeoService {

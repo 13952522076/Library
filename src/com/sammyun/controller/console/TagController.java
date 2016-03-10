@@ -25,7 +25,7 @@ import com.sammyun.service.TagService;
  * Controller - 标签
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminTagController")
 @RequestMapping("/console/tag")

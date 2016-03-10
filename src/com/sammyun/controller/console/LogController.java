@@ -22,7 +22,7 @@ import com.sammyun.service.LogService;
  * Controller - 管理日志
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminLogController")
 @RequestMapping("/console/log")

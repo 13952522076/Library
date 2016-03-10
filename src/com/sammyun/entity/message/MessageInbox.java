@@ -16,7 +16,7 @@ import com.sammyun.entity.BaseEntity;
  * Entity - 站内信(系统消息)
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_message_inbox")

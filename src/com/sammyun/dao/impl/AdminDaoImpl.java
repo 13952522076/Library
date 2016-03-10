@@ -21,7 +21,7 @@ import com.sammyun.listener.InitListener;
  * Dao - 管理员
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("adminDaoImpl")
 public class AdminDaoImpl extends BaseDaoImpl<Admin, Long> implements AdminDao {

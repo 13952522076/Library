@@ -36,7 +36,7 @@ import com.sammyun.entity.dict.DictStudent;
  * DaoImpl - 考勤
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("attendanceDaoImpl")
 public class AttendanceDaoImpl extends BaseDaoImpl<Attendance, Long> implements AttendanceDao

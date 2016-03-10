@@ -10,7 +10,7 @@ import com.sammyun.entity.BaseEntity;
  * MessageAttachment * Entity - 消息附件
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_message_attachment")

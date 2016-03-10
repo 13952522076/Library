@@ -22,7 +22,7 @@ import com.sammyun.service.DeviceResolutionService;
  * Controller - mobile设备管理
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 
 @Controller("deviceResolutionController")

@@ -14,7 +14,7 @@ import com.sammyun.entity.bus.BusLine;
  * BusLine * ServiceImpl - 班车线路数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("busLineServiceImpl")
 public class BusLineServiceImpl extends BaseServiceImpl<BusLine, Long> implements BusLineService {

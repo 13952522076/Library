@@ -26,7 +26,7 @@ import org.hibernate.validator.constraints.Length;
  * Entity - 收款单
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_payment")

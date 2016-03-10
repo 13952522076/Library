@@ -16,7 +16,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * ServiceImpl - 排班管理
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("workSchedulingServiceImpl")
 public class WorkSchedulingServiceImpl extends BaseServiceImpl<WorkScheduling, Long> implements WorkSchedulingService

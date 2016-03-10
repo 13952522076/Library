@@ -18,7 +18,7 @@ import com.sammyun.entity.recipe.RecipeWeekDay;
  * Bound * DaoImpl - 学生食谱详情
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("recipesDetailDaoImpl")
 public class RecipesDetailDaoImpl extends BaseDaoImpl<RecipeWeekDay, Long> implements RecipesDetailDao {

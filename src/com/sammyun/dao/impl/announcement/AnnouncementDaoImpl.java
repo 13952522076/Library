@@ -23,7 +23,7 @@ import com.sammyun.entity.dict.DictSchool;
  * DaoImpl - 通知公告数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("announcementDaoImpl")
 public class AnnouncementDaoImpl extends BaseDaoImpl<Announcement, Long> implements AnnouncementDao 

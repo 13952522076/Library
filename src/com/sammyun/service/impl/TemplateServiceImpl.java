@@ -31,7 +31,7 @@ import com.sammyun.service.TemplateService;
  * Service - 模板
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("templateServiceImpl")
 public class TemplateServiceImpl implements TemplateService, ServletContextAware {

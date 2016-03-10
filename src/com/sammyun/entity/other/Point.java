@@ -19,7 +19,7 @@ import com.sammyun.entity.BaseEntity;
  * Point * Entity - 用户积分
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_point")

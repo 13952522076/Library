@@ -7,7 +7,7 @@ import com.sammyun.entity.dict.DictSchool;
  * DictSchool * Dao - 学校
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface DictSchoolDao extends BaseDao<DictSchool, Long> {
 

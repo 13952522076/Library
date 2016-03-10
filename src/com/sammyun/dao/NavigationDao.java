@@ -14,7 +14,7 @@ import com.sammyun.entity.Navigation.Position;
  * Dao - 导航
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface NavigationDao extends BaseDao<Navigation, Long>
 {

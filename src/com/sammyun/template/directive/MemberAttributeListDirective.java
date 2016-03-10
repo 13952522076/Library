@@ -25,7 +25,7 @@ import freemarker.template.TemplateModel;
  * 模板指令 - 会员注册项列表
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Component("memberAttributeListDirective")
 public class MemberAttributeListDirective extends BaseDirective

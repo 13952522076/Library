@@ -28,7 +28,7 @@ import com.sammyun.service.PluginConfigService;
  * Controller - 快钱支付(网银直连)
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminPay99billBankController")
 @RequestMapping("/console/payment_plugin/pay_99bill_bank")

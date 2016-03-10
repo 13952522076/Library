@@ -14,7 +14,7 @@ import com.sammyun.entity.BaseEntity;
  * ProfilesImage * Entity - 概况图片数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_yellowpage_version")

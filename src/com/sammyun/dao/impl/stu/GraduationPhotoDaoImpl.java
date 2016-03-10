@@ -13,7 +13,7 @@ import com.sammyun.entity.stu.GraduationPhoto;
  * GraduationPhoto * DaoImpl - 毕业合影
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("graduationPhotoDaoImpl")
 public class GraduationPhotoDaoImpl extends BaseDaoImpl<GraduationPhoto, Long> implements GraduationPhotoDao

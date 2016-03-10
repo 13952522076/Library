@@ -41,7 +41,7 @@ import com.sammyun.util.SettingUtils;
  * Service - 文件
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("fileServiceImpl")
 public class FileServiceImpl implements FileService, ServletContextAware

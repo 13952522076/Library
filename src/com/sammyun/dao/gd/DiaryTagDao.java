@@ -9,7 +9,7 @@ import com.sammyun.entity.gd.DiaryTag;
  * DiaryTagDao * Dao - 成长记标签
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface DiaryTagDao extends BaseDao<DiaryTag, Long>
 {

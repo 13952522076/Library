@@ -10,7 +10,7 @@ import com.sammyun.entity.app.AppStat;
  * Dao - 应用统计
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("appStatDaoImpl")
 public class AppStatDaoImpl extends BaseDaoImpl<AppStat, Long> implements AppStatDao

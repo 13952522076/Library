@@ -17,7 +17,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * ServiceImpl - 教师考情详情
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("teacherAttendanceDetailServiceImpl")
 public class TeacherAttendanceDetailServiceImpl extends BaseServiceImpl<TeacherAttendanceDetail, Long> implements

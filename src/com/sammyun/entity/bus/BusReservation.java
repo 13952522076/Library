@@ -19,7 +19,7 @@ import com.sammyun.entity.BaseEntity;
  * BusReservation * Entity - 预约数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_bus_reservation")

@@ -21,7 +21,7 @@ import com.sammyun.entity.json.JsonFamilyMap;
  * JsonFamilyMap * DaoImpl - 家庭的JSON信息
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("jsonFamilyMapDaoImpl")
 public class JsonFamilyMapDaoImpl extends BaseDaoImpl<JsonFamilyMap, Long> implements JsonFamilyMapDao  

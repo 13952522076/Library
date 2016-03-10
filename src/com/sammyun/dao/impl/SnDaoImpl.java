@@ -28,7 +28,7 @@ import freemarker.template.TemplateException;
  * Dao - 序列号
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("snDaoImpl")
 public class SnDaoImpl implements SnDao, InitializingBean {

@@ -14,7 +14,7 @@ import com.sammyun.entity.message.MessageInbox;
  * MessageInbox * ServiceImpl - 站内信(系统消息)
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("messageInboxServiceImpl")
 public class MessageInboxServiceImpl extends BaseServiceImpl<MessageInbox, Long> implements MessageInboxService{

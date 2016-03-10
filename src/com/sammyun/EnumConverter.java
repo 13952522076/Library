@@ -11,7 +11,7 @@ import org.apache.commons.beanutils.converters.AbstractConverter;
  * 枚举类型转换
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public class EnumConverter extends AbstractConverter
 {

@@ -27,7 +27,7 @@ import com.sammyun.service.PluginConfigService;
  * Controller - FTP
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminPluginFtpController")
 @RequestMapping("/console/storage_plugin/ftp")

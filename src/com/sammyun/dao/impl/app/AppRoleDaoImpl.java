@@ -19,7 +19,7 @@ import com.sammyun.entity.app.AppRole;
  * Dao - 应用角色
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("appRoleDaoImpl")
 public class AppRoleDaoImpl extends BaseDaoImpl<AppRole, Long> implements AppRoleDao {

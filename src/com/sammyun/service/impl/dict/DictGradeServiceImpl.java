@@ -16,7 +16,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * DictSchool * ServiceImpl - 学校
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("dictGradeServiceImpl")
 public class DictGradeServiceImpl extends BaseServiceImpl<DictGrade, Long> implements DictGradeService 

@@ -10,7 +10,7 @@ import com.sammyun.entity.stu.MeritTemplate;
  * MeritTemplate * Dao - 评价等级模板
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface MeritTemplateDao extends BaseDao<MeritTemplate, Long> 
 {

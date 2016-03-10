@@ -14,7 +14,7 @@ import javax.persistence.Table;
  * Entity - 序列号
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_sn")

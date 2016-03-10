@@ -18,7 +18,7 @@ import com.sammyun.entity.BaseEntity;
  * Evolution * Entity - 
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_evolution")

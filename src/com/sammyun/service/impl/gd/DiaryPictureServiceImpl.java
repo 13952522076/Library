@@ -16,7 +16,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * DiaryPicture * ServiceImpl -
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("diaryPictureServiceImpl")
 public class DiaryPictureServiceImpl extends BaseServiceImpl<DiaryPicture, Long> implements DiaryPictureService

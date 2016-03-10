@@ -21,7 +21,7 @@ import com.sammyun.service.TemplateService;
  * Controller - Sitemap
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminSitemapController")
 @RequestMapping("/console/sitemap")

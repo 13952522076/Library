@@ -10,7 +10,7 @@ import com.sammyun.entity.dict.DictSchool;
  * Dao - 班次设置
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface WorkSettingDao extends BaseDao<WorkSetting, Long>
 {

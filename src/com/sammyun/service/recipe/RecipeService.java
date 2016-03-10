@@ -14,7 +14,7 @@ import com.sammyun.service.BaseService;
  * RecipesService * Service - 学生食谱
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface RecipeService extends BaseService<Recipe, Long>
 {

@@ -9,7 +9,7 @@ import com.sammyun.entity.other.Point;
  * Point * DaoImpl - 用户积分
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("pointDaoImpl")
 public class PointDaoImpl extends BaseDaoImpl<Point, Long> implements PointDao  {

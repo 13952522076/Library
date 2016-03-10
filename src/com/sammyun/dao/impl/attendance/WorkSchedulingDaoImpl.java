@@ -32,7 +32,7 @@ import com.sammyun.entity.recipe.Recipe;
  * DaoImpl - 排班管理
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("workSchedulingDaoImpl")
 public class WorkSchedulingDaoImpl extends BaseDaoImpl<WorkScheduling, Long> implements WorkSchedulingDao

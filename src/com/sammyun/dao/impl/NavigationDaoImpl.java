@@ -22,7 +22,7 @@ import com.sammyun.entity.Navigation.Position;
  * Dao - 导航
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("navigationDaoImpl")
 public class NavigationDaoImpl extends BaseDaoImpl<Navigation, Long> implements NavigationDao {

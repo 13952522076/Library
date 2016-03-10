@@ -11,7 +11,7 @@ import com.sammyun.util.SpringUtils;
  * 消息
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public class Message
 {

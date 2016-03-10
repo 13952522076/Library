@@ -35,7 +35,7 @@ import com.sammyun.util.FreemarkerUtils;
  * Service - 静态化
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("staticServiceImpl")
 public class StaticServiceImpl implements StaticService, ServletContextAware

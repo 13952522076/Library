@@ -28,7 +28,7 @@ import com.sammyun.util.SettingUtils;
  * Plugin - 支付宝(即时交易)
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Component("alipayDirectPlugin")
 public class AlipayDirectPlugin extends PaymentPlugin

@@ -14,7 +14,7 @@ import com.sammyun.entity.dict.DictCourseName;
  * DictCourseName * ServiceImpl - 课程名称字典表
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("dictCourseNameServiceImpl")
 public class DictCourseNameServiceImpl extends BaseServiceImpl<DictCourseName, Long> implements DictCourseNameService {

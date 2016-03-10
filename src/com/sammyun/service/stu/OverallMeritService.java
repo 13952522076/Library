@@ -13,7 +13,7 @@ import com.sammyun.service.BaseService;
  * OverallMerit * Service - 综合评价
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface OverallMeritService extends BaseService<OverallMerit, Long>
 {

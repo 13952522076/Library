@@ -19,7 +19,7 @@ import freemarker.template.TemplateModel;
  * 模板指令 - 当前品牌ID
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Component("tagsIdDirective")
 public class TagsIdDirective extends BaseDirective

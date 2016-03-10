@@ -23,7 +23,7 @@ import com.sammyun.entity.Member;
  * Entity - 成长日记
  * 
  * @author xutianlong
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_growth_diary")

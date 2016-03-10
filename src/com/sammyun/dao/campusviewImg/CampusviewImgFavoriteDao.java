@@ -11,7 +11,7 @@ import com.sammyun.entity.campusviewImg.CampusviewImgFavorite;
  * CampusviewImgFavorite * Dao - 校园风光点赞记录表
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 
 public interface CampusviewImgFavoriteDao extends BaseDao<CampusviewImgFavorite, Long> {

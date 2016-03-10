@@ -18,7 +18,7 @@ import com.sammyun.entity.attendance.TeacherAskLeave;
  * DaoImpl - 教师请假
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("teacherAskLeaveDaoImpl")
 public class TeacherAskLeaveDaoImpl extends BaseDaoImpl<TeacherAskLeave, Long> implements TeacherAskLeaveDao

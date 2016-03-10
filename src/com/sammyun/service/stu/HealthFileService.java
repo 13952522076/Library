@@ -8,7 +8,7 @@ import com.sammyun.service.BaseService;
  * Service - 健康档案
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface HealthFileService extends BaseService<HealthFile, Long>
 {

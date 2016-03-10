@@ -25,7 +25,7 @@ import com.sammyun.plugin.PaymentPlugin;
  * Plugin - 快钱支付(网银直连)
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Component("pay99billBankPlugin")
 public class Pay99billBankPlugin extends PaymentPlugin

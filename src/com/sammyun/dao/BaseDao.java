@@ -19,7 +19,7 @@ import com.sammyun.Pageable;
  * Dao - 基类
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface BaseDao<T, ID extends Serializable>
 {

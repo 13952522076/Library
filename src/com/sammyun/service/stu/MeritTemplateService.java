@@ -10,7 +10,7 @@ import com.sammyun.service.BaseService;
  * MeritTemplate * Service - 评价等级模板
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface MeritTemplateService  extends BaseService<MeritTemplate, Long>
 {

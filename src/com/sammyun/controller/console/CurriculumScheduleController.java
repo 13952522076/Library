@@ -32,7 +32,7 @@ import com.sammyun.util.JsonUtils;
  * Controller - 课程表controller
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("curriculumScheduleController")
 @RequestMapping("/console/curriculum_schedule")

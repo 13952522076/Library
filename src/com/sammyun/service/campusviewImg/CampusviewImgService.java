@@ -10,7 +10,7 @@ import com.sammyun.service.BaseService;
  * CampusviewImg * Service - 校园风光表
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 
 public interface CampusviewImgService extends BaseService<CampusviewImg, Long> {

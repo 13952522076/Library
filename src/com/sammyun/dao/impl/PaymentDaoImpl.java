@@ -20,7 +20,7 @@ import com.sammyun.entity.Payment;
  * Dao - 收款单
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("paymentDaoImpl")
 public class PaymentDaoImpl extends BaseDaoImpl<Payment, Long> implements PaymentDao

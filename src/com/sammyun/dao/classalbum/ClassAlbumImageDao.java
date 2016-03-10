@@ -13,7 +13,7 @@ import com.sammyun.entity.dict.DictSchool;
  * ClassAlbumImage * Dao - 班级相册
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 
 public interface ClassAlbumImageDao extends BaseDao<ClassAlbumImage, Long>

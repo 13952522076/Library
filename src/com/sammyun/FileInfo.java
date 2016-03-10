@@ -11,7 +11,7 @@ import java.util.Date;
  * 文件信息
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public class FileInfo
 {

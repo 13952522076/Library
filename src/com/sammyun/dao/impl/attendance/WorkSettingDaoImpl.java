@@ -20,7 +20,7 @@ import com.sammyun.entity.dict.DictSchool;
  * DaoImpl - 班次设置
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("workSettingDaoImpl")
 public class WorkSettingDaoImpl extends BaseDaoImpl<WorkSetting, Long> implements WorkSettingDao

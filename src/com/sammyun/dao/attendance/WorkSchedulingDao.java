@@ -10,7 +10,7 @@ import com.sammyun.entity.attendance.WorkScheduling;
  * Dao - 排班管理
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface WorkSchedulingDao extends BaseDao<WorkScheduling, Long>
 {

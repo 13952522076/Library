@@ -9,7 +9,7 @@ import com.sammyun.entity.other.Evolution;
  * Evolution * DaoImpl - 
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("evolutionDaoImpl")
 public class EvolutionDaoImpl extends BaseDaoImpl<Evolution, Long> implements EvolutionDao  {

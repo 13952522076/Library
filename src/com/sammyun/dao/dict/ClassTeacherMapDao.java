@@ -13,7 +13,7 @@ import com.sammyun.entity.dict.DictClass.ClassStatus;
  * ClassTeacherMap * Dao - 班级
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface ClassTeacherMapDao  extends BaseDao<ClassTeacherMap, Long>
 {

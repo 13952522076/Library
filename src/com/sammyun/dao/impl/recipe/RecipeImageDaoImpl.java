@@ -10,7 +10,7 @@ import com.sammyun.entity.recipe.RecipeImage;
  * Dao - 食谱图片
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("recipeImageDaoImpl")
 public class RecipeImageDaoImpl extends BaseDaoImpl<RecipeImage, Long> implements RecipeImageDao

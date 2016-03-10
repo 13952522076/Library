@@ -44,7 +44,7 @@ import com.sammyun.util.JsonUtils;
  * Controller - 请假
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("askLeaveController")
 @RequestMapping("/console/askLeave")

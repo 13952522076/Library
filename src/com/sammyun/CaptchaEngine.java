@@ -27,7 +27,7 @@ import com.octo.captcha.image.gimpy.GimpyFactory;
  * 验证码图片生成
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public class CaptchaEngine extends ListImageCaptchaEngine
 {

@@ -16,7 +16,7 @@ import com.tencent.xinge.XingeApp;
  * Plugin - 信鸽推送
  * 
  * @author xutianlong
- * @version 3.0
+
  */
 @Component("xgForAndroidPlugin")
 public class XgForAndroidPlugin extends MessagePushPlugin

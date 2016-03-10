@@ -29,7 +29,7 @@ import com.sammyun.service.PluginConfigService;
  * Controller - Paypal
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminPaypalController")
 @RequestMapping("/console/payment_plugin/paypal")

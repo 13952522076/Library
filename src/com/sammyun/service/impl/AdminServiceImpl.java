@@ -27,7 +27,7 @@ import com.sammyun.service.AdminService;
  * Service - 管理员
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("adminServiceImpl")
 public class AdminServiceImpl extends BaseServiceImpl<Admin, Long> implements AdminService

@@ -13,7 +13,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * Entity - 排序基类
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @MappedSuperclass
 public class ExcelMessage

@@ -22,7 +22,7 @@ import com.sammyun.entity.Tag.Type;
  * Dao - 标签
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("tagDaoImpl")
 public class TagDaoImpl extends BaseDaoImpl<Tag, Long> implements TagDao

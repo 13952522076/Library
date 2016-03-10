@@ -14,7 +14,7 @@ import com.sammyun.entity.dict.DictCampus;
  * DictCampus * ServiceImpl - 校区
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("dictCampusServiceImpl")
 public class DictCampusServiceImpl extends BaseServiceImpl<DictCampus, Long> implements DictCampusService {

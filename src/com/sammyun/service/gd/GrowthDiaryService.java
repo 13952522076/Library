@@ -13,7 +13,7 @@ import com.sammyun.service.BaseService;
  * GrowthDiary * Service - 成长记
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface GrowthDiaryService extends BaseService<GrowthDiary, Long>
 {

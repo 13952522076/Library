@@ -18,7 +18,7 @@ import com.sammyun.entity.message.Message;
  * Friendship * DaoImpl - 好友关系
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("friendshipDaoImpl")
 public class FriendshipDaoImpl extends BaseDaoImpl<Friendship, Long> implements FriendshipDao

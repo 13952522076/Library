@@ -17,7 +17,7 @@ import com.sammyun.entity.FriendLink.Type;
  * Service - 友情链接
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface FriendLinkService extends BaseService<FriendLink, Long> {
 

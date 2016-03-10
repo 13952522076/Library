@@ -18,7 +18,7 @@ import com.sammyun.entity.stu.StudentWorks;
  * StudentWorks * DaoImpl - 学生作品
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("studentWorksDaoImpl")
 public class StudentWorksDaoImpl extends BaseDaoImpl<StudentWorks, Long> implements StudentWorksDao

@@ -30,7 +30,7 @@ import com.sammyun.plugin.PaymentPlugin;
  * Plugin - 财付通(网银直连)
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Component("tenpayBankPlugin")
 public class TenpayBankPlugin extends PaymentPlugin

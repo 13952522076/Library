@@ -18,7 +18,7 @@ import com.sammyun.service.PluginConfigService;
  * Service - 插件配置
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("pluginConfigServiceImpl")
 public class PluginConfigServiceImpl extends BaseServiceImpl<PluginConfig, Long> implements PluginConfigService {

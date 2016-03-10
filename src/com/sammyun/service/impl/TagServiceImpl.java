@@ -30,7 +30,7 @@ import com.sammyun.service.TagService;
  * Service - 标签
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("tagServiceImpl")
 public class TagServiceImpl extends BaseServiceImpl<Tag, Long> implements TagService {

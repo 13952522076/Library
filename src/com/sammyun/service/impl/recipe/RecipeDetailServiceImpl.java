@@ -18,7 +18,7 @@ import com.sammyun.service.recipe.RecipeDetailService;
  * ServiceImpl - 学生食谱详情
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("recipesDetailServiceImpl")
 public class RecipeDetailServiceImpl extends BaseServiceImpl<RecipeWeekDay, Long> implements RecipeDetailService

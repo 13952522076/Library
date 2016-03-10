@@ -26,7 +26,7 @@ import com.sammyun.entity.recipe.Recipe;
  * Recipes * DaoImpl - 学生食谱
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("recipeDaoImpl")
 public class RecipeDaoImpl extends BaseDaoImpl<Recipe, Long> implements RecipeDao

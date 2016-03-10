@@ -15,7 +15,7 @@ import com.sammyun.entity.dict.DictSchool;
  * Dao - 通知公告数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface AnnouncementDao extends BaseDao<Announcement, Long>
 {

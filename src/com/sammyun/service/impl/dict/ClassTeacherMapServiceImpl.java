@@ -24,7 +24,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * Service - 班级
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("classTeacherMapServiceImpl")
 public class ClassTeacherMapServiceImpl extends BaseServiceImpl<ClassTeacherMap, Long> implements

@@ -16,7 +16,7 @@ import com.sammyun.entity.BaseEntity;
  * DictClientVer * Entity - 客户端版本号数据字典
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_dict_client_ver")

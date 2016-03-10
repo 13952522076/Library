@@ -14,7 +14,7 @@ import com.sammyun.entity.message.MessageAttachment;
  * MessageAttachment * ServiceImpl - 消息附件
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("messageAttachmentServiceImpl")
 public class MessageAttachmentServiceImpl extends BaseServiceImpl<MessageAttachment, Long> implements MessageAttachmentService {

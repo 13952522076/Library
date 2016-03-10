@@ -16,7 +16,7 @@ import com.sammyun.entity.Log;
  * Dao - 日志
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("logDaoImpl")
 public class LogDaoImpl extends BaseDaoImpl<Log, Long> implements LogDao {

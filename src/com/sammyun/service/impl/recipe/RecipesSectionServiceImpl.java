@@ -14,7 +14,7 @@ import com.sammyun.entity.recipe.RecipeSection;
  * ServiceImpl - 学生食谱时间段
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("recipesSectionServiceImpl")
 public class RecipesSectionServiceImpl extends BaseServiceImpl<RecipeSection, Long> implements RecipesSectionService{

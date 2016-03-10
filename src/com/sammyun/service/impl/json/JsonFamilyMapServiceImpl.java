@@ -28,7 +28,7 @@ import com.sammyun.util.SpringUtils;
  * JsonFamilyMap * ServiceImpl - 家庭的JSON信息
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("jsonFamilyMapServiceImpl")
 public class JsonFamilyMapServiceImpl extends BaseServiceImpl<JsonFamilyMap, Long> implements JsonFamilyMapService 

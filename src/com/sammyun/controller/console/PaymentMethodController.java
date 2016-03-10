@@ -24,7 +24,7 @@ import com.sammyun.service.PaymentMethodService;
  * Controller - 支付方式
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminPaymentMethodController")
 @RequestMapping("/console/payment_method")

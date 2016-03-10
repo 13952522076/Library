@@ -13,7 +13,7 @@ import com.sammyun.entity.BaseEntity;
  * Entity - 设备凭证数据字典
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_dict_device_token")

@@ -13,7 +13,7 @@ import com.sammyun.service.BaseService;
  * Parenting * Service - 育儿数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface ParentingService extends BaseService<Parenting, Long>
 {

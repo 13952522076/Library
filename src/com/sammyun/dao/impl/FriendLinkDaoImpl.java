@@ -22,7 +22,7 @@ import com.sammyun.entity.FriendLink.Type;
  * Dao - 友情链接
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("friendLinkDaoImpl")
 public class FriendLinkDaoImpl extends BaseDaoImpl<FriendLink, Long> implements FriendLinkDao {

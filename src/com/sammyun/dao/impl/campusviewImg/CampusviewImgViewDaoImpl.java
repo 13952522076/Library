@@ -21,7 +21,7 @@ import com.sammyun.entity.campusviewImg.CampusviewImgView;
  * CampusviewImgView * DaoImpl - 校园风光查看记录表
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 
 @Repository("campusviewImgViewDaoImpl")

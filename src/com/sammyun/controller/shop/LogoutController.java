@@ -20,7 +20,7 @@ import com.sammyun.util.WebUtils;
  * Controller - 会员注销
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("shopLogoutController")
 public class LogoutController extends BaseController

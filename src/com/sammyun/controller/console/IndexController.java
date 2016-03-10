@@ -22,7 +22,7 @@ import com.sammyun.service.SearchService;
  * Controller - 索引
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminIndexController")
 @RequestMapping("/console/index")

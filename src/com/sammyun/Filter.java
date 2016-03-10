@@ -16,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * 筛选
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public class Filter implements Serializable
 {

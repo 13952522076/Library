@@ -11,7 +11,7 @@ import com.sammyun.entity.dict.DictSchool;
  * DictSchool * DaoImpl - 学校
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("dictSchoolDaoImpl")
 public class DictSchoolDaoImpl extends BaseDaoImpl<DictSchool, Long> implements DictSchoolDao  {

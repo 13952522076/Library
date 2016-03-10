@@ -28,7 +28,7 @@ import com.sammyun.plugin.StoragePlugin;
  * Plugin - FTP
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Component("ftpPlugin")
 public class FtpPlugin extends StoragePlugin

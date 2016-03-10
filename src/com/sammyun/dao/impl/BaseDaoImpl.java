@@ -46,7 +46,7 @@ import com.sammyun.util.DateUtil;
  * Dao - 基类
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public abstract class BaseDaoImpl<T, ID extends Serializable> implements BaseDao<T, ID>
 {

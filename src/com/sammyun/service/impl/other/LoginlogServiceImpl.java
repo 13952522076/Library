@@ -14,7 +14,7 @@ import com.sammyun.entity.other.Loginlog;
  * Loginlog * ServiceImpl - 登录日志
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("loginlogServiceImpl")
 public class LoginlogServiceImpl extends BaseServiceImpl<Loginlog, Long> implements LoginlogService {

@@ -26,7 +26,7 @@ import com.sammyun.service.PluginService;
  * Service - 插件
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("pluginServiceImpl")
 public class PluginServiceImpl implements PluginService

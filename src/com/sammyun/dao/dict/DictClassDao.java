@@ -11,7 +11,7 @@ import com.sammyun.entity.dict.DictStudent;
  * DictClass * Dao - 班级
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface DictClassDao extends BaseDao<DictClass, Long> {
     

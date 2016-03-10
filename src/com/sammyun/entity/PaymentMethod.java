@@ -21,7 +21,7 @@ import org.hibernate.validator.constraints.NotEmpty;
  * Entity - 支付方式
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_payment_method")

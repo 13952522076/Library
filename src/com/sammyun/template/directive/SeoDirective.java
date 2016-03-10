@@ -26,7 +26,7 @@ import freemarker.template.TemplateModel;
  * 模板指令 - SEO设置
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Component("seoDirective")
 public class SeoDirective extends BaseDirective

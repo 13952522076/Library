@@ -13,7 +13,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * ServiceImpl - 应用API授权
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("appCredentialServiceImpl")
 public class AppCredentialServiceImpl extends BaseServiceImpl<AppCredential, Long> implements AppCredentialService

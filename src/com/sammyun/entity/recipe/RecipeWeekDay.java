@@ -20,7 +20,7 @@ import com.sammyun.entity.BaseEntity;
  * Entity - 学生食谱周信息
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_recipe_week_day")

@@ -14,7 +14,7 @@ import com.sammyun.service.profile.ProfileService;
  * ServiceImpl - 学校概况数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("profileServiceImpl")
 public class ProfileServiceImpl extends BaseServiceImpl<Profile, Long> implements ProfileService

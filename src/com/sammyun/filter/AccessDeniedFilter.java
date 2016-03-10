@@ -21,7 +21,7 @@ import org.apache.commons.codec.binary.Base64;
  * Filter - 限制访问
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public class AccessDeniedFilter implements Filter
 {

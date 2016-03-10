@@ -20,7 +20,7 @@ import com.sammyun.service.MemberDeviceInfoService;
  * Service - 会员设备信息列表
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("memberDeviceInfoServiceImpl")
 public class MemberDeviceInfoServiceImpl extends BaseServiceImpl<MemberDeviceInfo, Long> implements MemberDeviceInfoService {

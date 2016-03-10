@@ -14,7 +14,7 @@ import com.sammyun.entity.BaseEntity;
  *  Entity - 校区
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_dict_campus")

@@ -25,7 +25,7 @@ import com.sammyun.entity.dict.PatriarchStudentMap;
  * PatriarchStudentMap * DaoImpl - 学生家长对应列表
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("patriarchStudentMapDaoImpl")
 public class PatriarchStudentMapDaoImpl extends BaseDaoImpl<PatriarchStudentMap, Long> implements PatriarchStudentMapDao

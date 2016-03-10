@@ -32,7 +32,7 @@ import freemarker.template.TemplateModelException;
  * 模板指令 - 基类
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public abstract class BaseDirective implements TemplateDirectiveModel
 {

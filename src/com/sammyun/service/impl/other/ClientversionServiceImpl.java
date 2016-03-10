@@ -14,7 +14,7 @@ import com.sammyun.entity.other.Clientversion;
  * Clientversion * ServiceImpl - 客户端版本管理
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("clientversionServiceImpl")
 public class ClientversionServiceImpl extends BaseServiceImpl<Clientversion, Long> implements ClientversionService {

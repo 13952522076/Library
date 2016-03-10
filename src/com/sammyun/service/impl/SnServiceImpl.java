@@ -18,7 +18,7 @@ import com.sammyun.service.SnService;
  * Service - 序列号
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("snServiceImpl")
 public class SnServiceImpl implements SnService {

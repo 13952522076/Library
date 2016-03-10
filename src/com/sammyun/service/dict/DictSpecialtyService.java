@@ -7,7 +7,7 @@ import com.sammyun.entity.dict.DictSpecialty;
  * DictSpecialty * Service - 专业
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface DictSpecialtyService extends BaseService<DictSpecialty, Long> {
 

@@ -26,7 +26,7 @@ import com.sammyun.entity.dict.DictStudent;
  * DictStudent * DaoImpl - 学生
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("dictStudentDaoImpl")
 public class DictStudentDaoImpl extends BaseDaoImpl<DictStudent, Long> implements DictStudentDao  {

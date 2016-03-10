@@ -8,7 +8,7 @@ import com.sammyun.entity.campusviewImg.CampusviewImg;
  * Dao - 校园相册图片附件
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface CampusviewImageAttachDao extends BaseDao<CampusviewImageAttach, Long>
 {

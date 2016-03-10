@@ -16,7 +16,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * ServiceImpl - 请假
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("askLeaveServiceImpl")
 public class AskLeaveServiceImpl extends BaseServiceImpl<AskLeave, Long> implements AskLeaveService

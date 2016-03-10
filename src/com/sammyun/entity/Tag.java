@@ -18,7 +18,7 @@ import org.hibernate.validator.constraints.NotEmpty;
  * Entity - 标签
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_tag")

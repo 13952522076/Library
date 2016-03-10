@@ -16,7 +16,7 @@ import com.sammyun.entity.BaseEntity;
  * BusDriver * Entity - 驾驶员数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_bus_driver")

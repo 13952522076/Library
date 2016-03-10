@@ -25,7 +25,7 @@ import com.sammyun.service.FriendLinkService;
  * Controller - 友情链接
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminFriendLinkController")
 @RequestMapping("/console/friend_link")

@@ -26,7 +26,7 @@ import com.sammyun.entity.dict.ClassTeacherMap;
  * Dao - 会员设备信息列表
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("memberDeviceInfoDaoImpl")
 public class MemberDeviceInfoDaoImpl extends BaseDaoImpl<MemberDeviceInfo, Long> implements MemberDeviceInfoDao {

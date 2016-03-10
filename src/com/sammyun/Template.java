@@ -11,7 +11,7 @@ import java.io.Serializable;
  * 模板
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public class Template implements Serializable
 {

@@ -18,7 +18,7 @@ import com.sammyun.entity.news.NewsCategory;
  * News * DaoImpl - 新闻数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("newsDaoImpl")
 public class NewsDaoImpl extends BaseDaoImpl<News, Long> implements NewsDao  {

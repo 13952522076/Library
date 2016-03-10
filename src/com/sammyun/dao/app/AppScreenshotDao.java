@@ -8,7 +8,7 @@ import com.sammyun.entity.app.AppScreenshot;
  * Dao - 应用管理
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface AppScreenshotDao extends BaseDao<AppScreenshot, Long>
 {

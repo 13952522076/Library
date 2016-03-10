@@ -14,7 +14,7 @@ import com.sammyun.entity.other.Evolution;
  * Evolution * ServiceImpl - 
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("evolutionServiceImpl")
 public class EvolutionServiceImpl extends BaseServiceImpl<Evolution, Long> implements EvolutionService {

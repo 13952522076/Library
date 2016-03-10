@@ -11,7 +11,7 @@ import com.sammyun.service.BaseService;
  * CampusviewImgFavorite * Service - 校园风光点赞记录表
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 
 public interface CampusviewImgFavoriteService extends BaseService<CampusviewImgFavorite, Long> {

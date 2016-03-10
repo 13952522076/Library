@@ -52,7 +52,7 @@ import com.sammyun.util.SettingUtils;
  * Plugin - 支付
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public abstract class PaymentPlugin implements Comparable<PaymentPlugin>
 {

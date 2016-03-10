@@ -36,7 +36,7 @@ import freemarker.template.utility.DeepUnwrap;
  * Utils - Freemarker
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @SuppressWarnings("unchecked")
 public final class FreemarkerUtils

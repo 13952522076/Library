@@ -61,7 +61,7 @@ import com.sammyun.util.JsonUtils;
  * Entity - 用户
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_member")

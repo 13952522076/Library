@@ -30,7 +30,7 @@ import com.sammyun.entity.dict.DictSchool;
  * Entity - 校园风光表
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_campusview_img")

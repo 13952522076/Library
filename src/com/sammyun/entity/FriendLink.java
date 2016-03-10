@@ -18,7 +18,7 @@ import org.hibernate.validator.constraints.NotEmpty;
  * Entity - 友情链接
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_friend_link")

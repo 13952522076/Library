@@ -8,7 +8,7 @@ import com.sammyun.service.BaseService;
  * Service - 毕业合影
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface GraduationPhotoService extends BaseService<GraduationPhoto, Long>
 {

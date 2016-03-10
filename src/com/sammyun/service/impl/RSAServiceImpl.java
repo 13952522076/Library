@@ -24,7 +24,7 @@ import com.sammyun.util.RSAUtils;
  * Service - RSA安全
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("rsaServiceImpl")
 public class RSAServiceImpl implements RSAService {

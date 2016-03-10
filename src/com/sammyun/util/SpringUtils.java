@@ -24,7 +24,7 @@ import org.springframework.web.servlet.LocaleResolver;
  * Utils - Spring
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Component("springUtils")
 @Lazy(false)

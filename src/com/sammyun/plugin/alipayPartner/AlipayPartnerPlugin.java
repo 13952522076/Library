@@ -26,7 +26,7 @@ import com.sammyun.util.SettingUtils;
  * Plugin - 支付宝(担保交易)
  * 
  * @author xutianlong
- * @version 3.0
+
  */
 @Component("alipayPartnerPlugin")
 public class AlipayPartnerPlugin extends PaymentPlugin

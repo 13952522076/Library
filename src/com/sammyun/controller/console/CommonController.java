@@ -43,7 +43,7 @@ import com.sammyun.service.message.MessageService;
  * Controller - 共用
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminCommonController")
 @RequestMapping("/console/common")

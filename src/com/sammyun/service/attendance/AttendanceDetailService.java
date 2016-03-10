@@ -16,7 +16,7 @@ import com.sammyun.entity.attendance.AttendanceDetail;
  * Service - 考勤详情
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface AttendanceDetailService extends BaseService<AttendanceDetail, Long>
 {

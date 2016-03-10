@@ -11,7 +11,7 @@ import com.sun.org.apache.xml.internal.resolver.helpers.PublicId;
  * Service - 班次设置
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface WorkSettingService extends BaseService<WorkSetting, Long>
 {

@@ -14,7 +14,7 @@ import com.sammyun.entity.bus.BusDriver;
  * BusDriver * ServiceImpl - 驾驶员数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("busDriverServiceImpl")
 public class BusDriverServiceImpl extends BaseServiceImpl<BusDriver, Long> implements BusDriverService {

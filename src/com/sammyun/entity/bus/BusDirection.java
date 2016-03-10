@@ -16,7 +16,7 @@ import com.sammyun.entity.BaseEntity;
  * BusDirection * Entity - 线路方向数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_bus_direction")

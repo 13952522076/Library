@@ -15,7 +15,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * DiaryTag * ServiceImpl -成长记标签
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("diaryTagServiceImpl")
 public class DiaryTagServiceImpl extends BaseServiceImpl<DiaryTag, Long> implements DiaryTagService

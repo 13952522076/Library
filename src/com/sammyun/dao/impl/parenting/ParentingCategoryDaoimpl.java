@@ -21,7 +21,7 @@ import com.sammyun.entity.parenting.ParentingCategory;
  * ParentingCategory * DaoImpl - 育儿类别
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("parentingCategoryDaoImpl")
 public class ParentingCategoryDaoimpl extends BaseDaoImpl<ParentingCategory, Long> implements ParentingCategoryDao

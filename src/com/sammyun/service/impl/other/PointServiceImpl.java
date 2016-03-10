@@ -14,7 +14,7 @@ import com.sammyun.entity.other.Point;
  * Point * ServiceImpl - 用户积分
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("pointServiceImpl")
 public class PointServiceImpl extends BaseServiceImpl<Point, Long> implements PointService {

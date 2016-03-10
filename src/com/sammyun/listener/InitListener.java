@@ -27,7 +27,7 @@ import com.sammyun.service.system.SystemDictService;
  * Listener - 初始化
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Component("initListener")
 public class InitListener implements ServletContextAware, ApplicationListener<ContextRefreshedEvent>

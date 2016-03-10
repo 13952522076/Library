@@ -16,7 +16,7 @@ import com.sammyun.service.news.NewsService;
  * News * ServiceImpl - 新闻数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("newsServiceImpl")
 public class NewsServiceImpl extends BaseServiceImpl<News, Long> implements NewsService {

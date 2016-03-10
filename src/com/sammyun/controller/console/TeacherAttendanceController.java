@@ -36,7 +36,7 @@ import com.sammyun.util.JsonUtils;
  * Controller - 老师考勤管理
  * 
  * @author xutianlong
- * @version 3.0
+
  */
 @Controller("teacherAttendanceController")
 @RequestMapping("/console/teacherAttendance")

@@ -16,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * 排序
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public class Order implements Serializable
 {

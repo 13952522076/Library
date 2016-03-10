@@ -16,7 +16,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * Poster * ServiceImpl - 应用超市海报
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("appPosterServiceImpl")
 public class AppPosterServiceImpl extends BaseServiceImpl<AppPoster, Long>

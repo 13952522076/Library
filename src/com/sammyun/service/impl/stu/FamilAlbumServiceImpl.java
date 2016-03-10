@@ -16,7 +16,7 @@ import com.sammyun.service.stu.FamilAlbumService;
  * ServiceImpl - 学生作品
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("familAlbumServiceImpl")
 public class FamilAlbumServiceImpl extends BaseServiceImpl<FamilAlbum, Long> implements FamilAlbumService

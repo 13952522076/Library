@@ -16,7 +16,7 @@ import com.sammyun.entity.dict.DictStudent;
  * DaoImpl - 请假
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("askLeaveDaoImpl")
 public class AskLeaveDaoImpl extends BaseDaoImpl<AskLeave, Long> implements AskLeaveDao

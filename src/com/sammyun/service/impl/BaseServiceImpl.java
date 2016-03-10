@@ -33,7 +33,7 @@ import com.sammyun.service.BaseService;
  * Service - 基类
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Transactional
 public class BaseServiceImpl<T, ID extends Serializable> implements BaseService<T, ID> {

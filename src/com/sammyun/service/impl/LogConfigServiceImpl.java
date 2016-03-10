@@ -23,7 +23,7 @@ import com.sammyun.service.LogConfigService;
  * Service - 日志配置
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("logConfigServiceImpl")
 public class LogConfigServiceImpl implements LogConfigService {

@@ -10,7 +10,7 @@ import com.sammyun.entity.dict.DictStudent;
  * DictStudent * Service - 学生
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface DictStudentService extends BaseService<DictStudent, Long> {
     

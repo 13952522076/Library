@@ -22,7 +22,7 @@ import com.sammyun.entity.stu.OverallMerit;
  * OverallMerit * DaoImpl - 综合评价
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("overallMeritDaoImpl")
 public class OverallMeritDaoImpl extends BaseDaoImpl<OverallMerit, Long> implements OverallMeritDao

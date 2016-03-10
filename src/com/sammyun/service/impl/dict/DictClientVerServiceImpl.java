@@ -14,7 +14,7 @@ import com.sammyun.entity.dict.DictClientVer;
  * DictClientVer * ServiceImpl - 客户端版本号数据字典
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("dictClientVerServiceImpl")
 public class DictClientVerServiceImpl extends BaseServiceImpl<DictClientVer, Long> implements DictClientVerService {

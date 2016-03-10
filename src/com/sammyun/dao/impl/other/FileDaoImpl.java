@@ -9,7 +9,7 @@ import com.sammyun.entity.other.File;
  * File * DaoImpl - 文件
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("fileDaoImpl")
 public class FileDaoImpl extends BaseDaoImpl<File, Long> implements FileDao  {

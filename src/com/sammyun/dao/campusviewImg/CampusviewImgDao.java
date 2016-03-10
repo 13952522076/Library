@@ -10,7 +10,7 @@ import com.sammyun.entity.dict.DictSchool;
  * CampusviewImg * Dao - 校园风光表
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 
 public interface CampusviewImgDao extends BaseDao<CampusviewImg, Long> {

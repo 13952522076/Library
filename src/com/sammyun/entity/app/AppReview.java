@@ -21,7 +21,7 @@ import com.sammyun.entity.Member;
  * Entity - 应用评论
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_app_review")

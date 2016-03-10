@@ -23,7 +23,7 @@ import com.sammyun.plugin.PaymentPlugin;
  * Plugin - Paypal
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Component("paypalPlugin")
 public class PaypalPlugin extends PaymentPlugin

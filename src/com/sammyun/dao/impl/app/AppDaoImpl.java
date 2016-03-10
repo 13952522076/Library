@@ -27,7 +27,7 @@ import com.sammyun.entity.dict.DictSchool;
  * DaoImpl - 应用管理
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("appDaoImpl")
 public class AppDaoImpl extends BaseDaoImpl<App, Long> implements AppDao

@@ -14,7 +14,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * CampusviewImageAttachService * ServiceImpl - 校园相册图片附件
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 
 @Service("campusviewImageAttachServiceImpl")

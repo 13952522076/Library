@@ -9,7 +9,7 @@ import com.sammyun.entity.dict.DictClientVer;
  * DictClientVer * DaoImpl - 客户端版本号数据字典
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("dictClientVerDaoImpl")
 public class DictClientVerDaoImpl extends BaseDaoImpl<DictClientVer, Long> implements DictClientVerDao  {

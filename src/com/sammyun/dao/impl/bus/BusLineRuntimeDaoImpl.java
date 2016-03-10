@@ -9,7 +9,7 @@ import com.sammyun.entity.bus.BusLineRuntime;
  * BusLineRuntime * DaoImpl - 班车营运时间数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 
 @Repository("busLineRuntimeDaoImpl")

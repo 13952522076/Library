@@ -21,7 +21,7 @@ import com.sammyun.service.AreaService;
  * Service - 地区
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("areaServiceImpl")
 public class AreaServiceImpl extends BaseServiceImpl<Area, Long> implements AreaService {

@@ -23,7 +23,7 @@ import com.sammyun.util.SettingUtils;
  * Filter - 网站状态
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Component("siteStatusFilter")
 public class SiteStatusFilter extends OncePerRequestFilter

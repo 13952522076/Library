@@ -10,7 +10,7 @@ import com.sammyun.service.BaseService;
  * DiaryPicture * Service - 成长记图片附件
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface DiaryPictureService extends BaseService<DiaryPicture, Long>
 {

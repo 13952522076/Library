@@ -14,7 +14,7 @@ import com.sammyun.entity.message.MessageTimeline;
  * MessageTimeline * ServiceImpl - 消息时间线
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("messageTimelineServiceImpl")
 public class MessageTimelineServiceImpl extends BaseServiceImpl<MessageTimeline, Long> implements MessageTimelineService {

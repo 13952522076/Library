@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * Controller - 打印
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminPrintController")
 @RequestMapping("/console/print")

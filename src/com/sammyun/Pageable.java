@@ -18,7 +18,7 @@ import com.sammyun.Order.Direction;
  * 分页信息
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public class Pageable implements Serializable
 {

@@ -34,7 +34,7 @@ import com.sammyun.service.dict.DictSchoolService;
  * Controller - 学年管理
  * 
  * @author xutianlong
- * @version 3.0
+
  */
 @Controller("schoolYearMngController")
 @RequestMapping("/console/school_year_mng")

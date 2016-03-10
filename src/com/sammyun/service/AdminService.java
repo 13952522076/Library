@@ -14,7 +14,7 @@ import com.sammyun.entity.dict.DictSchool;
  * Service - 管理员
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface AdminService extends BaseService<Admin, Long>
 {

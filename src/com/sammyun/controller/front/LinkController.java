@@ -20,7 +20,7 @@ import com.sammyun.service.FriendLinkService;
  * Controller - 链接
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("linkController")
 @RequestMapping("/front/link")

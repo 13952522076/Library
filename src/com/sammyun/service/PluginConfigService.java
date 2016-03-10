@@ -11,7 +11,7 @@ import com.sammyun.entity.PluginConfig;
  * Service - 插件配置
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface PluginConfigService extends BaseService<PluginConfig, Long> {
 

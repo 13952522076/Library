@@ -16,7 +16,7 @@ import com.sammyun.entity.BaseEntity;
  * Loginlog * Entity - 登录日志
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_loginlog")

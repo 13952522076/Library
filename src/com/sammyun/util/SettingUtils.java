@@ -39,7 +39,7 @@ import com.sammyun.Setting;
  * Utils - 系统设置
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @SuppressWarnings("unchecked")
 public final class SettingUtils

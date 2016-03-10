@@ -11,7 +11,7 @@ import com.sammyun.entity.json.JsonFamilyMap;
  * JsonFamilyMap * Dao - 家庭的JSON信息
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface JsonFamilyMapDao extends BaseDao<JsonFamilyMap, Long> 
 {

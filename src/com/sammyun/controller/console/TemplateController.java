@@ -22,7 +22,7 @@ import com.sammyun.service.TemplateService;
  * Controller - 模板
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminTemplateController")
 @RequestMapping("/console/template")

@@ -22,7 +22,7 @@ import com.sammyun.service.message.MessageService;
  * Controller - 会员中心
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("shopMemberController")
 @RequestMapping("/member")

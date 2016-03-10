@@ -11,7 +11,7 @@ import com.sammyun.entity.Role;
  * Dao - 角色
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface RoleDao extends BaseDao<Role, Long>
 {

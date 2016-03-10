@@ -15,7 +15,7 @@ import com.sammyun.entity.PaymentMethod;
  * Dao - 支付方式
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("paymentMethodDaoImpl")
 public class PaymentMethodDaoImpl extends BaseDaoImpl<PaymentMethod, Long> implements PaymentMethodDao {

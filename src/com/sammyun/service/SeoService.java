@@ -12,7 +12,7 @@ import com.sammyun.entity.Seo.Type;
  * Service - SEO设置
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface SeoService extends BaseService<Seo, Long> {
 

@@ -9,7 +9,7 @@ package com.sammyun.util;
  * Utils - Base64 加密解密
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public final class Base64Util
 {

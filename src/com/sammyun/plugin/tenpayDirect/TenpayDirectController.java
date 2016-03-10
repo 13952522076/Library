@@ -28,7 +28,7 @@ import com.sammyun.service.PluginConfigService;
  * Controller - 财付通(即时交易)
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminTenpayDirectController")
 @RequestMapping("/console/payment_plugin/tenpay_direct")

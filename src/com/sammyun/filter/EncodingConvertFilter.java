@@ -20,7 +20,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
  * Filter - 编码格式转换
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public class EncodingConvertFilter extends OncePerRequestFilter
 {

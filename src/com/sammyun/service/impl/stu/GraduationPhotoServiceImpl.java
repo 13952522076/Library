@@ -14,7 +14,7 @@ import com.sammyun.service.stu.GraduationPhotoService;
  * ServiceImpl - 毕业合影
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("graduationPhotoServiceImpl")
 public class GraduationPhotoServiceImpl extends BaseServiceImpl<GraduationPhoto, Long> implements GraduationPhotoService

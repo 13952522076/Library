@@ -15,7 +15,7 @@ import com.sammyun.entity.stu.FamilAlbum;
  * FamilAlbum * DaoImpl - 全家福
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("familAlbumDaoImpl")
 public class FamilAlbumDaoImpl extends BaseDaoImpl<FamilAlbum, Long> implements FamilAlbumDao

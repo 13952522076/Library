@@ -18,7 +18,7 @@ import com.sammyun.entity.dict.DictSchool;
  * Entity - 学校概况数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_profile")

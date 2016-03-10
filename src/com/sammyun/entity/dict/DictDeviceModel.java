@@ -16,7 +16,7 @@ import com.sammyun.entity.BaseEntity;
  * DictDeviceModel * Entity - 设备数据字典
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_dict_device_model")

@@ -18,7 +18,7 @@ import com.sammyun.service.stu.StudentWorksService;
  * ServiceImpl - 学生作品
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("studentWorksServiceImpl")
 public class StudentWorksServiceImpl extends BaseServiceImpl<StudentWorks, Long> implements StudentWorksService

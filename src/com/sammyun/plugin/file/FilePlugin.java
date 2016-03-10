@@ -26,7 +26,7 @@ import com.sammyun.util.SettingUtils;
  * Plugin - 本地文件存储
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Component("filePlugin")
 public class FilePlugin extends StoragePlugin implements ServletContextAware

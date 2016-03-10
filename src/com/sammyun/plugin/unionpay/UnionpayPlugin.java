@@ -29,7 +29,7 @@ import com.sammyun.util.SettingUtils;
  * Plugin - 银联在线支付
  * 
  * @author xutianlong
- * @version 3.0
+
  */
 @Component("unionpayPlugin")
 public class UnionpayPlugin extends PaymentPlugin

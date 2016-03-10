@@ -15,7 +15,7 @@ import com.sammyun.Template.Type;
  * Service - 模板
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface TemplateService {
 

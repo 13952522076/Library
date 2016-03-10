@@ -11,7 +11,7 @@ import com.sammyun.entity.gd.GrowthDiary;
  * DiaryAgree * Dao - 成长记点赞
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface DiaryAgreeDao extends BaseDao<DiaryAgree, Long>
 {

@@ -26,7 +26,7 @@ import com.sammyun.service.system.SystemDictService;
  * Controller - 系统字典
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("systemDictController")
 @RequestMapping("/console/systemDict")

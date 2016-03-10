@@ -24,7 +24,7 @@ import com.sammyun.service.AreaService;
  * Controller - 地区
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminAreaController")
 @RequestMapping("/console/area")

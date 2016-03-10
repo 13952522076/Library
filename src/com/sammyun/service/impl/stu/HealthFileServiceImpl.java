@@ -17,7 +17,7 @@ import com.sammyun.service.stu.HealthFileService;
  * ServiceImpl - 健康档案
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("healthFileServiceImpl")
 public class HealthFileServiceImpl extends BaseServiceImpl<HealthFile, Long> implements HealthFileService

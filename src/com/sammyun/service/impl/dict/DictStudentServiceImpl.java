@@ -21,7 +21,7 @@ import com.sammyun.entity.dict.DictStudent;
  * DictStudent * ServiceImpl - 学生
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("dictStudentServiceImpl")
 public class DictStudentServiceImpl extends BaseServiceImpl<DictStudent, Long> implements DictStudentService {

@@ -34,7 +34,7 @@ import com.tencent.xinge.XingeApp;
  * Message * ServiceImpl - 消息附件
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("messageServiceImpl")
 public class MessageServiceImpl extends BaseServiceImpl<Message, Long> implements MessageService

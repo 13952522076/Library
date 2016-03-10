@@ -20,7 +20,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * Friendship * ServiceImpl - 
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("friendshipServiceImpl")
 public class FriendshipServiceImpl extends BaseServiceImpl<Friendship, Long> implements FriendshipService

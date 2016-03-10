@@ -44,7 +44,7 @@ import com.sun.mail.smtp.SMTPSenderFailedException;
  * Controller - 系统设置
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminstingController")
 @RequestMapping("/console/setting")

@@ -25,7 +25,7 @@ import com.sammyun.service.attendance.TeacherAskLeaveService;
  * Controller - 教师请假
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("teacherAskLeaveController")
 @RequestMapping("/console/teacherAskLeave")

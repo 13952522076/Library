@@ -22,7 +22,7 @@ import freemarker.template.TemplateModelException;
  * 模板方法 - 货币格式化
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Component("currencyMethod")
 public class CurrencyMethod implements TemplateMethodModel

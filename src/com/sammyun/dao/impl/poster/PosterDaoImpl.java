@@ -20,7 +20,7 @@ import com.sammyun.entity.poster.Poster.PosterPosition;
  * Poster * DaoImpl - 海报
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("posterDaoImpl")
 public class PosterDaoImpl extends BaseDaoImpl<Poster, Long> implements PosterDao  {

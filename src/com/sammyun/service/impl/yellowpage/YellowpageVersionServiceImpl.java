@@ -14,7 +14,7 @@ import com.sammyun.entity.yellowpage.YellowpageVersion;
  * ProfilesImage * ServiceImpl - 概况图片数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("yellowpageVersionServiceImpl")
 public class YellowpageVersionServiceImpl extends BaseServiceImpl<YellowpageVersion, Long> implements YellowpageVersionService {

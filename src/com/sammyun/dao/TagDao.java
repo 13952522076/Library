@@ -14,7 +14,7 @@ import com.sammyun.entity.Tag.Type;
  * Dao - 标签
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface TagDao extends BaseDao<Tag, Long>
 {

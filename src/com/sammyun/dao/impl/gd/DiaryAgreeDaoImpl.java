@@ -23,7 +23,7 @@ import com.sammyun.entity.parenting.Parenting;
  * DiaryAgree * DaoImpl - 成长记点赞
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("diaryAgreeDaoImpl")
 public class DiaryAgreeDaoImpl extends BaseDaoImpl<DiaryAgree, Long> implements DiaryAgreeDao

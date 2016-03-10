@@ -16,7 +16,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * ServiceImpl - 班次设置
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("workSettingServiceImpl")
 public class WorkSettingServiceImpl extends BaseServiceImpl<WorkSetting, Long> implements WorkSettingService

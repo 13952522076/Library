@@ -7,7 +7,7 @@ import com.sammyun.entity.recipe.RecipeSection;
  * Bound * Dao - 学生食谱时间段
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface RecipesSectionDao extends BaseDao<RecipeSection, Long> {
 

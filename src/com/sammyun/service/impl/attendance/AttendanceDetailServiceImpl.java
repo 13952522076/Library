@@ -24,7 +24,7 @@ import com.sammyun.entity.attendance.AttendanceDetail;
  * ServiceImpl - 考勤
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("attendanceDetailServiceImpl")
 public class AttendanceDetailServiceImpl extends BaseServiceImpl<AttendanceDetail, Long> implements AttendanceDetailService

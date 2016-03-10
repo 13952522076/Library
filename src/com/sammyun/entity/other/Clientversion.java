@@ -16,7 +16,7 @@ import com.sammyun.entity.BaseEntity;
  * Clientversion * Entity - 客户端版本管理
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_clientversion")

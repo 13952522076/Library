@@ -28,7 +28,7 @@ import com.sammyun.entity.dict.DictSchool;
  * Entity - 消息
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_message")

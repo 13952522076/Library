@@ -23,7 +23,7 @@ import com.sammyun.service.app.AppRoleService;
  * Controller - 应用角色
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("appRoleController")
 @RequestMapping("/console/app_role")

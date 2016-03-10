@@ -14,7 +14,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * ServiceImpl - 应用管理
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("appScreenshotServiceImpl")
 public class AppScreenshotServiceImpl extends BaseServiceImpl<AppScreenshot, Long> implements AppScreenshotService

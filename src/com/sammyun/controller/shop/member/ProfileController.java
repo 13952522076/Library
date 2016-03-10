@@ -39,7 +39,7 @@ import com.sammyun.util.SettingUtils;
  * Controller - 会员中心 - 个人资料
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("shopMemberProfileController")
 @RequestMapping("/member/profile")

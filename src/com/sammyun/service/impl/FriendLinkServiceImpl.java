@@ -25,7 +25,7 @@ import com.sammyun.service.FriendLinkService;
  * Service - 友情链接
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("friendLinkServiceImpl")
 public class FriendLinkServiceImpl extends BaseServiceImpl<FriendLink, Long> implements FriendLinkService {

@@ -19,7 +19,7 @@ import com.sammyun.entity.BaseEntity;
  * File * Entity - 文件
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_file")

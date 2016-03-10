@@ -9,7 +9,7 @@ import com.sammyun.entity.bus.BusHirecar;
  * BusHirecar * DaoImpl - 租车预约数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("busHirecarDaoImpl")
 public class BusHirecarDaoImpl extends BaseDaoImpl<BusHirecar, Long> implements BusHirecarDao  {

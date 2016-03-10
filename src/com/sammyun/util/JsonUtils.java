@@ -31,7 +31,7 @@ import com.sammyun.meta.Dto;
  * Utils - JSON
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public final class JsonUtils
 {

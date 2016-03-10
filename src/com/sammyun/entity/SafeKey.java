@@ -16,7 +16,7 @@ import javax.persistence.Transient;
  * Entity - 安全密钥
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Embeddable
 public class SafeKey implements Serializable

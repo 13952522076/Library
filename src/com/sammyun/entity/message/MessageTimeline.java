@@ -16,7 +16,7 @@ import com.sammyun.entity.BaseEntity;
  * MessageTimeline * Entity - 消息时间线
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_message_timeline")

@@ -18,7 +18,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * ServiceImpl - 卡管理
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("timeCardServiceImpl")
 public class TimeCardServiceImpl extends BaseServiceImpl<TimeCard, Long> implements TimeCardService

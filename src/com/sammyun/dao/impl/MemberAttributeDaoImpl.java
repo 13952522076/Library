@@ -20,7 +20,7 @@ import com.sammyun.entity.MemberAttribute.Type;
  * Dao - 会员注册项
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("memberAttributeDaoImpl")
 public class MemberAttributeDaoImpl extends BaseDaoImpl<MemberAttribute, Long> implements MemberAttributeDao {

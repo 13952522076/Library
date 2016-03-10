@@ -24,7 +24,7 @@ import com.sammyun.util.DateUtil;
  * GrowthDiary * ServiceImpl -
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("growthDiaryServiceImpl")
 public class GrowthDiaryServiceImpl extends BaseServiceImpl<GrowthDiary, Long> implements GrowthDiaryService

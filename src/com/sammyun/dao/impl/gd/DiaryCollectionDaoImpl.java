@@ -10,7 +10,7 @@ import com.sammyun.entity.gd.DiaryCollection;
  * DiaryCollection * DaoImpl - 成长记收藏
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("diaryCollectionDaoImpl")
 public class DiaryCollectionDaoImpl extends BaseDaoImpl<DiaryCollection, Long> implements DiaryCollectionDao

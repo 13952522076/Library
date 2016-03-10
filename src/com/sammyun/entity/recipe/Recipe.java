@@ -22,7 +22,7 @@ import com.sun.istack.internal.NotNull;
  * Entity - 学生食谱
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_recipe")

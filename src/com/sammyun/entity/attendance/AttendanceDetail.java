@@ -19,7 +19,7 @@ import com.sammyun.util.JsonDateSerializer;
  * Entity - 学生考勤详情
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_attendance_detail")

@@ -10,7 +10,7 @@ import com.sammyun.entity.app.AppCredential;
  * DaoImpl - 应用API授权
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("appCredentialDaoImpl")
 public class AppCredentialDaoImpl extends BaseDaoImpl<AppCredential, Long> implements AppCredentialDao

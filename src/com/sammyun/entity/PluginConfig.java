@@ -22,7 +22,7 @@ import javax.persistence.Transient;
  * Entity - 插件配置
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_plugin_config")

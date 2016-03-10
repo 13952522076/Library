@@ -28,7 +28,7 @@ import com.sammyun.service.PluginConfigService;
  * Controller - 支付宝(担保交易)
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminAlipayPartnerController")
 @RequestMapping("/console/payment_plugin/alipay_partner")

@@ -13,7 +13,7 @@ import com.sammyun.entity.Payment;
  * Service - 收款单
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface PaymentService extends BaseService<Payment, Long>
 {

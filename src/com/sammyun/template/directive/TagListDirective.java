@@ -27,7 +27,7 @@ import freemarker.template.TemplateModel;
  * 模板指令 - 标签列表
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Component("tagListDirective")
 public class TagListDirective extends BaseDirective

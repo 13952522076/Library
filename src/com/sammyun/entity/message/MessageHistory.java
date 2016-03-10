@@ -18,7 +18,7 @@ import com.sammyun.entity.BaseEntity;
  * MessageHistory * Entity - 消息历史
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_message_history")

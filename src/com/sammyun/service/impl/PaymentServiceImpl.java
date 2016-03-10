@@ -27,7 +27,7 @@ import com.sammyun.service.PaymentService;
  * Service - 收款单
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("paymentServiceImpl")
 public class PaymentServiceImpl extends BaseServiceImpl<Payment, Long> implements PaymentService

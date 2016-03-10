@@ -9,7 +9,7 @@ import com.sammyun.entity.message.MessageHistory;
  * MessageHistory * DaoImpl - 消息历史
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("messageHistoryDaoImpl")
 public class MessageHistoryDaoImpl extends BaseDaoImpl<MessageHistory, Long> implements MessageHistoryDao  {

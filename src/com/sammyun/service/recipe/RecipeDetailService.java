@@ -10,7 +10,7 @@ import com.sammyun.service.BaseService;
  * Service - 学生食谱详情
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface RecipeDetailService extends BaseService<RecipeWeekDay, Long>
 {

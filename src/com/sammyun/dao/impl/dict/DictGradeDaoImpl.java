@@ -19,7 +19,7 @@ import com.sammyun.entity.dict.DictSchool;
  * DaoImpl - 年级
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("dictGradeDaoImpl")
 public class DictGradeDaoImpl extends BaseDaoImpl<DictGrade, Long> implements DictGradeDao

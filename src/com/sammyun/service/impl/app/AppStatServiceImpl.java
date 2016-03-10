@@ -22,7 +22,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * Service - 应用统计
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("appStatServiceImpl")
 public class AppStatServiceImpl extends BaseServiceImpl<AppStat, Long> implements AppStatService

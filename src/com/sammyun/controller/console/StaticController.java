@@ -28,7 +28,7 @@ import com.sammyun.util.WebUtils;
  * Controller - 静态化
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminStaticController")
 @RequestMapping("/console/static")

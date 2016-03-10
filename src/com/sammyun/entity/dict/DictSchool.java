@@ -45,7 +45,7 @@ import com.sammyun.entity.stu.MeritTemplate;
  * Entity - 学校
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_dict_school")

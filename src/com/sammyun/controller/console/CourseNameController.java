@@ -26,7 +26,7 @@ import com.sammyun.service.dict.DictSchoolService;
  * Controller - 课程
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("courseNameController")
 @RequestMapping("/console/course_name")

@@ -24,7 +24,7 @@ import freemarker.template.TemplateModel;
  * 模板指令 - 瞬时消息
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Component("flashMessageDirective")
 public class FlashMessageDirective extends BaseDirective

@@ -21,7 +21,7 @@ import com.sammyun.service.SeoService;
  * Controller - SEO设置
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Controller("adminSeoController")
 @RequestMapping("/console/seo")

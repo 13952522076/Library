@@ -13,7 +13,7 @@ import com.sammyun.service.BaseService;
  * ClassTeacherMap * Service - 班级老师对应列表
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface ClassTeacherMapService extends BaseService<ClassTeacherMap, Long> 
 {

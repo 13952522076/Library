@@ -22,7 +22,7 @@ import com.sammyun.service.MemberAttributeService;
  * Service - 会员注册项
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("memberAttributeServiceImpl")
 public class MemberAttributeServiceImpl extends BaseServiceImpl<MemberAttribute, Long> implements MemberAttributeService {

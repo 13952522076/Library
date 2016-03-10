@@ -14,7 +14,7 @@ import com.sammyun.entity.dict.DictDeviceToken;
  * DictDeviceToken * ServiceImpl - 设备凭证数据字典
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("dictDeviceTokenServiceImpl")
 public class DictDeviceTokenServiceImpl extends BaseServiceImpl<DictDeviceToken, Long> implements DictDeviceTokenService {

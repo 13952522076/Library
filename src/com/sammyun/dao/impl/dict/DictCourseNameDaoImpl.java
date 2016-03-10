@@ -9,7 +9,7 @@ import com.sammyun.entity.dict.DictCourseName;
  * DictCourseName * DaoImpl - 课程名称字典表
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("dictCourseNameDaoImpl")
 public class DictCourseNameDaoImpl extends BaseDaoImpl<DictCourseName, Long> implements DictCourseNameDao  {

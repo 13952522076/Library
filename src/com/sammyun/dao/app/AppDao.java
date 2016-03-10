@@ -16,7 +16,7 @@ import com.sammyun.entity.dict.DictSchool;
  * Dao - 应用管理
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface AppDao extends BaseDao<App, Long>
 {

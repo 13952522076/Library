@@ -17,7 +17,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * Service - 应用角色
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("appRoleServiceImpl")
 public class AppRoleServiceImpl extends BaseServiceImpl<AppRole, Long> implements AppRoleService {

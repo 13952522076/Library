@@ -22,7 +22,7 @@ import com.sammyun.util.SettingUtils;
  * Service - 验证码
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("captchaServiceImpl")
 public class CaptchaServiceImpl implements CaptchaService {

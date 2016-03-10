@@ -22,7 +22,7 @@ import org.slf4j.LoggerFactory;
  * HttpRequester - HTTP请求对象
  * 
  * @author xutianlong
- * @version 3.0
+
  */
 public class HttpRequester
 {

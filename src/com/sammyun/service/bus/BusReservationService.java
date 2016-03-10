@@ -7,7 +7,7 @@ import com.sammyun.entity.bus.BusReservation;
  * BusReservation * Service - 预约数据
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 
 public interface BusReservationService extends BaseService<BusReservation, Long> {

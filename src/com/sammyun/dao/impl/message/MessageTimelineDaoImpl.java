@@ -9,7 +9,7 @@ import com.sammyun.entity.message.MessageTimeline;
  * MessageTimeline * DaoImpl - 消息时间线
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("messageTimelineDaoImpl")
 public class MessageTimelineDaoImpl extends BaseDaoImpl<MessageTimeline, Long> implements MessageTimelineDao  {

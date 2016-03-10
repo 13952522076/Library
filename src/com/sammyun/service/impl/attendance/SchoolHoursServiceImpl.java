@@ -13,7 +13,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * ServiceImpl - 上学放学时间设置
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("schoolHoursServiceImpl")
 public class SchoolHoursServiceImpl  extends BaseServiceImpl<SchoolHours, Long> implements SchoolHoursService

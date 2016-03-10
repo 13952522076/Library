@@ -19,7 +19,7 @@ import freemarker.template.TemplateModelException;
  * 模板方法 - 字符串缩略
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Component("abbreviateMethod")
 public class AbbreviateMethod implements TemplateMethodModel

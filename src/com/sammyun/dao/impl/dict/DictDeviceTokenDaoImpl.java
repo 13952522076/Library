@@ -9,7 +9,7 @@ import com.sammyun.entity.dict.DictDeviceToken;
  * DictDeviceToken * DaoImpl - 设备凭证数据字典
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("dictDeviceTokenDaoImpl")
 public class DictDeviceTokenDaoImpl extends BaseDaoImpl<DictDeviceToken, Long> implements DictDeviceTokenDao  {

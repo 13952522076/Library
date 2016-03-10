@@ -16,7 +16,7 @@ import com.sammyun.entity.BaseEntity;
  * Entity - 专业
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_dict_specialty")

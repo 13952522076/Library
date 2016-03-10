@@ -10,7 +10,7 @@ import com.sammyun.entity.BaseEntity;
  * Entity - 好友关系
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_friendship")

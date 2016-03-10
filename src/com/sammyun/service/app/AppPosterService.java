@@ -10,7 +10,7 @@ import com.sammyun.service.BaseService;
  * Poster * Service - 应用超市海报
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface AppPosterService extends BaseService<AppPoster, Long> {
 	

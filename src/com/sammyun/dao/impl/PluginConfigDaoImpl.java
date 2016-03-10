@@ -17,7 +17,7 @@ import com.sammyun.entity.PluginConfig;
  * Dao - 插件配置
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Repository("pluginConfigDaoImpl")
 public class PluginConfigDaoImpl extends BaseDaoImpl<PluginConfig, Long> implements PluginConfigDao {

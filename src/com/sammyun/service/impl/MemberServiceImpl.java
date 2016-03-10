@@ -37,7 +37,7 @@ import com.sammyun.util.SettingUtils;
  * Service - 会员
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("memberServiceImpl")
 public class MemberServiceImpl extends BaseServiceImpl<Member, Long> implements MemberService

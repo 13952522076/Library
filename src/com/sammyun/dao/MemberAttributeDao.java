@@ -13,7 +13,7 @@ import com.sammyun.entity.MemberAttribute;
  * Dao - 会员注册项
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface MemberAttributeDao extends BaseDao<MemberAttribute, Long>
 {

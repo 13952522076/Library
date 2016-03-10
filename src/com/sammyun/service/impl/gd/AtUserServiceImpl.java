@@ -13,7 +13,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
  * AtUser * ServiceImpl -
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("atUserServiceImpl")
 public class AtUserServiceImpl extends BaseServiceImpl<AtUser, Long> implements AtUserService

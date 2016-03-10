@@ -11,7 +11,7 @@ import com.sammyun.entity.dict.PatriarchStudentMap;
  * PatriarchStudentMap * Dao - 学生家长对应列表
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface PatriarchStudentMapDao extends BaseDao<PatriarchStudentMap, Long>
 {

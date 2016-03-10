@@ -11,7 +11,7 @@ import com.sammyun.service.BaseService;
  * QualityCourse * Service - 精品课程
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface QualityCourseService extends BaseService<QualityCourse, Long>
 {

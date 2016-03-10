@@ -17,7 +17,7 @@ import com.sammyun.service.parenting.ParentingCategoryService;
  * ParentingCategory * ServiceImpl - 育儿类别
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("parentingCategoryServiceImpl")
 public class ParentingCategoryServiceImpl extends BaseServiceImpl<ParentingCategory, Long> implements

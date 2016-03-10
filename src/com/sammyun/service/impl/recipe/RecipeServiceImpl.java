@@ -21,7 +21,7 @@ import com.sammyun.service.recipe.RecipeService;
  * ServiceImpl - 学生食谱
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Service("recipeServiceImpl")
 public class RecipeServiceImpl extends BaseServiceImpl<Recipe, Long> implements RecipeService

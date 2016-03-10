@@ -25,7 +25,7 @@ import com.sammyun.util.WebUtils;
  * Plugin - 易宝支付
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Component("yeepayPlugin")
 public class YeepayPlugin extends PaymentPlugin

@@ -13,7 +13,7 @@ import com.sammyun.entity.BaseEntity;
  * Entity - 课程名称字典表
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 @Entity
 @Table(name = "t_pe_dict_course_name")

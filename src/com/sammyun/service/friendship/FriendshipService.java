@@ -7,7 +7,7 @@ import com.sammyun.service.BaseService;
  * Message * Service - 好友关系
  * 
  * @author Sencloud Team
- * @version 3.0
+
  */
 public interface FriendshipService extends BaseService<Friendship, Long>
 {
