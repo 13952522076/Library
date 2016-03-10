@@ -124,7 +124,6 @@
 				<entry key="tags_id" value-ref="tagsIdDirective"/>
 				<entry key="pagination" value-ref="paginationDirective" />
 				<entry key="seo" value-ref="seoDirective" />
-				<entry key="ad_position" value-ref="adPositionDirective" />
 				<entry key="member_attribute_list" value-ref="memberAttributeListDirective" />
 				<entry key="navigation_list" value-ref="navigationListDirective" />
 				<entry key="tag_list" value-ref="tagListDirective" />

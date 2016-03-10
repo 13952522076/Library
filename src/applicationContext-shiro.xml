@@ -24,8 +24,6 @@
 
 				/console/navigation/** = perms["console:navigation"]
 				/console/friend_link/** = perms["console:friendLink"]
-				/console/ad_position/** = perms["console:adPosition"]
-				/console/ad/** = perms["console:ad"]
 				/console/template/** = perms["console:template"]
 				/console/cache/** = perms["console:cache"]
 				/console/static/** = perms["console:static"]

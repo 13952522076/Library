@@ -20,7 +20,6 @@ import com.sammyun.entity.Admin;
 import com.sammyun.entity.Area;
 import com.sammyun.entity.BaseEntity;
 import com.sammyun.entity.Member;
-import com.sammyun.entity.ad.Ad;
 import com.sammyun.entity.announcement.Announcement;
 import com.sammyun.entity.app.App;
 import com.sammyun.entity.attendance.AttendanceEquipment;
@@ -158,8 +157,6 @@ public class DictSchool extends BaseEntity
     /** 应用清单*/
     private Set<App> apps = new HashSet<App>();
     
-    /** 广告 */
-    private Set<Ad> ads = new HashSet<Ad>();
 
     @Column(name = "code", length = 40)
     public String getCode()
@@ -714,21 +711,5 @@ public class DictSchool extends BaseEntity
         this.apps = apps;
     }
     
-    /**
-     * @return 返回 ads
-     */
-    @ManyToMany(mappedBy = "adDictSchools", fetch = FetchType.LAZY)
-    public Set<Ad> getAds()
-    {
-        return ads;
-    }
-
-    /**
-     * @param 对ads进行赋值
-     */
-    public void setAds(Set<Ad> ads)
-    {
-        this.ads = ads;
-    }
     
 }

@@ -507,32 +507,6 @@
                 </ul>
             </li>
          	<!-- end 应用管理 -->
-         	<!-- start 广告管理-->
-         	<li name="menu">
-                [#list ["console:ad","console:adCategory"] as permission]
-                   [@shiro.hasPermission name = permission]
-                        <a  href="index.html">
-                           <i class="fa fa-link"></i>
-                           <span class="nav-label">${message("广告管理")}</span>
-                           <span class="fa arrow"></span>
-                        </a>
-                    [#break /]
-					[/@shiro.hasPermission]
-                 [/#list]
-                <ul class="nav nav-second-level">
-                    [@shiro.hasPermission name="console:ad"]
-                        <li id="menu.Ad">
-                            <a href="${base}/console/ad/list.ct" >${message("广告管理")}</a>
-                        </li>
-                    [/@shiro.hasPermission]
-                    [@shiro.hasPermission name="console:adCategory"]
-                        <li id="menu.AdCategory">
-                            <a href="${base}/console/adCategory/list.ct" >${message("广告类别")}</a>
-                        </li>
-                    [/@shiro.hasPermission]
-                </ul>
-            </li>
-         	<!-- end   广告管理-->
             <!-- start 系统设置 -->
             <li name="menu">
                [#list ["console:setting", "console:area", "console:paymentPlugin", "console:storagePlugin", "console:admin", "console:role", "console:log"] as permission]
