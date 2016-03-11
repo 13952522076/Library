@@ -65,16 +65,7 @@ public class SchoolYearMngController extends BaseController
     {
         Admin admin = adminService.getCurrent();
         // 校园管理员只能看到自己学校的，超级管理员可以看到所有的
-        if (admin.getIsSchoolManager() != null && admin.getIsSchoolManager())
-        {
-            Filter filter = new Filter("dictSchool", Operator.eq, admin.getDictSchool());
-            pageable.addFilters(filter);
-            model.addAttribute("page", schoolYearMngService.findPage(pageable));
-        }
-        else
-        {
-            model.addAttribute("page", schoolYearMngService.findPage(pageable));
-        }
+        model.addAttribute("page", schoolYearMngService.findPage(pageable));
         model.addAttribute("menuId", SchoolYearMng.class.getSimpleName());
         return "/console/school_year_mng/list";
     }

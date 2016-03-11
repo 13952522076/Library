@@ -100,9 +100,6 @@ public class AdminController extends BaseController
             return ERROR_VIEW;
         }
         admin.setPassword(DigestUtils.md5Hex(admin.getPassword()));
-        admin.setIsLocked(false);
-        admin.setLoginFailureCount(0);
-        admin.setLockedDate(null);
         admin.setLoginDate(null);
         admin.setLoginIp(null);
         adminService.save(admin);
@@ -150,17 +147,6 @@ public class AdminController extends BaseController
         else
         {
             admin.setPassword(pAdmin.getPassword());
-        }
-        if (pAdmin.getIsLocked() && !admin.getIsLocked())
-        {
-            admin.setLoginFailureCount(0);
-            admin.setLockedDate(null);
-        }
-        else
-        {
-            admin.setIsLocked(pAdmin.getIsLocked());
-            admin.setLoginFailureCount(pAdmin.getLoginFailureCount());
-            admin.setLockedDate(pAdmin.getLockedDate());
         }
         adminService.update(admin, "username", "loginDate", "loginIp", "orders");
         model.addAttribute("menuId", Admin.class.getSimpleName());

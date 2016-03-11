@@ -58,16 +58,7 @@ public class DictSchoolController extends BaseController
     {
         Admin admin = adminService.getCurrent();
         // 校园管理员只能看到自己学校的，超级管理员可以看到所有的
-        if (admin.getIsSchoolManager() != null && admin.getIsSchoolManager())
-        {
-            Filter filter = new Filter("id", Operator.eq, admin.getDictSchool().getId());
-            pageable.addFilters(filter);
-            model.addAttribute("page", dictSchoolService.findPage(pageable));
-        }
-        else
-        {
-            model.addAttribute("page", dictSchoolService.findPage(pageable));
-        }
+        model.addAttribute("page", dictSchoolService.findPage(pageable));
         model.addAttribute("menuId", DictSchool.class.getSimpleName());
         return "/console/dict_school/list";
     }

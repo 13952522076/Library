@@ -362,8 +362,7 @@
 								}
 							%>
 							<div class="login-header">
-								<%=SpringUtils
-				.getMessage("console.login.PreschoolEducationPlatform")%>
+								图书智能管理推荐系统
 							</div>
 							<fieldset>
 								<section> <label class="input"> <input

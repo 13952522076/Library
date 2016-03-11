@@ -383,16 +383,7 @@ public class AppController extends BaseController {
 	        // 校园管理员只能看到自己学校的，超级管理员可以看到所有的
 			Pageable pageable = new Pageable();
 			Page<DictSchool> page = new Page<DictSchool>();
-	        if (admin.getIsSchoolManager() != null && admin.getIsSchoolManager())
-	        {
-	            Filter filter = new Filter("id", Operator.eq, admin.getDictSchool().getId());
-	            pageable.addFilters(filter);
-	            page = dictSchoolService.findPage(pageable);
-	        }
-	        else
-	        {
-	        	page = dictSchoolService.findPage(pageable);
-	        }
+			page = dictSchoolService.findPage(pageable);
 	        dictSchools = page.getContent();
 	        if(dictSchools != null && dictSchools.size() > 0){
         		Set<DictSchool> dictSchoolsSet = app.getDictSchools();
@@ -596,16 +587,7 @@ public class AppController extends BaseController {
     {
         Admin admin = adminService.getCurrent();
         // 校园管理员只能看到自己学校的，超级管理员可以看到所有的
-        if (admin.getIsSchoolManager() != null && admin.getIsSchoolManager())
-        {
-            Filter filter = new Filter("id", Operator.eq, admin.getDictSchool().getId());
-            pageable.addFilters(filter);
-            model.addAttribute("page", dictSchoolService.findPage(pageable));
-        }
-        else
-        {
-            model.addAttribute("page", dictSchoolService.findPage(pageable));
-        }
+        model.addAttribute("page", dictSchoolService.findPage(pageable));
         String[] dictSchoolIdArray = null ;
         List<Long> alreadyChoiceSchoolIds = new ArrayList<Long>();
         List<DictSchool> alreadyChoiceSchools = new ArrayList<DictSchool>();

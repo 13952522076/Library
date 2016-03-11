@@ -30,20 +30,18 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.sammyun.entity.dict.DictSchool;
-import com.sammyun.entity.recipe.Recipe;
 
 /**
  * Entity - 管理员
  * 
  * @author Sencloud Team
-
  */
 @Entity
 @Table(name = "t_pe_admin")
 @SequenceGenerator(name = "sequenceGenerator", sequenceName = "t_pe_admin_sequence")
 public class Admin extends BaseEntity
 {
-    
+
     private static final long serialVersionUID = -7519486823153844426L;
 
     /** 用户名 */
@@ -58,21 +56,6 @@ public class Admin extends BaseEntity
     /** 姓名 */
     private String name;
 
-    /** 部门 */
-    private String department;
-
-    /** 是否启用 */
-    private Boolean isEnabled;
-
-    /** 是否锁定 */
-    private Boolean isLocked;
-
-    /** 连续登录失败次数 */
-    private Integer loginFailureCount;
-
-    /** 锁定日期 */
-    private Date lockedDate;
-
     /** 最后登录日期 */
     private Date loginDate;
 
@@ -82,15 +65,9 @@ public class Admin extends BaseEntity
     /** 角色 */
     private Set<Role> roles = new HashSet<Role>();
 
-    /** 学生食谱 */
-    private Set<Recipe> recipes = new HashSet<Recipe>();
-
     /** 管理员隶属的学校 */
     private DictSchool dictSchool;
 
-    /** 是否是学校管理员 默认为学校管理员 */
-    private Boolean isSchoolManager;
-    
     /** 用户头像 */
     private String iconPhoto;
 
@@ -152,7 +129,6 @@ public class Admin extends BaseEntity
     @NotEmpty
     @Email
     @Length(max = 200)
-    @Column(nullable = false)
     public String getEmail()
     {
         return email;
@@ -188,116 +164,6 @@ public class Admin extends BaseEntity
     public void setName(String name)
     {
         this.name = name;
-    }
-
-    /**
-     * 获取部门
-     * 
-     * @return 部门
-     */
-    @JsonProperty
-    @Length(max = 200)
-    public String getDepartment()
-    {
-        return department;
-    }
-
-    /**
-     * 设置部门
-     * 
-     * @param department 部门
-     */
-    public void setDepartment(String department)
-    {
-        this.department = department;
-    }
-
-    /**
-     * 获取是否启用
-     * 
-     * @return 是否启用
-     */
-    @JsonProperty
-    @NotNull
-    @Column(nullable = false)
-    public Boolean getIsEnabled()
-    {
-        return isEnabled;
-    }
-
-    /**
-     * 设置是否启用
-     * 
-     * @param isEnabled 是否启用
-     */
-    public void setIsEnabled(Boolean isEnabled)
-    {
-        this.isEnabled = isEnabled;
-    }
-
-    /**
-     * 获取是否锁定
-     * 
-     * @return 是否锁定
-     */
-    @JsonProperty
-    @Column(nullable = false)
-    public Boolean getIsLocked()
-    {
-        return isLocked;
-    }
-
-    /**
-     * 设置是否锁定
-     * 
-     * @param isLocked 是否锁定
-     */
-    public void setIsLocked(Boolean isLocked)
-    {
-        this.isLocked = isLocked;
-    }
-
-    /**
-     * 获取连续登录失败次数
-     * 
-     * @return 连续登录失败次数
-     */
-    @JsonProperty
-    @Column(nullable = false)
-    public Integer getLoginFailureCount()
-    {
-        return loginFailureCount;
-    }
-
-    /**
-     * 设置连续登录失败次数
-     * 
-     * @param loginFailureCount 连续登录失败次数
-     */
-    public void setLoginFailureCount(Integer loginFailureCount)
-    {
-        this.loginFailureCount = loginFailureCount;
-    }
-
-    /**
-     * 获取锁定日期
-     * 
-     * @return 锁定日期
-     */
-    @JsonProperty
-    public Date getLockedDate()
-    {
-        return lockedDate;
-    }
-
-    /**
-     * 设置锁定日期
-     * 
-     * @param lockedDate 锁定日期
-     */
-    public void setLockedDate(Date lockedDate)
-    {
-        this.lockedDate = lockedDate;
     }
 
     /**
@@ -386,22 +252,6 @@ public class Admin extends BaseEntity
         this.dictSchool = dictSchool;
     }
 
-    /**
-     * @return 返回 isSchoolManager
-     */
-    public Boolean getIsSchoolManager()
-    {
-        return isSchoolManager;
-    }
-
-    /**
-     * @param 对isSchoolManager进行赋值
-     */
-    public void setIsSchoolManager(Boolean isSchoolManager)
-    {
-        this.isSchoolManager = isSchoolManager;
-    }
-    
     /**
      * @return 返回 iconPhoto
      */

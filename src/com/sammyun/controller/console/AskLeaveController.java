@@ -81,14 +81,7 @@ public class AskLeaveController extends BaseController
     {
         Admin admin = adminService.getCurrent();
         List<DictStudent> students = new ArrayList<DictStudent>();
-        if (admin.getIsSchoolManager() != null && admin.getIsSchoolManager())
-        {
-            students = dictStudentService.findStudentsBySchool(admin.getDictSchool());
-        }
-        else
-        {
-            students = dictStudentService.findAll();
-        }
+        students = dictStudentService.findStudentsBySchool(admin.getDictSchool());
         Filter filter = new Filter("dictStudent", Operator.in, students);
         if(students==null||students.size()==0){
         	filter = new Filter("id", Operator.eq, "0");//添加一个空的过滤器

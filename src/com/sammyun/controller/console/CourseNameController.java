@@ -53,17 +53,7 @@ public class CourseNameController extends BaseController
     public String list(Pageable pageable, ModelMap model)
     {
         Admin admin = adminService.getCurrent();
-
-        if (admin.getIsSchoolManager() != null && admin.getIsSchoolManager())
-        {
-            Filter filter = new Filter("dictSchool", Operator.eq, admin.getDictSchool());
-            pageable.addFilters(filter);
-            model.addAttribute("page", courseNameService.findPage(pageable));
-        }
-        else
-        {
-            model.addAttribute("page", courseNameService.findPage(pageable));
-        }
+        model.addAttribute("page", courseNameService.findPage(pageable));
         model.addAttribute("menuId", CourseName.class.getSimpleName());
         return "/console/course_name/list";
     }
