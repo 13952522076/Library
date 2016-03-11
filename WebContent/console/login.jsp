@@ -102,16 +102,7 @@
 		var $password = $("#password");
 		var $captcha = $("#captcha");
 		var $captchaImage = $("#captchaImage");
-		var $isRememberUsername = $("#isRememberUsername");
-		// 记住用户名
-		if(getCookie("adminUsername") != null) {
-			$isRememberUsername.prop("checked", true);
-			$username.val(getCookie("adminUsername"));
-			$password.focus();
-		} else {
-			$isRememberUsername.prop("checked", false);
-			$username.focus();
-		}
+		
 		// 更换验证码
 		$captchaImage.click( function() {
 			$captchaImage.attr("src", "<%=base%>/console/common/captcha.ct?captchaId=<%=captchaId%>&timestamp=" + (new Date()).valueOf());
@@ -134,11 +125,6 @@
 				return false;
 			}
 			
-			if ($isRememberUsername.prop("checked")) {
-				addCookie("adminUsername", $username.val(), {expires: 7 * 24 * 60 * 60});
-			} else {
-				removeCookie("adminUsername");
-			}
 			
 			var rsaKey = new RSAKey();
 			rsaKey.setPublic(b64tohex("<%=modulus%>"), b64tohex("<%=exponent%>"));
@@ -173,53 +159,8 @@
 	<%
 		if (applicationContext != null) {
 	%>
-	<div class="header">
-		<div class="wrap">
-			<div class="logo">
-				<img src="<%=base%>/resources/console/images/login_logo2.png"
-					alt="图书智能管理推荐系统" style="  height: 80px;width: 300px;" />
-				<!-- 二维码 start-->
-				<div class="wechatdiv" style="display: none;">
-					<div class="qrcodeImage">
-						<img src="<%=base%>/resources/console/images/ios.jpg"
-							style="width: 100px; height: 100px;">
-					</div>
-					<div class="scan_text">
-						<span>下载</span>
-					</div>
-					<div class="scan_text">
-						<span>小书僮iOS版本</span>
-					</div>
-				</div>
-				<div class="wechatdivs" style="display: none;">
-					<div class="qrcodeImages">
-						<img src="<%=base%>/resources/console/images/android.jpg"
-							style="width: 100px; height: 100px;">
-					</div>
-					<div class="scan_texts">
-						<span>下载</span>
-					</div>
-					<div class="scan_texts">
-						<span>小书僮Android版本</span>
-					</div>
-				</div>
-				<!-- 二维码 end-->
-			</div>
-			<div class="menu">
-				<ul>
-					<li><a href="<%=base%>/console/">首页</a></li>
-					<li><a href="<%=base%>/front/link/applyOpen.ct">申请开通小书僮</a></li>
-					<!-- onclick="javascript:Show_Hidden(this)" -->
-					<li><a href="javascript:void(0)" id="downloadApplication">下载应用</a></li>
-					<li class="noborder"><a href="<%=base%>/front/link/help.ct" style="border-right: 0;">关于</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
+	
 	<div class="main" id="div_1" style="display: block;">
-		<!-- <div class="img1" style="display: block;"></div>
-        <div class="img2" style="display: none;"></div> 
-        -->
 		<div class="img3" style="display: block;"></div>
 		<div class="login">
 			<div class="row">
@@ -272,10 +213,7 @@
 								%>
 							</fieldset>
 							<footer>
-							 <label> <input type="checkbox"
-								id="isRememberUsername" value="true" /> <%=SpringUtils
-				.getMessage("console.login.rememberUsername")%>
-							</label> 
+							 
 							<input type="submit" class="loginButton"
 								value="<%=SpringUtils.getMessage("console.login.login")%>" />
 							</footer>
