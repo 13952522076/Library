@@ -21,7 +21,6 @@ import com.sammyun.entity.Area;
 import com.sammyun.entity.BaseEntity;
 import com.sammyun.entity.Member;
 import com.sammyun.entity.announcement.Announcement;
-import com.sammyun.entity.app.App;
 import com.sammyun.entity.attendance.AttendanceEquipment;
 import com.sammyun.entity.attendance.SchoolHours;
 import com.sammyun.entity.attendance.WorkSetting;
@@ -43,9 +42,6 @@ import com.sammyun.entity.stu.MeritTemplate;
 
 /**
  * Entity - 学校
- * 
-
-
  */
 @Entity
 @Table(name = "t_pe_dict_school")
@@ -153,10 +149,6 @@ public class DictSchool extends BaseEntity
 
     /** 年级清单 */
     private Set<DictGrade> dictGrades = new HashSet<DictGrade>();
-    
-    /** 应用清单*/
-    private Set<App> apps = new HashSet<App>();
-    
 
     @Column(name = "code", length = 40)
     public String getCode()
@@ -694,22 +686,4 @@ public class DictSchool extends BaseEntity
         this.dictGrades = dictGrades;
     }
 
-    /**
-     * @return 返回 apps
-     */
-    @ManyToMany(mappedBy = "dictSchools", fetch = FetchType.LAZY)
-    public Set<App> getApps()
-    {
-        return apps;
-    }
-
-    /**
-     * @param 对apps进行赋值
-     */
-    public void setApps(Set<App> apps)
-    {
-        this.apps = apps;
-    }
-    
-    
 }

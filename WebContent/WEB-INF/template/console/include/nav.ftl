@@ -466,47 +466,6 @@
                 </ul>
             </li>
          	<!-- end反馈管理 -->
-         	<!-- start  应用管理 -->
-             <li name="menu">
-                [#list ["console:app", "console:appRole","console:appCategory","console:appClientVersion","console:appPoster"] as permission]
-                   [@shiro.hasPermission name = permission]
-                        <a  href="index.html">
-                           <i class="fa fa-skyatlas"></i>
-                           <span class="nav-label">${message("应用市场")}</span>
-                           <span class="fa arrow"></span>
-                        </a>
-                    [#break /]
-					[/@shiro.hasPermission]
-                 [/#list]
-                <ul class="nav nav-second-level">
-                    [@shiro.hasPermission name="console:app"]
-                        <li id="menu.App">
-                            <a href="${base}/console/app/list.ct" >${message("console.main.app")}</a>
-                        </li>
-                    [/@shiro.hasPermission]
-                   [@shiro.hasPermission name="console:appRole"]
-                        <li id="menu.AppRole">
-                            <a href="${base}/console/app_role/list.ct" >${message("console.main.appRole")}</a>
-                        </li>
-                   [/@shiro.hasPermission]
-                   [@shiro.hasPermission name="console:appCategory"]
-                        <li id="menu.AppCategory">
-                            <a href="${base}/console/app_category/list.ct" >${message("console.main.appCategory")}</a>
-                        </li>
-                   [/@shiro.hasPermission]
-                   [@shiro.hasPermission name="console:appClientVersion"]
-                        <li id="menu.AppClientVersion">
-                            <a href="${base}/console/app_client_version/list.ct" >${message("console.main.appClientVersion")}</a>
-                        </li>
-                    [/@shiro.hasPermission]
-                    [@shiro.hasPermission name="console:appPoster"]
-                        <li id="menu.AppPoster">
-                            <a href="${base}/console/app_poster/list.ct" >${message("console.main.appPoster")}</a>
-                        </li>
-                    [/@shiro.hasPermission]
-                </ul>
-            </li>
-         	<!-- end 应用管理 -->
             <!-- start 系统设置 -->
             <li name="menu">
                [#list ["console:setting", "console:area", "console:paymentPlugin", "console:storagePlugin", "console:admin", "console:role", "console:log"] as permission]

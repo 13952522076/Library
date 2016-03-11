@@ -1,10 +1,9 @@
 package com.sammyun.controller.console;
 
-import java.util.Iterator;
-import java.util.LinkedList;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -14,7 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -24,10 +22,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import com.sammyun.Filter;
 import com.sammyun.Filter.Operator;
 import com.sammyun.Message;
-import com.sammyun.Order;
-import com.sammyun.Order.Direction;
 import com.sammyun.Pageable;
-import com.sammyun.entity.app.App;
 import com.sammyun.entity.dict.DictClass;
 import com.sammyun.entity.dict.DictClass.ClassStatus;
 import com.sammyun.entity.dict.DictGrade;
@@ -228,7 +223,7 @@ public class DictGradeController extends BaseController
         Map<String, Object> data = new HashMap<String, Object>();
         data.put("dictClasses", dictClasses);
 
-        //System.out.println(classIds);
+        // System.out.println(classIds);
         try
         {
             // Date endDate = new Date();
@@ -307,7 +302,7 @@ public class DictGradeController extends BaseController
             }
         }
     }
-    
+
     @RequestMapping(value = "/changeOrders", method = RequestMethod.POST)
     public @ResponseBody
     Message changeOrders(Long currentId, Long changeId)
@@ -327,7 +322,7 @@ public class DictGradeController extends BaseController
         List<DictGrade> dictGradeColumn = dictGradeService.findAll();
         for (Integer i = 0; i < dictGradeColumn.size(); i++)
         {
-            //Integer newOrder = i;
+            // Integer newOrder = i;
             if (dictGradeColumn.get(i).getOrder().equals(i))
             {
                 continue;
@@ -347,8 +342,7 @@ public class DictGradeController extends BaseController
         // }
         return SUCCESS_MESSAGE;
     }
-    
-    
+
     /**
      * ajax判断升级到的班级名称是否已经存在
      * 
@@ -358,31 +352,31 @@ public class DictGradeController extends BaseController
     @RequestMapping(value = "/isExistCName", method = RequestMethod.GET)
     public void isExistCName(String className, HttpServletResponse response)
     {
-       Boolean isExist=false;
-       DictSchool dictSchool = adminService.getCurrentDictSchool();
-       if (StringUtils.isEmpty(className))
-       {
-    	   isExist=false;
-       }
-       else
-       {
-    	   if (dictClassService.classNameExists(className.trim(), dictSchool))
-           {
-        	   isExist=true;
-           }
-           else
-           {
-        	   isExist= false;
-           }
-       }
-       try
-       {
+        Boolean isExist = false;
+        DictSchool dictSchool = adminService.getCurrentDictSchool();
+        if (StringUtils.isEmpty(className))
+        {
+            isExist = false;
+        }
+        else
+        {
+            if (dictClassService.classNameExists(className.trim(), dictSchool))
+            {
+                isExist = true;
+            }
+            else
+            {
+                isExist = false;
+            }
+        }
+        try
+        {
             response.setContentType("text/html; charset=UTF-8");
             JsonUtils.writeValue(response.getWriter(), isExist);
-       }
-       catch (IOException e)
-       {
+        }
+        catch (IOException e)
+        {
             e.printStackTrace();
-       }
+        }
     }
 }

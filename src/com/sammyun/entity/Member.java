@@ -37,7 +37,6 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.sammyun.entity.MemberAttribute.Type;
-import com.sammyun.entity.app.AppUser;
 import com.sammyun.entity.attendance.TeacherAskLeave;
 import com.sammyun.entity.attendance.TeacherAttendance;
 import com.sammyun.entity.attendance.TimeCard;
@@ -59,9 +58,6 @@ import com.sammyun.util.JsonUtils;
 
 /**
  * Entity - 用户
- * 
-
-
  */
 @Entity
 @Table(name = "t_pe_member")
@@ -247,9 +243,6 @@ public class Member extends BaseEntity
 
     /** 我审批的请假列表 */
     private Set<TeacherAskLeave> approvalAskLeaves = new HashSet<TeacherAskLeave>();
-
-    /** 用户的安装app清单列表 */
-    private Set<AppUser> appUsers = new HashSet<AppUser>();
 
     /**
      * 获取用户名
@@ -1200,23 +1193,6 @@ public class Member extends BaseEntity
     public void setApprovalAskLeaves(Set<TeacherAskLeave> approvalAskLeaves)
     {
         this.approvalAskLeaves = approvalAskLeaves;
-    }
-
-    /**
-     * @return 返回 appUsers
-     */
-    @OneToMany(mappedBy = "member", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
-    public Set<AppUser> getAppUsers()
-    {
-        return appUsers;
-    }
-
-    /**
-     * @param 对appUsers进行赋值
-     */
-    public void setAppUsers(Set<AppUser> appUsers)
-    {
-        this.appUsers = appUsers;
     }
 
     /**
