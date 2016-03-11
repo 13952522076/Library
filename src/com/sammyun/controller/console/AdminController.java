@@ -12,6 +12,7 @@ import javax.annotation.Resource;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -47,6 +48,24 @@ public class AdminController extends BaseController
 
     @Resource(name = "dictSchoolServiceImpl")
     private DictSchoolService dictSchoolService;
+    
+    /**
+     * 个人信息页面
+     * <功能详细描述>
+     * @param id
+     * @param model
+     * @return
+     * @see [类、类#方法、类#成员]
+     */
+    @RequestMapping(value = "/info", method = RequestMethod.GET)
+    public String info(Long id, ModelMap model)
+    {
+        Admin admin = adminService.getCurrent();
+        model.addAttribute("admin",admin);
+        model.addAttribute("menuId","Admin");
+        return "/console/admin/info";
+    }
+    
     
 
     /**
@@ -165,6 +184,7 @@ public class AdminController extends BaseController
         return "/console/admin/list";
     }
 
+    
     /**
      * 删除
      */

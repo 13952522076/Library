@@ -38,6 +38,9 @@ public class Mark extends BaseEntity
      */
     private int mark;
 
+    /** 评价 */
+    private String evaluation;
+
     public Book getBook()
     {
         return book;
@@ -66,6 +69,16 @@ public class Mark extends BaseEntity
     public void setMark(int mark)
     {
         this.mark = mark;
+    }
+
+    public String getEvaluation()
+    {
+        return evaluation;
+    }
+
+    public void setEvaluation(String evaluation)
+    {
+        this.evaluation = evaluation;
     }
 
 }

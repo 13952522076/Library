@@ -55,9 +55,6 @@ public class Book extends BaseEntity
     /** 藏书数 */
     private int count;
 
-    /** 管理员 */
-    private Set<Admin> admins = new HashSet<Admin>();
-
     public String getName()
     {
         return name;
@@ -138,24 +135,4 @@ public class Book extends BaseEntity
         this.count = count;
     }
 
-    /**
-     * 获取管理员
-     * 
-     * @return 管理员
-     */
-    @ManyToMany(mappedBy = "books", fetch = FetchType.LAZY)
-    public Set<Admin> getAdmins()
-    {
-        return admins;
-    }
-
-    /**
-     * 设置管理员
-     * 
-     * @param admins 管理员
-     */
-    public void setAdmins(Set<Admin> admins)
-    {
-        this.admins = admins;
-    }
 }

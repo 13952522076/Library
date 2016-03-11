@@ -70,9 +70,6 @@ public class Admin extends BaseEntity
     /** 用户头像 */
     private String iconPhoto;
     
-    /** 用户喜欢的书籍 */
-    private Set<Book> books = new HashSet<Book>();
- 
     /**
      * 获取用户名
      * 
@@ -277,19 +274,5 @@ public class Admin extends BaseEntity
     public void preRemove()
     {
     }
-
-    @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(name = "t_pe_admin_books")
-    public Set<Book> getBooks()
-    {
-        return books;
-    }
-
-    public void setBooks(Set<Book> books)
-    {
-        this.books = books;
-    }
-    
-    
 
 }
