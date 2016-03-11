@@ -59,13 +59,8 @@ public class AuthenticationRealm extends AuthorizingRealm
         AuthenticationToken authenticationToken = (AuthenticationToken) token;
         String username = authenticationToken.getUsername();
         String password = new String(authenticationToken.getPassword());
-        String captchaId = authenticationToken.getCaptchaId();
-        String captcha = authenticationToken.getCaptcha();
         String ip = authenticationToken.getHost();
-        if (!captchaService.isValid(CaptchaType.consoleLogin, captchaId, captcha))
-        {
-            throw new UnsupportedTokenException();
-        }
+        
         if (username != null && password != null)
         {
             Admin admin = adminService.findByUsername(username);
@@ -73,57 +68,12 @@ public class AuthenticationRealm extends AuthorizingRealm
             {
                 throw new UnknownAccountException();
             }
-            if (!admin.getIsEnabled())
+            if (!password.equals(admin.getPassword()))
             {
-                throw new DisabledAccountException();
-            }
-            Setting setting = SettingUtils.get();
-            if (admin.getIsLocked())
-            {
-                if (ArrayUtils.contains(setting.getAccountLockTypes(), AccountLockType.admin))
-                {
-                    int loginFailureLockTime = setting.getAccountLockTime();
-                    if (loginFailureLockTime == 0)
-                    {
-                        throw new LockedAccountException();
-                    }
-                    Date lockedDate = admin.getLockedDate();
-                    Date unlockDate = DateUtils.addMinutes(lockedDate, loginFailureLockTime);
-                    if (new Date().after(unlockDate))
-                    {
-                        admin.setLoginFailureCount(0);
-                        admin.setIsLocked(false);
-                        admin.setLockedDate(null);
-                        adminService.update(admin);
-                    }
-                    else
-                    {
-                        throw new LockedAccountException();
-                    }
-                }
-                else
-                {
-                    admin.setLoginFailureCount(0);
-                    admin.setIsLocked(false);
-                    admin.setLockedDate(null);
-                    adminService.update(admin);
-                }
-            }
-            if (!DigestUtils.md5Hex(password).equals(admin.getPassword()))
-            {
-                int loginFailureCount = admin.getLoginFailureCount() + 1;
-                if (loginFailureCount >= setting.getAccountLockCount())
-                {
-                    admin.setIsLocked(true);
-                    admin.setLockedDate(new Date());
-                }
-                admin.setLoginFailureCount(loginFailureCount);
-                adminService.update(admin);
                 throw new IncorrectCredentialsException();
             }
             admin.setLoginIp(ip);
             admin.setLoginDate(new Date());
-            admin.setLoginFailureCount(0);
             adminService.update(admin);
             return new SimpleAuthenticationInfo(new Principal(admin.getId(), username), password, getName());
         }

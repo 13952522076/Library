@@ -107,7 +107,7 @@
 		$captchaImage.click( function() {
 			$captchaImage.attr("src", "<%=base%>/console/common/captcha.ct?captchaId=<%=captchaId%>&timestamp=" + (new Date()).valueOf());
 		});
-		// 表单验证、记住用户名
+		// 表单验证
 		$loginForm.submit( function() {
 			if ($username.val() == "") {
 				$.message("warn", "<%=SpringUtils
