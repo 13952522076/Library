@@ -24,7 +24,7 @@
 <nav id="leftSideNavbar" class="navbar-default navbar-static-side navbar-background" role="navigation" style="overflow-y: visible;">
     <div class="sidebar-collapse">
         <ul class="nav" id="side-menu">
-            <li class="nav-header" style="width:200px;">
+            <li class="nav-header" style="width:180px;">
                 <div class="dropdown profile-element" style="margin-left: 20px;"> 
                 	<span>
                     	<img alt="image" class="img-circle" src="
@@ -63,7 +63,7 @@
             </li>
            	<!--  _____ 模块化导航 start_____-->
            	<!--个人信息管理 start-->
-             <li name="menu">
+         	<li name="menu">
                 <a href="index.html">
                    	<i class="fa fa-user"></i> 
                    	<span class="nav-label">${message("个人管理")}</span> 
@@ -76,6 +76,28 @@
                 </ul>
             </li>
             <!--个人管理 end -->
+            
+            <!--智能推荐 start-->
+            <li name="menu">
+                <a href="index.html">
+                   	<i class="fa fa-user"></i> 
+                   	<span class="nav-label">${message("智能推荐")}</span> 
+                   	<span class="fa arrow"></span>
+                </a>
+                <ul class="nav nav-second-level"> 
+					<li id="menu.Admin">
+						<a href="${base}/console/admin/info.ct?" >最热书籍</a>
+					</li>
+					<li id="menu.Admin">
+						<a href="${base}/console/admin/info.ct?" >相似同学</a>
+					</li>
+					<li id="menu.Admin">
+						<a href="${base}/console/admin/info.ct?" >历史推荐</a>
+					</li>
+                </ul>
+            </li>
+            <!--智能推荐 end  -->
+            
             <!--图书管理 start-->
              <li name="menu">
                 <a href="index.html">

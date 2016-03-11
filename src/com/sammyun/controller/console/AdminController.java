@@ -5,9 +5,12 @@
  */
 package com.sammyun.controller.console;
 
+import java.io.IOException;
 import java.util.HashSet;
+import java.util.Set;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang.StringUtils;
@@ -24,10 +27,13 @@ import com.sammyun.Pageable;
 import com.sammyun.entity.Admin;
 import com.sammyun.entity.BaseEntity.Save;
 import com.sammyun.entity.Role;
+import com.sammyun.entity.dict.DictClass;
 import com.sammyun.entity.dict.DictSchool;
+import com.sammyun.entity.dict.DictStudent;
 import com.sammyun.service.AdminService;
 import com.sammyun.service.RoleService;
 import com.sammyun.service.dict.DictSchoolService;
+import com.sammyun.util.JsonUtils;
 
 /**
  * Controller - 管理员
@@ -199,5 +205,33 @@ public class AdminController extends BaseController
         adminService.delete(ids);
         return SUCCESS_MESSAGE;
     }
+    
+    /**
+     * ajax修改用户名，邮箱 <功能详细描述>
+     * 
+     * @param dictClassId
+     * @param response
+     * @see [类、类#方法、类#成员]
+     */
+    @RequestMapping(value = "/editInfo", method = RequestMethod.GET)
+    public void editInfo(Long id,String name,String email, HttpServletResponse response)
+    {   
+        Admin admin = adminService.find(id);
+        admin.setName(name);
+        admin.setEmail(email);
+        adminService.update(admin);
+        try
+        {
+            response.setContentType("text/html; charset=UTF-8");
+            JsonUtils.writeValue(response.getWriter(), "success");
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
+    
+    
+    
 
 }
