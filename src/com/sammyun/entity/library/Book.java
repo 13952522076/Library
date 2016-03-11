@@ -1,18 +1,17 @@
 package com.sammyun.entity.library;
 
 import java.sql.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.ManyToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.sammyun.entity.Admin;
 import com.sammyun.entity.BaseEntity;
-import com.sammyun.entity.dict.DictSchool;
 
 /**
  * 图书
@@ -30,58 +29,34 @@ public class Book extends BaseEntity
      */
     private static final long serialVersionUID = -2798028155336348301L;
 
-    // 1 bookname varchar 50 书名 No
-    // 2 bannercode char 13 条形码 No
-    // 3 kindnumber varchar 8 分类号 No
-    // 4 kindname varchar 30 分类名 No
-    // 5 Positionnumber varchar 8 排架号 No
-    // 6 Publishingcompany varchar 20 出版社 No
-    // 7 publishtime Datetime 8 出版日期 No
-    // 8 putintime Datetime 8 入库日期 No
-    // 9 Price float 价格 No
-    // 10 State Char 4 目前状态 No
-    // 11 Introduction varchar 200 简介 No
-    // 12 Author varchar 30 作者 No
-
     /**
      * 书名
      */
     private String name;
 
-    /**
-     * 作者
-     */
+    /** 作者 */
     private String author;
 
-    /**
-     * 出版日期
-     */
+    /** 出版日期 */
     private Date publishDate;
 
-    /**
-     * 入库日期
-     */
+    /** 入库日期 */
     private Date putingDate;
 
-    /**
-     * 价格
-     */
+    /** 价格 */
     private Double price;
 
-    /**
-     * 出版社
-     */
+    /** 出版社 */
     private String publishCompany;
 
-    /**
-     * 简介
-     */
+    /** 简介 */
     private String description;
 
-    /**
-     * 藏书数
-     */
+    /** 藏书数 */
     private int count;
+
+    /** 管理员 */
+    private Set<Admin> admins = new HashSet<Admin>();
 
     public String getName()
     {
@@ -163,4 +138,24 @@ public class Book extends BaseEntity
         this.count = count;
     }
 
+    /**
+     * 获取管理员
+     * 
+     * @return 管理员
+     */
+    @ManyToMany(mappedBy = "books", fetch = FetchType.LAZY)
+    public Set<Admin> getAdmins()
+    {
+        return admins;
+    }
+
+    /**
+     * 设置管理员
+     * 
+     * @param admins 管理员
+     */
+    public void setAdmins(Set<Admin> admins)
+    {
+        this.admins = admins;
+    }
 }

@@ -30,6 +30,7 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.sammyun.entity.dict.DictSchool;
+import com.sammyun.entity.library.Book;
 
 /**
  * Entity - 管理员
@@ -69,8 +70,9 @@ public class Admin extends BaseEntity
     /** 用户头像 */
     private String iconPhoto;
     
-    
-
+    /** 用户喜欢的书籍 */
+    private Set<Book> books = new HashSet<Book>();
+ 
     /**
      * 获取用户名
      * 
@@ -275,5 +277,19 @@ public class Admin extends BaseEntity
     public void preRemove()
     {
     }
+
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(name = "t_pe_admin_books")
+    public Set<Book> getBooks()
+    {
+        return books;
+    }
+
+    public void setBooks(Set<Book> books)
+    {
+        this.books = books;
+    }
+    
+    
 
 }
