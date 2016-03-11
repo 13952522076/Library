@@ -20,7 +20,7 @@ import com.sammyun.service.AreaService;
 /**
  * Service - 地区
  * 
- * @author Sencloud Team
+
 
  */
 @Service("areaServiceImpl")

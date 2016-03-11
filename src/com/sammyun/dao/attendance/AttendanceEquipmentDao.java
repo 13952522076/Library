@@ -11,7 +11,7 @@ import com.sammyun.entity.attendance.AttendanceEquipment;
 /**
  * Dao - 考勤机
  * 
- * @author Sencloud Team
+
 
  */
 public interface AttendanceEquipmentDao extends BaseDao<AttendanceEquipment, Long>

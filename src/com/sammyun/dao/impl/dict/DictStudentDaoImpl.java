@@ -25,7 +25,7 @@ import com.sammyun.entity.dict.DictStudent;
 /**
  * DictStudent * DaoImpl - 学生
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("dictStudentDaoImpl")

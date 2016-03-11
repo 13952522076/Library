@@ -34,7 +34,7 @@ import com.sammyun.util.FreemarkerUtils;
 /**
  * Service - 静态化
  * 
- * @author Sencloud Team
+
 
  */
 @Service("staticServiceImpl")

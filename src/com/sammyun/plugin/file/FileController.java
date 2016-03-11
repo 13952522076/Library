@@ -21,7 +21,7 @@ import com.sammyun.service.PluginConfigService;
 /**
  * Controller - 本地文件存储
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminPluginFileController")

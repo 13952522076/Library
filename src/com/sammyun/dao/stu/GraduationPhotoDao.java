@@ -7,7 +7,7 @@ import com.sammyun.entity.stu.GraduationPhoto;
 /**
  * GraduationPhoto * Dao - 毕业合影
  * 
- * @author Sencloud Team
+
 
  */
 public interface GraduationPhotoDao extends BaseDao<GraduationPhoto, Long>

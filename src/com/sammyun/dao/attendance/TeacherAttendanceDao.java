@@ -13,7 +13,7 @@ import com.sammyun.entity.attendance.TeacherAttendance;
 /**
  * Dao - 教师考勤
  * 
- * @author Sencloud Team
+
 
  */
 public interface TeacherAttendanceDao extends BaseDao<TeacherAttendance, Long>

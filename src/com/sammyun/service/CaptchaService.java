@@ -13,7 +13,7 @@ import com.sammyun.Setting.CaptchaType;
 /**
  * Service - 验证码
  * 
- * @author Sencloud Team
+
 
  */
 public interface CaptchaService {

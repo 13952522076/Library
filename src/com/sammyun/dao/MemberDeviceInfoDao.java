@@ -13,7 +13,7 @@ import com.sammyun.entity.MemberDeviceInfo;
 /**
  * Dao - 会员设备信息列表
  * 
- * @author Sencloud Team
+
 
  */
 public interface MemberDeviceInfoDao extends BaseDao<MemberDeviceInfo, Long>

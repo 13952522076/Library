@@ -26,7 +26,7 @@ import com.sammyun.service.system.SystemDictService;
 /**
  * Listener - 初始化
  * 
- * @author Sencloud Team
+
 
  */
 @Component("initListener")

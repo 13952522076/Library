@@ -20,7 +20,7 @@ import com.sammyun.entity.dict.DictStudent;
 /**
  * Dao - 考勤
  * 
- * @author Sencloud Team
+
 
  */
 public interface AttendanceDao extends BaseDao<Attendance, Long>

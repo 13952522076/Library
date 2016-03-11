@@ -10,7 +10,7 @@ import com.sammyun.service.BaseService;
 /**
  * NewsCategory * Service - 新闻类别
  * 
- * @author Sencloud Team
+
 
  */
 public interface NewsCategoryService extends BaseService<NewsCategory, Long> 

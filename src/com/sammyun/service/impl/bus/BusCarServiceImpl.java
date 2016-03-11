@@ -13,7 +13,7 @@ import com.sammyun.entity.bus.BusCar;
 /**
  * BusCar * ServiceImpl - 车辆数据
  * 
- * @author Sencloud Team
+
 
  */
 @Service("busCarServiceImpl")

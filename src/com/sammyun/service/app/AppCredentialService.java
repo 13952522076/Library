@@ -6,7 +6,7 @@ import com.sammyun.service.BaseService;
 /**
  * Service - 应用API授权
  * 
- * @author Sencloud Team
+
 
  */
 public interface AppCredentialService extends BaseService<AppCredential, Long>

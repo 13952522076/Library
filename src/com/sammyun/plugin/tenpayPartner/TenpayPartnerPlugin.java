@@ -29,7 +29,7 @@ import com.sammyun.plugin.PaymentPlugin;
 /**
  * Plugin - 财付通(担保交易)
  * 
- * @author Sencloud Team
+
 
  */
 @Component("tenpayPartnerPlugin")

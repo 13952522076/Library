@@ -8,7 +8,7 @@ import com.sammyun.entity.message.MessageHistory;
 /**
  * MessageHistory * DaoImpl - 消息历史
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("messageHistoryDaoImpl")

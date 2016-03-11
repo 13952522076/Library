@@ -6,7 +6,7 @@ import com.sammyun.service.BaseService;
 /**
  * AtUser * Service - 成长记AT用户
  * 
- * @author Sencloud Team
+
 
  */
 public interface AtUserService extends BaseService<AtUser, Long>

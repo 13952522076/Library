@@ -20,7 +20,7 @@ import com.sammyun.entity.dict.DictStudent;
 /**
  * Entity - 学生考勤
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

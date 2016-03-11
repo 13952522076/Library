@@ -8,7 +8,7 @@ import com.sammyun.entity.bus.BusDirection;
 /**
  * BusDirection * DaoImpl - 线路方向数据
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("busDirectionDaoImpl")

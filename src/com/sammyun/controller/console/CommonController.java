@@ -42,7 +42,7 @@ import com.sammyun.service.message.MessageService;
 /**
  * Controller - 共用
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminCommonController")

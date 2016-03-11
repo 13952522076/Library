@@ -21,7 +21,7 @@ import com.sun.istack.internal.NotNull;
 /**
  * Entity - 学生食谱
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

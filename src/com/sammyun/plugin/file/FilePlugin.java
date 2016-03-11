@@ -25,7 +25,7 @@ import com.sammyun.util.SettingUtils;
 /**
  * Plugin - 本地文件存储
  * 
- * @author Sencloud Team
+
 
  */
 @Component("filePlugin")

@@ -15,7 +15,7 @@ import com.sammyun.service.stu.MeritTemplateService;
 /**
  * Service   - 评价等级模板
  * 
- * @author Sencloud Team
+
 
  */
 @Service("meritTemplateServiceImpl")

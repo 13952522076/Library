@@ -17,7 +17,7 @@ import com.sammyun.entity.attendance.TeacherAskLeave;
 /**
  * DaoImpl - 教师请假
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("teacherAskLeaveDaoImpl")

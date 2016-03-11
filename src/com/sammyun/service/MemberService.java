@@ -17,7 +17,7 @@ import com.sammyun.entity.dict.DictSchool;
 /**
  * Service - 会员
  * 
- * @author Sencloud Team
+
 
  */
 public interface MemberService extends BaseService<Member, Long>

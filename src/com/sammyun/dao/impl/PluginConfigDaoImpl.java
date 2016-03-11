@@ -16,7 +16,7 @@ import com.sammyun.entity.PluginConfig;
 /**
  * Dao - 插件配置
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("pluginConfigDaoImpl")

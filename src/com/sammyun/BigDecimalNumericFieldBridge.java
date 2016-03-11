@@ -14,7 +14,7 @@ import org.hibernate.search.bridge.builtin.NumericFieldBridge;
 /**
  * BigDecimal类型转换
  * 
- * @author Sencloud Team
+
 
  */
 public class BigDecimalNumericFieldBridge extends NumericFieldBridge

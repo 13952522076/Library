@@ -9,7 +9,7 @@ import com.sammyun.service.BaseService;
 /**
  * Service - 排班管理
  * 
- * @author Sencloud Team
+
 
  */
 public interface WorkSchedulingService  extends BaseService<WorkScheduling, Long>

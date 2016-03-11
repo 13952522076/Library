@@ -24,7 +24,7 @@ import com.sammyun.util.WebUtils;
 /**
  * Plugin - 易宝支付
  * 
- * @author Sencloud Team
+
 
  */
 @Component("yeepayPlugin")

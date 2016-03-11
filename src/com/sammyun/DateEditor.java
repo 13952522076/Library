@@ -15,7 +15,7 @@ import org.apache.commons.lang.time.DateUtils;
 /**
  * 日期类型转换
  * 
- * @author Sencloud Team
+
 
  */
 public class DateEditor extends PropertyEditorSupport

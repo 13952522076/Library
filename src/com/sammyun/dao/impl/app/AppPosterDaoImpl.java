@@ -17,7 +17,7 @@ import com.sammyun.entity.app.AppPoster.OperatingSystem;
 /**
  * Poster * DaoImpl - 应用超市海报
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("appPosterDaoImpl")

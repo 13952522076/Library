@@ -15,7 +15,7 @@ import com.sammyun.entity.BaseEntity;
 /**
  * DictDeviceModel * Entity - 设备数据字典
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

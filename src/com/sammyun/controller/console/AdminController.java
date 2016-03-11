@@ -31,7 +31,7 @@ import com.sammyun.service.dict.DictSchoolService;
 /**
  * Controller - 管理员
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminAdminController")

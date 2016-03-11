@@ -17,7 +17,7 @@ import com.sammyun.entity.Seo.Type;
 /**
  * Dao - SEO设置
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("seoDaoImpl")

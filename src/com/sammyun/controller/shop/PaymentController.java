@@ -47,7 +47,7 @@ import com.sammyun.util.SpringUtils;
 /**
  * Controller - 支付
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("shopPaymentController")

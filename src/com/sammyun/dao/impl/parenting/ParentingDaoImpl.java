@@ -26,7 +26,7 @@ import com.sammyun.entity.parenting.ParentingCategory;
 /**
  * Parenting * DaoImpl - 育儿数据
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("parentingDaoImpl")

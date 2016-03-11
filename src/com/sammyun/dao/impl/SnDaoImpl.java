@@ -27,7 +27,7 @@ import freemarker.template.TemplateException;
 /**
  * Dao - 序列号
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("snDaoImpl")

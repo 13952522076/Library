@@ -17,7 +17,7 @@ import com.sammyun.entity.recipe.RecipeWeekDay;
 /**
  * Bound * DaoImpl - 学生食谱详情
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("recipesDetailDaoImpl")

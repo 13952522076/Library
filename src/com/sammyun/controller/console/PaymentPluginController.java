@@ -18,7 +18,7 @@ import com.sammyun.service.PluginService;
 /**
  * Controller - 支付插件
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminPaymentPluginController")

@@ -25,7 +25,7 @@ import com.sammyun.util.SettingUtils;
 /**
  * Plugin - 支付宝(纯网关)
  * 
- * @author Sencloud Team
+
 
  */
 @Component("alipayBankPlugin")

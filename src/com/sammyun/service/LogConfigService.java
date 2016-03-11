@@ -13,7 +13,7 @@ import com.sammyun.LogConfig;
 /**
  * Service - 日志配置
  * 
- * @author Sencloud Team
+
 
  */
 public interface LogConfigService {

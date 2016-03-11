@@ -14,7 +14,7 @@ import com.sammyun.entity.stu.FamilAlbum;
 /**
  * FamilAlbum * DaoImpl - 全家福
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("familAlbumDaoImpl")

@@ -9,7 +9,7 @@ import com.sammyun.service.BaseService;
 /**
  * CampusviewImg * Service - 校园风光表
  * 
- * @author Sencloud Team
+
 
  */
 

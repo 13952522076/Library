@@ -27,7 +27,7 @@ import com.sammyun.service.PluginConfigService;
 /**
  * Controller - 易宝支付
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminYeepayController")

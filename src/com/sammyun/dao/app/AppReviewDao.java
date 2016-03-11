@@ -8,7 +8,7 @@ import com.sammyun.entity.app.AppReview;
 /**
  * AppReview Dao - 应用评论
  * 
- * @author Sencloud Team
+
 
  */
 public interface AppReviewDao extends BaseDao<AppReview, Long>{

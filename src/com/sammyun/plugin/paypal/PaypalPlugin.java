@@ -22,7 +22,7 @@ import com.sammyun.plugin.PaymentPlugin;
 /**
  * Plugin - Paypal
  * 
- * @author Sencloud Team
+
 
  */
 @Component("paypalPlugin")

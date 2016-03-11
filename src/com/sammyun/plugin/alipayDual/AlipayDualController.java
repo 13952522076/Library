@@ -27,7 +27,7 @@ import com.sammyun.service.PluginConfigService;
 /**
  * Controller - 支付宝(双接口)
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminAlipayDualController")

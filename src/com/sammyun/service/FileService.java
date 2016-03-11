@@ -16,7 +16,7 @@ import com.sammyun.FileInfo.OrderType;
 /**
  * Service - 文件
  * 
- * @author Sencloud Team
+
 
  */
 public interface FileService {

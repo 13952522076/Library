@@ -15,7 +15,7 @@ import com.sammyun.entity.BaseEntity;
 /**
  * Listener - 创建日期、修改日期处理
  * 
- * @author Sencloud Team
+
 
  */
 public class EntityListener

@@ -10,7 +10,7 @@ import java.io.Serializable;
 /**
  * 日志配置
  * 
- * @author Sencloud Team
+
 
  */
 public class LogConfig implements Serializable

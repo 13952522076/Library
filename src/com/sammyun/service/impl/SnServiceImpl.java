@@ -17,7 +17,7 @@ import com.sammyun.service.SnService;
 /**
  * Service - 序列号
  * 
- * @author Sencloud Team
+
 
  */
 @Service("snServiceImpl")

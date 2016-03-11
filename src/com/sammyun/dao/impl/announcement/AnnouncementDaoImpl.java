@@ -22,7 +22,7 @@ import com.sammyun.entity.dict.DictSchool;
 /**
  * DaoImpl - 通知公告数据
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("announcementDaoImpl")

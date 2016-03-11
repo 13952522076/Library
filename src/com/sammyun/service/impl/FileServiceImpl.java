@@ -40,7 +40,7 @@ import com.sammyun.util.SettingUtils;
 /**
  * Service - 文件
  * 
- * @author Sencloud Team
+
 
  */
 @Service("fileServiceImpl")

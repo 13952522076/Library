@@ -23,7 +23,7 @@ import org.springframework.web.servlet.LocaleResolver;
 /**
  * Utils - Spring
  * 
- * @author Sencloud Team
+
 
  */
 @Component("springUtils")

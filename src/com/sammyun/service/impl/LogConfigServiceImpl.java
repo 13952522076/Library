@@ -22,7 +22,7 @@ import com.sammyun.service.LogConfigService;
 /**
  * Service - 日志配置
  * 
- * @author Sencloud Team
+
 
  */
 @Service("logConfigServiceImpl")

@@ -16,7 +16,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
 /**
  * Service - 应用角色
  * 
- * @author Sencloud Team
+
 
  */
 @Service("appRoleServiceImpl")

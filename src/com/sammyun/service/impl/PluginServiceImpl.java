@@ -25,7 +25,7 @@ import com.sammyun.service.PluginService;
 /**
  * Service - 插件
  * 
- * @author Sencloud Team
+
 
  */
 @Service("pluginServiceImpl")

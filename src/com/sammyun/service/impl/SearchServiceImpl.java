@@ -21,7 +21,7 @@ import com.sammyun.service.SearchService;
 /**
  * Service - 搜索
  * 
- * @author Sencloud Team
+
 
  */
 @Service("searchServiceImpl")

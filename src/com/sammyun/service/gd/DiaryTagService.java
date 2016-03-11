@@ -8,7 +8,7 @@ import com.sammyun.service.BaseService;
 /**
  * DiaryTag * Service - 成长记标签
  * 
- * @author Sencloud Team
+
 
  */
 public interface DiaryTagService extends BaseService<DiaryTag, Long>

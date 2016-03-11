@@ -13,7 +13,7 @@ import com.sammyun.entity.dict.DictClientVer;
 /**
  * DictClientVer * ServiceImpl - 客户端版本号数据字典
  * 
- * @author Sencloud Team
+
 
  */
 @Service("dictClientVerServiceImpl")

@@ -18,7 +18,7 @@ import com.sammyun.entity.stu.MeritTemplate;
 /**
  * MeritTemplate * DaoImpl - 评价等级模板
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("meritTemplateDaoImpl")

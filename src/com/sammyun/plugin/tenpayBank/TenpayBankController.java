@@ -27,7 +27,7 @@ import com.sammyun.service.PluginConfigService;
 /**
  * Controller - 财付通(网银直连)
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminTenpayBankController")

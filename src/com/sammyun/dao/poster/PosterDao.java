@@ -11,7 +11,7 @@ import com.sammyun.entity.poster.Poster.PosterPosition;
 /**
  * Poster * Dao - 海报
  * 
- * @author Sencloud Team
+
 
  */
 public interface PosterDao extends BaseDao<Poster, Long> {

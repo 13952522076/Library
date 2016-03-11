@@ -16,7 +16,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
 /**
  * DiaryAgree * ServiceImpl -
  * 
- * @author Sencloud Team
+
 
  */
 @Service("diaryAgreeServiceImpl")

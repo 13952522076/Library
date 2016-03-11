@@ -13,7 +13,7 @@ import com.sammyun.entity.BaseEntity;
 /**
  *  Entity - 校区
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

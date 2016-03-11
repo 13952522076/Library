@@ -15,7 +15,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
 /**
  * CampusviewImg * ServiceImpl - 校园风光表
  * 
- * @author Sencloud Team
+
 
  */
 

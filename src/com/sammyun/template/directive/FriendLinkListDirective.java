@@ -26,7 +26,7 @@ import freemarker.template.TemplateModel;
 /**
  * 模板指令 - 友情链接列表
  * 
- * @author Sencloud Team
+
 
  */
 @Component("friendLinkListDirective")

@@ -23,7 +23,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 /**
  * Entity - 属性
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

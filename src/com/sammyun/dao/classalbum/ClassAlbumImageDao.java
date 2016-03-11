@@ -12,7 +12,7 @@ import com.sammyun.entity.dict.DictSchool;
 /**
  * ClassAlbumImage * Dao - 班级相册
  * 
- * @author Sencloud Team
+
 
  */
 

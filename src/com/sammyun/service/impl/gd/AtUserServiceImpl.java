@@ -12,7 +12,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
 /**
  * AtUser * ServiceImpl -
  * 
- * @author Sencloud Team
+
 
  */
 @Service("atUserServiceImpl")

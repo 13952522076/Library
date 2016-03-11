@@ -12,7 +12,7 @@ import com.sammyun.entity.Payment;
 /**
  * Dao - 收款单
  * 
- * @author Sencloud Team
+
 
  */
 public interface PaymentDao extends BaseDao<Payment, Long>

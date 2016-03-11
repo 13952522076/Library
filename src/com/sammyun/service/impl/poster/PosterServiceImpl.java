@@ -18,7 +18,7 @@ import com.sammyun.entity.poster.Poster.PosterPosition;
 /**
  * Poster * ServiceImpl - 海报
  * 
- * @author Sencloud Team
+
 
  */
 @Service("posterServiceImpl")

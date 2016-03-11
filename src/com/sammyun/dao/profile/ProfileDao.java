@@ -7,7 +7,7 @@ import com.sammyun.entity.profile.Profile;
 /**
  * Profiles * Dao - 学校概况数据
  * 
- * @author Sencloud Team
+
 
  */
 public interface ProfileDao extends BaseDao<Profile, Long> {

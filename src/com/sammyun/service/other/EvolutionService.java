@@ -6,7 +6,7 @@ import com.sammyun.entity.other.Evolution;
 /**
  * Evolution * Service - 
  * 
- * @author Sencloud Team
+
 
  */
 public interface EvolutionService extends BaseService<Evolution, Long> {

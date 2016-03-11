@@ -26,7 +26,7 @@ import com.sammyun.service.PluginConfigService;
 /**
  * Controller - FTP
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminPluginFtpController")

@@ -15,7 +15,7 @@ import com.sammyun.entity.dict.DictStudent;
 /**
  * DaoImpl - 请假
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("askLeaveDaoImpl")

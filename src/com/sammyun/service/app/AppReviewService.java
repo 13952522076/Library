@@ -8,7 +8,7 @@ import com.sammyun.service.BaseService;
 /**
  * AppReview Service - 应用评论
  * 
- * @author Sencloud Team
+
 
  */
 public interface AppReviewService extends BaseService<AppReview, Long>{

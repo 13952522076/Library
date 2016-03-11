@@ -23,7 +23,7 @@ import freemarker.template.TemplateModelException;
 /**
  * Service - 缓存
  * 
- * @author Sencloud Team
+
 
  */
 @Service("cacheServiceImpl")

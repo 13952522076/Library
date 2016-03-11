@@ -22,7 +22,7 @@ import org.hibernate.validator.constraints.NotEmpty;
 /**
  * Entity - 会员注册项
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

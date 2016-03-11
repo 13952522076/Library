@@ -8,7 +8,7 @@ import com.sammyun.entity.dict.DictCourseName;
 /**
  * DictCourseName * DaoImpl - 课程名称字典表
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("dictCourseNameDaoImpl")

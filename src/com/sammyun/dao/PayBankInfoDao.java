@@ -12,7 +12,7 @@ import com.sammyun.entity.PayBankInfo;
 /**
  * Dao - 网银支付银行列表
  * 
- * @author Sencloud Team
+
 
  */
 public interface PayBankInfoDao extends BaseDao<PayBankInfo, Long>

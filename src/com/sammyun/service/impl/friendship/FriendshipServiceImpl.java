@@ -19,7 +19,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
 /**
  * Friendship * ServiceImpl - 
  * 
- * @author Sencloud Team
+
 
  */
 @Service("friendshipServiceImpl")

@@ -11,7 +11,7 @@ import com.sammyun.service.BaseService;
 /**
  * Poster * Service - 海报
  * 
- * @author Sencloud Team
+
 
  */
 public interface PosterService extends BaseService<Poster, Long> {

@@ -19,7 +19,7 @@ import com.sammyun.entity.Payment;
 /**
  * Dao - 收款单
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("paymentDaoImpl")

@@ -16,7 +16,7 @@ import com.sammyun.service.parenting.ParentingCategoryService;
 /**
  * ParentingCategory * ServiceImpl - 育儿类别
  * 
- * @author Sencloud Team
+
 
  */
 @Service("parentingCategoryServiceImpl")

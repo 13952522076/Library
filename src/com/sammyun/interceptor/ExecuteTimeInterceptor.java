@@ -17,7 +17,7 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 /**
  * Interceptor - 执行时间
  * 
- * @author Sencloud Team
+
 
  */
 public class ExecuteTimeInterceptor extends HandlerInterceptorAdapter {

@@ -9,7 +9,7 @@ import com.sammyun.entity.app.AppCredential;
 /**
  * DaoImpl - 应用API授权
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("appCredentialDaoImpl")

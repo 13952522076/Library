@@ -16,7 +16,7 @@ import com.sammyun.entity.stu.HealthFile;
 /**
  * HealthFile * DaoImpl - 健康档案
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("healthFileDaoImpl")

@@ -17,7 +17,7 @@ import com.sammyun.service.PluginConfigService;
 /**
  * Service - 插件配置
  * 
- * @author Sencloud Team
+
 
  */
 @Service("pluginConfigServiceImpl")

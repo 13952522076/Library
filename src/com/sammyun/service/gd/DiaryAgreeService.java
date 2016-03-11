@@ -10,7 +10,7 @@ import com.sammyun.service.BaseService;
 /**
  * DiaryAgree * Service - 成长记点赞
  * 
- * @author Sencloud Team
+
 
  */
 public interface DiaryAgreeService extends BaseService<DiaryAgree, Long>

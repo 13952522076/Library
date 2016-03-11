@@ -19,7 +19,7 @@ import freemarker.template.TemplateModelException;
 /**
  * 模板方法 - 多语言
  * 
- * @author Sencloud Team
+
 
  */
 @Component("messageMethod")

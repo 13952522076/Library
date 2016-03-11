@@ -19,7 +19,7 @@ import com.sammyun.entity.attendance.TeacherAttendanceDetail;
 /**
  * DaoImpl - 教师考情详情
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("teacherAttendanceDetailDaoImpl")

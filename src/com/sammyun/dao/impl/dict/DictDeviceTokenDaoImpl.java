@@ -8,7 +8,7 @@ import com.sammyun.entity.dict.DictDeviceToken;
 /**
  * DictDeviceToken * DaoImpl - 设备凭证数据字典
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("dictDeviceTokenDaoImpl")

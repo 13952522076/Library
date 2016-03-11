@@ -10,7 +10,7 @@ import com.sammyun.service.BaseService;
 /**
  * JsonFamilyMap * Service - 家庭的JSON信息
  * 
- * @author Sencloud Team
+
 
  */
 public interface JsonFamilyMapService extends BaseService<JsonFamilyMap, Long> 

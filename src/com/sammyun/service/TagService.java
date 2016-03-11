@@ -17,7 +17,7 @@ import com.sammyun.entity.Tag.Type;
 /**
  * Service - 标签
  * 
- * @author Sencloud Team
+
 
  */
 public interface TagService extends BaseService<Tag, Long> {

@@ -13,7 +13,7 @@ import com.sammyun.service.profile.ProfileService;
 /**
  * ServiceImpl - 学校概况数据
  * 
- * @author Sencloud Team
+
 
  */
 @Service("profileServiceImpl")

@@ -10,7 +10,7 @@ import java.util.Date;
 /**
  * 文件信息
  * 
- * @author Sencloud Team
+
 
  */
 public class FileInfo

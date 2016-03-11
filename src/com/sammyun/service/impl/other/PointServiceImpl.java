@@ -13,7 +13,7 @@ import com.sammyun.entity.other.Point;
 /**
  * Point * ServiceImpl - 用户积分
  * 
- * @author Sencloud Team
+
 
  */
 @Service("pointServiceImpl")

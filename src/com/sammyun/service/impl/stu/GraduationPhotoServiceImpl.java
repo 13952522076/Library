@@ -13,7 +13,7 @@ import com.sammyun.service.stu.GraduationPhotoService;
 /**
  * ServiceImpl - 毕业合影
  * 
- * @author Sencloud Team
+
 
  */
 @Service("graduationPhotoServiceImpl")

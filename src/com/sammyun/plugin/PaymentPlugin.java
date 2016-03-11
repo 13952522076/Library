@@ -51,7 +51,7 @@ import com.sammyun.util.SettingUtils;
 /**
  * Plugin - 支付
  * 
- * @author Sencloud Team
+
 
  */
 public abstract class PaymentPlugin implements Comparable<PaymentPlugin>

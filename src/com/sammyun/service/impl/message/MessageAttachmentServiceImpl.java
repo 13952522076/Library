@@ -13,7 +13,7 @@ import com.sammyun.entity.message.MessageAttachment;
 /**
  * MessageAttachment * ServiceImpl - 消息附件
  * 
- * @author Sencloud Team
+
 
  */
 @Service("messageAttachmentServiceImpl")

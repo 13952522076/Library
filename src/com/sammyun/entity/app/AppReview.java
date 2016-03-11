@@ -20,7 +20,7 @@ import com.sammyun.entity.Member;
 /**
  * Entity - 应用评论
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

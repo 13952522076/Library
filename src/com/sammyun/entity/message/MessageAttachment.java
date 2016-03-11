@@ -9,7 +9,7 @@ import com.sammyun.entity.BaseEntity;
 /**
  * MessageAttachment * Entity - 消息附件
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

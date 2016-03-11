@@ -13,7 +13,7 @@ import com.sammyun.entity.recipe.Recipe;
 /**
  * Recipes * Dao - 学生食谱
  * 
- * @author Sencloud Team
+
 
  */
 public interface RecipeDao extends BaseDao<Recipe, Long>

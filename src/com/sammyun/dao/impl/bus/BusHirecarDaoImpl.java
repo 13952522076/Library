@@ -8,7 +8,7 @@ import com.sammyun.entity.bus.BusHirecar;
 /**
  * BusHirecar * DaoImpl - 租车预约数据
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("busHirecarDaoImpl")

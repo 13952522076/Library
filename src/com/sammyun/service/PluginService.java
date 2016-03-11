@@ -14,7 +14,7 @@ import com.sammyun.plugin.StoragePlugin;
 /**
  * Service - 插件
  * 
- * @author Sencloud Team
+
 
  */
 public interface PluginService

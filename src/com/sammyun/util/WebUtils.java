@@ -24,7 +24,7 @@ import com.sammyun.Setting;
 /**
  * Utils - Web
  * 
- * @author Sencloud Team
+
 
  */
 public final class WebUtils

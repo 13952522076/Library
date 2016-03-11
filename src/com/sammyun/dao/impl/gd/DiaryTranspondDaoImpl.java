@@ -19,7 +19,7 @@ import com.sammyun.entity.gd.GrowthDiary;
 /**
  * DiaryTranspond * DaoImpl - 成长记转发
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("diaryTranspondDaoImpl")

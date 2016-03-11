@@ -12,7 +12,7 @@ import com.sammyun.entity.BaseEntity;
 /**
  * Entity - 设备凭证数据字典
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

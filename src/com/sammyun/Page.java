@@ -15,7 +15,7 @@ import com.sammyun.Order.Direction;
 /**
  * 分页
  * 
- * @author Sencloud Team
+
 
  */
 public class Page<T> implements Serializable

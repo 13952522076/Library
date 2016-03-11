@@ -16,7 +16,7 @@ import com.sammyun.service.stu.HealthFileService;
 /**
  * ServiceImpl - 健康档案
  * 
- * @author Sencloud Team
+
 
  */
 @Service("healthFileServiceImpl")

@@ -26,7 +26,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
 /**
  * PatriarchStudentMap * ServiceImpl - 学生家长对应列表
  * 
- * @author Sencloud Team
+
 
  */
 @Service("patriarchStudentMapServiceImpl")

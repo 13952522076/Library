@@ -14,7 +14,7 @@ import com.sammyun.service.BaseService;
 /**
  * Service - 通知公告数据
  * 
- * @author Sencloud Team
+
 
  */
 public interface AnnouncementService extends BaseService<Announcement, Long>

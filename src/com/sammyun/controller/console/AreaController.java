@@ -23,7 +23,7 @@ import com.sammyun.service.AreaService;
 /**
  * Controller - 地区
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminAreaController")

@@ -9,7 +9,7 @@ import com.sammyun.entity.recipe.RecipeWeekDay;
 /**
  * Dao - 学生食谱周信息
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("recipeWeekDayDaoImpl")

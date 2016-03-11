@@ -43,7 +43,7 @@ import com.sun.mail.smtp.SMTPSenderFailedException;
 /**
  * Controller - 系统设置
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminstingController")

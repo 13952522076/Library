@@ -21,7 +21,7 @@ import com.sammyun.entity.FriendLink.Type;
 /**
  * Dao - 友情链接
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("friendLinkDaoImpl")

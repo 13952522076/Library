@@ -14,7 +14,7 @@ import com.sammyun.service.BaseService;
 /**
  * ClassAlbumImage * Service - 班级相册
  * 
- * @author Sencloud Team
+
 
  */
 public interface ClassAlbumImageAttachService extends BaseService<ClassAlbumImageAttach, Long> 

@@ -18,7 +18,7 @@ import com.sammyun.entity.Area;
 /**
  * Dao - 地区
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("areaDaoImpl")

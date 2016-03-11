@@ -27,7 +27,7 @@ import com.sammyun.service.PluginConfigService;
 /**
  * Controller - 快钱支付
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminPay99billController")

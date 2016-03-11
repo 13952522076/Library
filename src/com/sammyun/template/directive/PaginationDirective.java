@@ -23,7 +23,7 @@ import freemarker.template.TemplateModel;
 /**
  * 模板指令 - 分页
  * 
- * @author Sencloud Team
+
 
  */
 @Component("paginationDirective")

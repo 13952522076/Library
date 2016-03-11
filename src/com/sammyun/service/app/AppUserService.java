@@ -11,7 +11,7 @@ import com.sammyun.service.BaseService;
 /**
  * Service - 用户应用
  * 
- * @author Sencloud Team
+
 
  */
 public interface AppUserService extends BaseService<AppUser, Long>

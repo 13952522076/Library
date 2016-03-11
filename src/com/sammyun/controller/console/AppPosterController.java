@@ -35,7 +35,7 @@ import com.sammyun.util.JsonUtils;
 /**
  * Controller - 应用超市海报
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("appPosterController")

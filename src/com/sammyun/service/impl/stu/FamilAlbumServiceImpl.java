@@ -15,7 +15,7 @@ import com.sammyun.service.stu.FamilAlbumService;
 /**
  * ServiceImpl - 学生作品
  * 
- * @author Sencloud Team
+
 
  */
 @Service("familAlbumServiceImpl")

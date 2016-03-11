@@ -36,7 +36,7 @@ import com.sammyun.util.SettingUtils;
 /**
  * Service - 会员
  * 
- * @author Sencloud Team
+
 
  */
 @Service("memberServiceImpl")

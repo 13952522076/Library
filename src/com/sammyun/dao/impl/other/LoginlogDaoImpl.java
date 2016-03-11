@@ -8,7 +8,7 @@ import com.sammyun.entity.other.Loginlog;
 /**
  * Loginlog * DaoImpl - 登录日志
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("loginlogDaoImpl")

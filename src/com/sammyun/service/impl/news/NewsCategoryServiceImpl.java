@@ -16,7 +16,7 @@ import com.sammyun.service.news.NewsCategoryService;
 /**
  * NewsCategory * ServiceImpl - 新闻类别
  * 
- * @author Sencloud Team
+
 
  */
 @Service("newsCategoryServiceImpl")

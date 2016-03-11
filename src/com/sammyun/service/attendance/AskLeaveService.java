@@ -9,7 +9,7 @@ import com.sammyun.service.BaseService;
 /**
  * Service - 请假
  * 
- * @author Sencloud Team
+
 
  */
 public interface AskLeaveService extends BaseService<AskLeave, Long>

@@ -13,7 +13,7 @@ import com.sammyun.entity.MemberDeviceInfo;
 /**
  * Service - 会员设备信息列表
  * 
- * @author Sencloud Team
+
 
  */
 public interface MemberDeviceInfoService extends BaseService<MemberDeviceInfo, Long> {

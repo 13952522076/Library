@@ -10,7 +10,7 @@ import com.sammyun.entity.Log;
 /**
  * Service - 日志
  * 
- * @author Sencloud Team
+
 
  */
 public interface LogService extends BaseService<Log, Long> {

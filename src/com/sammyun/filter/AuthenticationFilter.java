@@ -27,7 +27,7 @@ import com.sammyun.service.RSAService;
 /**
  * Filter - 权限认证
  * 
- * @author Sencloud Team
+
 
  */
 public class AuthenticationFilter extends FormAuthenticationFilter

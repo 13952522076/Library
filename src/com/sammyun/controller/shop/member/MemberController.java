@@ -21,7 +21,7 @@ import com.sammyun.service.message.MessageService;
 /**
  * Controller - 会员中心
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("shopMemberController")

@@ -17,7 +17,7 @@ import com.sammyun.util.WebUtils;
 /**
  * Interceptor - 令牌
  * 
- * @author Sencloud Team
+
 
  */
 public class TokenInterceptor extends HandlerInterceptorAdapter {

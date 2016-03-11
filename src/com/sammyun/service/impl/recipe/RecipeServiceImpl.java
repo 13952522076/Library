@@ -20,7 +20,7 @@ import com.sammyun.service.recipe.RecipeService;
 /**
  * ServiceImpl - 学生食谱
  * 
- * @author Sencloud Team
+
 
  */
 @Service("recipeServiceImpl")

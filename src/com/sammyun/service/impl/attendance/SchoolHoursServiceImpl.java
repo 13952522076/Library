@@ -12,7 +12,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
 /**
  * ServiceImpl - 上学放学时间设置
  * 
- * @author Sencloud Team
+
 
  */
 @Service("schoolHoursServiceImpl")

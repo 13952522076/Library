@@ -12,7 +12,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
 /**
  * DiaryComment * ServiceImpl - 
  * 
- * @author Sencloud Team
+
 
  */
 @Service("diaryCommentServiceImpl")

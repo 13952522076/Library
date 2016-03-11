@@ -44,7 +44,7 @@ import com.sammyun.entity.stu.MeritTemplate;
 /**
  * Entity - 学校
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

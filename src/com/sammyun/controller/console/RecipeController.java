@@ -45,7 +45,7 @@ import com.sammyun.util.JsonUtils;
 /**
  * Controller - 食谱controller
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminRecipeController")

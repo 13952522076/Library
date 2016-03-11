@@ -35,7 +35,7 @@ import freemarker.template.utility.DeepUnwrap;
 /**
  * Utils - Freemarker
  * 
- * @author Sencloud Team
+
 
  */
 @SuppressWarnings("unchecked")

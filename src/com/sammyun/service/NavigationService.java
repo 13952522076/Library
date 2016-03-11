@@ -16,7 +16,7 @@ import com.sammyun.entity.Navigation.Position;
 /**
  * Service - 导航
  * 
- * @author Sencloud Team
+
 
  */
 public interface NavigationService extends BaseService<Navigation, Long> {

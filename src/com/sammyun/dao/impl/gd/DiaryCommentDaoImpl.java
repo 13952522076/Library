@@ -9,7 +9,7 @@ import com.sammyun.entity.gd.DiaryComment;
 /**
  * DiaryComment * DaoImpl - 成长记评论
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("diaryCommentDaoImpl")

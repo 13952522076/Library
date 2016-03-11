@@ -17,7 +17,7 @@ import org.hibernate.validator.constraints.NotEmpty;
 /**
  * Entity - 友情链接
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

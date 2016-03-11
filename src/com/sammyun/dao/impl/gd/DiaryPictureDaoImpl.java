@@ -17,7 +17,7 @@ import com.sammyun.entity.gd.GrowthDiary;
 /**
  * DiaryPicture * DaoImpl - 成长记图片附件
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("diaryPictureDaoImpl")

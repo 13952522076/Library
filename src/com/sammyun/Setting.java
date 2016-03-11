@@ -19,7 +19,7 @@ import org.hibernate.validator.constraints.NotEmpty;
 /**
  * 系统设置
  * 
- * @author Sencloud Team
+
 
  */
 public class Setting implements Serializable

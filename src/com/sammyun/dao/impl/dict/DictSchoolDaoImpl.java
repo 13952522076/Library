@@ -10,7 +10,7 @@ import com.sammyun.entity.dict.DictSchool;
 /**
  * DictSchool * DaoImpl - 学校
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("dictSchoolDaoImpl")

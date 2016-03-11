@@ -10,7 +10,7 @@ import java.io.Serializable;
 /**
  * 身份信息
  * 
- * @author Sencloud Team
+
 
  */
 public class Principal implements Serializable

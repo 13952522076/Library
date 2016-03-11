@@ -23,7 +23,7 @@ import com.sammyun.entity.attendance.AttendanceDetail;
 /**
  * ServiceImpl - 考勤
  * 
- * @author Sencloud Team
+
 
  */
 @Service("attendanceDetailServiceImpl")

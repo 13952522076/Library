@@ -9,7 +9,7 @@ import com.sammyun.entity.recipe.RecipeWeekDay;
 /**
  * Bound * Dao - 学生食谱详情
  * 
- * @author Sencloud Team
+
 
  */
 public interface RecipesDetailDao extends BaseDao<RecipeWeekDay, Long> {

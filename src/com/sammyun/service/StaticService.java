@@ -12,7 +12,7 @@ import com.sammyun.entity.dict.DictStudent;
 /**
  * Service - 静态化
  * 
- * @author Sencloud Team
+
 
  */
 public interface StaticService

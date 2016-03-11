@@ -9,7 +9,7 @@ import com.sammyun.entity.attendance.TeacherAskLeave;
 /**
  * Dao - 教师请假
  * 
- * @author Sencloud Team
+
 
  */
 public interface TeacherAskLeaveDao extends BaseDao<TeacherAskLeave, Long>

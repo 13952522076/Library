@@ -13,7 +13,7 @@ import com.sammyun.entity.dict.DictSchool;
 /**
  * Service - 管理员
  * 
- * @author Sencloud Team
+
 
  */
 public interface AdminService extends BaseService<Admin, Long>

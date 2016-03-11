@@ -13,7 +13,7 @@ import com.sammyun.entity.message.MessageTimeline;
 /**
  * MessageTimeline * ServiceImpl - 消息时间线
  * 
- * @author Sencloud Team
+
 
  */
 @Service("messageTimelineServiceImpl")

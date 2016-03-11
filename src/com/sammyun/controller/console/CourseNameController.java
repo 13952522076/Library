@@ -25,7 +25,7 @@ import com.sammyun.service.dict.DictSchoolService;
 /**
  * Controller - 课程
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("courseNameController")

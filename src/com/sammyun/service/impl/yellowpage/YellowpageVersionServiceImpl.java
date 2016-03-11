@@ -13,7 +13,7 @@ import com.sammyun.entity.yellowpage.YellowpageVersion;
 /**
  * ProfilesImage * ServiceImpl - 概况图片数据
  * 
- * @author Sencloud Team
+
 
  */
 @Service("yellowpageVersionServiceImpl")

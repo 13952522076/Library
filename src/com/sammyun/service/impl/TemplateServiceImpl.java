@@ -30,7 +30,7 @@ import com.sammyun.service.TemplateService;
 /**
  * Service - 模板
  * 
- * @author Sencloud Team
+
 
  */
 @Service("templateServiceImpl")

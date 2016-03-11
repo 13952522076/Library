@@ -29,7 +29,7 @@ import com.sammyun.service.gd.DiaryTagService;
 /**
  * Controller - 成长记图片附件
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("diaryPictureController")

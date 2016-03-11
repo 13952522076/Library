@@ -9,7 +9,7 @@ import com.sammyun.entity.message.MessageAttachment;
 /**
  * MessageAttachment * DaoImpl - 消息附件
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("messageAttachmentDaoImpl")

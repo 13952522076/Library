@@ -6,7 +6,7 @@ import com.sammyun.entity.gd.AtUser;
 /**
  * AtUser * Dao - 成长记
  * 
- * @author Sencloud Team
+
 
  */
 public interface AtUserDao extends BaseDao<AtUser, Long>

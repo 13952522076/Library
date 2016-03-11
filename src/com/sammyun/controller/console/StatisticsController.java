@@ -27,7 +27,7 @@ import com.sammyun.util.SettingUtils;
 /**
  * Controller - 统计
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("statisticsController")

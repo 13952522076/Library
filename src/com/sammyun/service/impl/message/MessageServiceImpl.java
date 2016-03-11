@@ -33,7 +33,7 @@ import com.tencent.xinge.XingeApp;
 /**
  * Message * ServiceImpl - 消息附件
  * 
- * @author Sencloud Team
+
 
  */
 @Service("messageServiceImpl")

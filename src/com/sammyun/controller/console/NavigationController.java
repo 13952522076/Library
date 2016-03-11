@@ -23,7 +23,7 @@ import com.sammyun.service.NavigationService;
 /**
  * Controller - 导航
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminNavigationController")

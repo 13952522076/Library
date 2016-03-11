@@ -15,7 +15,7 @@ import com.sammyun.entity.BaseEntity;
 /**
  * Yellowpage * Entity - 黄页数据
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

@@ -10,7 +10,7 @@ import com.sammyun.entity.Sn.Type;
 /**
  * Service - 序列号
  * 
- * @author Sencloud Team
+
 
  */
 public interface SnService {

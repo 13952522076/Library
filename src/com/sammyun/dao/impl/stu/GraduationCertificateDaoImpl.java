@@ -9,7 +9,7 @@ import com.sammyun.entity.stu.GraduationCertificate;
 /**
  * GraduationCertificate * DaoImpl - 毕业证书
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("graduationCertificateDaoImpl")

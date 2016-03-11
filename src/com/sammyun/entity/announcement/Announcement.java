@@ -20,9 +20,6 @@ import com.sammyun.entity.dict.DictSchool;
 
 /**
  * Entity - 通知公告数据
- * 
- * @author Sencloud Team
-
  */
 @Entity
 @Table(name = "t_pe_announcement")

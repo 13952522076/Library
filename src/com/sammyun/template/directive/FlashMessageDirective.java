@@ -23,7 +23,7 @@ import freemarker.template.TemplateModel;
 /**
  * 模板指令 - 瞬时消息
  * 
- * @author Sencloud Team
+
 
  */
 @Component("flashMessageDirective")

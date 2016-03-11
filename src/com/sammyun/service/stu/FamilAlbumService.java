@@ -7,7 +7,7 @@ import com.sammyun.service.BaseService;
 /**
  * Service - 全家福
  * 
- * @author Sencloud Team
+
 
  */
 public interface FamilAlbumService extends BaseService<FamilAlbum, Long>

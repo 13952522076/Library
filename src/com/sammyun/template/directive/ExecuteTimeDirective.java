@@ -22,7 +22,7 @@ import freemarker.template.TemplateModel;
 /**
  * 模板指令 - 执行时间
  * 
- * @author Sencloud Team
+
 
  */
 @Component("executeTimeDirective")

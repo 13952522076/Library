@@ -31,7 +31,7 @@ import com.sammyun.util.JsonUtils;
 /**
  * Controller - 课程表controller
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("curriculumScheduleController")

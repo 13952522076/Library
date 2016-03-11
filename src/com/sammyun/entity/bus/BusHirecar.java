@@ -15,7 +15,7 @@ import com.sammyun.entity.BaseEntity;
 /**
  * BusHirecar * Entity - 租车预约数据
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

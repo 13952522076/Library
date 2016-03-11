@@ -25,7 +25,7 @@ import org.hibernate.validator.constraints.Length;
 /**
  * Entity - 收款单
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

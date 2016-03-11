@@ -13,7 +13,7 @@ import com.sammyun.entity.bus.BusLineCollect;
 /**
  * BusLineCollect * ServiceImpl - 线路收藏数据
  * 
- * @author Sencloud Team
+
 
  */
 @Service("busLineCollectServiceImpl")

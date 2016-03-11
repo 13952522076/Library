@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 /**
  * 资源不存在异常
  * 
- * @author Sencloud Team
+
 
  */
 @ResponseStatus(value = HttpStatus.NOT_FOUND)

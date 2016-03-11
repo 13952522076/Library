@@ -16,7 +16,7 @@ import com.sammyun.entity.dict.DictSchool;
 /**
  * Service   - 班级
  * 
- * @author Sencloud Team
+
 
  */
 @Service("dictClassServiceImpl")

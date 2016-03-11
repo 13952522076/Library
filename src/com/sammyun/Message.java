@@ -10,7 +10,7 @@ import com.sammyun.util.SpringUtils;
 /**
  * 消息
  * 
- * @author Sencloud Team
+
 
  */
 public class Message

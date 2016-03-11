@@ -7,7 +7,7 @@ import com.sammyun.service.BaseService;
 /**
  * Service - 应用统计
  * 
- * @author Sencloud Team
+
 
  */
 public interface AppStatService extends BaseService<AppStat, Long>

@@ -27,7 +27,7 @@ import com.sammyun.util.WebUtils;
 /**
  * Controller - 静态化
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminStaticController")

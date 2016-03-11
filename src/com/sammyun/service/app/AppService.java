@@ -17,7 +17,7 @@ import freemarker.cache.StringTemplateLoader;
 /**
  * Service - 应用管理
  * 
- * @author Sencloud Team
+
 
  */
 public interface AppService extends BaseService<App, Long>

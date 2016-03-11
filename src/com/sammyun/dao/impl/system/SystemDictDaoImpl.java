@@ -17,7 +17,7 @@ import com.sammyun.entity.system.SystemDict;
 /**
  * Dao - 系统字典
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("systemDictDaoImpl")

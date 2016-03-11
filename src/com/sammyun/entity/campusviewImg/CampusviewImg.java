@@ -29,7 +29,7 @@ import com.sammyun.entity.dict.DictSchool;
 /**
  * Entity - 校园风光表
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

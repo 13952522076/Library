@@ -15,7 +15,7 @@ import com.sammyun.entity.BaseEntity;
 /**
  * BusDriver * Entity - 驾驶员数据
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

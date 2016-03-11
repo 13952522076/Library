@@ -20,7 +20,7 @@ import com.sammyun.service.BaseService;
 /**
  * Service - 考勤
  * 
- * @author Sencloud Team
+
 
  */
 public interface AttendanceService extends BaseService<Attendance, Long>

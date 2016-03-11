@@ -23,7 +23,7 @@ import com.sammyun.service.PaymentMethodService;
 /**
  * Controller - 支付方式
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminPaymentMethodController")

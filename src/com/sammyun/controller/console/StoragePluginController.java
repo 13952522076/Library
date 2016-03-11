@@ -18,7 +18,7 @@ import com.sammyun.service.PluginService;
 /**
  * Controller - 存储插件
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminStoragePluginController")

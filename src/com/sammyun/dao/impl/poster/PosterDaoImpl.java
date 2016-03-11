@@ -19,7 +19,7 @@ import com.sammyun.entity.poster.Poster.PosterPosition;
 /**
  * Poster * DaoImpl - 海报
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("posterDaoImpl")

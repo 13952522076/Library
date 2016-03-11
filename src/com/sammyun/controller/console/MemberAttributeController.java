@@ -29,7 +29,7 @@ import com.sammyun.service.MemberAttributeService;
 /**
  * Controller - 会员注册项
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminMemberAttributeController")

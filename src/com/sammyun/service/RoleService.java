@@ -10,7 +10,7 @@ import com.sammyun.entity.Role;
 /**
  * Service - 角色
  * 
- * @author Sencloud Team
+
 
  */
 public interface RoleService extends BaseService<Role, Long> {

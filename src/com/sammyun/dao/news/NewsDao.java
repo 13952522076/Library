@@ -9,7 +9,7 @@ import com.sammyun.entity.news.NewsCategory;
 /**
  * News * Dao - 新闻数据
  * 
- * @author Sencloud Team
+
 
  */
 public interface NewsDao extends BaseDao<News, Long> {

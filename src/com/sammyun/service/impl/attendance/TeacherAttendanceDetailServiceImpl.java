@@ -16,7 +16,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
 /**
  * ServiceImpl - 教师考情详情
  * 
- * @author Sencloud Team
+
 
  */
 @Service("teacherAttendanceDetailServiceImpl")

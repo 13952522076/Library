@@ -15,7 +15,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
 /**
  * ServiceImpl - 教师请假
  * 
- * @author Sencloud Team
+
 
  */
 @Service("teacherAskLeaveServiceImpl")

@@ -8,7 +8,7 @@ import com.sammyun.entity.other.File;
 /**
  * File * DaoImpl - 文件
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("fileDaoImpl")

@@ -17,7 +17,7 @@ import com.sammyun.entity.message.Message;
 /**
  * Friendship * DaoImpl - 好友关系
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("friendshipDaoImpl")

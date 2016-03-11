@@ -6,7 +6,7 @@ import com.sammyun.entity.bus.BusLine;
 /**
  * BusLine * Service - 班车线路数据
  * 
- * @author Sencloud Team
+
 
  */
 public interface BusLineService extends BaseService<BusLine, Long> {

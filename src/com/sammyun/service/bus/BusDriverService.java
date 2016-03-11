@@ -6,7 +6,7 @@ import com.sammyun.entity.bus.BusDriver;
 /**
  * BusDriver * Service - 驾驶员数据
  * 
- * @author Sencloud Team
+
 
  */
 public interface BusDriverService extends BaseService<BusDriver, Long> {

@@ -22,7 +22,7 @@ import com.sammyun.util.SettingUtils;
 /**
  * Filter - 网站状态
  * 
- * @author Sencloud Team
+
 
  */
 @Component("siteStatusFilter")

@@ -25,7 +25,7 @@ import com.sammyun.util.SettingUtils;
 /**
  * Plugin - 支付宝(双接口)
  * 
- * @author Sencloud Team
+
 
  */
 @Component("alipayDualPlugin")

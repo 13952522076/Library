@@ -9,7 +9,7 @@ import com.sammyun.entity.gd.AtUser;
 /**
  * AtUser * DaoImpl - 成长记AT用户
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("atUserDaoImpl")

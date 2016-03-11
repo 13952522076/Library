@@ -14,7 +14,7 @@ import com.sammyun.entity.BaseEntity;
 /**
  * Dao - 食谱图片
  * 
- * @author Sencloud Team
+
 
  */
 

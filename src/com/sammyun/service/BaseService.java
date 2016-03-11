@@ -17,7 +17,7 @@ import com.sammyun.Pageable;
 /**
  * Service - 基类
  * 
- * @author Sencloud Team
+
 
  */
 public interface BaseService<T, ID extends Serializable> {

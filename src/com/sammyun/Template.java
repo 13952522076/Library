@@ -10,7 +10,7 @@ import java.io.Serializable;
 /**
  * 模板
  * 
- * @author Sencloud Team
+
 
  */
 public class Template implements Serializable

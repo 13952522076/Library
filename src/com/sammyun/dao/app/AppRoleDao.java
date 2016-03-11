@@ -9,7 +9,7 @@ import com.sammyun.entity.app.AppRole;
 /**
  * Dao - 应用角色
  * 
- * @author Sencloud Team
+
 
  */
 public interface AppRoleDao extends BaseDao<AppRole, Long>

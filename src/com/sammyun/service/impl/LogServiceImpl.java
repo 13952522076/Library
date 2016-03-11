@@ -16,7 +16,7 @@ import com.sammyun.service.LogService;
 /**
  * Service - 日志
  * 
- * @author Sencloud Team
+
 
  */
 @Service("logServiceImpl")

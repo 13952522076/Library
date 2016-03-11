@@ -33,7 +33,7 @@ import com.sammyun.util.JsonDateSerializer;
 /**
  * Entity - 基类
  * 
- * @author Sencloud Team
+
 
  */
 @JsonAutoDetect(fieldVisibility = Visibility.NONE, getterVisibility = Visibility.NONE, setterVisibility = Visibility.NONE, isGetterVisibility = Visibility.NONE, creatorVisibility = Visibility.NONE)

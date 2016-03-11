@@ -14,7 +14,7 @@ import com.sammyun.entity.parenting.ParentingCategory;
 /**
  * Parenting * Dao - 育儿模块
  * 
- * @author Sencloud Team
+
 
  */
 public interface ParentingDao extends BaseDao<Parenting, Long> {

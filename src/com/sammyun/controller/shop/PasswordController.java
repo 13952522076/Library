@@ -36,7 +36,7 @@ import com.sammyun.util.SpringUtils;
 /**
  * Controller - 密码
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("shopPasswordController")

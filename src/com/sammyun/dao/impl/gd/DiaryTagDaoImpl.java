@@ -17,7 +17,7 @@ import com.sammyun.entity.gd.DiaryTag;
 /**
  * DiaryTag * DaoImpl - 成长记点赞
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("diaryTagDaoImpl")

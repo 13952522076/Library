@@ -6,7 +6,7 @@ import com.sammyun.entity.message.MessageTimeline;
 /**
  * MessageTimeline * Dao - 消息时间线
  * 
- * @author Sencloud Team
+
 
  */
 public interface MessageTimelineDao extends BaseDao<MessageTimeline, Long> {

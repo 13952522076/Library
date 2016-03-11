@@ -14,7 +14,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
 /**
  * AppReview * ServiceImpl - 应用评论
  * 
- * @author Sencloud Team
+
 
  */
 @Service("appReviewServiceImpl")

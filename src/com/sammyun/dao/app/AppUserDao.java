@@ -11,7 +11,7 @@ import com.sammyun.entity.app.App.OperatingSystem;
 /**
  * Dao - 用户应用清单
  * 
- * @author Sencloud Team
+
 
  */
 public interface AppUserDao extends BaseDao<AppUser, Long>

@@ -8,7 +8,7 @@ import com.sammyun.entity.message.MessageInbox;
 /**
  * MessageInbox * DaoImpl - 站内信(系统消息)
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("messageInboxDaoImpl")

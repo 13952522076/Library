@@ -20,7 +20,7 @@ import com.sammyun.service.TemplateService;
 /**
  * Controller - Sitemap
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminSitemapController")

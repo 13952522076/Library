@@ -13,7 +13,7 @@ import com.sammyun.entity.dict.DictDeviceModel;
 /**
  * DictDeviceModel * ServiceImpl - 设备数据字典
  * 
- * @author Sencloud Team
+
 
  */
 @Service("dictDeviceModelServiceImpl")

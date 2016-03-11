@@ -19,7 +19,7 @@ import com.sammyun.entity.dict.DictSchool;
 /**
  * DaoImpl - 班次设置
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("workSettingDaoImpl")

@@ -38,7 +38,7 @@ import com.sammyun.Setting;
 /**
  * Utils - 系统设置
  * 
- * @author Sencloud Team
+
 
  */
 @SuppressWarnings("unchecked")

@@ -22,7 +22,7 @@ import com.sammyun.entity.parenting.Parenting;
 /**
  * DiaryAgree * DaoImpl - 成长记点赞
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("diaryAgreeDaoImpl")

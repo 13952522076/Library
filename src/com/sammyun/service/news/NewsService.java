@@ -9,7 +9,7 @@ import com.sammyun.service.BaseService;
 /**
  * News * Service - 新闻数据
  * 
- * @author Sencloud Team
+
 
  */
 public interface NewsService extends BaseService<News, Long> {

@@ -21,7 +21,7 @@ import com.sammyun.entity.Member;
 /**
  * Entity - 校园风光点赞记录表
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

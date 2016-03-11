@@ -17,7 +17,7 @@ import com.sammyun.entity.dict.DictSchool;
 /**
  * CampusviewImg * DaoImpl - 校园风光表
  * 
- * @author Sencloud Team
+
 
  */
 

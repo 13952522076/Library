@@ -22,7 +22,7 @@ import com.sammyun.service.AdminService;
 /**
  * Controller - 个人资料
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminProfileController")

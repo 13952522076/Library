@@ -60,7 +60,7 @@ import com.sammyun.util.JsonUtils;
 /**
  * Entity - 用户
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

@@ -9,7 +9,7 @@ import com.sammyun.entity.app.AppPoster.OperatingSystem;
 /**
  * Poster * Dao - 应用超市海报
  * 
- * @author Sencloud Team
+
 
  */
 public interface AppPosterDao extends BaseDao<AppPoster, Long> {

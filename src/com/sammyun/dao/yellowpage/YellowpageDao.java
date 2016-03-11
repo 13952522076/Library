@@ -6,7 +6,7 @@ import com.sammyun.entity.yellowpage.Yellowpage;
 /**
  * Yellowpage * Dao - 黄页数据
  * 
- * @author Sencloud Team
+
 
  */
 public interface YellowpageDao extends BaseDao<Yellowpage, Long> {

@@ -13,7 +13,7 @@ import com.sammyun.entity.dict.DictCampus;
 /**
  * DictCampus * ServiceImpl - 校区
  * 
- * @author Sencloud Team
+
 
  */
 @Service("dictCampusServiceImpl")

@@ -8,7 +8,7 @@ import com.sammyun.entity.message.MessageTimeline;
 /**
  * MessageTimeline * DaoImpl - 消息时间线
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("messageTimelineDaoImpl")

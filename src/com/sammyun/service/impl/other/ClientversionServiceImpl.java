@@ -13,7 +13,7 @@ import com.sammyun.entity.other.Clientversion;
 /**
  * Clientversion * ServiceImpl - 客户端版本管理
  * 
- * @author Sencloud Team
+
 
  */
 @Service("clientversionServiceImpl")

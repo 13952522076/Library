@@ -15,7 +15,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
 /**
  * DiaryPicture * ServiceImpl -
  * 
- * @author Sencloud Team
+
 
  */
 @Service("diaryPictureServiceImpl")

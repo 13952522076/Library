@@ -52,7 +52,7 @@ import com.sammyun.util.WebUtils;
 /**
  * Controller - 会员注册
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("shopRegisterController")

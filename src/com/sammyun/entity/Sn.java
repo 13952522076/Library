@@ -13,7 +13,7 @@ import javax.persistence.Table;
 /**
  * Entity - 序列号
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

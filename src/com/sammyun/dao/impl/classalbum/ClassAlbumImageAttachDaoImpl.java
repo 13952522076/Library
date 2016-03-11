@@ -15,7 +15,7 @@ import com.sammyun.entity.classalbum.ClassAlbumImageAttach;
 /**
  * ClassAlbumImage * DaoImpl - 校园风光表
  * 
- * @author Sencloud Team
+
 
  */
 

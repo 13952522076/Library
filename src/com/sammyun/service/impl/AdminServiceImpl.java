@@ -26,7 +26,7 @@ import com.sammyun.service.AdminService;
 /**
  * Service - 管理员
  * 
- * @author Sencloud Team
+
 
  */
 @Service("adminServiceImpl")

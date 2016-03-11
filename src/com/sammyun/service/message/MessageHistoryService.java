@@ -6,7 +6,7 @@ import com.sammyun.entity.message.MessageHistory;
 /**
  * MessageHistory * Service - 消息历史
  * 
- * @author Sencloud Team
+
 
  */
 public interface MessageHistoryService extends BaseService<MessageHistory, Long> {

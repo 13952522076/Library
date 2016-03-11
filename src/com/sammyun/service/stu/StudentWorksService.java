@@ -9,7 +9,7 @@ import com.sammyun.service.BaseService;
 /**
  * Service - 学生作品
  * 
- * @author Sencloud Team
+
 
  */
 public interface StudentWorksService extends BaseService<StudentWorks, Long>

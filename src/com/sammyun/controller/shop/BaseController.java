@@ -30,7 +30,7 @@ import com.sammyun.util.SpringUtils;
 /**
  * Controller - 基类
  * 
- * @author Sencloud Team
+
 
  */
 public class BaseController

@@ -27,7 +27,7 @@ import com.sammyun.entity.dict.DictSchool;
 /**
  * Entity - 消息
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

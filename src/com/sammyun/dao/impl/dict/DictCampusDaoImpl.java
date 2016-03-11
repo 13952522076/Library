@@ -8,7 +8,7 @@ import com.sammyun.entity.dict.DictCampus;
 /**
  * DictCampus * DaoImpl - 校区
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("dictCampusDaoImpl")

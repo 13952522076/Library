@@ -17,7 +17,7 @@ import com.sammyun.entity.stu.StudentWorks;
 /**
  * StudentWorks * DaoImpl - 学生作品
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("studentWorksDaoImpl")

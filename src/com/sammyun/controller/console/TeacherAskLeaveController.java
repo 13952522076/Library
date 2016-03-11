@@ -24,7 +24,7 @@ import com.sammyun.service.attendance.TeacherAskLeaveService;
 /**
  * Controller - 教师请假
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("teacherAskLeaveController")

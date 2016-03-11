@@ -21,7 +21,7 @@ import com.sammyun.entity.app.AppUser;
 /**
  * DaoImpl - 用户应用清单
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("appUserDaoImpl")

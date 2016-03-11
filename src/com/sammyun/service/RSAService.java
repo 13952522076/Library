@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * Service - RSA安全
  * 
- * @author Sencloud Team
+
 
  */
 public interface RSAService {

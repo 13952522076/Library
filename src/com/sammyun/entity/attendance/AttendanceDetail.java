@@ -18,7 +18,7 @@ import com.sammyun.util.JsonDateSerializer;
 /**
  * Entity - 学生考勤详情
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

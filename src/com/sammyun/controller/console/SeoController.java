@@ -20,7 +20,7 @@ import com.sammyun.service.SeoService;
 /**
  * Controller - SEO设置
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminSeoController")

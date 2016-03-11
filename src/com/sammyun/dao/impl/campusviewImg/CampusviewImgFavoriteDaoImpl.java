@@ -20,7 +20,7 @@ import com.sammyun.entity.campusviewImg.CampusviewImgFavorite;
 /**
  * CampusviewImgFavorite * DaoImpl - 校园风光点赞记录表
  * 
- * @author Sencloud Team
+
 
  */
 

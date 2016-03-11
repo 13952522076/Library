@@ -20,7 +20,7 @@ import com.sammyun.entity.json.JsonFamilyMap;
 /**
  * JsonFamilyMap * DaoImpl - 家庭的JSON信息
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("jsonFamilyMapDaoImpl")

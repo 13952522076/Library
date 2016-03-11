@@ -21,7 +21,7 @@ import com.sammyun.service.TemplateService;
 /**
  * Controller - 模板
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminTemplateController")

@@ -14,7 +14,7 @@ import com.sammyun.entity.message.Message.MessageCategory;
 /**
  * Message * Dao - 消息附件
  * 
- * @author Sencloud Team
+
 
  */
 public interface MessageDao extends BaseDao<Message, Long>

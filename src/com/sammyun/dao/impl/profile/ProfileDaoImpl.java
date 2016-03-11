@@ -13,7 +13,7 @@ import com.sammyun.entity.profile.Profile;
 /**
  * Profiles * DaoImpl - 学校概况数据
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("profileDaoImpl")

@@ -15,7 +15,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
 /**
  * DictSchool * ServiceImpl - 学校
  * 
- * @author Sencloud Team
+
 
  */
 @Service("dictGradeServiceImpl")

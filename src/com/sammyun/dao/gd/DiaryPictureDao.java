@@ -9,7 +9,7 @@ import com.sammyun.entity.gd.GrowthDiary;
 /**
  * DiaryPicture * Dao - 成长记图片附件
  * 
- * @author Sencloud Team
+
 
  */
 public interface DiaryPictureDao extends BaseDao<DiaryPicture, Long>

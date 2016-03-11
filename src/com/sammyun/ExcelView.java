@@ -36,7 +36,7 @@ import org.springframework.web.servlet.view.document.AbstractExcelView;
 /**
  * Excel视图
  * 
- * @author Sencloud Team
+
 
  */
 public class ExcelView extends AbstractExcelView

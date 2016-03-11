@@ -33,8 +33,6 @@ import com.sammyun.entity.dict.DictSchool;
 
 /**
  * Entity - 管理员
- * 
- * @author Sencloud Team
  */
 @Entity
 @Table(name = "t_pe_admin")

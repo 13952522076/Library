@@ -12,7 +12,7 @@ import com.sammyun.entity.Area;
 /**
  * Dao - 地区
  * 
- * @author Sencloud Team
+
 
  */
 public interface AreaDao extends BaseDao<Area, Long>

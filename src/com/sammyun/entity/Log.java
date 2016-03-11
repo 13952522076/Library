@@ -14,7 +14,7 @@ import javax.persistence.Table;
 /**
  * Entity - 日志
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

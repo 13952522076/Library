@@ -24,7 +24,7 @@ import com.sammyun.plugin.PaymentPlugin;
 /**
  * Plugin - 快钱支付
  * 
- * @author Sencloud Team
+
 
  */
 @Component("pay99billPlugin")

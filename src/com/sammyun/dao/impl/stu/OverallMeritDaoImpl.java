@@ -21,7 +21,7 @@ import com.sammyun.entity.stu.OverallMerit;
 /**
  * OverallMerit * DaoImpl - 综合评价
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("overallMeritDaoImpl")

@@ -15,7 +15,7 @@ import com.sammyun.entity.BaseEntity;
 /**
  * BusLineRuntime * Entity - 班车营运时间数据
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

@@ -13,7 +13,7 @@ import com.sammyun.entity.other.Loginlog;
 /**
  * Loginlog * ServiceImpl - 登录日志
  * 
- * @author Sencloud Team
+
 
  */
 @Service("loginlogServiceImpl")

@@ -26,7 +26,7 @@ import freemarker.template.TemplateModel;
 /**
  * 模板指令 - 标签列表
  * 
- * @author Sencloud Team
+
 
  */
 @Component("tagListDirective")

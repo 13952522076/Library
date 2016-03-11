@@ -28,7 +28,7 @@ import com.sammyun.service.PluginConfigService;
 /**
  * Controller - Paypal
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminPaypalController")

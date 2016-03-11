@@ -10,7 +10,7 @@ import com.sammyun.entity.PaymentMethod;
 /**
  * Service - 支付方式
  * 
- * @author Sencloud Team
+
 
  */
 public interface PaymentMethodService extends BaseService<PaymentMethod, Long> {

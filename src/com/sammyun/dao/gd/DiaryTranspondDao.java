@@ -8,7 +8,7 @@ import com.sammyun.entity.gd.GrowthDiary;
 /**
  * DiaryTranspond * Dao - 成长记转发
  * 
- * @author Sencloud Team
+
 
  */
 public interface DiaryTranspondDao extends BaseDao<DiaryTranspond, Long>

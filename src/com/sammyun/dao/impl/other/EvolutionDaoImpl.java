@@ -8,7 +8,7 @@ import com.sammyun.entity.other.Evolution;
 /**
  * Evolution * DaoImpl - 
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("evolutionDaoImpl")

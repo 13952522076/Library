@@ -15,7 +15,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
 /**
  * Poster * ServiceImpl - 应用超市海报
  * 
- * @author Sencloud Team
+
 
  */
 @Service("appPosterServiceImpl")

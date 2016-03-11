@@ -35,7 +35,7 @@ import com.sammyun.util.SettingUtils;
 /**
  * 权限认证
  * 
- * @author Sencloud Team
+
 
  */
 public class AuthenticationRealm extends AuthorizingRealm

@@ -24,7 +24,7 @@ import com.sammyun.service.TagService;
 /**
  * Controller - 标签
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminTagController")

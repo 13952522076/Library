@@ -21,7 +21,7 @@ import com.sammyun.service.MemberAttributeService;
 /**
  * Service - 会员注册项
  * 
- * @author Sencloud Team
+
 
  */
 @Service("memberAttributeServiceImpl")

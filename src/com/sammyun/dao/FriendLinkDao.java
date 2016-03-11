@@ -13,7 +13,7 @@ import com.sammyun.entity.FriendLink.Type;
 /**
  * Dao - 友情链接
  * 
- * @author Sencloud Team
+
 
  */
 public interface FriendLinkDao extends BaseDao<FriendLink, Long>

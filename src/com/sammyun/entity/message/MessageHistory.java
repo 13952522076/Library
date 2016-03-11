@@ -17,7 +17,7 @@ import com.sammyun.entity.BaseEntity;
 /**
  * MessageHistory * Entity - 消息历史
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

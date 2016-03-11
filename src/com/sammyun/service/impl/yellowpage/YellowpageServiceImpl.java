@@ -13,7 +13,7 @@ import com.sammyun.entity.yellowpage.Yellowpage;
 /**
  * Yellowpage * ServiceImpl - 黄页数据
  * 
- * @author Sencloud Team
+
 
  */
 @Service("yellowpageServiceImpl")

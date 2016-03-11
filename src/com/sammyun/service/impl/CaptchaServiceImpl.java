@@ -21,7 +21,7 @@ import com.sammyun.util.SettingUtils;
 /**
  * Service - 验证码
  * 
- * @author Sencloud Team
+
 
  */
 @Service("captchaServiceImpl")

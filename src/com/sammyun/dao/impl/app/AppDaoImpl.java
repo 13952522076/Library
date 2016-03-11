@@ -26,7 +26,7 @@ import com.sammyun.entity.dict.DictSchool;
 /**
  * DaoImpl - 应用管理
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("appDaoImpl")

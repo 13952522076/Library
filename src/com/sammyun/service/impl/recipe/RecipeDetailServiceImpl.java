@@ -17,7 +17,7 @@ import com.sammyun.service.recipe.RecipeDetailService;
 /**
  * ServiceImpl - 学生食谱详情
  * 
- * @author Sencloud Team
+
 
  */
 @Service("recipesDetailServiceImpl")

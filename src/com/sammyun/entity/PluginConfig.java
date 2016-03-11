@@ -21,7 +21,7 @@ import javax.persistence.Transient;
 /**
  * Entity - 插件配置
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

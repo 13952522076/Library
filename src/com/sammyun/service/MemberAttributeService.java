@@ -13,7 +13,7 @@ import com.sammyun.entity.MemberAttribute;
 /**
  * Service - 会员注册项
  * 
- * @author Sencloud Team
+
 
  */
 public interface MemberAttributeService extends BaseService<MemberAttribute, Long> {

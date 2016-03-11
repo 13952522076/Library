@@ -14,7 +14,7 @@ import com.sammyun.service.BaseService;
 /**
  * Message * Service - 消息
  * 
- * @author Sencloud Team
+
 
  */
 public interface MessageService extends BaseService<Message, Long>

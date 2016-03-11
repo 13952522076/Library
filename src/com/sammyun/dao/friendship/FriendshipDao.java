@@ -8,7 +8,7 @@ import com.sammyun.entity.friendship.Friendship;
 /**
  * Friendship * Dao - 好友关系
  * 
- * @author Sencloud Team
+
 
  */
 public interface FriendshipDao extends BaseDao<Friendship, Long>

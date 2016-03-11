@@ -7,7 +7,7 @@ import com.sammyun.service.BaseService;
 /**
  * Service - 应用管理
  * 
- * @author Sencloud Team
+
 
  */
 public interface AppScreenshotService extends BaseService<AppScreenshot, Long>

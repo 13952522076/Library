@@ -26,7 +26,7 @@ import com.sammyun.service.PaymentService;
 /**
  * Service - 收款单
  * 
- * @author Sencloud Team
+
 
  */
 @Service("paymentServiceImpl")

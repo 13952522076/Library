@@ -11,7 +11,7 @@ import com.sammyun.entity.dict.DictStudent;
 /**
  * Dao - 卡管理
  * 
- * @author Sencloud Team
+
 
  */ 
 public interface TimeCardDao  extends BaseDao<TimeCard, Long>

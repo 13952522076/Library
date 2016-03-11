@@ -10,7 +10,7 @@ import com.sammyun.entity.Log;
 /**
  * Dao - 日志
  * 
- * @author Sencloud Team
+
 
  */
 public interface LogDao extends BaseDao<Log, Long>

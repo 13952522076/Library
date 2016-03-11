@@ -18,7 +18,7 @@ import com.sammyun.service.stu.OverallMeritService;
 /**
  * Service   - 综合评价
  * 
- * @author Sencloud Team
+
 
  */
 @Service("overallMeritServiceImpl")

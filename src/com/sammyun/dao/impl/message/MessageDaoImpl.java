@@ -23,7 +23,7 @@ import com.sammyun.entity.message.Message.MessageCategory;
 /**
  * Message * DaoImpl - 消息附件
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("messageDaoImpl")

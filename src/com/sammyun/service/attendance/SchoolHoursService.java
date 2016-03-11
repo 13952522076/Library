@@ -6,7 +6,7 @@ import com.sammyun.service.BaseService;
 /**
  * Service - 上学放学时间设置
  * 
- * @author Sencloud Team
+
 
  */
 public interface SchoolHoursService  extends BaseService<SchoolHours, Long>

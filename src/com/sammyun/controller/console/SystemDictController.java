@@ -25,7 +25,7 @@ import com.sammyun.service.system.SystemDictService;
 /**
  * Controller - 系统字典
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("systemDictController")

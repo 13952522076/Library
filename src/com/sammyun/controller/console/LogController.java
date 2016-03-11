@@ -21,7 +21,7 @@ import com.sammyun.service.LogService;
 /**
  * Controller - 管理日志
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminLogController")

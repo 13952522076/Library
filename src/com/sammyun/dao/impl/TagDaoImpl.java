@@ -21,7 +21,7 @@ import com.sammyun.entity.Tag.Type;
 /**
  * Dao - 标签
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("tagDaoImpl")

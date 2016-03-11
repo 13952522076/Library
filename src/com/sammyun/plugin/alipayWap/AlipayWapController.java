@@ -27,7 +27,7 @@ import com.sammyun.service.PluginConfigService;
 /**
  * Controller - 支付宝(手机网站支付)
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminAlipayWapController")

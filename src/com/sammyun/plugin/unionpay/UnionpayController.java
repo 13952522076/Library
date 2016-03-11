@@ -27,7 +27,7 @@ import com.sammyun.service.PluginConfigService;
 /**
  * Controller - 银联在线支付
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminUnionpayController")

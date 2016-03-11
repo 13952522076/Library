@@ -21,7 +21,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
 /**
  * Service - 应用统计
  * 
- * @author Sencloud Team
+
 
  */
 @Service("appStatServiceImpl")

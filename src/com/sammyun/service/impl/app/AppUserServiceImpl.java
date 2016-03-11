@@ -17,7 +17,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
 /**
  * ServiceImpl - 用户应用清单
  * 
- * @author Sencloud Team
+
 
  */
 @Service("appUserServiceImpl")

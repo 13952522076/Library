@@ -15,7 +15,7 @@ import com.sammyun.service.news.NewsService;
 /**
  * News * ServiceImpl - 新闻数据
  * 
- * @author Sencloud Team
+
 
  */
 @Service("newsServiceImpl")

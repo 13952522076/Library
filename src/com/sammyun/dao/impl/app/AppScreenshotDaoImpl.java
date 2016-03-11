@@ -12,7 +12,7 @@ import com.sammyun.entity.app.AppScreenshot;
 /**
  * DaoImpl - 应用管理
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("appScreenshotDaoImpl")

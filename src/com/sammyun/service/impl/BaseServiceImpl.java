@@ -32,7 +32,7 @@ import com.sammyun.service.BaseService;
 /**
  * Service - 基类
  * 
- * @author Sencloud Team
+
 
  */
 @Transactional

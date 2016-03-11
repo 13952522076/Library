@@ -17,7 +17,7 @@ import com.sammyun.entity.BaseEntity;
 /**
  * Evolution * Entity - 
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

@@ -19,7 +19,7 @@ import com.sammyun.entity.MemberAttribute.Type;
 /**
  * Dao - 会员注册项
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("memberAttributeDaoImpl")

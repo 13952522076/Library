@@ -9,7 +9,7 @@ import com.sammyun.entity.dict.DictSchool;
 /**
  *  Dao - 年级
  * 
- * @author Sencloud Team
+
 
  */
 public interface DictGradeDao extends BaseDao<DictGrade, Long> 

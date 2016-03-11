@@ -15,7 +15,7 @@ import com.sammyun.entity.attendance.AttendanceDetail;
 /**
  * Dao - 考勤详情
  * 
- * @author Sencloud Team
+
 
  */
 public interface AttendanceDetailDao extends BaseDao<AttendanceDetail, Long>

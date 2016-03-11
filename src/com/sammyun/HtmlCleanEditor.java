@@ -13,7 +13,7 @@ import org.jsoup.safety.Whitelist;
 /**
  * HTML清理
  * 
- * @author Sencloud Team
+
 
  */
 public class HtmlCleanEditor extends PropertyEditorSupport

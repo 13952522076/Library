@@ -25,7 +25,7 @@ import com.sammyun.service.gd.GrowthDiaryService;
 /**
  * Controller - 成长记标签
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("diaryTagController")

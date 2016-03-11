@@ -33,7 +33,7 @@ import com.sammyun.util.JsonUtils;
 /**
  * Controller - 文件处理
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminFileController")

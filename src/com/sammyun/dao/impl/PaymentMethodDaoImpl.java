@@ -14,7 +14,7 @@ import com.sammyun.entity.PaymentMethod;
 /**
  * Dao - 支付方式
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("paymentMethodDaoImpl")

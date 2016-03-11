@@ -18,7 +18,7 @@ import com.sammyun.entity.news.NewsCategory;
 /**
  * NewsCategory * DaoImpl - 新闻类别
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("newsCategoryDaoImpl")

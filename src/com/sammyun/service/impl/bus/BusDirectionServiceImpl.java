@@ -13,7 +13,7 @@ import com.sammyun.entity.bus.BusDirection;
 /**
  * BusDirection * ServiceImpl - 线路方向数据
  * 
- * @author Sencloud Team
+
 
  */
 @Service("busDirectionServiceImpl")

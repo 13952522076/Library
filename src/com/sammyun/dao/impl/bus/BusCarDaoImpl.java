@@ -8,7 +8,7 @@ import com.sammyun.entity.bus.BusCar;
 /**
  * BusCar * DaoImpl - 车辆数据
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("busCarDaoImpl")

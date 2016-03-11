@@ -18,7 +18,7 @@ import freemarker.template.TemplateModelException;
 /**
  * 模板方法 - 字符串缩略
  * 
- * @author Sencloud Team
+
 
  */
 @Component("abbreviateMethod")

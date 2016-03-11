@@ -12,7 +12,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
 /**
  * ServiceImpl - 应用API授权
  * 
- * @author Sencloud Team
+
 
  */
 @Service("appCredentialServiceImpl")

@@ -12,7 +12,7 @@ import com.sammyun.entity.stu.GraduationPhoto;
 /**
  * GraduationPhoto * DaoImpl - 毕业合影
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("graduationPhotoDaoImpl")

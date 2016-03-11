@@ -24,7 +24,7 @@ import com.sammyun.service.FriendLinkService;
 /**
  * Service - 友情链接
  * 
- * @author Sencloud Team
+
 
  */
 @Service("friendLinkServiceImpl")

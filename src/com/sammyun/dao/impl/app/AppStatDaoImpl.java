@@ -9,7 +9,7 @@ import com.sammyun.entity.app.AppStat;
 /**
  * Dao - 应用统计
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("appStatDaoImpl")

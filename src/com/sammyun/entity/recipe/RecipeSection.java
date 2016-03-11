@@ -20,7 +20,7 @@ import com.sammyun.entity.OrderEntity;
 /**
  * Entity - 学生食谱-食谱段
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

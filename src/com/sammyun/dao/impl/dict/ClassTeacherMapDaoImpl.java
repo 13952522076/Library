@@ -26,7 +26,7 @@ import com.sammyun.entity.recipe.Recipe;
 /**
  * ClassTeacherMap * DaoImpl - 学校
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("classTeacherMapDaoImpl")

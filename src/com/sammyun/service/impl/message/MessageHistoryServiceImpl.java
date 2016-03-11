@@ -13,7 +13,7 @@ import com.sammyun.entity.message.MessageHistory;
 /**
  * MessageHistory * ServiceImpl - 消息历史
  * 
- * @author Sencloud Team
+
 
  */
 @Service("messageHistoryServiceImpl")

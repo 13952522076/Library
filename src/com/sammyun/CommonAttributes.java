@@ -8,7 +8,7 @@ package com.sammyun;
 /**
  * 公共参数
  * 
- * @author Sencloud Team
+
 
  */
 public final class CommonAttributes

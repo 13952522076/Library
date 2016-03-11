@@ -20,7 +20,7 @@ import org.hibernate.validator.constraints.NotEmpty;
 /**
  * Entity - 支付方式
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

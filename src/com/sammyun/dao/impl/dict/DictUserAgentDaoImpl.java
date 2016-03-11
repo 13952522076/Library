@@ -8,7 +8,7 @@ import com.sammyun.entity.dict.DictUserAgent;
 /**
  * DictUserAgent * DaoImpl - 用户浏览器数据字典
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("dictUserAgentDaoImpl")

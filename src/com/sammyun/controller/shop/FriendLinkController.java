@@ -18,7 +18,7 @@ import com.sammyun.service.FriendLinkService;
 /**
  * Controller - 友情链接
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("shopFriendLinkController")

@@ -15,7 +15,7 @@ import javax.persistence.Transient;
 /**
  * Entity - 安全密钥
  * 
- * @author Sencloud Team
+
 
  */
 @Embeddable

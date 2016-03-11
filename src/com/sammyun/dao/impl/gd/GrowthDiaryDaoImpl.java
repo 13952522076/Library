@@ -26,7 +26,7 @@ import com.sammyun.entity.parenting.Parenting;
 /**
  * GrowthDiary * DaoImpl - 成长记
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("growthDiaryDaoImpl")

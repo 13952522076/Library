@@ -25,7 +25,7 @@ import com.sammyun.entity.dict.ClassTeacherMap;
 /**
  * Dao - 会员设备信息列表
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("memberDeviceInfoDaoImpl")

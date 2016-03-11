@@ -24,7 +24,7 @@ import com.sammyun.entity.dict.PatriarchStudentMap;
 /**
  * PatriarchStudentMap * DaoImpl - 学生家长对应列表
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("patriarchStudentMapDaoImpl")

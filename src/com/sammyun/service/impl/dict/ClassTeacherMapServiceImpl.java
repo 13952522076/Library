@@ -23,7 +23,7 @@ import com.sammyun.service.impl.BaseServiceImpl;
 /**
  * Service - 班级
  * 
- * @author Sencloud Team
+
 
  */
 @Service("classTeacherMapServiceImpl")

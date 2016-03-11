@@ -9,7 +9,7 @@ import com.sammyun.entity.recipe.RecipeImage;
 /**
  * Dao - 食谱图片
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("recipeImageDaoImpl")

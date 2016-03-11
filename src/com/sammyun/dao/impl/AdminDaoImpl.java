@@ -20,7 +20,7 @@ import com.sammyun.listener.InitListener;
 /**
  * Dao - 管理员
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("adminDaoImpl")

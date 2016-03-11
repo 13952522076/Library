@@ -6,7 +6,7 @@ import com.sammyun.entity.attendance.SchoolHours;
 /**
  * Dao - 上学放学时间设置
  * 
- * @author Sencloud Team
+
 
  */
 public interface SchoolHoursDao  extends BaseDao<SchoolHours, Long>

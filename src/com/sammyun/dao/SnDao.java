@@ -10,7 +10,7 @@ import com.sammyun.entity.Sn.Type;
 /**
  * Dao - 序列号
  * 
- * @author Sencloud Team
+
 
  */
 public interface SnDao

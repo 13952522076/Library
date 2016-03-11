@@ -22,7 +22,7 @@ import com.sammyun.service.PluginConfigService;
 /**
  * Plugin - 存储
  * 
- * @author Sencloud Team
+
 
  */
 public abstract class StoragePlugin implements Comparable<StoragePlugin>

@@ -17,7 +17,7 @@ import com.sammyun.util.WebUtils;
 /**
  * Interceptor - 列表查询
  * 
- * @author Sencloud Team
+
 
  */
 public class ListInterceptor extends HandlerInterceptorAdapter {

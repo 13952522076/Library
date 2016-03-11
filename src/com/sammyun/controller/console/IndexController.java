@@ -21,7 +21,7 @@ import com.sammyun.service.SearchService;
 /**
  * Controller - 索引
  * 
- * @author Sencloud Team
+
 
  */
 @Controller("adminIndexController")

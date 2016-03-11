@@ -13,7 +13,7 @@ import com.sammyun.entity.Area;
 /**
  * Service - 地区
  * 
- * @author Sencloud Team
+
 
  */
 public interface AreaService extends BaseService<Area, Long> {

@@ -15,7 +15,7 @@ import com.sammyun.entity.Log;
 /**
  * Dao - 日志
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("logDaoImpl")

@@ -19,7 +19,7 @@ import com.sammyun.entity.BaseEntity;
 /**
  * Entity - 学生食谱周信息
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

@@ -8,7 +8,7 @@ import com.sammyun.entity.dict.DictSpecialty;
 /**
  * DictSpecialty * DaoImpl - 专业
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("dictSpecialtyDaoImpl")

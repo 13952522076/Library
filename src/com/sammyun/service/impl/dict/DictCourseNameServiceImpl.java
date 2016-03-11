@@ -13,7 +13,7 @@ import com.sammyun.entity.dict.DictCourseName;
 /**
  * DictCourseName * ServiceImpl - 课程名称字典表
  * 
- * @author Sencloud Team
+
 
  */
 @Service("dictCourseNameServiceImpl")

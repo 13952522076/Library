@@ -27,7 +27,7 @@ import com.sammyun.plugin.StoragePlugin;
 /**
  * Plugin - FTP
  * 
- * @author Sencloud Team
+
 
  */
 @Component("ftpPlugin")

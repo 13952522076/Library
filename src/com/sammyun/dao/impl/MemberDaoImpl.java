@@ -32,7 +32,7 @@ import com.sammyun.entity.parenting.Parenting;
 /**
  * Dao - 会员
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("memberDaoImpl")

@@ -8,7 +8,7 @@ import com.sammyun.service.BaseService;
 /**
  * DiaryTranspond * Service - 成长记转发
  * 
- * @author Sencloud Team
+
 
  */
 public interface DiaryTranspondService extends BaseService<DiaryTranspond, Long>

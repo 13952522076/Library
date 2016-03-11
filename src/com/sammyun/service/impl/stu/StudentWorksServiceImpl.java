@@ -17,7 +17,7 @@ import com.sammyun.service.stu.StudentWorksService;
 /**
  * ServiceImpl - 学生作品
  * 
- * @author Sencloud Team
+
 
  */
 @Service("studentWorksServiceImpl")

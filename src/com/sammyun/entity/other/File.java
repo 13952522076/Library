@@ -18,7 +18,7 @@ import com.sammyun.entity.BaseEntity;
 /**
  * File * Entity - 文件
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

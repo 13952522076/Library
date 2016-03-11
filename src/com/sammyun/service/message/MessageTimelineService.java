@@ -6,7 +6,7 @@ import com.sammyun.entity.message.MessageTimeline;
 /**
  * MessageTimeline * Service - 消息时间线
  * 
- * @author Sencloud Team
+
 
  */
 public interface MessageTimelineService extends BaseService<MessageTimeline, Long> {

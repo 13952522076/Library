@@ -8,7 +8,7 @@ import com.sammyun.entity.other.Clientversion;
 /**
  * Clientversion * DaoImpl - 客户端版本管理
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("clientversionDaoImpl")

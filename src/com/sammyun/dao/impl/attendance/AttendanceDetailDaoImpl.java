@@ -28,7 +28,7 @@ import com.sammyun.entity.attendance.WorkScheduling;
 /**
  * DaoImpl - 考勤详情
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("attendanceDetailDaoImpl")

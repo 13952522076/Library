@@ -8,7 +8,7 @@ import com.sammyun.entity.dict.DictDeviceModel;
 /**
  * DictDeviceModel * DaoImpl - 设备数据字典
  * 
- * @author Sencloud Team
+
 
  */
 @Repository("dictDeviceModelDaoImpl")

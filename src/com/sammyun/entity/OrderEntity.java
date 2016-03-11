@@ -19,7 +19,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 /**
  * Entity - 排序基类
  * 
- * @author Sencloud Team
+
 
  */
 @MappedSuperclass

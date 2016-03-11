@@ -29,7 +29,7 @@ import com.sammyun.entity.dict.DictSchool;
 /**
  * Entity - 地区
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

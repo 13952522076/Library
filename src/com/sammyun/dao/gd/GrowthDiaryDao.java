@@ -12,7 +12,7 @@ import com.sammyun.entity.gd.GrowthDiary;
 /**
  * GrowthDiary * Dao - 成长记
  * 
- * @author Sencloud Team
+
 
  */
 public interface GrowthDiaryDao extends BaseDao<GrowthDiary, Long>

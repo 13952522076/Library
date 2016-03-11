@@ -18,7 +18,7 @@ import com.sammyun.entity.BaseEntity;
 /**
  * BusReservation * Entity - 预约数据
  * 
- * @author Sencloud Team
+
 
  */
 @Entity

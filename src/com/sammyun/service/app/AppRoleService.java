@@ -9,7 +9,7 @@ import com.sammyun.service.BaseService;
 /**
  * Service - 应用角色
  * 
- * @author Sencloud Team
+
 
  */
 public interface AppRoleService extends BaseService<AppRole, Long> {
