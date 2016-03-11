@@ -63,11 +63,13 @@ public class Admin extends BaseEntity
     /** 角色 */
     private Set<Role> roles = new HashSet<Role>();
 
-    /** 管理员隶属的学校 */
+    /** 用户隶属的学校 */
     private DictSchool dictSchool;
 
     /** 用户头像 */
     private String iconPhoto;
+    
+    
 
     /**
      * 获取用户名
