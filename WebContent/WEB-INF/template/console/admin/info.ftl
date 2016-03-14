@@ -6,16 +6,10 @@
 <title>${message("console.admin.list")} -图书智能管理推荐系统</title>
 <meta name="author" content="福州盛云软件技术有限公司 Team" />
 <meta name="copyright" content="福州盛云软件技术有限公司" />
-[#include "/console/include/resources.ftl" /]
-<script type="text/javascript" src="${base}/resources/console/js/common.js"></script>
-<script type="text/javascript" src="${base}/resources/console/js/list.js"></script>
+[#include "/console/include/resource.ftl" /]
 <script type="text/javascript">
 $().ready(function() {
-
 	[@flash_message /]
-	
-	
-
 });
 
 function editName(){
@@ -45,8 +39,6 @@ function editName(){
 		}
 	});
 	
-	
-	
 }
 </script>
 <style type="text/css">
@@ -68,7 +60,9 @@ function editName(){
 	<!-- start  导航 -->
 	[#include "/console/include/nav.ftl" /]
 	<!-- end 导航-->
-	 <div class="wrapper wrapper-content col-md-10 col-md-offset-2">
+	 <div class="wrapper wrapper-content">
+	 	
+	 
 	 	<input type="hidden" id="adminId" value="${admin.id}">
         <div class="row">
             <div class="col-sm-3">

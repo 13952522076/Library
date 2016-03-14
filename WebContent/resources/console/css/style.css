@@ -176,7 +176,7 @@ h3,h4,h5 {
 /*�û����ñ���*/
 .nav-header {
 	padding: 33px 25px;
-	background:#70bde0;
+	/* background:#70bde0; */
 	/*background: url("patterns/header-profile.png") no-repeat;*/
 }
 

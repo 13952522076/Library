@@ -1594,27 +1594,3 @@ div.search fieldset input.text {
 }
 
 
-/* ----------start IE版本过低弹出层 ---------- */
-
-#bodyMask{position: fixed;left: 0px;top: 0px;z-index: 999;width: 100%;height: 100%;background: #000;filter: alpha(opacity = 30);-moz-opacity: 0.3;opacity: 0.3;}
-#bodyMask2{position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; background: #000; filter: alpha(opacity = 90); -moz-opacity: 0.9; opacity: 0.9;}
-.layerDiv{display:none; position: absolute; position: fixed; _position: absolute; z-index: 9999999999999; width: 730px; height: 340px; left: 50%; top: 50%; margin: -170px 0 0 -365px; padding: 0px; background: #fff; border: 2px #808080 solid; -moz-border-radius: 8px; -khtml-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px;}
-.layerDiv h2{line-height: 1.2em; margin: 30px 25px 10px; color: #000; font-size: 24px;}
-.layerDiv h3{margin: 20px 25px; color: #333; clear: both; font-size: 16px;}
-.layerDiv div{margin: 0px 25px; color: #333; clear: both; font-size: 14px; border-top:#ccc 1px dotted; padding-top: 20px;}
-.layerDiv div span{float: right; color: #666; font-size: 12px;}
-a:link, a:visited{color:#333;text-decoration:none;}
-.layerDiv p a:hover{color: #0884CD;}
-.layerDiv div span a{color: #369;}
-.layerDiv ul{margin: 20px auto 0px; width: 540px; height: 100px; clear: both; width: 580px;}
-.layerDiv ul li{text-align: center; margin: 0px 15px; width: 105px; float: left; height: 80px;}
-.layerDiv ul li a{display: block; height: 80px; clear: both;}
-.icoChrom{background:url("../images/login/Chorm.png") no-repeat; width: 105px; display: inline-block; background-position: 0px 0px; height: 80px; margin-right: 20px;}
-.icoOpera{background: url("../images/login/opera.png") no-repeat; width: 73px; margin-right: 20px;}
-.icoFirefox{background: url("../images/login/Firefox.png") no-repeat ; width: 61px; display: inline-block; height: 80px; margin-right: 20px;}
-.icosafari{background: url(../images/login/safari.png) no-repeat ; width: 69px; display: inline-block; height: 80px;}
-.layerDiv p{position: relative; margin: 0px 25px; border-top: #ccc 1px dotted; padding-top: 15px;}
-.layerDiv p a{line-height: 32px; height: 32px; color: #666; font-size: 16px; cursor: pointer;}
-.icoGt{text-indent: 40px; display: inline-block; background: url(../images/login/arrow.png) no-repeat 0px 0px;}
-
-/* ----------end IE版本过低弹出层 ---------- */

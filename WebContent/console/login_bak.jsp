@@ -415,33 +415,6 @@
 		</div>
 	</div>
 	
-	<!-- IE版本过低 start -->
-	<div id="bodyMask" style="display:none;"></div>
-	<div id="bodyMask2" style="display:none;"></div>
-	<div id="browser" class="layerDiv" jQuery19103044797775550879="18">
-		<h2>噢，您是否知道您正在使用浏览器无法支持我们的页面？</h2>
-		<h3>很抱歉，由于采用了HTML5，当前浏览器无法完美的呈现该页面。</h3>
-		<div>
-			<span>如果你还不知道什么是HTML5标准，请看<a href="http://zh.wikipedia.org/wiki/HTML5" target="_blank">维基百科</a></span>
-			建议您使用以下浏览器最新版本
-		</div>
-		<ul>
-			<li>
-				<a target="_blank" href="http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html" class="icoChrom" title="谷歌Chrome浏览器"></a>
-			</li>
-			<li>
-				<a target="_blank" href="http://www.opera.com/zh-cn" class="icoOpera" title="Opera浏览器"></a>
-			</li>
-			<li>
-				<a target="_blank" href="http://www.firefox.com.cn/" class="icoFirefox" title="火狐浏览器"></a>
-			</li>
-			<li>
-				<a target="_blank" href="http://www.apple.com/cn/safari/" class="icosafari" title="safari浏览器"></a>
-			</li>
-		</ul>
-		<p><a class="ico icoGt" onclick="knowStillOpen()" >知道了但是还是请打开页面</a></p>
-	</div>
-	<!-- IE版本过低 end-->
 	
 	<!-- 申请开通小书僮 start-->
 	<div class="main contact_bodyColor" id="div_2" style="display: none;">

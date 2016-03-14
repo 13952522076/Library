@@ -563,27 +563,6 @@ function message(code) {
 
 
 
-	/*判断浏览器版本是否过低*/
-$(document).ready(function() {
-	var b_name = navigator.appName;
-	var b_version = navigator.appVersion;
-	var version = b_version.split(";");
-	var trim_version = version[1].replace(/[ ]/g, "");
-	if (b_name == "Microsoft Internet Explorer") {
-		/*如果是IE6或者IE7或者IE8*/
-		if (trim_version == "MSIE8.0"
-				|| trim_version == "MSIE7.0"
-				|| trim_version == "MSIE6.0") {
-		    $("#bodyMask").show();
-		    $("#bodyMask2").show();
-		    $("#browser").show();
-			//document.getElementById("bodyMask").style.display = "block";
-			//document.getElementById("bodyMask2").style.display = "block";
-			//document.getElementById("browser").style.display = "block";
-		}
-	}
-});
-
 // 令牌
 $().ready(function() {
 	
