@@ -47,7 +47,7 @@
 			          	<span class="caret"></span>
 					</a>
 		          	<ul class="dropdown-menu">
-			            <li><a href="#">图书管理</a></li>
+			            <li><a href="${base}/console/book/list.ct?">图书管理</a></li>
 			            <li><a href="#">新增图书</a></li>
 		          	</ul>
 	        	</li>
