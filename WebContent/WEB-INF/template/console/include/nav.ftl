@@ -37,6 +37,7 @@
 			            <li><a href="#">最热书籍</a></li>
 			            <li><a href="#">相似同学</a></li>
 			            <li><a href="#">历史推荐</a></li>
+			            <li><a href="#">所有书籍</a></li>
 		          	</ul>
 	        	</li>
 	        	

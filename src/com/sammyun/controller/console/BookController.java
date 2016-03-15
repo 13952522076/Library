@@ -71,4 +71,31 @@ public class BookController extends BaseController
         return "/console/book/list";
 
     }
+    
+    /**
+     * 下拉获取书本列表 <功能详细描述>
+     * 
+     * @param dictClassId
+     * @param response
+     * @see [类、类#方法、类#成员]
+     */
+    @RequestMapping(value = "/ajaxList", method = RequestMethod.GET)
+    public void ajaxList(Pageable pageable, ModelMap model, HttpServletResponse response)
+    {   
+        Page<Book> page = bookService.findPage(pageable);
+        List<Book> books = page.getContent();
+        try
+        {
+            response.setContentType("text/html; charset=UTF-8");
+            JsonUtils.writeValue(response.getWriter(), books);
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
+    
+    
+    
+    
 }

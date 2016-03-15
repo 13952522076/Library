@@ -55,6 +55,9 @@ public class Book extends BaseEntity
     /** 藏书数 */
     private int count;
 
+    /** 封面 */
+    private String cover;
+
     public String getName()
     {
         return name;
@@ -135,4 +138,13 @@ public class Book extends BaseEntity
         this.count = count;
     }
 
+    public String getCover()
+    {
+        return cover;
+    }
+
+    public void setCover(String cover)
+    {
+        this.cover = cover;
+    }
 }

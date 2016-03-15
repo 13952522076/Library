@@ -139,20 +139,20 @@
                         <h1>图书智能管理</h1>
                     </div>
                     <div class="m-b"></div>
-                    <h4>欢迎使用 <strong>图书智能管理推荐系统</strong></h4>
+                    <h4>Better mind,better life</h4>
                     <ul class="m-b">
-                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势一</li>
-                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势二</li>
-                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势三</li>
-                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势四</li>
-                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势五</li>
+                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 手机电脑的适应</li>
+                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优秀算法的推荐</li>
+                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优质管理的服务</li>
+                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 简单易懂的操作</li>
+                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 简洁大气的页面</li>
                     </ul>
                     <strong>还没有账号？ <a href="#">立即注册&raquo;</a></strong>
                 </div>
             </div>
             <div class="col-sm-5">
                 <form id="loginForm" action="login.jsp" method="post">
-                    <h4 class="no-margins">登录：</h4>
+                    <h4 class="no-margins">Login the system：</h4>
                     
                     <input type="hidden" id="enPassword" name="enPassword" />
                     <input id="username" class="form-control uname" name="username" maxlength="20" placeholder="用户名" />
