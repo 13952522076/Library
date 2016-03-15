@@ -32,6 +32,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="renderer" content="webkit">
 <%
 	if (applicationContext != null) {
@@ -67,7 +68,7 @@
 <script src="<%=base%>/resources/console/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
 <link href="<%=base%>/resources/console/css/bootstrap.min.css?v=1.7" rel="stylesheet">
-
+<link href="<%=base%>/resources/console/css/login.min.css" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript">
 	$().ready( function() {
@@ -104,7 +105,7 @@
 <%
 	} else {
 %>
-<title>提示信息 -图书智能管理推荐系统</title>
+<title>图书智能管理推荐系统</title>
 <meta http-equiv="expires" content="0" />
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Cache-Control" content="no-cache" />
@@ -112,22 +113,60 @@
 <meta name="copyright" content="maxu" />
 <link href="<%=base%>/resources/console/css/common.css" rel="stylesheet"
 	type="text/css" />
-<link href="<%=base%>/resources/console/css/login.css" rel="stylesheet"
+<link href="<%=base%>/resources/console/css/login.min.css" rel="stylesheet"
 	type="text/css" />
 <%
 	}
 %>
 </head>
-<body>
+<body class="signin">
 	
-					
+	<!--  			
 		<form id="loginForm" action="login.jsp" method="post">
 			<input type="hidden" id="enPassword" name="enPassword" />
 			<input id="username" name="username" maxlength="20" placeholder="用户名" />
 			<input type="password" id="password"  maxlength="20" autocomplete="off" placeholder="密码" />
 			<input type="submit" value="登录" />
 		</form>
-					
+	-->		
+	
+	
+	<div class="signinpanel">
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="signin-info">
+                    <div class="logopanel m-b">
+                        <h1>图书智能管理</h1>
+                    </div>
+                    <div class="m-b"></div>
+                    <h4>欢迎使用 <strong>图书智能管理推荐系统</strong></h4>
+                    <ul class="m-b">
+                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势一</li>
+                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势二</li>
+                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势三</li>
+                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势四</li>
+                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势五</li>
+                    </ul>
+                    <strong>还没有账号？ <a href="#">立即注册&raquo;</a></strong>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <form id="loginForm" action="login.jsp" method="post">
+                    <h4 class="no-margins">登录：</h4>
+                    
+                    <input type="hidden" id="enPassword" name="enPassword" />
+                    <input id="username" class="form-control uname" name="username" maxlength="20" placeholder="用户名" />
+                    <input type="password" id="password"  maxlength="20" autocomplete="off" placeholder="密码" class="form-control pword m-b"/>
+                    <input class="btn btn-success btn-block" type="submit" value="登录" />
+                </form>
+            </div>
+        </div>
+        <div class="signup-footer">
+            <div class="pull-left">
+                &copy; 2016 All Rights Reserved. Melody
+            </div>
+        </div>
+    </div>			
 	
 </body>
 </html>
