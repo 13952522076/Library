@@ -10,6 +10,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.sammyun.entity.Admin;
 import com.sammyun.entity.BaseEntity;
 
@@ -58,6 +59,7 @@ public class Book extends BaseEntity
     /** 封面 */
     private String cover;
 
+    @JsonProperty
     public String getName()
     {
         return name;
@@ -68,6 +70,7 @@ public class Book extends BaseEntity
         this.name = name;
     }
 
+    @JsonProperty
     public String getAuthor()
     {
         return author;
@@ -78,6 +81,7 @@ public class Book extends BaseEntity
         this.author = author;
     }
 
+    @JsonProperty
     public Date getPublishDate()
     {
         return publishDate;
@@ -88,6 +92,7 @@ public class Book extends BaseEntity
         this.publishDate = publishDate;
     }
 
+    @JsonProperty
     public Date getPutingDate()
     {
         return putingDate;
@@ -98,6 +103,7 @@ public class Book extends BaseEntity
         this.putingDate = putingDate;
     }
 
+    @JsonProperty
     public Double getPrice()
     {
         return price;
@@ -108,6 +114,7 @@ public class Book extends BaseEntity
         this.price = price;
     }
 
+    @JsonProperty
     public String getPublishCompany()
     {
         return publishCompany;
@@ -118,6 +125,7 @@ public class Book extends BaseEntity
         this.publishCompany = publishCompany;
     }
 
+    @JsonProperty
     public String getDescription()
     {
         return description;
@@ -128,6 +136,7 @@ public class Book extends BaseEntity
         this.description = description;
     }
 
+    @JsonProperty
     public int getCount()
     {
         return count;
@@ -138,6 +147,7 @@ public class Book extends BaseEntity
         this.count = count;
     }
 
+    @JsonProperty
     public String getCover()
     {
         return cover;

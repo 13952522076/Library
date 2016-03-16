@@ -5,6 +5,7 @@
 <script src="${base}/resources/console/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
 <!-- Custom and plugin javascript -->
+<script src="${base}/resources/console/js/plugins/metisMenu/jquery.metisMenu.js"></script>
 <script src="${base}/resources/console/js/hplus.js?v=1.7"></script>
 <script src="${base}/resources/console/js/plugins/pace/pace.min.js"></script>
 <!-- layer -->

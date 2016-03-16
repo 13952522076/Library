@@ -14,16 +14,69 @@
 $().ready(function() {
 	[@flash_message /]
 	//下拉加载
-	$(window).bind("scroll",function(){
-		if($(document).scrollTop() + $(window).height() > $(document).height() - 100 && c != 0)// 接近底部100px
-		{
-			alert("test");
-		}
+	$(window).scroll(function () {
+	    var scrollTop = $(this).scrollTop();
+	    var scrollHeight = $(document).height();
+	    var windowHeight = $(this).height();
+	    if (scrollTop + windowHeight == scrollHeight) {
+			//ajax获取数据
+			getBooks();
+	    }
 	});
 	
 	
 	
 });
+
+//ajax获取book
+function getBooks(){
+	var pageNumber = $("#pageNumber").val();
+	pageNumber++;
+	$("#pageNumber").val(pageNumber);
+	$.ajax({
+		type: "GET",
+		url: "ajaxList.ct",
+		data: {
+			pageNumber:pageNumber
+		},
+		dataType: "json",
+		success:function(data){
+			showBooks(data);
+			//插入页面
+		}
+	});
+}
+
+//显示排版图书
+function showBooks(data){
+	if(data==null || data.length==0){
+		alert("已到底");
+		return;
+	}
+	
+	var appendContent = '';
+	for (i in data)
+	{
+		var iBook = data[i];
+		appendContent+='<div class="post-masonry col-md-4 col-sm-6">';
+		appendContent+='<div class="post-thumb">';
+		appendContent+='<img src="http://rescdn.qqmail.com/dyimg/20140630/7D3176BB2FD7.jpg" alt="">';
+		appendContent+='<div class="title-over">';
+		appendContent+='<h4><a href="#">'+iBook.name+'</a></h4>';
+		appendContent+='</div>';
+		appendContent+='<div class="post-hover text-center">';
+		appendContent+='<div class="inside">';
+		appendContent+='<i class="fa fa-plus"></i>';
+		appendContent+='<span class="date">'+iBook.author+'</span>';
+		appendContent+='<p>'+iBook.description+'</p>';
+		appendContent+='</div>';
+		appendContent+='</div>';
+		appendContent+='</div>';
+		appendContent+='</div>';
+	}
+	//$("#masonryDiv").append(appendContent);
+	$("#masonryDiv").append("haha");
+}
 </script>
 
  <!-- Preloader -->
@@ -46,6 +99,7 @@ $().ready(function() {
 	[#include "/console/include/nav.ftl" /]
 	<!-- end 导航-->
  	<div class="wrapper wrapper-content">
+ 		<input type="hidden" id="pageNumber" value="1">
  		<!--主体内容 start-->
 		<div id="loader-wrapper">
             <div id="loader"></div>
