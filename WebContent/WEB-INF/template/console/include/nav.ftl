@@ -49,7 +49,7 @@
 					</a>
 		          	<ul class="dropdown-menu">
 			            <li><a href="${base}/console/book/list.ct?">图书管理</a></li>
-			            <li><a href="#">新增图书</a></li>
+			            <li><a href="${base}/console/book/add.ct">新增图书</a></li>
 		          	</ul>
 	        	</li>
 	      	</ul>

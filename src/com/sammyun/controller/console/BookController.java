@@ -95,7 +95,20 @@ public class BookController extends BaseController
         }
     }
     
-    
+    /**
+     * 进入图书添加页面
+     * @param pageable
+     * @param model
+     * @return
+     * @see [类、类#方法、类#成员]
+     */
+    @RequestMapping(value = "/add", method = RequestMethod.GET)
+    public String add(ModelMap model)
+    {
+        
+        return "/console/book/add";
+
+    }
     
     
 }
