@@ -50,8 +50,48 @@ $().ready(function() {
 	});
 	
 	
+	<!--图片上传插件-->
+	$("#imageUpload").uploadify({
+		'successTimeout' : 50000,
+        'height'        : 27, //按钮高度  
+        'width'         : 80, // 按钮长度  
+        'buttonText'    : '浏览',  
+        'swf'           : '${base}/resources/console/uploadify/uploadify.swf',  
+        'uploader'      : '${base}/console/upload/uploadImage.ct',  
+        'auto'          : true,
+        'multi'          : true, //是否支持多文件上传  
+	    'simUploadLimit' : 1, //一次同步上传的文件数目     
+	    'sizeLimit'      : 19871202, //设置单个文件大小限制     
+	    'queueSizeLimit' : 1, //队列中同时存在的文件个数限制
+	    'fileObjName'    :  'file',
+	    'fileTypeDesc'  :  '*.jpg;*.gif;*.jpeg;*.png;*.bmp',//图片选择描述  
+        'fileTypeExts'  :  '*.jpg;*.gif;*.jpeg;*.png;*.bmp',//允许的格式      
+        'formData'      : {'token' : getCookie("token") },
+        //上传成功  
+        'onUploadSuccess' : function(file, data, response) {  
+            var dataJson = JSON.parse(data);
+            var imageURL = dataJson['url'];
+            var message = dataJson['message'];
+            if(message == 'success'){
+	            //alert(imageURL);url(man.jpg)
+	            $("#cover_hidden").val(imageURL);
+	            document.getElementById("bookSample").style.backgroundImage = 'url('+imageURL+')';
+            }else{
+            	alert("上传失败");
+            }
+        },
+	    onComplete: function (event, queueID, fileObj, response, data) {
+	           
+	    },  
+	    onError: function(event, queueID, fileObj) {     
+	        alert("文件:" + fileObj.name + "上传失败");     
+	    }
+	});
 	
 	
+	
+	
+	<!--图片上传插件-->
 	
 	
 	
@@ -60,6 +100,13 @@ $().ready(function() {
 	
 	
 });
+
+function getCookie(name) {
+	if (name != null) {
+		var value = new RegExp("(?:^|; )" + encodeURIComponent(String(name)) + "=([^;]*)").exec(document.cookie);
+		return value ? decodeURIComponent(value[1]) : null;
+	}
+}
 
 </script>
 <style>
@@ -144,14 +191,15 @@ $().ready(function() {
                         <div class="form-group">
                             <label class="col-sm-3 control-label">封面</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" name="cover">
+                            	<input type="hidden" id="cover_hidden" name="cover">
+                                <input type="file" id="imageUpload" />
                             </div>
                         </div>
 		        	</div>
 		        	<div class="col-md-5">
 		        		<div class="row">
 		        			<!--<img src="${base}/resources/console/images/book_cover.jpg" alt="..." class="img-thumbnail">-->
-		        			<div class="col-md-10 col-md-offset-1 self_book_cover">
+		        			<div id="bookSample" class="col-md-10 col-md-offset-1 self_book_cover">
 		        				<center>
 		        					<h2>书名</h2>
 		        					<h3>作者</h3>

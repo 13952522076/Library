@@ -2,7 +2,7 @@
 
 <preschoolEdu> 
 	<setting name="siteName" value="盛云幼教平台"/>  
-	<setting name="siteUrl" value="http://121.42.213.205:8080/PreschoolEdu"/>  
+	<setting name="siteUrl" value="http://localhost:8080/Library"/>  
 	<setting name="logo" value="/upload/image/logo.gif"/>  
 	<setting name="address" value="广州"/>  
 	<setting name="phone" value="400-8888888"/>  
