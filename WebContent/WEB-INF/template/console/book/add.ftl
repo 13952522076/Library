@@ -8,7 +8,7 @@
 <script type="text/javascript" src="${base}/resources/console/js/jquery.validate.js"></script>
 <script type="text/javascript" src="${base}/resources/console/uploadify/jquery.uploadify.min.js"></script>
 <link href="${base}/resources/console/uploadify/uploadify.css" rel="stylesheet" type="text/css" />
-
+<script type="text/javascript" src="${base}/resources/console/js/common.js"></script>
 <script type="text/javascript">
 $().ready(function() {
 	[@flash_message /]	
@@ -16,7 +16,7 @@ $().ready(function() {
 	/**添加正整数验证规则 */
 	jQuery.validator.addMethod("positiveinteger", function(value, element) {
 		var aint=parseInt(value);	
-    	return aint>0&& (aint+"")==value;   
+    	return aint>0==value;   
   	}, "请填写一个正整数"); 
 	
 	
@@ -40,7 +40,8 @@ $().ready(function() {
 		        required: true
 		    },
 		    count:{
-		        positiveinteger:true,
+		    	number:true,
+		    	min:0,
 		        max:100
 		    }
 			
@@ -101,12 +102,7 @@ $().ready(function() {
 	
 });
 
-function getCookie(name) {
-	if (name != null) {
-		var value = new RegExp("(?:^|; )" + encodeURIComponent(String(name)) + "=([^;]*)").exec(document.cookie);
-		return value ? decodeURIComponent(value[1]) : null;
-	}
-}
+
 
 </script>
 <style>
@@ -137,7 +133,7 @@ function getCookie(name) {
  	<div class="wrapper wrapper-content">
  		<!--主体内容 start-->
 	    <div class="col-md-8 col-md-offset-2 form-group self_form_div container">
-		    <form id="inputForm" class="form-horizontal">
+		    <form id="inputForm" class="form-horizontal" action="save.ct" method="post">
 		        <div class="row">
 		        	<div class="col-md-7" style="border-right: 1px solid lightgray">
 		        		<div class="form-group">
@@ -155,43 +151,43 @@ function getCookie(name) {
                         <div class="form-group">
                             <label class="col-sm-3 control-label">出版日期</label>
                             <div class="col-sm-9">
-                                <input type="text" readOnly id="publishDate" class="form-control layer-date" name="publishDate">
+                                <input type="text" id="publishDate" class="form-control layer-date" name="publishDate">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-3 control-label">入库日期</label>
                             <div class="col-sm-9">
-                                <input type="text" readOnly id="putingDate" class="form-control layer-date" name="putingDate">
+                                <input type="text" id="putingDate" class="form-control layer-date" name="putingDate">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-3 control-label">价格（元）</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control " name="price">
+                                <input type="text" class="form-control" name="price">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-3 control-label">出版社</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" name="publishCompany" maxlength="30">
+                                <input type="text" class="form-control" name="publishCompany"  maxlength="30">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-3 control-label">简介</label>
                             <div class="col-sm-9">
-                            	<textarea name="description" class="form-control" rows="3" maxlength="50" placeholder="50个字以内"></textarea>
+                            	<textarea name="description"  class="form-control" rows="3" maxlength="50" placeholder="50个字以内"></textarea>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-3 control-label">藏书数</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" name="count">
+                                <input type="text" name="count" class="form-control" >
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-3 control-label">封面</label>
                             <div class="col-sm-9">
-                            	<input type="hidden" id="cover_hidden" name="cover">
+                            	<input type="hidden" id="cover_hidden" name="cover" >
                                 <input type="file" id="imageUpload" />
                             </div>
                         </div>
@@ -203,6 +199,7 @@ function getCookie(name) {
 		        				<center>
 		        					<h2>书名</h2>
 		        					<h3>作者</h3>
+		        					<div>出版社</div>
 		        				</center>
 		        			</div>
 		        		</div>
@@ -225,13 +222,13 @@ laydate({
     elem: '#publishDate', 
     event: 'focus',
     max: laydate.now(), 
-    format: 'YYYY/MM/DD' 
+    format: 'YYYY-MM-DD' 
 });
 laydate({
     elem: '#putingDate', 
     event: 'focus',
     max: laydate.now(), 
-    format: 'YYYY/MM/DD'
+    format: 'YYYY-MM-DD'
 });
 </script>
 

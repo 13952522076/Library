@@ -6,44 +6,20 @@
 package com.sammyun.controller.console;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.sammyun.Filter;
-import com.sammyun.Filter.Operator;
-import com.sammyun.Message;
 import com.sammyun.Page;
 import com.sammyun.Pageable;
-import com.sammyun.entity.Admin;
-import com.sammyun.entity.dict.DictSchool;
 import com.sammyun.entity.library.Book;
-import com.sammyun.entity.news.News;
-import com.sammyun.entity.recipe.Recipe;
-import com.sammyun.entity.recipe.RecipeImage;
-import com.sammyun.entity.recipe.RecipeSection;
-import com.sammyun.entity.recipe.RecipeWeekDay;
-import com.sammyun.service.AdminService;
 import com.sammyun.service.library.BookService;
-import com.sammyun.service.news.NewsService;
-import com.sammyun.service.recipe.RecipeDetailService;
-import com.sammyun.service.recipe.RecipeImageService;
-import com.sammyun.service.recipe.RecipeService;
-import com.sammyun.service.recipe.RecipeWeekDayService;
-import com.sammyun.service.recipe.RecipesSectionService;
-import com.sammyun.util.EduUtil;
 import com.sammyun.util.JsonUtils;
 
 /**
@@ -53,9 +29,6 @@ import com.sammyun.util.JsonUtils;
 @RequestMapping("/console/book")
 public class BookController extends BaseController
 {
-
-    /** 日志 */
-    private static final Logger logger = LoggerFactory.getLogger(BookController.class);
 
     @Resource(name = "bookServiceImpl")
     private BookService bookService;
@@ -71,7 +44,7 @@ public class BookController extends BaseController
         return "/console/book/list";
 
     }
-    
+
     /**
      * 下拉获取书本列表 <功能详细描述>
      * 
@@ -81,7 +54,7 @@ public class BookController extends BaseController
      */
     @RequestMapping(value = "/ajaxList", method = RequestMethod.GET)
     public void ajaxList(Pageable pageable, ModelMap model, HttpServletResponse response)
-    {   
+    {
         Page<Book> page = bookService.findPage(pageable);
         List<Book> books = page.getContent();
         try
@@ -94,9 +67,10 @@ public class BookController extends BaseController
             e.printStackTrace();
         }
     }
-    
+
     /**
      * 进入图书添加页面
+     * 
      * @param pageable
      * @param model
      * @return
@@ -105,10 +79,16 @@ public class BookController extends BaseController
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String add(ModelMap model)
     {
-        
+
         return "/console/book/add";
 
     }
-    
-    
+
+    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    public String save(Book book)
+    {
+        bookService.save(book);
+        return "redirect:list.ct";
+    }
+
 }
