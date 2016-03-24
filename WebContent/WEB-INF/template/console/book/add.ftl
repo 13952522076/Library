@@ -41,8 +41,12 @@ $().ready(function() {
 		    },
 		    count:{
 		    	number:true,
+		    	digits:true,
 		    	min:0,
 		        max:100
+		    },
+		    price:{
+		    	number:true
 		    }
 			
 		},
@@ -74,7 +78,6 @@ $().ready(function() {
             var imageURL = dataJson['url'];
             var message = dataJson['message'];
             if(message == 'success'){
-	            //alert(imageURL);url(man.jpg)
 	            $("#cover_hidden").val(imageURL);
 	            document.getElementById("bookSample").style.backgroundImage = 'url('+imageURL+')';
             }else{
@@ -94,8 +97,17 @@ $().ready(function() {
 	
 	<!--图片上传插件-->
 	
-	
-	
+	<!--监听表单变化-->
+	$("#name, #author,#publishCompany").change(function(){
+		var name = $("#name").val();
+		var author = $("#author").val();
+		var publishCompany = $("#publishCompany").val();
+		
+		$("#publishCompanyShow").html(publishCompany);
+		$("#nameShow").html(name);
+		$("#authorShow").html(author);
+		
+	});  
 	
 	
 	
@@ -114,9 +126,11 @@ $().ready(function() {
 }
 .self_book_cover{
 	background-image: url(${base}/resources/console/images/book_cover.png);
-	background-size: cover;
+	/*background-size: cover;*/
+	background-size: contain;
 	background-repeat: no-repeat;
 	/*background-attachment: fixed;*/
+	height:500px;
 }
 .laydate_box, .laydate_box * {
     box-sizing:content-box;
@@ -135,17 +149,17 @@ $().ready(function() {
 	    <div class="col-md-8 col-md-offset-2 form-group self_form_div container">
 		    <form id="inputForm" class="form-horizontal" action="save.ct" method="post">
 		        <div class="row">
-		        	<div class="col-md-7" style="border-right: 1px solid lightgray">
+		        	<div  class="col-md-7" style="border-right: 1px solid lightgray">
 		        		<div class="form-group">
                             <label class="col-sm-3 control-label">书名<span class="text-danger">*</span></label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" name="name" maxlength="30">
+                                <input type="text" class="form-control" id="name" name="name" maxlength="30">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-3 control-label">作者</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" name="author" maxlength="30">
+                                <input type="text" class="form-control" id="author" name="author" maxlength="30">
                             </div>
                         </div>
                         <div class="form-group">
@@ -169,7 +183,7 @@ $().ready(function() {
                         <div class="form-group">
                             <label class="col-sm-3 control-label">出版社</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" name="publishCompany"  maxlength="30">
+                                <input type="text" class="form-control" id="publishCompany" name="publishCompany"  maxlength="30">
                             </div>
                         </div>
                         <div class="form-group">
@@ -192,14 +206,14 @@ $().ready(function() {
                             </div>
                         </div>
 		        	</div>
-		        	<div class="col-md-5">
+		        	<div id="rightDIV" class="col-md-5">
 		        		<div class="row">
 		        			<!--<img src="${base}/resources/console/images/book_cover.jpg" alt="..." class="img-thumbnail">-->
 		        			<div id="bookSample" class="col-md-10 col-md-offset-1 self_book_cover">
 		        				<center>
-		        					<h2>书名</h2>
-		        					<h3>作者</h3>
-		        					<div>出版社</div>
+		        					<h2 id="nameShow" style="margin-top:30%;">书名</h2>
+		        					<h3 id="authorShow" style="margin-top:10%;">作者</h3>
+		        					<div id="publishCompanyShow" style="margin-top:10%;">出版社</div>
 		        				</center>
 		        			</div>
 		        		</div>
