@@ -1,17 +1,12 @@
 package com.sammyun.entity.library;
 
 import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
 
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.ManyToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.sammyun.entity.Admin;
 import com.sammyun.entity.BaseEntity;
 
 /**

@@ -39,8 +39,8 @@ public class BookController extends BaseController
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String list(Pageable pageable, ModelMap model)
     {
-        Page<Book> page = bookService.findPage(pageable);
-        model.addAttribute("page", page);
+        List<Book> books = bookService.findAll();
+        model.addAttribute("books", books);
         return "/console/book/list";
 
     }
@@ -84,6 +84,13 @@ public class BookController extends BaseController
 
     }
 
+    /**
+     * 保存书本
+     * <功能详细描述>
+     * @param book
+     * @return
+     * @see [类、类#方法、类#成员]
+     */
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public String save(Book book)
     {
@@ -91,4 +98,17 @@ public class BookController extends BaseController
         return "redirect:list.ct";
     }
 
+    @RequestMapping(value = "/detail", method = RequestMethod.GET)
+    public String detail(Long id, ModelMap model)
+    {
+        Book book = bookService.find(id);
+        model.addAttribute("book", book);
+        return "/console/book/detail";
+
+    }
+    
+    
+    
+    
+    
 }

@@ -115,13 +115,19 @@ function showBooks(data){
             <div class="container">
                 <div class="row">
                     <div id="masonryDiv" class="blog-masonry masonry-true">
-                    	[#list page.content as book]
+                    	[#list books as book]
                         <div class="post-masonry col-md-4 col-sm-6">
                             <div class="post-thumb">
-                                <img src="http://rescdn.qqmail.com/dyimg/20140630/7D3176BB2FD7.jpg" alt="">
+                            	[#if book.cover?? && book.cover!=""]
+                            	<img src="${book.cover}">
+                            	[#else]
+                            	<img src="${base}/resources/console/images/book_cover.png">
+                            	[/#if]
+                                
                                 <div class="title-over">
                                     <h4><a href="#">${book.name}</a></h4>
                                 </div>
+                            	<a  href="${base}/console/book/detail.ct?id=${book.id}">
                                 <div class="post-hover text-center">
                                     <div class="inside">
                                         <i class="fa fa-plus"></i>
@@ -129,6 +135,7 @@ function showBooks(data){
                                         <p>${book.description}</p>
                                     </div>
                                 </div>
+                                </a>
                             </div>
                         </div> <!-- /.post-masonry -->
                         [/#list]
