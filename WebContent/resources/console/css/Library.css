@@ -3,8 +3,7 @@
 @author:maxu
 @TEL:13952522076
 */
-
-body{
+body {
 	padding-top: 70px;
 	background-color: #f3f3f4;
 }
@@ -44,4 +43,81 @@ body{
 	border-image: none;
 	border-style: solid solid none;
 	border-width: 1px 0px;
+}
+
+.profile-content {
+	border-top: none !important;
+}
+
+/* GLOBAL  */
+.no-padding {
+	padding: 0 !important;
+}
+
+.no-borders {
+	border: none !important;
+}
+
+.no-margins {
+	margin: 0 !important;
+}
+
+.no-top-border {
+	border-top: 0 !important;
+}
+
+.border-left-right {
+	border-left: 1px solid #e7eaec;
+	border-right: 1px solid #e7eaec;
+	border-top: none;
+	border-bottom: none;
+}
+
+.float-e-margins .btn {
+	margin-bottom:13px;
+	/*margin-left:35px;*/
+	margin-top:10px;
+}
+
+.ibox-content h1,.ibox-content h2,.ibox-content h3,.ibox-content h4,.ibox-content h5,.ibox-title h1,.ibox-title h2,.ibox-title h3,.ibox-title h4,.ibox-title h5
+	{
+	margin-top: 5px;
+}
+.m-t {
+	margin-top: 15px;
+}
+.form-control:focus {
+	border-color: #1ab394;
+}
+
+.has-success .form-control {
+	border-color: #1ab394;
+}
+
+.has-warning .form-control {
+	border-color: #f8ac59;
+}
+
+.has-error .form-control {
+	border-color: #ed5565;
+}
+
+.has-success .control-label {
+	color: #1ab394;
+}
+
+.has-warning .control-label {
+	color: #f8ac59;
+}
+
+.has-error .control-label {
+	color: #ed5565;
+}
+a {
+	cursor: pointer;
+	outline: none;
+}
+a:hover,a:focus {
+	text-decoration: none;
+	outline: none;
 }

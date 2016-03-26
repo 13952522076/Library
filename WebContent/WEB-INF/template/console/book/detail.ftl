@@ -111,15 +111,13 @@ function check(){
                             <p><i class="fa fa-bookmark"></i> ${book.publishCompany}</p>
                             <h5>简介</h5>
                             <p>${book.description}</p>
-                            <div class="user-button">
-                                <div class="row">
-                                	<center>
-                                        <a type="button" class="btn btn-warning">
-	                                        <i class="fa fa-heart-o"></i> 
-	                                        喜欢收藏
-                                        </a>
-                                	</center>
-                                </div>
+                            <div class="row">
+                            	<center>
+                                    <a type="button" class="btn btn-warning">
+                                        <i class="fa fa-heart-o"></i> 
+                                        喜欢收藏
+                                    </a>
+                            	</center>
                             </div>
                         </div>
                     </div>
