@@ -1,8 +1,12 @@
 package com.sammyun.entity.library;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -53,6 +57,9 @@ public class Book extends BaseEntity
 
     /** 封面 */
     private String cover;
+    
+    /** 评价 */
+    private Set<Mark> marks = new HashSet<Mark>();
 
     @JsonProperty
     public String getName()
@@ -152,4 +159,17 @@ public class Book extends BaseEntity
     {
         this.cover = cover;
     }
+
+    @OneToMany(mappedBy = "book", fetch = FetchType.LAZY)
+    public Set<Mark> getMarks()
+    {
+        return marks;
+    }
+
+    public void setMarks(Set<Mark> marks)
+    {
+        this.marks = marks;
+    }
+    
+    
 }

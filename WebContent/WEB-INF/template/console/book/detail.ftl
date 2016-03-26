@@ -6,18 +6,76 @@
 <title>图书智能管理推荐系统</title>
 [#include "/console/include/resource.ftl" /]
 <script type="text/javascript" src="${base}/resources/console/js/common.js"></script>
+<script type="text/javascript" src="${base}/resources/console/js/jquery.validate.js"></script>
 <script type="text/javascript">
 $().ready(function() {
 	[@flash_message /]	
 	
+	/** Bootstrap 对jqueryvalidate样式支持 */
+	$.validator.setDefaults({
+        highlight: function (element) {
+            $(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+        },
+        success: function (element) {
+            element.closest('.form-group').removeClass('has-error').addClass('has-success');
+        },
+        errorElement: "span",
+        errorClass: "m-b-none",
+        validClass: "m-b-none"
+    });
+    
+    
+	$("#ratingForm").validate({
+		rules: {
+		    mark:{
+		    	required:true
+		    },
+		    evaluation:{
+		    	required:true
+		    }
+			
+		},
+		messages: {
+			mark:{
+		    	required: "别忘了给出评分哦"
+		    },
+		    evaluation:{
+		    	required: "麻烦给出一个评价吧"
+		    }
+		}
+	});
+	
+	
+	
 });
+/** 打分亮星星 */
+function ratingMark(num){
+	var hearts = $("#heartsContainer a");
+	hearts.attr("class", "fa fa-heart-o");
+	hearts.slice(0,num).attr("class", "fa fa-heart");
+	$("#mark").val(num);
+	check();
+}
 
-
-
+function check(){
+	var mark = $("#mark").val();
+	if(mark==null || mark==""){
+		$("#markError").html("别忘记评分哦");
+		return false;
+	}
+	$("#markError").html("");
+	return true;
+}
 </script>
 <style>
 .enjoy{
 	color:darkred;
+}
+#heartsContainer{
+	font-size: 20px;
+}
+#heartsContainer a{
+    color: red;
 }
 </style>
 
@@ -74,26 +132,30 @@ $().ready(function() {
 	                        <h5>请用心评价这本书给别人参考哦～</h5>
 	                    </div>
 	                    <div class="ibox-content">
-	                        <form class="form-horizontal m-t" id="commentForm">
+	                        <form id="ratingForm" class="form-horizontal m-t" onsubmit="return check()" action="rating.ct" method="post">
 	                            <div class="form-group">
 	                                <label class="col-sm-2 control-label">评分:</label>
-	                                <div class="col-sm-10">
-	                                    <i class="fa fa-heart-o"></i> 
-	                                    <i class="fa fa-heart-o"></i> 
-	                                    <i class="fa fa-heart-o"></i> 
-	                                    <i class="fa fa-heart-o"></i> 
-	                                    <i class="fa fa-heart-o"></i> 
+	                                <div id="heartsContainer" class="col-sm-10">
+	                                	<input type="hidden" name="bookId" value="${book.id}">
+	                                    <a onclick="ratingMark(1)" class="fa fa-heart-o"></a> 
+	                                    <a onclick="ratingMark(2)" class="fa fa-heart-o"></a> 
+	                                    <a onclick="ratingMark(3)" class="fa fa-heart-o"></a> 
+	                                    <a onclick="ratingMark(4)" class="fa fa-heart-o"></a> 
+	                                    <a onclick="ratingMark(5)" class="fa fa-heart-o"></a> 
+	                                    <input type="hidden" id="mark" name="mark">
+                                     	<small id="markError" class="m-b-none" style="display:initial;font-size:15px;"></small>
 	                                </div>
+	                               
 	                            </div>
 	                            <div class="form-group">
 	                                <label class="col-sm-2 control-label">评价:</label>
 	                                <div class="col-sm-10">
-	                                <textarea  class="form-control" rows="3" maxlength="50"></textarea>
+	                                <textarea name="evaluation" class="form-control" rows="3" maxlength="50"></textarea>
 	                                </div>
 	                            </div>
 	                            <div class="form-group">
 	                                <div class="col-sm-4 col-sm-offset-3">
-	                                    <button class="btn btn-primary" type="submit">提交</button>
+	                                    <button class="btn btn-primary" type="submit" >提交</button>
 	                                </div>
 	                            </div>
 	                        </form>

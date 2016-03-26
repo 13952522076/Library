@@ -1,6 +1,8 @@
 package com.sammyun.entity.library;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -41,6 +43,7 @@ public class Mark extends BaseEntity
     /** 评价 */
     private String evaluation;
 
+    @ManyToOne(fetch = FetchType.LAZY)
     public Book getBook()
     {
         return book;
@@ -51,6 +54,7 @@ public class Mark extends BaseEntity
         this.book = book;
     }
 
+    @ManyToOne(fetch = FetchType.LAZY)
     public Admin getAdmin()
     {
         return admin;

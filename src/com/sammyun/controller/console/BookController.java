@@ -18,8 +18,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.sammyun.Page;
 import com.sammyun.Pageable;
+import com.sammyun.entity.Admin;
 import com.sammyun.entity.library.Book;
+import com.sammyun.entity.library.Mark;
+import com.sammyun.service.AdminService;
 import com.sammyun.service.library.BookService;
+import com.sammyun.service.library.MarkService;
 import com.sammyun.util.JsonUtils;
 
 /**
@@ -32,6 +36,12 @@ public class BookController extends BaseController
 
     @Resource(name = "bookServiceImpl")
     private BookService bookService;
+    
+    @Resource(name = "adminServiceImpl")
+    private AdminService adminService;
+    
+    @Resource(name = "markServiceImpl")
+    private MarkService markService;
 
     /**
      * 列表
@@ -107,6 +117,23 @@ public class BookController extends BaseController
 
     }
     
+    /**
+     * <一句话功能简述>
+     * <功能详细描述>
+     * @param book
+     * @return
+     * @see [类、类#方法、类#成员]
+     */
+    @RequestMapping(value = "/rating", method = RequestMethod.POST)
+    public String rating(Mark mark,Long bookId)
+    {
+        Book book = bookService.find(bookId);
+        mark.setBook(book);
+        Admin admin = adminService.getCurrent();
+        mark.setAdmin(admin);
+        markService.save(mark);
+        return "redirect:list.ct";
+    }
     
     
     

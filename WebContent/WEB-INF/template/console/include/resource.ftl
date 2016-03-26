@@ -13,3 +13,4 @@
 
 <!-- 工程自定义资源文件-->
 <link href="${base}/resources/console/css/Library.css" rel="stylesheet">
+<link href="${base}/resources/console/css/style.css" rel="stylesheet">

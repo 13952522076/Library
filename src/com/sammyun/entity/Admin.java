@@ -16,6 +16,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.PreRemove;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
@@ -30,7 +31,7 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.sammyun.entity.dict.DictSchool;
-import com.sammyun.entity.library.Book;
+import com.sammyun.entity.library.Mark;
 
 /**
  * Entity - 管理员
@@ -63,6 +64,9 @@ public class Admin extends BaseEntity
 
     /** 角色 */
     private Set<Role> roles = new HashSet<Role>();
+   
+    /** 评价 */
+    private Set<Mark> marks = new HashSet<Mark>();
 
     /** 用户隶属的学校 */
     private DictSchool dictSchool;
@@ -226,6 +230,18 @@ public class Admin extends BaseEntity
     public void setRoles(Set<Role> roles)
     {
         this.roles = roles;
+    }
+    
+    
+    @OneToMany(mappedBy = "admin", fetch = FetchType.LAZY)
+    public Set<Mark> getMarks()
+    {
+        return marks;
+    }
+
+    public void setMarks(Set<Mark> marks)
+    {
+        this.marks = marks;
     }
 
     /**
