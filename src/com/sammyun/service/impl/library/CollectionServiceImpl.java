@@ -35,4 +35,11 @@ public class CollectionServiceImpl extends BaseServiceImpl<Collection, Long> imp
         return collectionDao.findByBookAndAdmin(book, admin);
     }
 
+    @Override
+    public List<Book> findMostCollection()
+    {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
 }

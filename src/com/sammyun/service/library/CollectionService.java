@@ -12,7 +12,10 @@ import com.sammyun.service.BaseService;
  */
 public interface CollectionService extends BaseService<Collection, Long>
 {
-   /**根据书和人查找到是否收藏 */
-   List<Collection> findByBookAndAdmin(Book book,Admin admin);
-   
+    /** 根据书和人查找到是否收藏 */
+    List<Collection> findByBookAndAdmin(Book book, Admin admin);
+
+    /** 查找出最多收藏的人 */
+    List<Book> findMostCollection();
+
 }

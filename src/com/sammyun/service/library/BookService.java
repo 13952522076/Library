@@ -8,5 +8,5 @@ import com.sammyun.service.BaseService;
  */
 public interface BookService extends BaseService<Book, Long> 
 {
-
+    
 }
