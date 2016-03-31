@@ -60,6 +60,9 @@ public class Book extends BaseEntity
     
     /** 评价 */
     private Set<Mark> marks = new HashSet<Mark>();
+    
+    /** 收藏 */
+    private Set<Collection> collections = new HashSet<Collection>();
 
     @JsonProperty
     public String getName()
@@ -170,6 +173,18 @@ public class Book extends BaseEntity
     {
         this.marks = marks;
     }
+
+    @OneToMany(mappedBy = "book", fetch = FetchType.LAZY)
+    public Set<Collection> getCollections()
+    {
+        return collections;
+    }
+
+    public void setCollections(Set<Collection> collections)
+    {
+        this.collections = collections;
+    }
+    
     
     
 }

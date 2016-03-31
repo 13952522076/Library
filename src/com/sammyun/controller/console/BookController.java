@@ -20,9 +20,11 @@ import com.sammyun.Page;
 import com.sammyun.Pageable;
 import com.sammyun.entity.Admin;
 import com.sammyun.entity.library.Book;
+import com.sammyun.entity.library.Collection;
 import com.sammyun.entity.library.Mark;
 import com.sammyun.service.AdminService;
 import com.sammyun.service.library.BookService;
+import com.sammyun.service.library.CollectionService;
 import com.sammyun.service.library.MarkService;
 import com.sammyun.util.JsonUtils;
 
@@ -36,12 +38,15 @@ public class BookController extends BaseController
 
     @Resource(name = "bookServiceImpl")
     private BookService bookService;
-    
+
     @Resource(name = "adminServiceImpl")
     private AdminService adminService;
-    
+
     @Resource(name = "markServiceImpl")
     private MarkService markService;
+
+    @Resource(name = "collectionServiceImpl")
+    private CollectionService collectionService;
 
     /**
      * 列表
@@ -95,8 +100,8 @@ public class BookController extends BaseController
     }
 
     /**
-     * 保存书本
-     * <功能详细描述>
+     * 保存书本 <功能详细描述>
+     * 
      * @param book
      * @return
      * @see [类、类#方法、类#成员]
@@ -116,16 +121,16 @@ public class BookController extends BaseController
         return "/console/book/detail";
 
     }
-    
+
     /**
-     * <一句话功能简述>
-     * <功能详细描述>
+     * <一句话功能简述> <功能详细描述>
+     * 
      * @param book
      * @return
      * @see [类、类#方法、类#成员]
      */
     @RequestMapping(value = "/rating", method = RequestMethod.POST)
-    public String rating(Mark mark,Long bookId)
+    public String rating(Mark mark, Long bookId)
     {
         Book book = bookService.find(bookId);
         mark.setBook(book);
@@ -134,8 +139,47 @@ public class BookController extends BaseController
         markService.save(mark);
         return "redirect:list.ct";
     }
-    
-    
-    
-    
+
+    /**
+     * 收藏书籍 <功能详细描述>
+     * 
+     * @param bookId
+     * @see [类、类#方法、类#成员]
+     */
+    @RequestMapping(value = "/collect", method = RequestMethod.POST)
+    public void collect(Long bookId, HttpServletResponse response)
+    {
+        Admin admin = adminService.getCurrent();
+        Book book = bookService.find(bookId);
+        List<Collection> collections = collectionService.findByBookAndAdmin(book, admin);
+        String message = "";
+        if (collections == null || collections.size() == 0)
+        {
+            Collection collection = new Collection();
+            collection.setAdmin(admin);
+            collection.setBook(book);
+            collectionService.save(collection);
+            message = "save";
+        }
+        else
+        {
+            for (Collection collection : collections)
+            {
+                collectionService.delete(collection);
+            }
+            message = "delete";
+        }
+
+        try
+        {
+            response.setContentType("text/html; charset=UTF-8");
+            JsonUtils.writeValue(response.getWriter(), message);
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+
+    }
+
 }

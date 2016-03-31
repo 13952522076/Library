@@ -66,9 +66,11 @@
 
 <script src="<%=base%>/resources/console/js/bootstrap.min.js?v=1.7"></script>
 <script src="<%=base%>/resources/console/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="<%=base%>/resources/console/js/plugins/layer/layer.js"></script>
 
 <link href="<%=base%>/resources/console/css/bootstrap.min.css?v=1.7" rel="stylesheet">
 <link href="<%=base%>/resources/console/css/login.min.css" rel="stylesheet" type="text/css" />
+
 
 <script type="text/javascript">
 	$().ready( function() {
@@ -96,7 +98,7 @@
 			$enPassword.val(enPassword);
 		});
 				<%if (message != null) {%>
-				alert("<%=SpringUtils.getMessage(message, setting.getAccountLockCount())%>");
+				layer.msg("<%=SpringUtils.getMessage(message, setting.getAccountLockCount())%>");
 <%}%>
 	});
 </script>

@@ -66,6 +66,32 @@ function check(){
 	$("#markError").html("");
 	return true;
 }
+
+
+/** 喜欢收藏按钮功能实现 */
+function collect(){
+	$.ajax({
+		url: "collect.ct",
+		type: "POST",
+		data: {
+		    bookId: ${book.id} 
+			},
+		dataType: "json",
+		cache: false,
+		async:false,
+		success: function(message) {
+			if(message == "save"){
+				$("#collectLabel").html("已收藏");
+				layer.msg('收藏成功');
+			}
+			if(message == "delete"){
+				$("#collectLabel").html("喜欢收藏");
+				layer.msg('取消收藏');
+			}
+		}
+	});
+
+}
 </script>
 <style>
 .enjoy{
@@ -113,9 +139,8 @@ function check(){
                             <p>${book.description}</p>
                             <div class="row">
                             	<center>
-                                    <a type="button" class="btn btn-warning">
-                                        <i class="fa fa-heart-o"></i> 
-                                        喜欢收藏
+                                    <a type="button" class="btn btn-warning" onclick="collect()">
+                                        <i id="collectLabel" class="fa fa-heart-o">喜欢收藏</i> 
                                     </a>
                             	</center>
                             </div>
