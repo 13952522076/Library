@@ -59,4 +59,11 @@ public class MarkServiceImpl extends BaseServiceImpl<Mark, Long> implements Mark
         return markDao.findListByBook(book);
     }
 
+    @Override
+    public List<KeyValue> findTopMark(List<Book> books)
+    {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
 }
