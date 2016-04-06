@@ -47,7 +47,7 @@
 		String message = null;
 		String loginFailure = (String) request
 				.getAttribute(FormAuthenticationFilter.DEFAULT_ERROR_KEY_ATTRIBUTE_NAME);
-		System.out.println(loginFailure);
+		//System.out.println(loginFailure);
 		if (loginFailure != null) {
 		    message = "登录失败";
 		}

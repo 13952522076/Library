@@ -1,10 +1,10 @@
 package com.sammyun.service.impl.library;
 
 import java.util.ArrayList;
-import java.util.Comparator;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
-import java.util.TreeMap;
+import java.util.Set;
 
 import javax.annotation.Resource;
 
@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import com.sammyun.dao.library.MarkDao;
 import com.sammyun.entity.library.Book;
 import com.sammyun.entity.library.Mark;
+import com.sammyun.form.KeyValue;
 import com.sammyun.service.impl.BaseServiceImpl;
 import com.sammyun.service.library.MarkService;
 
@@ -31,29 +32,26 @@ public class MarkServiceImpl extends BaseServiceImpl<Mark, Long> implements Mark
         super.setBaseDao(markDao);
     }
 
-    
-    
     @Override
-    public Map<Integer,Book> findMostMark(List<Book> books)
+    public List<KeyValue> findMostMark(List<Book> books)
     {
-        Map<Integer, Book> map = new TreeMap<Integer,Book>(new Comparator<Integer>() {
-            public int compare(Integer obj1, Integer obj2) {
-                // 降序排序
-                return obj2.compareTo(obj1);
-            }
-        });
-        for(Book book:books){
-            List<Mark> marks = this.findListByBook(book);
-            Integer count = marks.size();
-            map.put(count,book);
+        List<KeyValue> bookNums = new ArrayList<KeyValue>();
+        for (Book book : books)
+        {
+            Set<Mark> marks = book.getMarks();
+            KeyValue bookNum = new KeyValue(book, marks.size());
+            bookNums.add(bookNum);
         }
-        
-        System.out.println("map size:"+map.size());
-       
-        return map;
+        // KeyValue对象已经实现Comparable接口
+        Collections.sort(bookNums);
+        // 取前5条数据
+        if (bookNums.size() > 5)
+        {
+            bookNums = bookNums.subList(0, 5);
+
+        }
+        return bookNums;
     }
-
-
 
     @Override
     public List<Mark> findListByBook(Book book)

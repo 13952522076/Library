@@ -32,16 +32,14 @@ $().ready(function() {
                 </div>
         	 	<div class="ibox-content">
         	 		<div class="row">
-        	 			[#list markMap.keySet() as num]
-        	 				[#assign book = markMap.get(num)]
+        	 			[#list mostMarks as mostMark]
         	 				<div class="col-sm-2">
 	                        	<img alt="image" class="img-responsive" src="http://img2.imgtn.bdimg.com/it/u=2730523809,2825683527&fm=11&gp=0.jpg">
 	                        	<center>
-	                        		${book.name!}<br>
-	                        		<small>共${num}条评论</small>
+	                        		${mostMark.key.name!}<br>
+	                        		<small>共${mostMark.value}条评论</small>
                         		</center>
 	                        </div>
-        	 			
         	 			[/#list]
                     	
                     </div>

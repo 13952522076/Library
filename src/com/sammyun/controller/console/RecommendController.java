@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.sammyun.entity.library.Book;
+import com.sammyun.form.KeyValue;
 import com.sammyun.service.AdminService;
 import com.sammyun.service.library.BookService;
 import com.sammyun.service.library.CollectionService;
@@ -41,15 +42,25 @@ public class RecommendController extends BaseController
     @Resource(name = "collectionServiceImpl")
     private CollectionService collectionService;
 
-    /** 热门书籍 */
+    /** 
+     * 热门书籍 
+     * 评论最多，评分最高，收藏最多
+     * 最多5个
+     * */
     @RequestMapping(value = "/hot", method = RequestMethod.GET)
     public String hot(ModelMap model)
     {
         // 评论最多，评分最高，收藏最多
         List<Book> books = bookService.findAll();
-        Map<Integer, Book> markMap = markService.findMostMark(books);
-        model.addAttribute("markMap", markMap);
-        System.out.println(markMap);
+        
+        List<KeyValue> mostMarks = markService.findMostMark(books);
+        model.addAttribute("mostMarks", mostMarks);
+        
+        
+        //评分最高
+        //S.t. 1,最多返回5个；2，超过10个的评分；
+        
+        
         return "/console/recommend/hot";
     }
 
