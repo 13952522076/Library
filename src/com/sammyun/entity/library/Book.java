@@ -7,6 +7,7 @@ import java.util.Set;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -57,12 +58,15 @@ public class Book extends BaseEntity
 
     /** 封面 */
     private String cover;
-    
+
     /** 评价 */
     private Set<Mark> marks = new HashSet<Mark>();
-    
+
     /** 收藏 */
     private Set<Collection> collections = new HashSet<Collection>();
+
+    /** 书本统计信息 */
+    private BookInfo bookInfo;
 
     @JsonProperty
     public String getName()
@@ -184,7 +188,16 @@ public class Book extends BaseEntity
     {
         this.collections = collections;
     }
-    
-    
-    
+
+    @OneToOne(mappedBy = "book", fetch = FetchType.LAZY)
+    public BookInfo getBookInfo()
+    {
+        return bookInfo;
+    }
+
+    public void setBookInfo(BookInfo bookInfo)
+    {
+        this.bookInfo = bookInfo;
+    }
+
 }
