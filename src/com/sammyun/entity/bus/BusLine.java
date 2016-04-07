@@ -6,7 +6,6 @@ import java.math.BigDecimal;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -14,82 +13,99 @@ import com.sammyun.entity.BaseEntity;
 
 /**
  * BusLine * Entity - 班车线路数据
- * 
-
-
  */
+@SuppressWarnings("serial")
 @Entity
 @Table(name = "t_pe_bus_line")
 @SequenceGenerator(name = "sequenceGenerator", sequenceName = "t_pe_bus_line_sequence")
-public class BusLine extends BaseEntity {
+public class BusLine extends BaseEntity
+{
 
-	private BigDecimal id;
-	private String code;
-	private String name;
-	private Long status;
-	private BigDecimal directionId;
-	private BigDecimal schoolId;
+    @SuppressWarnings("unused")
+    private BigDecimal id;
 
-	public BusLine() {
-	}
+    private String code;
 
-	public BusLine(BigDecimal id) {
-		this.id = id;
-	}
+    private String name;
 
-	public BusLine(BigDecimal id, String code, String name, Long status,
-			BigDecimal directionId, BigDecimal schoolId) {
-		this.id = id;
-		this.code = code;
-		this.name = name;
-		this.status = status;
-		this.directionId = directionId;
-		this.schoolId = schoolId;
-	}
+    private Long status;
 
-	@Column(name = "code")
-	public String getCode() {
-		return this.code;
-	}
+    private BigDecimal directionId;
 
-	public void setCode(String code) {
-		this.code = code;
-	}
+    private BigDecimal schoolId;
 
-	@Column(name = "name")
-	public String getName() {
-		return this.name;
-	}
+    public BusLine()
+    {
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public BusLine(BigDecimal id)
+    {
+        this.id = id;
+    }
 
-	@Column(name = "status", precision = 10, scale = 0)
-	public Long getStatus() {
-		return this.status;
-	}
+    public BusLine(BigDecimal id, String code, String name, Long status, BigDecimal directionId, BigDecimal schoolId)
+    {
+        this.id = id;
+        this.code = code;
+        this.name = name;
+        this.status = status;
+        this.directionId = directionId;
+        this.schoolId = schoolId;
+    }
 
-	public void setStatus(Long status) {
-		this.status = status;
-	}
+    @Column(name = "code")
+    public String getCode()
+    {
+        return this.code;
+    }
 
-	@Column(name = "direction_id", scale = 0)
-	public BigDecimal getDirectionId() {
-		return this.directionId;
-	}
+    public void setCode(String code)
+    {
+        this.code = code;
+    }
 
-	public void setDirectionId(BigDecimal directionId) {
-		this.directionId = directionId;
-	}
+    @Column(name = "name")
+    public String getName()
+    {
+        return this.name;
+    }
 
-	@Column(name = "school_id", scale = 0)
-	public BigDecimal getSchoolId() {
-		return this.schoolId;
-	}
+    public void setName(String name)
+    {
+        this.name = name;
+    }
 
-	public void setSchoolId(BigDecimal schoolId) {
-		this.schoolId = schoolId;
-	}
+    @Column(name = "status", precision = 10, scale = 0)
+    public Long getStatus()
+    {
+        return this.status;
+    }
+
+    public void setStatus(Long status)
+    {
+        this.status = status;
+    }
+
+    @Column(name = "direction_id", scale = 0)
+    public BigDecimal getDirectionId()
+    {
+        return this.directionId;
+    }
+
+    public void setDirectionId(BigDecimal directionId)
+    {
+        this.directionId = directionId;
+    }
+
+    @Column(name = "school_id", scale = 0)
+    public BigDecimal getSchoolId()
+    {
+        return this.schoolId;
+    }
+
+    public void setSchoolId(BigDecimal schoolId)
+    {
+        this.schoolId = schoolId;
+    }
 
 }

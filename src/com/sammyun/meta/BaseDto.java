@@ -26,13 +26,20 @@ import com.sammyun.util.XmlHelper;
  * @see Dto
  * @see java.io.Serializable
  */
+@SuppressWarnings("rawtypes")
 public class BaseDto extends LinkedHashMap implements Dto, Serializable
 {
+
+    /**
+     * 注释内容
+     */
+    private static final long serialVersionUID = 8317371889035605118L;
 
     public BaseDto()
     {
     }
 
+    @SuppressWarnings("unchecked")
     public BaseDto(String key, Object value)
     {
         put(key, value);
@@ -190,6 +197,7 @@ public class BaseDto extends LinkedHashMap implements Dto, Serializable
      * 
      * @param pList 压入Dto的List对象
      */
+    @SuppressWarnings("unchecked")
     public void setDefaultAList(List pList)
     {
         put("defaultAList", pList);
@@ -201,6 +209,7 @@ public class BaseDto extends LinkedHashMap implements Dto, Serializable
      * 
      * @param pList 压入Dto的List对象
      */
+    @SuppressWarnings("unchecked")
     public void setDefaultBList(List pList)
     {
         put("defaultBList", pList);
@@ -233,6 +242,7 @@ public class BaseDto extends LinkedHashMap implements Dto, Serializable
      * 
      * @param jsonString
      */
+    @SuppressWarnings("unchecked")
     public void setDefaultJson(String jsonString)
     {
         put("defaultJsonString", jsonString);
@@ -310,6 +320,7 @@ public class BaseDto extends LinkedHashMap implements Dto, Serializable
      * 
      * @param pSuccess
      */
+    @SuppressWarnings("unchecked")
     public void setSuccess(Boolean pSuccess)
     {
         put("success", pSuccess);
@@ -339,6 +350,7 @@ public class BaseDto extends LinkedHashMap implements Dto, Serializable
      * 
      * @param pSuccess
      */
+    @SuppressWarnings("unchecked")
     public void setMsg(String pMsg)
     {
         put("msg", pMsg);

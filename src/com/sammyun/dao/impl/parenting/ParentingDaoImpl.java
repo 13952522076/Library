@@ -14,20 +14,13 @@ import org.springframework.stereotype.Repository;
 import com.sammyun.Page;
 import com.sammyun.Pageable;
 import com.sammyun.dao.impl.BaseDaoImpl;
-import com.sammyun.dao.news.NewsDao;
 import com.sammyun.dao.parenting.ParentingDao;
 import com.sammyun.entity.dict.DictSchool;
-import com.sammyun.entity.dict.DictStudent;
-import com.sammyun.entity.news.News;
-import com.sammyun.entity.news.NewsCategory;
 import com.sammyun.entity.parenting.Parenting;
 import com.sammyun.entity.parenting.ParentingCategory;
 
 /**
  * Parenting * DaoImpl - 育儿数据
- * 
-
-
  */
 @Repository("parentingDaoImpl")
 public class ParentingDaoImpl extends BaseDaoImpl<Parenting, Long> implements ParentingDao

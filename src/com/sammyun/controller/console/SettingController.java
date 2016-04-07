@@ -42,9 +42,6 @@ import com.sun.mail.smtp.SMTPSenderFailedException;
 
 /**
  * Controller - 系统设置
- * 
-
-
  */
 @Controller("adminstingController")
 @RequestMapping("/console/setting")
@@ -72,7 +69,6 @@ public class SettingController extends BaseController
         {
             return ERROR_MESSAGE;
         }
-        Setting setting = SettingUtils.get();
         if (StringUtils.isEmpty(smtpPassword))
         {
             // smtpPassword = setting.getSmtpPassword();
@@ -166,7 +162,6 @@ public class SettingController extends BaseController
         {
             return ERROR_VIEW;
         }
-        Setting srcSetting = SettingUtils.get();
 
         SettingUtils.set(setting);
         cacheService.clear();

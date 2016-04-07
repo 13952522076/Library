@@ -34,7 +34,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
-<meta name="renderer" content="webkit">
+<meta name="renderer" content="webkit" />
 <%
 	if (applicationContext != null) {
 		RSAService rsaService = SpringUtils.getBean("rsaServiceImpl",
@@ -300,8 +300,7 @@
 				<!-- 二维码 start-->
 				<div class="wechatdiv" style="display: none;">
 					<div class="qrcodeImage">
-						<img src="<%=base%>/resources/console/images/ios.jpg"
-							style="width: 100px; height: 100px;">
+						<img src="<%=base%>/resources/console/images/ios.jpg" style="width: 100px; height: 100px;"/>
 					</div>
 					<div class="scan_text">
 						<span>下载</span>
@@ -313,7 +312,7 @@
 				<div class="wechatdivs" style="display: none;">
 					<div class="qrcodeImages">
 						<img src="<%=base%>/resources/console/images/android.jpg"
-							style="width: 100px; height: 100px;">
+							style="width: 100px; height: 100px;" />
 					</div>
 					<div class="scan_texts">
 						<span>下载</span>
@@ -370,7 +369,8 @@
 									maxlength="20"
 									placeholder="<%=SpringUtils.getMessage("console.login.username")%>" />
 								</label> </section>
-								<section> <label class="input"> <input
+								<section> 
+								<label class="input"> <input
 									type="password" id="password" class="user_input" maxlength="20"
 									autocomplete="off"
 									placeholder="<%=SpringUtils.getMessage("console.login.password")%>" />

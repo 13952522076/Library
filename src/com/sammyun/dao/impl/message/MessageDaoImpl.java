@@ -22,9 +22,6 @@ import com.sammyun.entity.message.Message.MessageCategory;
 
 /**
  * Message * DaoImpl - 消息附件
- * 
-
-
  */
 @Repository("messageDaoImpl")
 public class MessageDaoImpl extends BaseDaoImpl<Message, Long> implements MessageDao
@@ -51,8 +48,7 @@ public class MessageDaoImpl extends BaseDaoImpl<Message, Long> implements Messag
         }
         if (sender != null)
         {
-            restrictions = criteriaBuilder.and(restrictions,
-                    criteriaBuilder.equal(root.get("sender"), sender));
+            restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.equal(root.get("sender"), sender));
         }
         if (senderDelete != null)
         {
@@ -61,8 +57,7 @@ public class MessageDaoImpl extends BaseDaoImpl<Message, Long> implements Messag
         }
         if (receiver != null)
         {
-            restrictions = criteriaBuilder.and(restrictions,
-                    criteriaBuilder.equal(root.get("receiver"), receiver));
+            restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.equal(root.get("receiver"), receiver));
         }
         if (receiverDelete != null)
         {
@@ -94,8 +89,7 @@ public class MessageDaoImpl extends BaseDaoImpl<Message, Long> implements Messag
         }
         if (sender != null)
         {
-            restrictions = criteriaBuilder.and(restrictions,
-                    criteriaBuilder.equal(root.get("sender"), sender));
+            restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.equal(root.get("sender"), sender));
         }
         if (senderDelete != null)
         {
@@ -104,86 +98,141 @@ public class MessageDaoImpl extends BaseDaoImpl<Message, Long> implements Messag
         }
         if (receiver != null)
         {
-            restrictions = criteriaBuilder.and(restrictions,
-                    criteriaBuilder.equal(root.get("receiver"), receiver));
+            restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.equal(root.get("receiver"), receiver));
         }
         if (receiverDelete != null)
         {
             restrictions = criteriaBuilder.and(restrictions,
                     criteriaBuilder.equal(root.get("receiverDelete"), receiverDelete));
         }
-		if (updateDate != null) {
-			restrictions = criteriaBuilder.and(restrictions,
-					criteriaBuilder.greaterThanOrEqualTo(root.<Date>get("modifyDate"), updateDate));
-		}
+        if (updateDate != null)
+        {
+            restrictions = criteriaBuilder.and(restrictions,
+                    criteriaBuilder.greaterThanOrEqualTo(root.<Date> get("modifyDate"), updateDate));
+        }
         criteriaQuery.where(restrictions);
         return super.findPage(criteriaQuery, pageable);
     }
-    
-    public Page<Message> findPage(Member member, Pageable pageable) {
+
+    public Page<Message> findPage(Member member, Pageable pageable)
+    {
         CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
         CriteriaQuery<Message> criteriaQuery = criteriaBuilder.createQuery(Message.class);
         Root<Message> root = criteriaQuery.from(Message.class);
         criteriaQuery.select(root);
         Predicate restrictions = criteriaBuilder.conjunction();
-        restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.isNull(root.get("forMessage")), criteriaBuilder.equal(root.get("isDraft"), false));
-        if (member != null) {
-            restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.or(criteriaBuilder.and(criteriaBuilder.equal(root.get("sender"), member), criteriaBuilder.equal(root.get("senderDelete"), false)), criteriaBuilder.and(criteriaBuilder.equal(root.get("receiver"), member), criteriaBuilder.equal(root.get("receiverDelete"), false))));
-        } else {
-            restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.or(criteriaBuilder.and(criteriaBuilder.isNull(root.get("sender")), criteriaBuilder.equal(root.get("senderDelete"), false)), criteriaBuilder.and(criteriaBuilder.isNull(root.get("receiver")), criteriaBuilder.equal(root.get("receiverDelete"), false))));
+        restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.isNull(root.get("forMessage")),
+                criteriaBuilder.equal(root.get("isDraft"), false));
+        if (member != null)
+        {
+            restrictions = criteriaBuilder.and(
+                    restrictions,
+                    criteriaBuilder.or(
+                            criteriaBuilder.and(criteriaBuilder.equal(root.get("sender"), member),
+                                    criteriaBuilder.equal(root.get("senderDelete"), false)),
+                            criteriaBuilder.and(criteriaBuilder.equal(root.get("receiver"), member),
+                                    criteriaBuilder.equal(root.get("receiverDelete"), false))));
+        }
+        else
+        {
+            restrictions = criteriaBuilder.and(
+                    restrictions,
+                    criteriaBuilder.or(
+                            criteriaBuilder.and(criteriaBuilder.isNull(root.get("sender")),
+                                    criteriaBuilder.equal(root.get("senderDelete"), false)),
+                            criteriaBuilder.and(criteriaBuilder.isNull(root.get("receiver")),
+                                    criteriaBuilder.equal(root.get("receiverDelete"), false))));
         }
         criteriaQuery.where(restrictions);
         return super.findPage(criteriaQuery, pageable);
 
     }
 
-    public Page<Message> findDraftPage(Member sender, Pageable pageable) {
+    public Page<Message> findDraftPage(Member sender, Pageable pageable)
+    {
         CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
         CriteriaQuery<Message> criteriaQuery = criteriaBuilder.createQuery(Message.class);
         Root<Message> root = criteriaQuery.from(Message.class);
         criteriaQuery.select(root);
         Predicate restrictions = criteriaBuilder.conjunction();
-        restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.isNull(root.get("forMessage")), criteriaBuilder.equal(root.get("isDraft"), true));
-        if (sender != null) {
+        restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.isNull(root.get("forMessage")),
+                criteriaBuilder.equal(root.get("isDraft"), true));
+        if (sender != null)
+        {
             restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.equal(root.get("sender"), sender));
-        } else {
+        }
+        else
+        {
             restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.isNull(root.get("sender")));
         }
         criteriaQuery.where(restrictions);
         return super.findPage(criteriaQuery, pageable);
     }
 
-    public Long count(Member member, Boolean read) {
+    public Long count(Member member, Boolean read)
+    {
         CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
         CriteriaQuery<Message> criteriaQuery = criteriaBuilder.createQuery(Message.class);
         Root<Message> root = criteriaQuery.from(Message.class);
         criteriaQuery.select(root);
         Predicate restrictions = criteriaBuilder.conjunction();
-        restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.isNull(root.get("forMessage")), criteriaBuilder.equal(root.get("isDraft"), false));
-        if (member != null) {
-            if (read != null) {
+        restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.isNull(root.get("forMessage")),
+                criteriaBuilder.equal(root.get("isDraft"), false));
+        if (member != null)
+        {
+            if (read != null)
+            {
+                restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.or(
+                        criteriaBuilder.and(criteriaBuilder.equal(root.get("sender"), member),
+                                criteriaBuilder.equal(root.get("senderDelete"), false),
+                                criteriaBuilder.equal(root.get("senderRead"), read)),
+                        criteriaBuilder.and(criteriaBuilder.equal(root.get("receiver"), member),
+                                criteriaBuilder.equal(root.get("receiverDelete"), false),
+                                criteriaBuilder.equal(root.get("receiverRead"), read))));
+            }
+            else
+            {
+                restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.or(
+                        criteriaBuilder.and(criteriaBuilder.equal(root.get("sender"), member),
+                                criteriaBuilder.equal(root.get("senderDelete"), false)),
+                        criteriaBuilder.and(criteriaBuilder.equal(root.get("receiver"), member),
+                                criteriaBuilder.equal(root.get("receiverDelete"), false))));
+            }
+        }
+        else
+        {
+            if (read != null)
+            {
                 restrictions = criteriaBuilder.and(
                         restrictions,
-                        criteriaBuilder.or(criteriaBuilder.and(criteriaBuilder.equal(root.get("sender"), member), criteriaBuilder.equal(root.get("senderDelete"), false), criteriaBuilder.equal(root.get("senderRead"), read)),
-                                criteriaBuilder.and(criteriaBuilder.equal(root.get("receiver"), member), criteriaBuilder.equal(root.get("receiverDelete"), false), criteriaBuilder.equal(root.get("receiverRead"), read))));
-            } else {
-                restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.or(criteriaBuilder.and(criteriaBuilder.equal(root.get("sender"), member), criteriaBuilder.equal(root.get("senderDelete"), false)), criteriaBuilder.and(criteriaBuilder.equal(root.get("receiver"), member), criteriaBuilder.equal(root.get("receiverDelete"), false))));
+                        criteriaBuilder.or(
+                                criteriaBuilder.and(criteriaBuilder.isNull(root.get("sender")),
+                                        criteriaBuilder.equal(root.get("senderDelete"), false),
+                                        criteriaBuilder.equal(root.get("senderRead"), read)),
+                                criteriaBuilder.and(criteriaBuilder.isNull(root.get("receiver")),
+                                        criteriaBuilder.equal(root.get("receiverDelete"), false),
+                                        criteriaBuilder.equal(root.get("receiverRead"), read))));
             }
-        } else {
-            if (read != null) {
-                restrictions = criteriaBuilder.and(restrictions,
-                        criteriaBuilder.or(criteriaBuilder.and(criteriaBuilder.isNull(root.get("sender")), criteriaBuilder.equal(root.get("senderDelete"), false), criteriaBuilder.equal(root.get("senderRead"), read)), criteriaBuilder.and(criteriaBuilder.isNull(root.get("receiver")), criteriaBuilder.equal(root.get("receiverDelete"), false), criteriaBuilder.equal(root.get("receiverRead"), read))));
-            } else {
-                restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.or(criteriaBuilder.and(criteriaBuilder.isNull(root.get("sender")), criteriaBuilder.equal(root.get("senderDelete"), false)), criteriaBuilder.and(criteriaBuilder.isNull(root.get("receiver")), criteriaBuilder.equal(root.get("receiverDelete"), false))));
+            else
+            {
+                restrictions = criteriaBuilder.and(
+                        restrictions,
+                        criteriaBuilder.or(
+                                criteriaBuilder.and(criteriaBuilder.isNull(root.get("sender")),
+                                        criteriaBuilder.equal(root.get("senderDelete"), false)),
+                                criteriaBuilder.and(criteriaBuilder.isNull(root.get("receiver")),
+                                        criteriaBuilder.equal(root.get("receiverDelete"), false))));
             }
         }
         criteriaQuery.where(restrictions);
         return super.count(criteriaQuery, null);
     }
 
-    public void remove(Long id, Member member) {
+    @SuppressWarnings("unused")
+    public void remove(Long id, Member member)
+    {
         Message message = super.find(id);
-        
+
     }
 
     @Override
@@ -194,7 +243,8 @@ public class MessageDaoImpl extends BaseDaoImpl<Message, Long> implements Messag
         Root<Message> root = criteriaQuery.from(Message.class);
         criteriaQuery.select(root);
         Predicate restrictions = criteriaBuilder.conjunction();
-        if (hasPush != null) {
+        if (hasPush != null)
+        {
             restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.equal(root.get("hasPush"), hasPush));
         }
         criteriaQuery.where(restrictions);
@@ -205,32 +255,25 @@ public class MessageDaoImpl extends BaseDaoImpl<Message, Long> implements Messag
     public List<Message> findMessage(String remark, Member sender, MessageCategory messageCategory)
     {
         CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
-        CriteriaQuery<Message> criteriaQuery = criteriaBuilder
-                .createQuery(Message.class);
+        CriteriaQuery<Message> criteriaQuery = criteriaBuilder.createQuery(Message.class);
         Root<Message> root = criteriaQuery.from(Message.class);
         criteriaQuery.select(root);
         Predicate restrictions = criteriaBuilder.conjunction();
-        if (remark != null) {
-            restrictions = criteriaBuilder.and(
-                    restrictions,
-                    criteriaBuilder.equal(
-                            root.get("remark"),remark));
+        if (remark != null)
+        {
+            restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.equal(root.get("remark"), remark));
         }
-        if (sender != null) {
-            restrictions = criteriaBuilder.and(
-                    restrictions,
-                    criteriaBuilder.equal(
-                            root.get("sender"), sender));
+        if (sender != null)
+        {
+            restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.equal(root.get("sender"), sender));
         }
-        if (messageCategory != null) {
-            restrictions = criteriaBuilder.and(
-                    restrictions,
-                    criteriaBuilder.equal(
-                            root.get("messageCategory"), messageCategory));
+        if (messageCategory != null)
+        {
+            restrictions = criteriaBuilder.and(restrictions,
+                    criteriaBuilder.equal(root.get("messageCategory"), messageCategory));
         }
         criteriaQuery.where(restrictions);
-        return entityManager.createQuery(criteriaQuery)
-                 .setFlushMode(FlushModeType.COMMIT).getResultList();
+        return entityManager.createQuery(criteriaQuery).setFlushMode(FlushModeType.COMMIT).getResultList();
     }
 
 }

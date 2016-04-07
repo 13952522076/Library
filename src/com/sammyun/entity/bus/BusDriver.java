@@ -6,7 +6,6 @@ import java.math.BigDecimal;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -14,93 +13,118 @@ import com.sammyun.entity.BaseEntity;
 
 /**
  * BusDriver * Entity - 驾驶员数据
- * 
-
-
  */
 @Entity
 @Table(name = "t_pe_bus_driver")
 @SequenceGenerator(name = "sequenceGenerator", sequenceName = "t_pe_bus_driver_sequence")
-public class BusDriver extends BaseEntity {
+public class BusDriver extends BaseEntity
+{
 
-	private BigDecimal id;
-	private String brand;
-	private String mobile;
-	private String name;
-	private Long status;
-	private BigDecimal schoolId;
-	private BigDecimal userId;
+    /**
+     * 注释内容
+     */
+    private static final long serialVersionUID = -5816053251353319197L;
 
-	public BusDriver() {
-	}
+    @SuppressWarnings("unused")
+    private BigDecimal id;
 
-	public BusDriver(BigDecimal id) {
-		this.id = id;
-	}
+    private String brand;
 
-	public BusDriver(BigDecimal id, String brand, String mobile,
-			String name, Long status, BigDecimal schoolId, BigDecimal userId) {
-		this.id = id;
-		this.brand = brand;
-		this.mobile = mobile;
-		this.name = name;
-		this.status = status;
-		this.schoolId = schoolId;
-		this.userId = userId;
-	}
-	
-	@Column(name = "brand")
-	public String getBrand() {
-		return this.brand;
-	}
+    private String mobile;
 
-	public void setBrand(String brand) {
-		this.brand = brand;
-	}
+    private String name;
 
-	@Column(name = "mobile")
-	public String getMobile() {
-		return this.mobile;
-	}
+    private Long status;
 
-	public void setMobile(String mobile) {
-		this.mobile = mobile;
-	}
+    private BigDecimal schoolId;
 
-	@Column(name = "name")
-	public String getName() {
-		return this.name;
-	}
+    private BigDecimal userId;
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public BusDriver()
+    {
+    }
 
-	@Column(name = "status", precision = 10, scale = 0)
-	public Long getStatus() {
-		return this.status;
-	}
+    public BusDriver(BigDecimal id)
+    {
+        this.id = id;
+    }
 
-	public void setStatus(Long status) {
-		this.status = status;
-	}
+    public BusDriver(BigDecimal id, String brand, String mobile, String name, Long status, BigDecimal schoolId,
+            BigDecimal userId)
+    {
+        this.id = id;
+        this.brand = brand;
+        this.mobile = mobile;
+        this.name = name;
+        this.status = status;
+        this.schoolId = schoolId;
+        this.userId = userId;
+    }
 
-	@Column(name = "school_id", scale = 0)
-	public BigDecimal getSchoolId() {
-		return this.schoolId;
-	}
+    @Column(name = "brand")
+    public String getBrand()
+    {
+        return this.brand;
+    }
 
-	public void setSchoolId(BigDecimal schoolId) {
-		this.schoolId = schoolId;
-	}
+    public void setBrand(String brand)
+    {
+        this.brand = brand;
+    }
 
-	@Column(name = "user_id", scale = 0)
-	public BigDecimal getUserId() {
-		return this.userId;
-	}
+    @Column(name = "mobile")
+    public String getMobile()
+    {
+        return this.mobile;
+    }
 
-	public void setUserId(BigDecimal userId) {
-		this.userId = userId;
-	}
+    public void setMobile(String mobile)
+    {
+        this.mobile = mobile;
+    }
+
+    @Column(name = "name")
+    public String getName()
+    {
+        return this.name;
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    @Column(name = "status", precision = 10, scale = 0)
+    public Long getStatus()
+    {
+        return this.status;
+    }
+
+    public void setStatus(Long status)
+    {
+        this.status = status;
+    }
+
+    @Column(name = "school_id", scale = 0)
+    public BigDecimal getSchoolId()
+    {
+        return this.schoolId;
+    }
+
+    public void setSchoolId(BigDecimal schoolId)
+    {
+        this.schoolId = schoolId;
+    }
+
+    @Column(name = "user_id", scale = 0)
+    public BigDecimal getUserId()
+    {
+        return this.userId;
+    }
+
+    public void setUserId(BigDecimal userId)
+    {
+        this.userId = userId;
+    }
 
 }

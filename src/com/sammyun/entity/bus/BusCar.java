@@ -6,7 +6,6 @@ import java.math.BigDecimal;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -14,127 +13,160 @@ import com.sammyun.entity.BaseEntity;
 
 /**
  * BusCar * Entity - 车辆数据
- * 
-
-
  */
 @Entity
 @Table(name = "t_pe_bus_car")
 @SequenceGenerator(name = "sequenceGenerator", sequenceName = "t_pe_bus_car_sequence")
-public class BusCar extends BaseEntity {
+public class BusCar extends BaseEntity
+{
 
-	private BigDecimal id;
-	private String brand;
-	private Long carStatus;
-	private Integer rentFlag;
-	private BigDecimal iconId;
-	private String model;
-	private String no;
-	private Long seats;
-	private Long status;
-	private BigDecimal schoolId;
+    /**
+     * 注释内容
+     */
+    private static final long serialVersionUID = -8313811288883407910L;
 
-	public BusCar() {
-	}
+    @SuppressWarnings("unused")
+    private BigDecimal id;
 
-	public BusCar(BigDecimal id) {
-		this.id = id;
-	}
+    private String brand;
 
-	public BusCar(BigDecimal id, String brand, Long carStatus,
-			Integer rentFlag, BigDecimal iconId, String model, String no,
-			Long seats, Long status, BigDecimal schoolId) {
-		this.id = id;
-		this.brand = brand;
-		this.carStatus = carStatus;
-		this.rentFlag = rentFlag;
-		this.iconId = iconId;
-		this.model = model;
-		this.no = no;
-		this.seats = seats;
-		this.status = status;
-		this.schoolId = schoolId;
-	}
+    private Long carStatus;
 
-	@Column(name = "brand")
-	public String getBrand() {
-		return this.brand;
-	}
+    private Integer rentFlag;
 
-	public void setBrand(String brand) {
-		this.brand = brand;
-	}
+    private BigDecimal iconId;
 
-	@Column(name = "car_status", precision = 10, scale = 0)
-	public Long getCarStatus() {
-		return this.carStatus;
-	}
+    private String model;
 
-	public void setCarStatus(Long carStatus) {
-		this.carStatus = carStatus;
-	}
+    private String no;
 
-	@Column(name = "rent_flag", precision = 5, scale = 0)
-	public Integer getRentFlag() {
-		return this.rentFlag;
-	}
+    private Long seats;
 
-	public void setRentFlag(Integer rentFlag) {
-		this.rentFlag = rentFlag;
-	}
+    private Long status;
 
-	@Column(name = "icon_id", scale = 0)
-	public BigDecimal getIconId() {
-		return this.iconId;
-	}
+    private BigDecimal schoolId;
 
-	public void setIconId(BigDecimal iconId) {
-		this.iconId = iconId;
-	}
+    public BusCar()
+    {
+    }
 
-	@Column(name = "model")
-	public String getModel() {
-		return this.model;
-	}
+    public BusCar(BigDecimal id)
+    {
+        this.id = id;
+    }
 
-	public void setModel(String model) {
-		this.model = model;
-	}
+    public BusCar(BigDecimal id, String brand, Long carStatus, Integer rentFlag, BigDecimal iconId, String model,
+            String no, Long seats, Long status, BigDecimal schoolId)
+    {
+        this.id = id;
+        this.brand = brand;
+        this.carStatus = carStatus;
+        this.rentFlag = rentFlag;
+        this.iconId = iconId;
+        this.model = model;
+        this.no = no;
+        this.seats = seats;
+        this.status = status;
+        this.schoolId = schoolId;
+    }
 
-	@Column(name = "no")
-	public String getNo() {
-		return this.no;
-	}
+    @Column(name = "brand")
+    public String getBrand()
+    {
+        return this.brand;
+    }
 
-	public void setNo(String no) {
-		this.no = no;
-	}
+    public void setBrand(String brand)
+    {
+        this.brand = brand;
+    }
 
-	@Column(name = "seats", precision = 10, scale = 0)
-	public Long getSeats() {
-		return this.seats;
-	}
+    @Column(name = "car_status", precision = 10, scale = 0)
+    public Long getCarStatus()
+    {
+        return this.carStatus;
+    }
 
-	public void setSeats(Long seats) {
-		this.seats = seats;
-	}
+    public void setCarStatus(Long carStatus)
+    {
+        this.carStatus = carStatus;
+    }
 
-	@Column(name = "status", precision = 10, scale = 0)
-	public Long getStatus() {
-		return this.status;
-	}
+    @Column(name = "rent_flag", precision = 5, scale = 0)
+    public Integer getRentFlag()
+    {
+        return this.rentFlag;
+    }
 
-	public void setStatus(Long status) {
-		this.status = status;
-	}
+    public void setRentFlag(Integer rentFlag)
+    {
+        this.rentFlag = rentFlag;
+    }
 
-	@Column(name = "school_id", scale = 0)
-	public BigDecimal getSchoolId() {
-		return this.schoolId;
-	}
+    @Column(name = "icon_id", scale = 0)
+    public BigDecimal getIconId()
+    {
+        return this.iconId;
+    }
 
-	public void setSchoolId(BigDecimal schoolId) {
-		this.schoolId = schoolId;
-	}
+    public void setIconId(BigDecimal iconId)
+    {
+        this.iconId = iconId;
+    }
+
+    @Column(name = "model")
+    public String getModel()
+    {
+        return this.model;
+    }
+
+    public void setModel(String model)
+    {
+        this.model = model;
+    }
+
+    @Column(name = "no")
+    public String getNo()
+    {
+        return this.no;
+    }
+
+    public void setNo(String no)
+    {
+        this.no = no;
+    }
+
+    @Column(name = "seats", precision = 10, scale = 0)
+    public Long getSeats()
+    {
+        return this.seats;
+    }
+
+    public void setSeats(Long seats)
+    {
+        this.seats = seats;
+    }
+
+    @Column(name = "status", precision = 10, scale = 0)
+    public Long getStatus()
+    {
+        return this.status;
+    }
+
+    public void setStatus(Long status)
+    {
+        this.status = status;
+    }
+
+    @Column(name = "school_id", scale = 0)
+    public BigDecimal getSchoolId()
+    {
+        return this.schoolId;
+    }
+
+    public void setSchoolId(BigDecimal schoolId)
+    {
+        this.schoolId = schoolId;
+    }
 
 }

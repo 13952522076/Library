@@ -5,7 +5,6 @@
  */
 package com.sammyun.dao.impl.attendance;
 
-
 import java.util.Date;
 import java.util.List;
 
@@ -22,14 +21,9 @@ import com.sammyun.dao.attendance.AttendanceDetailDao;
 import com.sammyun.dao.impl.BaseDaoImpl;
 import com.sammyun.entity.attendance.Attendance;
 import com.sammyun.entity.attendance.AttendanceDetail;
-import com.sammyun.entity.attendance.WorkScheduling;
-
 
 /**
  * DaoImpl - 考勤详情
- * 
-
-
  */
 @Repository("attendanceDetailDaoImpl")
 public class AttendanceDetailDaoImpl extends BaseDaoImpl<AttendanceDetail, Long> implements AttendanceDetailDao
@@ -39,16 +33,19 @@ public class AttendanceDetailDaoImpl extends BaseDaoImpl<AttendanceDetail, Long>
     public List<AttendanceDetail> getDetailByAttendance(Attendance attendance)
     {
         // TODO Auto-generated method stub
-        
+
         String jpql = "select attendanceDetail from AttendanceDetail attendanceDetail where 1=1 ";
-        if(attendance != null){
-            jpql = jpql +"and attendanceDetail.attendance = :attendance";
+        if (attendance != null)
+        {
+            jpql = jpql + "and attendanceDetail.attendance = :attendance";
         }
-        TypedQuery<AttendanceDetail> flushModel = entityManager.createQuery(jpql, AttendanceDetail.class).setFlushMode(FlushModeType.COMMIT);
-        if(attendance!=null){
+        TypedQuery<AttendanceDetail> flushModel = entityManager.createQuery(jpql, AttendanceDetail.class).setFlushMode(
+                FlushModeType.COMMIT);
+        if (attendance != null)
+        {
             flushModel.setParameter("attendance", attendance);
         }
-        List<AttendanceDetail> attendances= (List<AttendanceDetail>)flushModel.getResultList();
+        List<AttendanceDetail> attendances = (List<AttendanceDetail>) flushModel.getResultList();
         return attendances;
     }
 
@@ -63,16 +60,15 @@ public class AttendanceDetailDaoImpl extends BaseDaoImpl<AttendanceDetail, Long>
         Predicate restrictions = criteriaBuilder.conjunction();
         if (attendance != null)
         {
-            restrictions = criteriaBuilder.and(restrictions,
-                    criteriaBuilder.equal(root.get("attendance"), attendance));
+            restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.equal(root.get("attendance"), attendance));
         }
         if (clockInDate != null)
         {
-                restrictions = criteriaBuilder.and(restrictions,
-                        criteriaBuilder.equal(root.<Date> get("clockInDate"), clockInDate));
+            restrictions = criteriaBuilder.and(restrictions,
+                    criteriaBuilder.equal(root.<Date> get("clockInDate"), clockInDate));
         }
         criteriaQuery.where(restrictions);
         return entityManager.createQuery(criteriaQuery).setFlushMode(FlushModeType.COMMIT).getResultList();
     }
-  
+
 }

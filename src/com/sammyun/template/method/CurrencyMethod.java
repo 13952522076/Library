@@ -5,14 +5,10 @@
  */
 package com.sammyun.template.method;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Component;
-
-import com.sammyun.Setting;
-import com.sammyun.util.SettingUtils;
 
 import freemarker.template.SimpleScalar;
 import freemarker.template.TemplateMethodModel;
@@ -20,15 +16,13 @@ import freemarker.template.TemplateModelException;
 
 /**
  * 模板方法 - 货币格式化
- * 
-
-
  */
+@SuppressWarnings("deprecation")
 @Component("currencyMethod")
 public class CurrencyMethod implements TemplateMethodModel
 {
 
-    @SuppressWarnings("rawtypes")
+    @SuppressWarnings({"rawtypes", "unused"})
     public Object exec(List arguments) throws TemplateModelException
     {
         if (arguments != null && !arguments.isEmpty() && arguments.get(0) != null
@@ -54,18 +48,14 @@ public class CurrencyMethod implements TemplateMethodModel
                     showUnit = Boolean.valueOf(arguments.get(2).toString());
                 }
             }
-           // Setting setting = SettingUtils.get();
-           // BigDecimal amount = new BigDecimal(arguments.get(0).toString());
-           /**
-            String price = setting.setScale(amount).toString();
-            if (showSign)
-            {
-                price = setting.getCurrencySign() + price;
-            }
-            if (showUnit)
-            {
-                price += setting.getCurrencyUnit();
-            }**/
+            // Setting setting = SettingUtils.get();
+            // BigDecimal amount = new
+            // BigDecimal(arguments.get(0).toString());
+            /**
+             * String price = setting.setScale(amount).toString(); if
+             * (showSign) { price = setting.getCurrencySign() + price; } if
+             * (showUnit) { price += setting.getCurrencyUnit(); }
+             **/
             return new SimpleScalar("0");
         }
         return null;

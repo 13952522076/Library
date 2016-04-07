@@ -9,9 +9,6 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreRemove;
 import javax.persistence.PreUpdate;
 
-import com.sammyun.entity.Member;
-import com.sammyun.entity.Member.MemberType;
-import com.sammyun.entity.dict.ClassTeacherMap;
 import com.sammyun.entity.dict.DictClass;
 import com.sammyun.entity.dict.DictStudent;
 import com.sammyun.entity.dict.PatriarchStudentMap;

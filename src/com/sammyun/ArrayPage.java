@@ -20,9 +20,11 @@ public class ArrayPage
 
     private boolean hasPreviousPage = false; // 是否有前一页
 
+    @SuppressWarnings("rawtypes")
     private List list;
 
     // private Iterator it;
+    @SuppressWarnings("rawtypes")
     public ArrayPage(List list, int pageRecorders)
     {
         init(list, pageRecorders);// 通过对象集，记录总数划分
@@ -34,6 +36,7 @@ public class ArrayPage
      * @param list
      * @param pageRecorders
      */
+    @SuppressWarnings("rawtypes")
     public void init(List list, int pageRecorders)
     {
         this.pageRecorders = pageRecorders;
@@ -93,6 +96,7 @@ public class ArrayPage
         System.out.println(description);
     }
 
+    @SuppressWarnings("rawtypes")
     public List getNextPage()
     {
         page = page + 1;
@@ -129,6 +133,7 @@ public class ArrayPage
         }
     }
 
+    @SuppressWarnings("rawtypes")
     public List getPreviousPage()
     {
         page = page - 1;
@@ -158,6 +163,7 @@ public class ArrayPage
      * @param page
      * @return
      */
+    @SuppressWarnings("rawtypes")
     public List getObjects(int page)
     {
         if (page == 0)
@@ -183,6 +189,7 @@ public class ArrayPage
         return objects;
     }
 
+    @SuppressWarnings("rawtypes")
     public List getFistPage()
     {
         if (this.isNext())
@@ -205,11 +212,13 @@ public class ArrayPage
         this.hasNextPage = hasNextPage;
     }
 
+    @SuppressWarnings("rawtypes")
     public List getList()
     {
         return list;
     }
 
+    @SuppressWarnings("rawtypes")
     public void setList(List list)
     {
         this.list = list;

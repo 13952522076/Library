@@ -7,7 +7,6 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -17,95 +16,119 @@ import com.sammyun.entity.BaseEntity;
 
 /**
  * BusReservation * Entity - 预约数据
- * 
-
-
  */
 @Entity
 @Table(name = "t_pe_bus_reservation")
 @SequenceGenerator(name = "sequenceGenerator", sequenceName = "t_pe_bus_reservation_sequence")
-public class BusReservation extends BaseEntity {
+public class BusReservation extends BaseEntity
+{
 
-	private BigDecimal id;
-	private BigDecimal createTime;
-	private Date reservatDate;
-	private Long status;
-	private BigDecimal reservatorId;
-	private BigDecimal schoolId;
-	private BigDecimal stationId;
+    /**
+     * 注释内容
+     */
+    private static final long serialVersionUID = -1491435347995499835L;
 
-	public BusReservation() {
-	}
+    @SuppressWarnings("unused")
+    private BigDecimal id;
 
-	public BusReservation(BigDecimal id) {
-		this.id = id;
-	}
+    private BigDecimal createTime;
 
-	public BusReservation(BigDecimal id, BigDecimal createTime,
-			Date reservatDate, Long status, BigDecimal reservatorId,
-			BigDecimal schoolId, BigDecimal stationId) {
-		this.id = id;
-		this.createTime = createTime;
-		this.reservatDate = reservatDate;
-		this.status = status;
-		this.reservatorId = reservatorId;
-		this.schoolId = schoolId;
-		this.stationId = stationId;
-	}
+    private Date reservatDate;
 
-	@Column(name = "create_time", scale = 0)
-	public BigDecimal getCreateTime() {
-		return this.createTime;
-	}
+    private Long status;
 
-	public void setCreateTime(BigDecimal createTime) {
-		this.createTime = createTime;
-	}
+    private BigDecimal reservatorId;
 
-	@Temporal(TemporalType.TIMESTAMP)
-	@Column(name = "reservat_date", length = 19)
-	public Date getReservatDate() {
-		return this.reservatDate;
-	}
+    private BigDecimal schoolId;
 
-	public void setReservatDate(Date reservatDate) {
-		this.reservatDate = reservatDate;
-	}
+    private BigDecimal stationId;
 
-	@Column(name = "status", precision = 10, scale = 0)
-	public Long getStatus() {
-		return this.status;
-	}
+    public BusReservation()
+    {
+    }
 
-	public void setStatus(Long status) {
-		this.status = status;
-	}
+    public BusReservation(BigDecimal id)
+    {
+        this.id = id;
+    }
 
-	@Column(name = "reservator_id", scale = 0)
-	public BigDecimal getReservatorId() {
-		return this.reservatorId;
-	}
+    public BusReservation(BigDecimal id, BigDecimal createTime, Date reservatDate, Long status,
+            BigDecimal reservatorId, BigDecimal schoolId, BigDecimal stationId)
+    {
+        this.id = id;
+        this.createTime = createTime;
+        this.reservatDate = reservatDate;
+        this.status = status;
+        this.reservatorId = reservatorId;
+        this.schoolId = schoolId;
+        this.stationId = stationId;
+    }
 
-	public void setReservatorId(BigDecimal reservatorId) {
-		this.reservatorId = reservatorId;
-	}
+    @Column(name = "create_time", scale = 0)
+    public BigDecimal getCreateTime()
+    {
+        return this.createTime;
+    }
 
-	@Column(name = "school_id", scale = 0)
-	public BigDecimal getSchoolId() {
-		return this.schoolId;
-	}
+    public void setCreateTime(BigDecimal createTime)
+    {
+        this.createTime = createTime;
+    }
 
-	public void setSchoolId(BigDecimal schoolId) {
-		this.schoolId = schoolId;
-	}
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "reservat_date", length = 19)
+    public Date getReservatDate()
+    {
+        return this.reservatDate;
+    }
 
-	@Column(name = "station_id", scale = 0)
-	public BigDecimal getStationId() {
-		return this.stationId;
-	}
+    public void setReservatDate(Date reservatDate)
+    {
+        this.reservatDate = reservatDate;
+    }
 
-	public void setStationId(BigDecimal stationId) {
-		this.stationId = stationId;
-	}
+    @Column(name = "status", precision = 10, scale = 0)
+    public Long getStatus()
+    {
+        return this.status;
+    }
+
+    public void setStatus(Long status)
+    {
+        this.status = status;
+    }
+
+    @Column(name = "reservator_id", scale = 0)
+    public BigDecimal getReservatorId()
+    {
+        return this.reservatorId;
+    }
+
+    public void setReservatorId(BigDecimal reservatorId)
+    {
+        this.reservatorId = reservatorId;
+    }
+
+    @Column(name = "school_id", scale = 0)
+    public BigDecimal getSchoolId()
+    {
+        return this.schoolId;
+    }
+
+    public void setSchoolId(BigDecimal schoolId)
+    {
+        this.schoolId = schoolId;
+    }
+
+    @Column(name = "station_id", scale = 0)
+    public BigDecimal getStationId()
+    {
+        return this.stationId;
+    }
+
+    public void setStationId(BigDecimal stationId)
+    {
+        this.stationId = stationId;
+    }
 
 }

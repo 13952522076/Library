@@ -14,9 +14,7 @@ import org.hibernate.annotations.NotFound;
 import org.hibernate.annotations.NotFoundAction;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.sammyun.entity.BaseEntity;
 import com.sammyun.entity.OrderEntity;
-import com.sammyun.entity.classalbum.ClassAlbumImage;
 
 /**
  * Entity - 年级表
@@ -41,7 +39,7 @@ public class DictGrade extends OrderEntity
 
     /** 学校 */
     private DictSchool dictSchool;
-    
+
     /** 班级列表 */
     private Set<DictClass> dictClasses = new HashSet<DictClass>();
 

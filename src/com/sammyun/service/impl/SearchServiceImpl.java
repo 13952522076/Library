@@ -35,6 +35,7 @@ public class SearchServiceImpl implements SearchService
     @Resource(name = "ehCacheManager")
     private CacheManager cacheManager;
 
+    @SuppressWarnings("unused")
     public void index(Class<?> type)
     {
         FullTextEntityManager fullTextEntityManager = Search.getFullTextEntityManager(entityManager);

@@ -34,6 +34,7 @@ public class EduUtil
      * @param pObj 待检查对象
      * @return boolean 返回的布尔值
      */
+    @SuppressWarnings("rawtypes")
     public static boolean isEmpty(Object pObj)
     {
         if (pObj == null)
@@ -71,6 +72,7 @@ public class EduUtil
      * @param pObj 待检查对象
      * @return boolean 返回的布尔值
      */
+    @SuppressWarnings("rawtypes")
     public static boolean isNotEmpty(Object pObj)
     {
         if (pObj == null)
@@ -160,6 +162,7 @@ public class EduUtil
      * @param pFromObj JavaBean对象源
      * @param pToDto Dto目标对象
      */
+    @SuppressWarnings("unchecked")
     public static void copyPropFromBean2Dto(Object pFromObj, Dto pToDto)
     {
         if (pToDto != null)

@@ -18,9 +18,6 @@ import org.springframework.web.filter.OncePerRequestFilter;
 
 /**
  * Filter - 编码格式转换
- * 
-
-
  */
 public class EncodingConvertFilter extends OncePerRequestFilter
 {
@@ -31,7 +28,6 @@ public class EncodingConvertFilter extends OncePerRequestFilter
     /** 目标编码格式 */
     private String toEncoding = "UTF-8";
 
-    @SuppressWarnings("unchecked")
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
             throws ServletException, IOException

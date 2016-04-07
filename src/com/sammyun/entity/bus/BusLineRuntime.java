@@ -6,7 +6,6 @@ import java.math.BigDecimal;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -14,60 +13,71 @@ import com.sammyun.entity.BaseEntity;
 
 /**
  * BusLineRuntime * Entity - 班车营运时间数据
- * 
-
-
  */
+@SuppressWarnings("serial")
 @Entity
 @Table(name = "t_pe_bus_line_runtime")
 @SequenceGenerator(name = "sequenceGenerator", sequenceName = "t_pe_bus_line_runtime_sequence")
-public class BusLineRuntime extends BaseEntity {
+public class BusLineRuntime extends BaseEntity
+{
 
-	private BigDecimal id;
-	private String name;
-	private String value;
-	private BigDecimal lineId;
+    @SuppressWarnings("unused")
+    private BigDecimal id;
 
-	public BusLineRuntime() {
-	}
+    private String name;
 
-	public BusLineRuntime(BigDecimal id) {
-		this.id = id;
-	}
+    private String value;
 
-	public BusLineRuntime(BigDecimal id, String name, String value,
-			BigDecimal lineId) {
-		this.id = id;
-		this.name = name;
-		this.value = value;
-		this.lineId = lineId;
-	}
+    private BigDecimal lineId;
 
-	@Column(name = "name")
-	public String getName() {
-		return this.name;
-	}
+    public BusLineRuntime()
+    {
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public BusLineRuntime(BigDecimal id)
+    {
+        this.id = id;
+    }
 
-	@Column(name = "value")
-	public String getValue() {
-		return this.value;
-	}
+    public BusLineRuntime(BigDecimal id, String name, String value, BigDecimal lineId)
+    {
+        this.id = id;
+        this.name = name;
+        this.value = value;
+        this.lineId = lineId;
+    }
 
-	public void setValue(String value) {
-		this.value = value;
-	}
+    @Column(name = "name")
+    public String getName()
+    {
+        return this.name;
+    }
 
-	@Column(name = "line_id", scale = 0)
-	public BigDecimal getLineId() {
-		return this.lineId;
-	}
+    public void setName(String name)
+    {
+        this.name = name;
+    }
 
-	public void setLineId(BigDecimal lineId) {
-		this.lineId = lineId;
-	}
+    @Column(name = "value")
+    public String getValue()
+    {
+        return this.value;
+    }
+
+    public void setValue(String value)
+    {
+        this.value = value;
+    }
+
+    @Column(name = "line_id", scale = 0)
+    public BigDecimal getLineId()
+    {
+        return this.lineId;
+    }
+
+    public void setLineId(BigDecimal lineId)
+    {
+        this.lineId = lineId;
+    }
 
 }

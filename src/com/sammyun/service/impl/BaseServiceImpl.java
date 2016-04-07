@@ -58,7 +58,8 @@ public class BaseServiceImpl<T, ID extends Serializable> implements BaseService<
 		return findList(null, null, null, null);
 	}
 
-	@Transactional(readOnly = true)
+	@SuppressWarnings("unchecked")
+    @Transactional(readOnly = true)
 	public List<T> findList(ID... ids) {
 		List<T> result = new ArrayList<T>();
 		if (ids != null) {
@@ -137,7 +138,8 @@ public class BaseServiceImpl<T, ID extends Serializable> implements BaseService<
 		delete(baseDao.find(id));
 	}
 
-	@Transactional
+	@SuppressWarnings("unchecked")
+    @Transactional
 	public void delete(ID... ids) {
 		if (ids != null) {
 			for (ID id : ids) {

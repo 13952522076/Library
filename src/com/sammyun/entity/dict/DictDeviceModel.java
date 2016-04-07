@@ -6,7 +6,6 @@ import java.math.BigDecimal;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -14,37 +13,47 @@ import com.sammyun.entity.BaseEntity;
 
 /**
  * DictDeviceModel * Entity - 设备数据字典
- * 
-
-
  */
 @Entity
 @Table(name = "t_pe_dict_device_model")
 @SequenceGenerator(name = "sequenceGenerator", sequenceName = "t_pe_dict_device_model_sequence")
-public class DictDeviceModel extends BaseEntity {
+public class DictDeviceModel extends BaseEntity
+{
 
-	private BigDecimal id;
-	private String code;
+    /**
+     * 注释内容
+     */
+    private static final long serialVersionUID = 507911770281087230L;
 
-	public DictDeviceModel() {
-	}
+    @SuppressWarnings("unused")
+    private BigDecimal id;
 
-	public DictDeviceModel(BigDecimal id) {
-		this.id = id;
-	}
+    private String code;
 
-	public DictDeviceModel(BigDecimal id, String code) {
-		this.id = id;
-		this.code = code;
-	}
+    public DictDeviceModel()
+    {
+    }
 
-	@Column(name = "code", length = 250)
-	public String getCode() {
-		return this.code;
-	}
+    public DictDeviceModel(BigDecimal id)
+    {
+        this.id = id;
+    }
 
-	public void setCode(String code) {
-		this.code = code;
-	}
+    public DictDeviceModel(BigDecimal id, String code)
+    {
+        this.id = id;
+        this.code = code;
+    }
+
+    @Column(name = "code", length = 250)
+    public String getCode()
+    {
+        return this.code;
+    }
+
+    public void setCode(String code)
+    {
+        this.code = code;
+    }
 
 }

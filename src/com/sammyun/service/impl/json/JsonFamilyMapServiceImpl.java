@@ -5,51 +5,41 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 
 import com.sammyun.dao.json.JsonFamilyMapDao;
 import com.sammyun.entity.Member;
 import com.sammyun.entity.Member.MemberType;
-import com.sammyun.entity.attendance.TimeCard;
-import com.sammyun.entity.attendance.TimeCard.CardStatus;
-import com.sammyun.entity.dict.DictStudent;
-import com.sammyun.entity.dict.PatriarchStudentMap;
 import com.sammyun.entity.json.JsonFamilyMap;
 import com.sammyun.service.MemberService;
 import com.sammyun.service.attendance.TimeCardService;
 import com.sammyun.service.dict.PatriarchStudentMapService;
 import com.sammyun.service.impl.BaseServiceImpl;
 import com.sammyun.service.json.JsonFamilyMapService;
-import com.sammyun.util.SpringUtils;
 
 /**
  * JsonFamilyMap * ServiceImpl - 家庭的JSON信息
- * 
-
-
  */
 @Service("jsonFamilyMapServiceImpl")
-public class JsonFamilyMapServiceImpl extends BaseServiceImpl<JsonFamilyMap, Long> implements JsonFamilyMapService 
+public class JsonFamilyMapServiceImpl extends BaseServiceImpl<JsonFamilyMap, Long> implements JsonFamilyMapService
 {
     @Resource(name = "jsonFamilyMapDaoImpl")
     private JsonFamilyMapDao jsonFamilyMapDao;
 
     @Resource(name = "jsonFamilyMapDaoImpl")
-    public void setBaseDao(JsonFamilyMapDao jsonFamilyMapDao){
+    public void setBaseDao(JsonFamilyMapDao jsonFamilyMapDao)
+    {
         super.setBaseDao(jsonFamilyMapDao);
     }
-    
+
     @Resource(name = "memberServiceImpl")
     private MemberService memberService;
-    
+
     @Resource(name = "timeCardServiceImpl")
     private TimeCardService timeCardService;
-    
+
     @Resource(name = "patriarchStudentMapServiceImpl")
     private PatriarchStudentMapService patriarchStudentMapService;
-    
 
     @Override
     public List<JsonFamilyMap> findBySchool(Long dictSchoolId, Date modifyDate)
@@ -66,19 +56,20 @@ public class JsonFamilyMapServiceImpl extends BaseServiceImpl<JsonFamilyMap, Lon
     @Override
     public void createData(List<Long> memberIds)
     {
-       
+
     }
-    
+
     /**
-     * 构建JsonFamilyMap
-     * <功能详细描述>
+     * 构建JsonFamilyMap <功能详细描述>
+     * 
      * @param familyId
      * @param json
      * @param member
      * @see [类、类#方法、类#成员]
      */
-    public void createJsonFamilyMap(Long familyId,String json,Member member){
-        
+    public void createJsonFamilyMap(Long familyId, String json, Member member)
+    {
+
         if (familyId == null)
         {
             return;

@@ -12,13 +12,9 @@ import org.springframework.stereotype.Repository;
 import com.sammyun.dao.friendship.FriendshipDao;
 import com.sammyun.dao.impl.BaseDaoImpl;
 import com.sammyun.entity.friendship.Friendship;
-import com.sammyun.entity.message.Message;
 
 /**
  * Friendship * DaoImpl - 好友关系
- * 
-
-
  */
 @Repository("friendshipDaoImpl")
 public class FriendshipDaoImpl extends BaseDaoImpl<Friendship, Long> implements FriendshipDao
@@ -32,7 +28,8 @@ public class FriendshipDaoImpl extends BaseDaoImpl<Friendship, Long> implements 
         Root<Friendship> root = criteriaQuery.from(Friendship.class);
         criteriaQuery.select(root);
         Predicate restrictions = criteriaBuilder.conjunction();
-        if (hasCreated != null) {
+        if (hasCreated != null)
+        {
             restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.equal(root.get("hasCreated"), hasCreated));
         }
         criteriaQuery.where(restrictions);

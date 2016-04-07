@@ -123,7 +123,6 @@ public class AlipayDirectPlugin extends PaymentPlugin
         return parameterMap;
     }
 
-    @SuppressWarnings("unchecked")
     @Override
     public boolean verifyNotify(String sn, NotifyMethod notifyMethod, HttpServletRequest request)
     {
@@ -206,6 +205,7 @@ public class AlipayDirectPlugin extends PaymentPlugin
      * @param parameterMap 参数
      * @return 签名
      */
+    @SuppressWarnings("rawtypes")
     private String generateMobileSign(HttpServletRequest request)
     {
         // 获取支付宝POST过来反馈信息

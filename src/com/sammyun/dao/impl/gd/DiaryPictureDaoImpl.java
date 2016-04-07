@@ -10,15 +10,11 @@ import org.springframework.stereotype.Repository;
 
 import com.sammyun.dao.gd.DiaryPictureDao;
 import com.sammyun.dao.impl.BaseDaoImpl;
-import com.sammyun.entity.Member;
 import com.sammyun.entity.gd.DiaryPicture;
 import com.sammyun.entity.gd.GrowthDiary;
 
 /**
  * DiaryPicture * DaoImpl - 成长记图片附件
- * 
-
-
  */
 @Repository("diaryPictureDaoImpl")
 public class DiaryPictureDaoImpl extends BaseDaoImpl<DiaryPicture, Long> implements DiaryPictureDao

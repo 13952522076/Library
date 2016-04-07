@@ -6,7 +6,6 @@ import java.math.BigDecimal;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -14,72 +13,86 @@ import com.sammyun.entity.BaseEntity;
 
 /**
  * Loginlog * Entity - 登录日志
- * 
-
-
  */
+@SuppressWarnings("serial")
 @Entity
 @Table(name = "t_pe_loginlog")
 @SequenceGenerator(name = "sequenceGenerator", sequenceName = "t_pe_loginlog_sequence")
-public class Loginlog extends BaseEntity {
+public class Loginlog extends BaseEntity
+{
 
-	private BigDecimal id;
-	private BigDecimal timeLogin;
-	private BigDecimal timeLogout;
-	private BigDecimal idTerminalenvironment;
-	private BigDecimal idUser;
+    @SuppressWarnings("unused")
+    private BigDecimal id;
 
-	public Loginlog() {
-	}
+    private BigDecimal timeLogin;
 
-	public Loginlog(BigDecimal id) {
-		this.id = id;
-	}
+    private BigDecimal timeLogout;
 
-	public Loginlog(BigDecimal id, BigDecimal timeLogin,
-			BigDecimal timeLogout, BigDecimal idTerminalenvironment,
-			BigDecimal idUser) {
-		this.id = id;
-		this.timeLogin = timeLogin;
-		this.timeLogout = timeLogout;
-		this.idTerminalenvironment = idTerminalenvironment;
-		this.idUser = idUser;
-	}
-	
-	@Column(name = "time_login", scale = 0)
-	public BigDecimal getTimeLogin() {
-		return this.timeLogin;
-	}
+    private BigDecimal idTerminalenvironment;
 
-	public void setTimeLogin(BigDecimal timeLogin) {
-		this.timeLogin = timeLogin;
-	}
+    private BigDecimal idUser;
 
-	@Column(name = "time_logout", scale = 0)
-	public BigDecimal getTimeLogout() {
-		return this.timeLogout;
-	}
+    public Loginlog()
+    {
+    }
 
-	public void setTimeLogout(BigDecimal timeLogout) {
-		this.timeLogout = timeLogout;
-	}
+    public Loginlog(BigDecimal id)
+    {
+        this.id = id;
+    }
 
-	@Column(name = "id_terminalenvironment", scale = 0)
-	public BigDecimal getIdTerminalenvironment() {
-		return this.idTerminalenvironment;
-	}
+    public Loginlog(BigDecimal id, BigDecimal timeLogin, BigDecimal timeLogout, BigDecimal idTerminalenvironment,
+            BigDecimal idUser)
+    {
+        this.id = id;
+        this.timeLogin = timeLogin;
+        this.timeLogout = timeLogout;
+        this.idTerminalenvironment = idTerminalenvironment;
+        this.idUser = idUser;
+    }
 
-	public void setIdTerminalenvironment(BigDecimal idTerminalenvironment) {
-		this.idTerminalenvironment = idTerminalenvironment;
-	}
+    @Column(name = "time_login", scale = 0)
+    public BigDecimal getTimeLogin()
+    {
+        return this.timeLogin;
+    }
 
-	@Column(name = "id_user", scale = 0)
-	public BigDecimal getIdUser() {
-		return this.idUser;
-	}
+    public void setTimeLogin(BigDecimal timeLogin)
+    {
+        this.timeLogin = timeLogin;
+    }
 
-	public void setIdUser(BigDecimal idUser) {
-		this.idUser = idUser;
-	}
+    @Column(name = "time_logout", scale = 0)
+    public BigDecimal getTimeLogout()
+    {
+        return this.timeLogout;
+    }
+
+    public void setTimeLogout(BigDecimal timeLogout)
+    {
+        this.timeLogout = timeLogout;
+    }
+
+    @Column(name = "id_terminalenvironment", scale = 0)
+    public BigDecimal getIdTerminalenvironment()
+    {
+        return this.idTerminalenvironment;
+    }
+
+    public void setIdTerminalenvironment(BigDecimal idTerminalenvironment)
+    {
+        this.idTerminalenvironment = idTerminalenvironment;
+    }
+
+    @Column(name = "id_user", scale = 0)
+    public BigDecimal getIdUser()
+    {
+        return this.idUser;
+    }
+
+    public void setIdUser(BigDecimal idUser)
+    {
+        this.idUser = idUser;
+    }
 
 }

@@ -12,12 +12,9 @@ import org.springframework.stereotype.Service;
 import com.sammyun.dao.dict.ClassTeacherMapDao;
 import com.sammyun.dao.dict.PatriarchStudentMapDao;
 import com.sammyun.entity.Member;
-import com.sammyun.entity.dict.ClassTeacherMap;
 import com.sammyun.entity.dict.DictClass;
-import com.sammyun.entity.dict.DictSchool;
 import com.sammyun.entity.dict.DictStudent;
 import com.sammyun.entity.dict.PatriarchStudentMap;
-import com.sammyun.service.AdminService;
 import com.sammyun.service.MemberService;
 import com.sammyun.service.dict.ClassTeacherMapService;
 import com.sammyun.service.dict.PatriarchStudentMapService;
@@ -25,9 +22,6 @@ import com.sammyun.service.impl.BaseServiceImpl;
 
 /**
  * PatriarchStudentMap * ServiceImpl - 学生家长对应列表
- * 
-
-
  */
 @Service("patriarchStudentMapServiceImpl")
 public class PatriarchStudentMapServiceImpl extends BaseServiceImpl<PatriarchStudentMap, Long> implements
@@ -100,14 +94,14 @@ public class PatriarchStudentMapServiceImpl extends BaseServiceImpl<PatriarchStu
             String[] memberUserNames = memberString.split(",");
             for (String memberUserName : memberUserNames)
             {
-                //memberUserName.trim();
+                // memberUserName.trim();
                 Member member = memberService.findByUsername(memberUserName.trim());
                 if (member == null)
                 {
                     continue;
                 }
-//                member.setIsUpdate(true);
-//                memberService.update(member);
+                // member.setIsUpdate(true);
+                // memberService.update(member);
                 PatriarchStudentMap patriarchStudentMap = new PatriarchStudentMap();
                 patriarchStudentMap.setMember(member);
                 patriarchStudentMap.setDictStudent(dictStudent);

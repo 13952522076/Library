@@ -5,16 +5,12 @@
  */
 package com.sammyun.controller.front;
 
-import javax.annotation.Resource;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.sammyun.controller.shop.BaseController;
-import com.sammyun.entity.FriendLink.Type;
-import com.sammyun.service.FriendLinkService;
 
 /**
  * Controller - 链接

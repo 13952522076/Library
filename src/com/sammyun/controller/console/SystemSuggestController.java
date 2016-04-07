@@ -43,6 +43,7 @@ public class SystemSuggestController extends BaseController
     /**
      * 列表
      */
+    @SuppressWarnings("unused")
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String list(Pageable pageable, MemberType memberType, String mobile, String searchName, String startDate,
             String endDate, ModelMap model, HttpServletRequest request)

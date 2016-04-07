@@ -109,6 +109,7 @@ public class StaticServiceImpl implements StaticService, ServletContextAware
         return build(template.getTemplatePath(), template.getStaticPath());
     }
 
+    @SuppressWarnings("unused")
     @Transactional(readOnly = true)
     public int buildSitemap()
     {

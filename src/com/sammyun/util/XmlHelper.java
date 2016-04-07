@@ -40,6 +40,7 @@ public class XmlHelper
      * @param pStrXml 待解析的XML字符串
      * @return outDto 返回Dto
      */
+    @SuppressWarnings({"rawtypes", "unchecked"})
     public static final Dto parseXml2DtoBasedNode(String pStrXml)
     {
         Dto outDto = new BaseDto();
@@ -77,6 +78,7 @@ public class XmlHelper
      * @param pXPath 节点路径(例如："//paralist/row" 则表示根节点paralist下的row节点的xPath路径)
      * @return outDto 返回Dto
      */
+    @SuppressWarnings("unchecked")
     public static final Dto parseXml2DtoBasedNode(String pStrXml, String pXPath)
     {
         Dto outDto = new BaseDto();
@@ -98,7 +100,8 @@ public class XmlHelper
             // 获取根节点
             Element elNode = document.getRootElement();
             // 遍历节点属性值将其压入Dto
-            for (Iterator it = elNode.elementIterator(); it.hasNext();)
+            for (@SuppressWarnings("rawtypes")
+            Iterator it = elNode.elementIterator(); it.hasNext();)
             {
                 Element leaf = (Element) it.next();
                 outDto.put(leaf.getName().toLowerCase(), leaf.getData());
@@ -114,6 +117,7 @@ public class XmlHelper
      * @param pXPath 节点路径(例如："//paralist/row" 则表示根节点paralist下的row节点的xPath路径)
      * @return outDto 返回Dto
      */
+    @SuppressWarnings("unchecked")
     public static final Dto parseXml2DtoBasedProperty(String pStrXml, String pXPath)
     {
         Dto outDto = new BaseDto();
@@ -135,7 +139,8 @@ public class XmlHelper
             // 根据Xpath搜索节点
             Element elRoot = (Element) document.selectSingleNode(pXPath);
             // 遍历节点属性值将其压入Dto
-            for (Iterator it = elRoot.attributeIterator(); it.hasNext();)
+            for (@SuppressWarnings("rawtypes")
+            Iterator it = elRoot.attributeIterator(); it.hasNext();)
             {
                 Attribute attribute = (Attribute) it.next();
                 outDto.put(attribute.getName().toLowerCase(), attribute.getData());
@@ -151,6 +156,7 @@ public class XmlHelper
      * @param pRootNodeName 根结点名
      * @return string 返回XML格式字符串
      */
+    @SuppressWarnings("rawtypes")
     public static final String parseDto2Xml(Dto pDto, String pRootNodeName)
     {
         if (EduUtil.isEmpty(pDto))
@@ -183,6 +189,7 @@ public class XmlHelper
      * @param pFirstNodeName 一级节点名
      * @return string 返回XML格式字符串
      */
+    @SuppressWarnings("rawtypes")
     public static final String parseDto2Xml(Dto pDto, String pRootNodeName, String pFirstNodeName)
     {
         if (EduUtil.isEmpty(pDto))
@@ -216,6 +223,7 @@ public class XmlHelper
      * @param pFirstNodeName 行节点名称
      * @return string 返回XML格式字符串
      */
+    @SuppressWarnings("rawtypes")
     public static final String parseList2Xml(List pList, String pRootNodeName, String pFirstNodeName)
     {
         Document document = DocumentHelper.createDocument();
@@ -243,6 +251,7 @@ public class XmlHelper
      * @param pFirstNodeName 行节点名称
      * @return string 返回XML格式字符串
      */
+    @SuppressWarnings("rawtypes")
     public static final String parseList2XmlBasedNode(List pList, String pRootNodeName, String pFirstNodeName)
     {
         Document document = DocumentHelper.createDocument();
@@ -269,6 +278,7 @@ public class XmlHelper
      * @param pStrXml 传入的符合XML格式规范的字符串
      * @return list 返回List对象
      */
+    @SuppressWarnings({"rawtypes", "unchecked"})
     public static final List parseXml2List(String pStrXml)
     {
         List lst = new ArrayList();

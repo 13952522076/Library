@@ -19,15 +19,11 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import com.sammyun.Message;
 import com.sammyun.controller.console.BaseController;
 import com.sammyun.entity.PluginConfig;
-import com.sammyun.plugin.PaymentPlugin;
 import com.sammyun.plugin.StoragePlugin;
 import com.sammyun.service.PluginConfigService;
 
 /**
  * Controller - FTP
- * 
-
-
  */
 @Controller("adminPluginFtpController")
 @RequestMapping("/console/storage_plugin/ftp")
@@ -83,12 +79,12 @@ public class FtpController extends BaseController
         model.addAttribute("menuId", StoragePlugin.class.getSimpleName());
         return "/com/sammyun/plugin/ftp/setting";
     }
-    
+
     /**
      * 更新
      */
     @RequestMapping(value = "/update", method = RequestMethod.POST)
-    public String update(ModelMap model,String host, Integer port, String username, String password, String urlPrefix,
+    public String update(ModelMap model, String host, Integer port, String username, String password, String urlPrefix,
             @RequestParam(defaultValue = "false") Boolean isEnabled, Integer order,
             RedirectAttributes redirectAttributes)
     {

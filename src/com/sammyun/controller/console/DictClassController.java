@@ -63,7 +63,7 @@ public class DictClassController extends BaseController
 
     @Resource(name = "dictStudentServiceImpl")
     private DictStudentService dictStudentService;
-    
+
     @Resource(name = "dictGradeServiceImpl")
     private DictGradeService dictGradeService;
 
@@ -84,10 +84,12 @@ public class DictClassController extends BaseController
         Filter statusFilter = new Filter();
         statusFilter.setProperty("classStatus");
         statusFilter.setOperator(Operator.eq);
-        if(classStatus!=null && classStatus==ClassStatus.graduated){
+        if (classStatus != null && classStatus == ClassStatus.graduated)
+        {
             statusFilter.setValue(ClassStatus.graduated);
         }
-        else{
+        else
+        {
             statusFilter.setValue(ClassStatus.active);
         }
         pageable.addFilters(statusFilter);
@@ -100,7 +102,6 @@ public class DictClassController extends BaseController
     /**
      * 添加
      */
-    @SuppressWarnings("unchecked")
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String add(ModelMap model)
     {
@@ -118,7 +119,7 @@ public class DictClassController extends BaseController
      * 保存
      */
     @RequestMapping(value = "/save", method = RequestMethod.POST)
-    public String save(Long dictGradeId ,DictClass dictClass, RedirectAttributes redirectAttributes, ModelMap model)
+    public String save(Long dictGradeId, DictClass dictClass, RedirectAttributes redirectAttributes, ModelMap model)
     {
         DictGrade dictGrade = dictGradeService.find(dictGradeId);
         DictSchool dictSchool = adminService.getCurrentDictSchool();
@@ -151,7 +152,7 @@ public class DictClassController extends BaseController
      * 更新
      */
     @RequestMapping(value = "/update", method = RequestMethod.POST)
-    public String update(Long dictGradeId ,DictClass dictClass, RedirectAttributes redirectAttributes, ModelMap model)
+    public String update(Long dictGradeId, DictClass dictClass, RedirectAttributes redirectAttributes, ModelMap model)
     {
         DictSchool dictSchool = adminService.getCurrentDictSchool();
         DictGrade dictGrade = dictGradeService.find(dictGradeId);

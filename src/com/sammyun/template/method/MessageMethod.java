@@ -18,10 +18,8 @@ import freemarker.template.TemplateModelException;
 
 /**
  * 模板方法 - 多语言
- * 
-
-
  */
+@SuppressWarnings("deprecation")
 @Component("messageMethod")
 public class MessageMethod implements TemplateMethodModel
 {

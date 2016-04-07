@@ -39,9 +39,6 @@ import com.sammyun.util.RSAUtils;
 
 /**
  * Plugin - 支付宝(手机网站支付)
- * 
-
-
  */
 @Component("alipayWapPlugin")
 public class AlipayWapPlugin extends PaymentPlugin
@@ -185,7 +182,6 @@ public class AlipayWapPlugin extends PaymentPlugin
         return buildRequestPara(parameterMap);
     }
 
-    @SuppressWarnings("unchecked")
     @Override
     public boolean verifyNotify(String sn, NotifyMethod notifyMethod, HttpServletRequest request)
     {
@@ -274,6 +270,7 @@ public class AlipayWapPlugin extends PaymentPlugin
      * @return 签名
      * @throws Exception
      */
+    @SuppressWarnings("rawtypes")
     private Map<String, Object> generateMobileSign(HttpServletRequest request)
     {
         // 获取支付宝POST过来反馈信息
@@ -444,6 +441,7 @@ public class AlipayWapPlugin extends PaymentPlugin
      * @param params 通知返回来的参数数组
      * @return 验证结果
      */
+    @SuppressWarnings("unused")
     public boolean verifyReturn(Map<String, Object> params)
     {
         String sign = "";

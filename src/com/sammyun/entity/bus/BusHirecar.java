@@ -6,7 +6,6 @@ import java.math.BigDecimal;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -14,48 +13,57 @@ import com.sammyun.entity.BaseEntity;
 
 /**
  * BusHirecar * Entity - 租车预约数据
- * 
-
-
  */
+@SuppressWarnings("serial")
 @Entity
 @Table(name = "t_pe_bus_hirecar")
 @SequenceGenerator(name = "sequenceGenerator", sequenceName = "t_pe_bus_hirecar_sequence")
-public class BusHirecar extends BaseEntity {
+public class BusHirecar extends BaseEntity
+{
 
-	private BigDecimal id;
-	private String tel;
-	private BigDecimal schoolId;
+    @SuppressWarnings("unused")
+    private BigDecimal id;
 
-	public BusHirecar() {
-	}
+    private String tel;
 
-	public BusHirecar(BigDecimal id) {
-		this.id = id;
-	}
+    private BigDecimal schoolId;
 
-	public BusHirecar(BigDecimal id, String tel, BigDecimal schoolId) {
-		this.id = id;
-		this.tel = tel;
-		this.schoolId = schoolId;
-	}
+    public BusHirecar()
+    {
+    }
 
-	@Column(name = "tel")
-	public String getTel() {
-		return this.tel;
-	}
+    public BusHirecar(BigDecimal id)
+    {
+        this.id = id;
+    }
 
-	public void setTel(String tel) {
-		this.tel = tel;
-	}
+    public BusHirecar(BigDecimal id, String tel, BigDecimal schoolId)
+    {
+        this.id = id;
+        this.tel = tel;
+        this.schoolId = schoolId;
+    }
 
-	@Column(name = "school_id", scale = 0)
-	public BigDecimal getSchoolId() {
-		return this.schoolId;
-	}
+    @Column(name = "tel")
+    public String getTel()
+    {
+        return this.tel;
+    }
 
-	public void setSchoolId(BigDecimal schoolId) {
-		this.schoolId = schoolId;
-	}
+    public void setTel(String tel)
+    {
+        this.tel = tel;
+    }
+
+    @Column(name = "school_id", scale = 0)
+    public BigDecimal getSchoolId()
+    {
+        return this.schoolId;
+    }
+
+    public void setSchoolId(BigDecimal schoolId)
+    {
+        this.schoolId = schoolId;
+    }
 
 }

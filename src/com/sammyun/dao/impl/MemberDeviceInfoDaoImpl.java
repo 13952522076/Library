@@ -6,7 +6,6 @@
 package com.sammyun.dao.impl;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import javax.persistence.FlushModeType;
@@ -20,7 +19,6 @@ import org.springframework.stereotype.Repository;
 import com.sammyun.dao.MemberDeviceInfoDao;
 import com.sammyun.entity.Member;
 import com.sammyun.entity.MemberDeviceInfo;
-import com.sammyun.entity.dict.ClassTeacherMap;
 
 /**
  * Dao - 会员设备信息列表

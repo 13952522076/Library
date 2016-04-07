@@ -22,7 +22,6 @@ import org.apache.commons.logging.LogFactory;
  * Utils - 时间工具类
  * 
  * @author tianlongxu
-
  */
 public class DateUtil
 {
@@ -31,6 +30,7 @@ public class DateUtil
 
     private static String year_format = "yyyy";
 
+    @SuppressWarnings("unused")
     private static String month_format = "yyyyMM";
 
     private static String default_format = "yyyy-MM-dd";

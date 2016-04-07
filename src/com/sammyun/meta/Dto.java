@@ -18,6 +18,7 @@ import java.util.Map;
  * @since 2014-06-07
  * @see java.util.Map
  */
+@SuppressWarnings("rawtypes")
 public interface Dto extends Map
 {
 

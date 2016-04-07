@@ -3,10 +3,8 @@ package com.sammyun.dao.impl.gd;
 import java.util.List;
 
 import javax.persistence.FlushModeType;
-import javax.persistence.NoResultException;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Join;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 
@@ -17,17 +15,11 @@ import com.sammyun.Pageable;
 import com.sammyun.dao.gd.GrowthDiaryDao;
 import com.sammyun.dao.impl.BaseDaoImpl;
 import com.sammyun.entity.Member;
-import com.sammyun.entity.dict.DictClass;
-import com.sammyun.entity.dict.DictStudent;
 import com.sammyun.entity.gd.DiaryTag;
 import com.sammyun.entity.gd.GrowthDiary;
-import com.sammyun.entity.parenting.Parenting;
 
 /**
  * GrowthDiary * DaoImpl - 成长记
- * 
-
-
  */
 @Repository("growthDiaryDaoImpl")
 public class GrowthDiaryDaoImpl extends BaseDaoImpl<GrowthDiary, Long> implements GrowthDiaryDao
@@ -59,8 +51,7 @@ public class GrowthDiaryDaoImpl extends BaseDaoImpl<GrowthDiary, Long> implement
         Predicate restrictions = criteriaBuilder.conjunction();
         if (member != null)
         {
-            restrictions = criteriaBuilder.and(restrictions,
-                    criteriaBuilder.equal(root.get("member"), member));
+            restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.equal(root.get("member"), member));
         }
         criteriaQuery.where(restrictions);
         return entityManager.createQuery(criteriaQuery).setFlushMode(FlushModeType.COMMIT).getResultList();
@@ -69,7 +60,8 @@ public class GrowthDiaryDaoImpl extends BaseDaoImpl<GrowthDiary, Long> implement
     @Override
     public List<GrowthDiary> findByDiaryTag(DiaryTag diaryTag)
     {
-        if(diaryTag==null){
+        if (diaryTag == null)
+        {
             return null;
         }
         CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();

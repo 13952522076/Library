@@ -1,14 +1,8 @@
 package com.sammyun.dao.classalbum;
 
-import java.util.List;
-
-import com.sammyun.Page;
-import com.sammyun.Pageable;
 import com.sammyun.dao.BaseDao;
 import com.sammyun.entity.classalbum.ClassAlbumImage;
 import com.sammyun.entity.classalbum.ClassAlbumImageAttach;
-import com.sammyun.entity.dict.DictClass;
-import com.sammyun.entity.dict.DictSchool;
 
 /**
  * ClassAlbumImage * Dao - 班级相册

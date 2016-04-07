@@ -75,6 +75,7 @@ public class SmsCellUtil
      * <root return="0" info="成功" msgid=“FI293EF2D002F01D” numbers="1"
      * messages="1"> </root>
      */
+    @SuppressWarnings({"rawtypes", "unchecked"})
     public HashMap sendDone(String destnumbers, String msg, String sendtime) throws Exception
     {
         String qUrl = url + "?userid=" + userId + "&password=" + java.net.URLEncoder.encode(password, "UTF-8")
@@ -95,6 +96,7 @@ public class SmsCellUtil
         return map;
     }
 
+    @SuppressWarnings({"rawtypes", "unchecked"})
     public HashMap queryReportsDone(String date, String msgid) throws Exception
     {
         String qUrl = url + "?userid=" + userId + "&password=" + java.net.URLEncoder.encode(password, "UTF-8");

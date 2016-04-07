@@ -11,24 +11,20 @@ import org.springframework.stereotype.Repository;
 
 import com.sammyun.Order;
 import com.sammyun.dao.impl.BaseDaoImpl;
-import com.sammyun.dao.news.NewsCategoryDao;
 import com.sammyun.dao.parenting.ParentingCategoryDao;
 import com.sammyun.entity.dict.DictSchool;
-import com.sammyun.entity.news.NewsCategory;
 import com.sammyun.entity.parenting.ParentingCategory;
 
 /**
  * ParentingCategory * DaoImpl - 育儿类别
- * 
-
-
  */
 @Repository("parentingCategoryDaoImpl")
 public class ParentingCategoryDaoimpl extends BaseDaoImpl<ParentingCategory, Long> implements ParentingCategoryDao
 {
 
     @Override
-    public List<ParentingCategory> findBySchool(DictSchool dictSchool, Integer defFlag, Integer status, List<Order> orders)
+    public List<ParentingCategory> findBySchool(DictSchool dictSchool, Integer defFlag, Integer status,
+            List<Order> orders)
     {
 
         CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();

@@ -2,11 +2,8 @@ package com.sammyun.util;
 
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-
-import javax.annotation.Resource;
 
 import net.sf.ehcache.CacheManager;
 import net.sf.ehcache.Ehcache;
@@ -16,15 +13,12 @@ import org.apache.commons.beanutils.ConvertUtilsBean;
 import org.apache.commons.beanutils.Converter;
 import org.apache.commons.beanutils.converters.ArrayConverter;
 import org.apache.commons.beanutils.converters.DateConverter;
-import org.eclipse.jdt.internal.compiler.ast.ThisReference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.sammyun.CommonAttributes;
 import com.sammyun.EnumConverter;
 import com.sammyun.entity.system.SystemDict;
-import com.sammyun.service.PluginService;
-import com.sammyun.service.system.SystemDictService;
 
 /**
  * 系统字典维护，从数据库中读取出来，存入内存中，<br />
@@ -46,6 +40,7 @@ public class SystemDictUtils
     private static final CacheManager cacheManager = CacheManager.create();
 
     /** BeanUtilsBean */
+    @SuppressWarnings("unused")
     private static final BeanUtilsBean beanUtils;
 
     /** 不可以实例 */

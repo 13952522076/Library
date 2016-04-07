@@ -19,17 +19,12 @@ import com.sammyun.Pageable;
 import com.sammyun.dao.attendance.WorkSchedulingDao;
 import com.sammyun.dao.classalbum.ClassAlbumImageDao;
 import com.sammyun.dao.impl.BaseDaoImpl;
-import com.sammyun.entity.Member;
-import com.sammyun.entity.campusviewImg.CampusviewImg;
 import com.sammyun.entity.classalbum.ClassAlbumImage;
 import com.sammyun.entity.dict.DictClass;
 import com.sammyun.entity.dict.DictSchool;
 
 /**
  * ClassAlbumImage * DaoImpl - 校园风光表
- * 
-
-
  */
 
 @Repository("classAlbumImageDaoImpl")
@@ -66,7 +61,8 @@ public class ClassAlbumImageDaoImpl extends BaseDaoImpl<ClassAlbumImage, Long> i
     @Override
     public List<DictClass> getDictClasses(DictSchool dictSchool)
     {
-        if(dictSchool==null){
+        if (dictSchool == null)
+        {
             return null;
         }
         String jpql = "select classAlbumImage.dictClass from ClassAlbumImage classAlbumImage where classAlbumImage.dictSchool = :dictSchool";

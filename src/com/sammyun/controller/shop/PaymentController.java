@@ -73,6 +73,7 @@ public class PaymentController extends BaseController
     /**
      * 提交
      */
+    @SuppressWarnings("unused")
     @RequestMapping(value = "/submit", method = RequestMethod.POST)
     public String submit(Type type, String paymentPluginId, String sn, BigDecimal amount, String bank, String bankName,
             HttpServletRequest request, HttpServletResponse response, ModelMap model,
@@ -135,6 +136,7 @@ public class PaymentController extends BaseController
     /**
      * PC端通知
      */
+    @SuppressWarnings("rawtypes")
     @RequestMapping("/notify/{notifyMethod}/{sn}")
     public String notify(@PathVariable NotifyMethod notifyMethod, @PathVariable String sn, HttpServletRequest request,
             ModelMap model)
@@ -249,6 +251,7 @@ public class PaymentController extends BaseController
      * 
      * @see [类、类#方法、类#成员]
      */
+    @SuppressWarnings("rawtypes")
     private void sendMsgToMember(Member member, String message)
     {
         Setting setting = SettingUtils.get();

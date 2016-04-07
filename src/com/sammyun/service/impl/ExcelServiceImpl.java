@@ -47,9 +47,6 @@ import com.sammyun.util.SettingUtils;
 
 /**
  * Service - Excel导入
- * 
-
-
  */
 @Service("excelServiceImpl")
 public class ExcelServiceImpl implements ExcelService
@@ -77,6 +74,7 @@ public class ExcelServiceImpl implements ExcelService
 
     private static HSSFWorkbook courseWorkbook;
 
+    @SuppressWarnings("unused")
     @Override
     public List<Member> getMembersByExcel(InputStream is) throws Exception
     {
@@ -629,6 +627,7 @@ public class ExcelServiceImpl implements ExcelService
         return excelMessage;
     }
 
+    @SuppressWarnings("unused")
     @Override
     public List<Member> getTeachers(InputStream inputStream, DictSchool dictSchool, MemberType memberType,
             HttpServletRequest request) throws Exception
@@ -828,6 +827,7 @@ public class ExcelServiceImpl implements ExcelService
         return ret;
     }
 
+    @SuppressWarnings("unused")
     @Override
     public List<DictStudent> getDictStudents(InputStream inputStream, DictSchool dictSchool, HttpServletRequest request)
             throws Exception

@@ -17,13 +17,9 @@ import com.sammyun.dao.impl.BaseDaoImpl;
 import com.sammyun.entity.Member;
 import com.sammyun.entity.gd.DiaryAgree;
 import com.sammyun.entity.gd.GrowthDiary;
-import com.sammyun.entity.parenting.Parenting;
 
 /**
  * DiaryAgree * DaoImpl - 成长记点赞
- * 
-
-
  */
 @Repository("diaryAgreeDaoImpl")
 public class DiaryAgreeDaoImpl extends BaseDaoImpl<DiaryAgree, Long> implements DiaryAgreeDao
@@ -67,7 +63,8 @@ public class DiaryAgreeDaoImpl extends BaseDaoImpl<DiaryAgree, Long> implements 
         }
         if (growthDiary != null)
         {
-            restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.equal(root.get("growthDiary"), growthDiary));
+            restrictions = criteriaBuilder.and(restrictions,
+                    criteriaBuilder.equal(root.get("growthDiary"), growthDiary));
         }
         criteriaQuery.where(restrictions);
         return entityManager.createQuery(criteriaQuery).setFlushMode(FlushModeType.COMMIT).getResultList();

@@ -21,6 +21,7 @@ import freemarker.template.TemplateModelException;
 
 
  */
+@SuppressWarnings("deprecation")
 @Component("abbreviateMethod")
 public class AbbreviateMethod implements TemplateMethodModel
 {

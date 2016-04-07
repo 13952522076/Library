@@ -1,7 +1,5 @@
 package com.sammyun.controller.console;
 
-import java.util.List;
-
 import javax.annotation.Resource;
 
 import org.apache.commons.lang.StringUtils;
@@ -12,17 +10,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.sammyun.Filter;
-import com.sammyun.Filter.Operator;
 import com.sammyun.Message;
 import com.sammyun.Pageable;
-import com.sammyun.entity.Admin;
 import com.sammyun.entity.Area;
 import com.sammyun.entity.dict.DictSchool;
 import com.sammyun.service.AdminService;
 import com.sammyun.service.AreaService;
 import com.sammyun.service.dict.DictSchoolService;
-import com.sammyun.util.EduCodeUtil;
 
 /**
  * Controller - 学校管理
@@ -41,7 +35,7 @@ public class DictSchoolController extends BaseController
 
     @Resource(name = "areaServiceImpl")
     private AreaService areaService;
-    
+
     @Resource(name = "adminServiceImpl")
     private AdminService adminService;
 
@@ -56,7 +50,6 @@ public class DictSchoolController extends BaseController
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String list(Pageable pageable, ModelMap model)
     {
-        Admin admin = adminService.getCurrent();
         // 校园管理员只能看到自己学校的，超级管理员可以看到所有的
         model.addAttribute("page", dictSchoolService.findPage(pageable));
         model.addAttribute("menuId", DictSchool.class.getSimpleName());
@@ -69,8 +62,6 @@ public class DictSchoolController extends BaseController
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String add(ModelMap model)
     {
-        List<DictSchool> dictSchools = dictSchoolService.findAll();
-        String schoolCode = EduCodeUtil.generateSchoolCode(dictSchools);
         model.addAttribute("schoolCode", DictSchool.class.getSimpleName());
         model.addAttribute("menuId", DictSchool.class.getSimpleName());
         return "/console/dict_school/add";

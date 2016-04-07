@@ -6,7 +6,6 @@ import java.math.BigDecimal;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -14,16 +13,15 @@ import com.sammyun.entity.BaseEntity;
 
 /**
  * BusLineCollect * Entity - 线路收藏数据
- * 
-
-
  */
+@SuppressWarnings("serial")
 @Entity
 @Table(name = "t_pe_bus_line_collect")
 @SequenceGenerator(name = "sequenceGenerator", sequenceName = "t_pe_bus_line_collect_sequence")
 public class BusLineCollect extends BaseEntity
 {
 
+    @SuppressWarnings("unused")
     private BigDecimal id;
 
     private BigDecimal collectTime;

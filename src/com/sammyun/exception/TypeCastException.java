@@ -18,6 +18,11 @@ import java.io.PrintWriter;
 public class TypeCastException extends RuntimeException
 {
 
+    /**
+     * 注释内容
+     */
+    private static final long serialVersionUID = 6992716202493086199L;
+
     Throwable nested;
 
     public TypeCastException()

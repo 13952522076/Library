@@ -1,6 +1,5 @@
 package com.sammyun.entity.dict;
 
-
 import java.math.BigDecimal;
 
 import javax.persistence.Column;
@@ -11,61 +10,76 @@ import javax.persistence.Table;
 import com.sammyun.entity.BaseEntity;
 
 /**
- *  Entity - 校区
- * 
-
-
+ * Entity - 校区
  */
 @Entity
 @Table(name = "t_pe_dict_campus")
 @SequenceGenerator(name = "sequenceGenerator", sequenceName = "t_pe_dict_campus_sequence")
-public class DictCampus extends BaseEntity {
+public class DictCampus extends BaseEntity
+{
 
-	private BigDecimal id;
-	private String name;
-	private BigDecimal regionId;
-	private BigDecimal schoolId;
+    /**
+     * 注释内容
+     */
+    private static final long serialVersionUID = 7883033214852812236L;
 
-	public DictCampus() {
-	}
+    @SuppressWarnings("unused")
+    private BigDecimal id;
 
-	public DictCampus(BigDecimal id) {
-		this.id = id;
-	}
+    private String name;
 
-	public DictCampus(BigDecimal id, String name, BigDecimal regionId,
-			BigDecimal schoolId) {
-		this.id = id;
-		this.name = name;
-		this.regionId = regionId;
-		this.schoolId = schoolId;
-	}
+    private BigDecimal regionId;
 
-	@Column(name = "name", length = 100)
-	public String getName() {
-		return this.name;
-	}
+    private BigDecimal schoolId;
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public DictCampus()
+    {
+    }
 
-	@Column(name = "region_id", scale = 0)
-	public BigDecimal getRegionId() {
-		return this.regionId;
-	}
+    public DictCampus(BigDecimal id)
+    {
+        this.id = id;
+    }
 
-	public void setRegionId(BigDecimal regionId) {
-		this.regionId = regionId;
-	}
+    public DictCampus(BigDecimal id, String name, BigDecimal regionId, BigDecimal schoolId)
+    {
+        this.id = id;
+        this.name = name;
+        this.regionId = regionId;
+        this.schoolId = schoolId;
+    }
 
-	@Column(name = "school_id", scale = 0)
-	public BigDecimal getSchoolId() {
-		return this.schoolId;
-	}
+    @Column(name = "name", length = 100)
+    public String getName()
+    {
+        return this.name;
+    }
 
-	public void setSchoolId(BigDecimal schoolId) {
-		this.schoolId = schoolId;
-	}
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    @Column(name = "region_id", scale = 0)
+    public BigDecimal getRegionId()
+    {
+        return this.regionId;
+    }
+
+    public void setRegionId(BigDecimal regionId)
+    {
+        this.regionId = regionId;
+    }
+
+    @Column(name = "school_id", scale = 0)
+    public BigDecimal getSchoolId()
+    {
+        return this.schoolId;
+    }
+
+    public void setSchoolId(BigDecimal schoolId)
+    {
+        this.schoolId = schoolId;
+    }
 
 }

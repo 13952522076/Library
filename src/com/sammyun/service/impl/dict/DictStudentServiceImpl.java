@@ -2,37 +2,35 @@ package com.sammyun.service.impl.dict;
 
 import java.util.List;
 
-import com.sammyun.service.impl.BaseServiceImpl;
-
 import javax.annotation.Resource;
 
 import org.apache.commons.lang.StringUtils;
-import org.apache.commons.validator.Var;
 import org.springframework.stereotype.Service;
 
-import com.sammyun.service.dict.DictStudentService;
-import com.sammyun.dao.dict.DictStudentDao;
 import com.sammyun.dao.dict.DictClassDao;
+import com.sammyun.dao.dict.DictStudentDao;
 import com.sammyun.entity.dict.DictClass;
 import com.sammyun.entity.dict.DictSchool;
 import com.sammyun.entity.dict.DictStudent;
+import com.sammyun.service.dict.DictStudentService;
+import com.sammyun.service.impl.BaseServiceImpl;
 
 /**
  * DictStudent * ServiceImpl - 学生
- * 
-
-
  */
 @Service("dictStudentServiceImpl")
-public class DictStudentServiceImpl extends BaseServiceImpl<DictStudent, Long> implements DictStudentService {
+public class DictStudentServiceImpl extends BaseServiceImpl<DictStudent, Long> implements DictStudentService
+{
 
     @Resource(name = "dictStudentDaoImpl")
     private DictStudentDao dictStudentDao;
+
     @Resource(name = "dictClassDaoImpl")
     private DictClassDao dictClassDao;
 
     @Resource(name = "dictStudentDaoImpl")
-    public void setBaseDao(DictStudentDao dictStudentDao){
+    public void setBaseDao(DictStudentDao dictStudentDao)
+    {
         super.setBaseDao(dictStudentDao);
     }
 
@@ -40,12 +38,14 @@ public class DictStudentServiceImpl extends BaseServiceImpl<DictStudent, Long> i
     public List<DictStudent> getDictStudentByClassId(String dictClassId)
     {
         // TODO Auto-generated method stub
-        if(dictClassId == null){
+        if (dictClassId == null)
+        {
             return null;
         }
         long classId = Long.parseLong(dictClassId);
         DictClass dictClass = dictClassDao.find(classId);
-        if(dictClass == null){
+        if (dictClass == null)
+        {
             return null;
         }
         List<DictStudent> dictStudentList = dictStudentDao.getStudentByClass(dictClass);
@@ -53,9 +53,9 @@ public class DictStudentServiceImpl extends BaseServiceImpl<DictStudent, Long> i
     }
 
     @Override
-    public List<DictStudent> findByStudentNo(String studentNo,DictSchool dictSchool)
+    public List<DictStudent> findByStudentNo(String studentNo, DictSchool dictSchool)
     {
-        return dictStudentDao.findByStudentNo(studentNo,dictSchool);
+        return dictStudentDao.findByStudentNo(studentNo, dictSchool);
     }
 
     @Override
@@ -65,7 +65,7 @@ public class DictStudentServiceImpl extends BaseServiceImpl<DictStudent, Long> i
     }
 
     @Override
-    public boolean studentNoUnique(String previousStudentNo, String studentNo,DictSchool dictSchool)
+    public boolean studentNoUnique(String previousStudentNo, String studentNo, DictSchool dictSchool)
     {
         if (StringUtils.equalsIgnoreCase(previousStudentNo, studentNo))
         {
@@ -73,7 +73,7 @@ public class DictStudentServiceImpl extends BaseServiceImpl<DictStudent, Long> i
         }
         else
         {
-            if (dictStudentDao.studentNoUnique(studentNo,dictSchool))
+            if (dictStudentDao.studentNoUnique(studentNo, dictSchool))
             {
                 return true;
             }
@@ -89,6 +89,5 @@ public class DictStudentServiceImpl extends BaseServiceImpl<DictStudent, Long> i
     {
         return dictStudentDao.findByStudentNoSingle(studentNo, dictSchool);
     }
-
 
 }

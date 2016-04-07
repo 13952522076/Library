@@ -11,8 +11,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.sammyun.Filter;
-import com.sammyun.Filter.Operator;
 import com.sammyun.Message;
 import com.sammyun.Pageable;
 import com.sammyun.entity.Admin;
@@ -24,9 +22,6 @@ import com.sammyun.service.dict.DictSchoolService;
 
 /**
  * Controller - 课程
- * 
-
-
  */
 @Controller("courseNameController")
 @RequestMapping("/console/course_name")
@@ -52,7 +47,6 @@ public class CourseNameController extends BaseController
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String list(Pageable pageable, ModelMap model)
     {
-        Admin admin = adminService.getCurrent();
         model.addAttribute("page", courseNameService.findPage(pageable));
         model.addAttribute("menuId", CourseName.class.getSimpleName());
         return "/console/course_name/list";

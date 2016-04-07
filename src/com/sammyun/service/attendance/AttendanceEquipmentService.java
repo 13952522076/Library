@@ -1,7 +1,6 @@
 package com.sammyun.service.attendance;
 
 import com.sammyun.entity.attendance.AttendanceEquipment;
-import com.sammyun.entity.attendance.TimeCard;
 import com.sammyun.service.BaseService;
 
 /**
@@ -15,16 +14,17 @@ import com.sammyun.service.BaseService;
 public interface AttendanceEquipmentService extends BaseService<AttendanceEquipment, Long>
 {
     /**
-     * 判断考勤机序列号是否唯一
-     * <功能详细描述>
+     * 判断考勤机序列号是否唯一 <功能详细描述>
+     * 
      * @param equipmentSequence
      * @return
      * @see [类、类#方法、类#成员]
      */
     boolean sequenceExsit(String equipmentSequence);
-    
+
     /**
      * 通过设备号查询设备信息
+     * 
      * @param equipmentSequence
      * @return
      * @see [类、类#方法、类#成员]

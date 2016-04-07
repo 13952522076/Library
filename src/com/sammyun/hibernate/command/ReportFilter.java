@@ -24,6 +24,7 @@ public class ReportFilter
     {
     }
 
+    @SuppressWarnings("rawtypes")
     public ReportFilter(HttpServletRequest request)
     {
         Enumeration paramEnu = request.getParameterNames();

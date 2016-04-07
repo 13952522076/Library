@@ -1,4 +1,3 @@
-
 package com.sammyun.dao.impl.library;
 
 import java.util.List;
@@ -13,14 +12,14 @@ import org.springframework.stereotype.Repository;
 import com.sammyun.dao.impl.BaseDaoImpl;
 import com.sammyun.dao.library.MarkDao;
 import com.sammyun.entity.library.Book;
-import com.sammyun.entity.library.Collection;
 import com.sammyun.entity.library.Mark;
 
 /**
- *  DaoImpl - 评分
+ * DaoImpl - 评分
  */
 @Repository("markDaoImpl")
-public class MarkDaoImpl extends BaseDaoImpl<Mark, Long> implements MarkDao  {
+public class MarkDaoImpl extends BaseDaoImpl<Mark, Long> implements MarkDao
+{
 
     @Override
     public List<Mark> findListByBook(Book book)
@@ -37,7 +36,5 @@ public class MarkDaoImpl extends BaseDaoImpl<Mark, Long> implements MarkDao  {
         criteriaQuery.where(restrictions);
         return super.findList(criteriaQuery, null, null, null, null);
     }
-
-   
 
 }

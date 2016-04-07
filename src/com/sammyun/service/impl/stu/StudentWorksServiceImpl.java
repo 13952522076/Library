@@ -4,8 +4,6 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import com.sammyun.dao.stu.StudentWorksDao;
@@ -16,15 +14,10 @@ import com.sammyun.service.stu.StudentWorksService;
 
 /**
  * ServiceImpl - 学生作品
- * 
-
-
  */
 @Service("studentWorksServiceImpl")
 public class StudentWorksServiceImpl extends BaseServiceImpl<StudentWorks, Long> implements StudentWorksService
 {
-    /** 日志 */
-    private static final Logger logger = LoggerFactory.getLogger(StudentWorksServiceImpl.class);
 
     @Resource(name = "studentWorksDaoImpl")
     private StudentWorksDao studentWorksDao;
@@ -48,6 +41,5 @@ public class StudentWorksServiceImpl extends BaseServiceImpl<StudentWorks, Long>
         // TODO Auto-generated method stub
         studentWorksDao.deleteByDictStudent(dictStudent);
     }
-
 
 }

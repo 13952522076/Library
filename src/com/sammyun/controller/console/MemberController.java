@@ -27,7 +27,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.sammyun.FileInfo.FileType;
 import com.sammyun.Filter;
 import com.sammyun.Filter.Operator;
@@ -55,9 +54,6 @@ import com.sammyun.util.SettingUtils;
 
 /**
  * Controller - 会员
- * 
-
-
  */
 @Controller("adminMemberController")
 @RequestMapping("/console/member")
@@ -81,8 +77,6 @@ public class MemberController extends BaseController
 
     @Resource(name = "excelServiceImpl")
     private ExcelService excelService;
-
-    
 
     /**
      * 检查用户名是否被禁用或已存在
@@ -513,11 +507,11 @@ public class MemberController extends BaseController
         preMember.setIsEnabled(member.getIsEnabled());
         // preMember.setIsUpdate(true);
         // DigestUtils.md5Hex(member.getPassword())
-       
+
         model.addAttribute("menuId", Member.class.getSimpleName());
         addFlashMessage(redirectAttributes, SUCCESS_MESSAGE);
         return "redirect:list.ct";
-        
+
     }
 
     /**
@@ -536,7 +530,7 @@ public class MemberController extends BaseController
             }
             for (Member member : members)
             {
-               
+
                 memberService.delete(member);
             }
         }
@@ -579,8 +573,9 @@ public class MemberController extends BaseController
                 usernames.add(member.getUsername());
             }
             Setting setting = SettingUtils.get();
+            @SuppressWarnings("unused")
             String initPassword = setting.getInitPassword();
-           
+
             try
             {
                 memberService.batchUpdate(members);

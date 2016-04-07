@@ -119,6 +119,7 @@ public class BaseController
      * @param showUnit 显示单位
      * @return 货币格式化
      */
+    @SuppressWarnings("unused")
     protected String currency(BigDecimal amount, boolean showSign, boolean showUnit)
     {
         Setting setting = SettingUtils.get();

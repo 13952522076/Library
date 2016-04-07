@@ -16,8 +16,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.sammyun.Filter;
-import com.sammyun.Filter.Operator;
 import com.sammyun.Message;
 import com.sammyun.Message.Type;
 import com.sammyun.Pageable;
@@ -63,7 +61,6 @@ public class SchoolYearMngController extends BaseController
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String list(Pageable pageable, ModelMap model)
     {
-        Admin admin = adminService.getCurrent();
         // 校园管理员只能看到自己学校的，超级管理员可以看到所有的
         model.addAttribute("page", schoolYearMngService.findPage(pageable));
         model.addAttribute("menuId", SchoolYearMng.class.getSimpleName());

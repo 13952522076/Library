@@ -6,7 +6,6 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
-import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -27,14 +26,9 @@ import com.sammyun.service.message.MessageService;
 import com.sammyun.util.DateUtil;
 import com.sammyun.util.SettingUtils;
 import com.sammyun.util.SmsCellUtil;
-import com.sammyun.util.SpringUtils;
-import com.tencent.xinge.XingeApp;
 
 /**
  * Message * ServiceImpl - 消息附件
- * 
-
-
  */
 @Service("messageServiceImpl")
 public class MessageServiceImpl extends BaseServiceImpl<Message, Long> implements MessageService
@@ -67,7 +61,7 @@ public class MessageServiceImpl extends BaseServiceImpl<Message, Long> implement
         return messageDao.findMessage(dictSchool, messageCategory, sender, senderDelete, receiver, receiverDelete,
                 pageable);
     }
-    
+
     @Override
     public Page<Message> findMessage(DictSchool dictSchool, MessageCategory messageCategory, Member sender,
             Boolean senderDelete, Member receiver, Boolean receiverDelete, Pageable pageable, Date updateDate)
@@ -105,6 +99,7 @@ public class MessageServiceImpl extends BaseServiceImpl<Message, Long> implement
         return messageDao.findMessage(hasPush, count);
     }
 
+    @SuppressWarnings("unused")
     @Override
     public void sendMessage()
     {
@@ -131,13 +126,13 @@ public class MessageServiceImpl extends BaseServiceImpl<Message, Long> implement
                             {
                                 if (deviceOs.equalsIgnoreCase("iPhone OS"))
                                 {
-                                        sendMessageByMobile(reciver.getMobile(), body);
-                                        message.setSmsPush(true);
+                                    sendMessageByMobile(reciver.getMobile(), body);
+                                    message.setSmsPush(true);
                                 }
                                 else if (deviceOs.equalsIgnoreCase("android"))
                                 {
-                                        sendMessageByMobile(reciver.getMobile(), body);
-                                        message.setSmsPush(true);
+                                    sendMessageByMobile(reciver.getMobile(), body);
+                                    message.setSmsPush(true);
                                 }
                             }
 
@@ -164,12 +159,14 @@ public class MessageServiceImpl extends BaseServiceImpl<Message, Long> implement
     /**
      * 发送短信
      */
+    @SuppressWarnings("rawtypes")
     public void sendMessageByMobile(String destnumbers, String msg)
     {
         Setting setting = SettingUtils.get();
         try
         {
-            if(setting.getIsMsgNotified()){
+            if (setting.getIsMsgNotified())
+            {
                 String sendTime = DateUtil.date2String(new Date(), 1);
                 HashMap returnData = SmsCellUtil.getInstance().sendDone(destnumbers, msg, sendTime);
                 if ("0".equals(returnData.get("return")))
@@ -179,7 +176,7 @@ public class MessageServiceImpl extends BaseServiceImpl<Message, Long> implement
                 {
                 }
             }
-           
+
         }
         catch (Exception e)
         {

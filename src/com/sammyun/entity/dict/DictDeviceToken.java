@@ -21,6 +21,12 @@ import com.sammyun.entity.BaseEntity;
 public class DictDeviceToken extends BaseEntity
 {
 
+    /**
+     * 注释内容
+     */
+    private static final long serialVersionUID = 2792707153242912639L;
+
+    @SuppressWarnings("unused")
     private BigDecimal id;
 
     private String code;

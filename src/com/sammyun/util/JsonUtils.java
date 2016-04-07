@@ -165,6 +165,7 @@ public final class JsonUtils
      * @param jsonString 简单的Json对象
      * @return dto
      */
+    @SuppressWarnings("unchecked")
     public static Map<String, LinkedHashMap<String, String>> toMap(String json)
     {
         try
@@ -185,6 +186,7 @@ public final class JsonUtils
      * @param json JSON字符串
      * @return 对象
      */
+    @SuppressWarnings({"unchecked", "rawtypes"})
     public static List<Dto> toList(String json)
     {
         List<Dto> dtoList = new ArrayList<Dto>();
@@ -215,6 +217,7 @@ public final class JsonUtils
      * @param json JSON字符串
      * @return List<BaseDto>
      */
+    @SuppressWarnings({"unchecked", "rawtypes"})
     public static List<BaseDto> toListDto(String json)
     {
         Assert.hasText(json);

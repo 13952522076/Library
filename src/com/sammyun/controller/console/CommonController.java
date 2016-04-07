@@ -41,9 +41,6 @@ import com.sammyun.service.message.MessageService;
 
 /**
  * Controller - 共用
- * 
-
-
  */
 @Controller("adminCommonController")
 @RequestMapping("/console/common")
@@ -73,14 +70,15 @@ public class CommonController implements ServletContextAware
 
     @Resource(name = "messageServiceImpl")
     private MessageService messageService;
-    
+
     @Resource(name = "adminServiceImpl")
     private AdminService adminService;
-    
+
     @Resource(name = "dictStudentServiceImpl")
     private DictStudentService dictStudentService;
 
     /** servletContext */
+    @SuppressWarnings("unused")
     private ServletContext servletContext;
 
     public void setServletContext(ServletContext servletContext)
@@ -92,33 +90,36 @@ public class CommonController implements ServletContextAware
      * 主页
      */
     @RequestMapping(value = "/main", method = RequestMethod.GET)
-    public String main(ModelMap model,HttpServletRequest request)
+    public String main(ModelMap model, HttpServletRequest request)
     {
-    	DictSchool dictSchool = adminService.getCurrentDictSchool();
-    	String description = dictSchool.getDescription();
-    	int classNumber = dictSchool.getDictClasses().size();
-    	int teacherNumber = 0;
-    	int patriarchNumber =0;
-    	int studentNumber =0;
-    	try {
-    	    teacherNumber = memberService.findBySchoolAndType(dictSchool, MemberType.teacher).size();
-    		patriarchNumber = memberService.findBySchoolAndType(dictSchool, MemberType.patriarch).size();
-    		studentNumber = dictStudentService.findStudentsBySchool(dictSchool).size();
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-    	int newsNumber = dictSchool.getNewses().size();
-    	model.addAttribute("newsNumber", newsNumber);
-    	model.addAttribute("classNumber", classNumber);
-    	model.addAttribute("teacherNumber", teacherNumber);
-    	model.addAttribute("patriarchNumber", patriarchNumber);
-    	model.addAttribute("studentNumber", studentNumber);
-    	model.addAttribute("dictSchool", dictSchool);
-    	model.addAttribute("description", description);
-    	String realName = adminService.getCurrent().getName();
-    	request.getSession().setAttribute("realName", realName);
-    	request.getSession().setAttribute("iconPhoto", adminService.getCurrent().getIconPhoto());
-    	request.getSession().setAttribute("schoolName", dictSchool.getName());
+        DictSchool dictSchool = adminService.getCurrentDictSchool();
+        String description = dictSchool.getDescription();
+        int classNumber = dictSchool.getDictClasses().size();
+        int teacherNumber = 0;
+        int patriarchNumber = 0;
+        int studentNumber = 0;
+        try
+        {
+            teacherNumber = memberService.findBySchoolAndType(dictSchool, MemberType.teacher).size();
+            patriarchNumber = memberService.findBySchoolAndType(dictSchool, MemberType.patriarch).size();
+            studentNumber = dictStudentService.findStudentsBySchool(dictSchool).size();
+        }
+        catch (Exception e)
+        {
+            // TODO: handle exception
+        }
+        int newsNumber = dictSchool.getNewses().size();
+        model.addAttribute("newsNumber", newsNumber);
+        model.addAttribute("classNumber", classNumber);
+        model.addAttribute("teacherNumber", teacherNumber);
+        model.addAttribute("patriarchNumber", patriarchNumber);
+        model.addAttribute("studentNumber", studentNumber);
+        model.addAttribute("dictSchool", dictSchool);
+        model.addAttribute("description", description);
+        String realName = adminService.getCurrent().getName();
+        request.getSession().setAttribute("realName", realName);
+        request.getSession().setAttribute("iconPhoto", adminService.getCurrent().getIconPhoto());
+        request.getSession().setAttribute("schoolName", dictSchool.getName());
         return "/console/common/main";
     }
 
@@ -126,45 +127,51 @@ public class CommonController implements ServletContextAware
      * 首页
      */
     @RequestMapping(value = "/index", method = RequestMethod.GET)
-    public String index(ModelMap model,HttpServletRequest request)
+    public String index(ModelMap model, HttpServletRequest request)
     {
-//        model.addAttribute("systemName", systemName);
-//        model.addAttribute("systemVersion", systemVersion);
-//        model.addAttribute("systemDescription", systemDescription);
-//        model.addAttribute("systemShowPowered", systemShowPowered);
-//        model.addAttribute("javaVersion", System.getProperty("java.version"));
-//        model.addAttribute("javaHome", System.getProperty("java.home"));
-//        model.addAttribute("osName", System.getProperty("os.name"));
-//        model.addAttribute("osArch", System.getProperty("os.arch"));
-//        model.addAttribute("serverInfo", servletContext.getServerInfo());
-//        model.addAttribute("servletVersion", servletContext.getMajorVersion() + "." + servletContext.getMinorVersion());
-//        return "/console/common/index";
-    	DictSchool dictSchool = adminService.getCurrentDictSchool();
-    	String description = dictSchool.getDescription();
-    	int classNumber = dictSchool.getDictClasses().size();
-    	int teacherNumber = 0;
-    	int patriarchNumber =0;
-    	int studentNumber =0;
-    	try {
-    		teacherNumber = memberService.findBySchoolAndType(dictSchool, MemberType.teacher).size();
-    		patriarchNumber = memberService.findBySchoolAndType(dictSchool, MemberType.patriarch).size();
-    		studentNumber = dictStudentService.findStudentsBySchool(dictSchool).size();
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-    	int newsNumber = dictSchool.getNewses().size();
-    	model.addAttribute("newsNumber", newsNumber);
-    	model.addAttribute("classNumber", classNumber);
-    	model.addAttribute("teacherNumber", teacherNumber);
-    	model.addAttribute("patriarchNumber", patriarchNumber);
-    	model.addAttribute("studentNumber", studentNumber);
-    	model.addAttribute("dictSchool", dictSchool);
-    	model.addAttribute("description", description);
-    	String realName = adminService.getCurrentUsername();
-    	request.getSession().setAttribute("realName", realName);
-    	request.getSession().setAttribute("iconPhoto", adminService.getCurrent().getIconPhoto());
-    	request.getSession().setAttribute("schoolName", dictSchool.getName());
-		return "/console/common/main";
+        // model.addAttribute("systemName", systemName);
+        // model.addAttribute("systemVersion", systemVersion);
+        // model.addAttribute("systemDescription", systemDescription);
+        // model.addAttribute("systemShowPowered", systemShowPowered);
+        // model.addAttribute("javaVersion",
+        // System.getProperty("java.version"));
+        // model.addAttribute("javaHome", System.getProperty("java.home"));
+        // model.addAttribute("osName", System.getProperty("os.name"));
+        // model.addAttribute("osArch", System.getProperty("os.arch"));
+        // model.addAttribute("serverInfo", servletContext.getServerInfo());
+        // model.addAttribute("servletVersion",
+        // servletContext.getMajorVersion() + "." +
+        // servletContext.getMinorVersion());
+        // return "/console/common/index";
+        DictSchool dictSchool = adminService.getCurrentDictSchool();
+        String description = dictSchool.getDescription();
+        int classNumber = dictSchool.getDictClasses().size();
+        int teacherNumber = 0;
+        int patriarchNumber = 0;
+        int studentNumber = 0;
+        try
+        {
+            teacherNumber = memberService.findBySchoolAndType(dictSchool, MemberType.teacher).size();
+            patriarchNumber = memberService.findBySchoolAndType(dictSchool, MemberType.patriarch).size();
+            studentNumber = dictStudentService.findStudentsBySchool(dictSchool).size();
+        }
+        catch (Exception e)
+        {
+            // TODO: handle exception
+        }
+        int newsNumber = dictSchool.getNewses().size();
+        model.addAttribute("newsNumber", newsNumber);
+        model.addAttribute("classNumber", classNumber);
+        model.addAttribute("teacherNumber", teacherNumber);
+        model.addAttribute("patriarchNumber", patriarchNumber);
+        model.addAttribute("studentNumber", studentNumber);
+        model.addAttribute("dictSchool", dictSchool);
+        model.addAttribute("description", description);
+        String realName = adminService.getCurrentUsername();
+        request.getSession().setAttribute("realName", realName);
+        request.getSession().setAttribute("iconPhoto", adminService.getCurrent().getIconPhoto());
+        request.getSession().setAttribute("schoolName", dictSchool.getName());
+        return "/console/common/main";
     }
 
     /**

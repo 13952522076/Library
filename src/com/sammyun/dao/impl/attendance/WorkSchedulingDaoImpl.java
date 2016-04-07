@@ -1,20 +1,14 @@
 package com.sammyun.dao.impl.attendance;
 
-
-import java.util.List;
-
-import javax.persistence.FlushModeType;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Predicate;
-import javax.persistence.criteria.Root;
-
-
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.FlushModeType;
 import javax.persistence.TypedQuery;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,24 +16,18 @@ import org.springframework.stereotype.Repository;
 
 import com.sammyun.dao.attendance.WorkSchedulingDao;
 import com.sammyun.dao.impl.BaseDaoImpl;
-
-
 import com.sammyun.entity.Member;
 import com.sammyun.entity.attendance.WorkScheduling;
-import com.sammyun.entity.recipe.Recipe;
 
 /**
  * DaoImpl - 排班管理
- * 
-
-
  */
 @Repository("workSchedulingDaoImpl")
 public class WorkSchedulingDaoImpl extends BaseDaoImpl<WorkScheduling, Long> implements WorkSchedulingDao
 {
     /** 日志 */
     private static final Logger logger = LoggerFactory.getLogger(WorkSchedulingDao.class);
-    
+
     @Override
     public List<WorkScheduling> findWorkScheduling(Member member)
     {
@@ -51,13 +39,12 @@ public class WorkSchedulingDaoImpl extends BaseDaoImpl<WorkScheduling, Long> imp
         Predicate restrictions = criteriaBuilder.conjunction();
         if (member != null)
         {
-            restrictions = criteriaBuilder.and(restrictions,
-                    criteriaBuilder.equal(root.get("member"), member));
+            restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.equal(root.get("member"), member));
         }
         criteriaQuery.where(restrictions);
         return entityManager.createQuery(criteriaQuery).setFlushMode(FlushModeType.COMMIT).getResultList();
     }
-    
+
     @Override
     public List<Member> findMembers()
     {

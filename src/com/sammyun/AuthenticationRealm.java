@@ -10,27 +10,18 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
-import org.apache.commons.codec.digest.DigestUtils;
-import org.apache.commons.lang.ArrayUtils;
-import org.apache.commons.lang.time.DateUtils;
 import org.apache.shiro.authc.AuthenticationInfo;
-import org.apache.shiro.authc.DisabledAccountException;
 import org.apache.shiro.authc.IncorrectCredentialsException;
-import org.apache.shiro.authc.LockedAccountException;
 import org.apache.shiro.authc.SimpleAuthenticationInfo;
 import org.apache.shiro.authc.UnknownAccountException;
-import org.apache.shiro.authc.pam.UnsupportedTokenException;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 
-import com.sammyun.Setting.AccountLockType;
-import com.sammyun.Setting.CaptchaType;
 import com.sammyun.entity.Admin;
 import com.sammyun.service.AdminService;
 import com.sammyun.service.CaptchaService;
-import com.sammyun.util.SettingUtils;
 
 /**
  * 权限认证

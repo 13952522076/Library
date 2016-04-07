@@ -188,6 +188,7 @@ public class BaseController
      * @return
      * @see [类、类#方法、类#成员]
      */
+    @SuppressWarnings("rawtypes")
     protected List<Filter> getFilters(HttpServletRequest request)
     {
         List<Filter> filters = new ArrayList<Filter>();

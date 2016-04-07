@@ -7,7 +7,6 @@ package com.sammyun.controller.console;
 
 import java.io.IOException;
 import java.util.HashSet;
-import java.util.Set;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
@@ -15,7 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -27,9 +25,7 @@ import com.sammyun.Pageable;
 import com.sammyun.entity.Admin;
 import com.sammyun.entity.BaseEntity.Save;
 import com.sammyun.entity.Role;
-import com.sammyun.entity.dict.DictClass;
 import com.sammyun.entity.dict.DictSchool;
-import com.sammyun.entity.dict.DictStudent;
 import com.sammyun.service.AdminService;
 import com.sammyun.service.RoleService;
 import com.sammyun.service.dict.DictSchoolService;

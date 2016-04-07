@@ -30,6 +30,7 @@ public class TypeCaseHelper
      * @return Object
      * @throws TypeCastException
      */
+    @SuppressWarnings("unused")
     public static Object convert(Object obj, String type, String format) throws TypeCastException
     {
         Locale locale = new Locale("zh", "CN", "");

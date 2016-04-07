@@ -9,23 +9,21 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 
-import com.sammyun.dao.impl.BaseDaoImpl;
 import org.springframework.stereotype.Repository;
+
 import com.sammyun.dao.campusviewImg.CampusviewImgViewDao;
+import com.sammyun.dao.impl.BaseDaoImpl;
 import com.sammyun.entity.Member;
 import com.sammyun.entity.campusviewImg.CampusviewImg;
-import com.sammyun.entity.campusviewImg.CampusviewImgFavorite;
 import com.sammyun.entity.campusviewImg.CampusviewImgView;
 
 /**
  * CampusviewImgView * DaoImpl - 校园风光查看记录表
- * 
-
-
  */
 
 @Repository("campusviewImgViewDaoImpl")
-public class CampusviewImgViewDaoImpl extends BaseDaoImpl<CampusviewImgView, Long> implements CampusviewImgViewDao  {
+public class CampusviewImgViewDaoImpl extends BaseDaoImpl<CampusviewImgView, Long> implements CampusviewImgViewDao
+{
 
     @Override
     public CampusviewImgView findByMemberAndImg(Member member, CampusviewImg campusviewImg)

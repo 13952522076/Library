@@ -50,10 +50,8 @@ import com.sammyun.util.SettingUtils;
 
 /**
  * Plugin - 支付
- * 
-
-
  */
+@SuppressWarnings("deprecation")
 public abstract class PaymentPlugin implements Comparable<PaymentPlugin>
 {
 
@@ -363,6 +361,7 @@ public abstract class PaymentPlugin implements Comparable<PaymentPlugin>
      * @param amount 金额
      * @return 支付手续费
      */
+    @SuppressWarnings("unused")
     public BigDecimal calculateFee(BigDecimal amount)
     {
         Setting setting = SettingUtils.get();
@@ -375,7 +374,7 @@ public abstract class PaymentPlugin implements Comparable<PaymentPlugin>
         {
             fee = getFee();
         }
-        //return setting.setScale(fee);
+        // return setting.setScale(fee);
         return fee;
     }
 
@@ -573,6 +572,7 @@ public abstract class PaymentPlugin implements Comparable<PaymentPlugin>
      * @param parameterMap 请求参数
      * @return 返回结果
      */
+    @SuppressWarnings({"resource"})
     protected String post(String url, Map<String, Object> parameterMap)
     {
         Assert.hasText(url);
@@ -622,6 +622,7 @@ public abstract class PaymentPlugin implements Comparable<PaymentPlugin>
      * @param parameterMap 请求参数
      * @return 返回结果
      */
+    @SuppressWarnings({"resource"})
     protected String get(String url, Map<String, Object> parameterMap)
     {
         Assert.hasText(url);

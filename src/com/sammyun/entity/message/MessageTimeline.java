@@ -14,9 +14,6 @@ import com.sammyun.entity.BaseEntity;
 
 /**
  * MessageTimeline * Entity - 消息时间线
- * 
-
-
  */
 @Entity
 @Table(name = "t_pe_message_timeline")
@@ -24,12 +21,16 @@ import com.sammyun.entity.BaseEntity;
 public class MessageTimeline extends BaseEntity
 {
 
+    /**
+     * 注释内容
+     */
+    private static final long serialVersionUID = 2206609739305104074L;
+
     private Date timeline;
 
     private BigDecimal userId;
 
     private BigDecimal vgroupId;
-
 
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "timeline", nullable = false, length = 19)

@@ -43,6 +43,7 @@ public class ExcelUtil
      *            {@link com.gsww.jup.util.BornParser},详情及使用请参看
      *            {@link com.gsww.jup.util.BornParser}
      */
+    @SuppressWarnings("unused")
     public void export(OutputStream output, String workSheetName, String[] titles, String[] property, List<?> data,
             Class<?> clazz)
     {

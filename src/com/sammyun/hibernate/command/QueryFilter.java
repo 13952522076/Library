@@ -77,6 +77,7 @@ public class QueryFilter
      * 解析request 提交函数中的值<br />
      * <默认构造函数>
      */
+    @SuppressWarnings("rawtypes")
     public QueryFilter(HttpServletRequest request)
     {
         this.request = request;
@@ -162,6 +163,7 @@ public class QueryFilter
         this.paramValues.add(value);
     }
 
+    @SuppressWarnings("rawtypes")
     public List getParamValueList()
     {
         return this.paramValues;

@@ -136,7 +136,6 @@ public class AlipayPartnerPlugin extends PaymentPlugin
         return parameterMap;
     }
 
-    @SuppressWarnings("unchecked")
     @Override
     public boolean verifyNotify(String sn, NotifyMethod notifyMethod, HttpServletRequest request)
     {

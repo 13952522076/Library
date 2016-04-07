@@ -21,9 +21,6 @@ import com.sammyun.util.SettingUtils;
 
 /**
  * Filter - 网站状态
- * 
-
-
  */
 @Component("siteStatusFilter")
 public class SiteStatusFilter extends OncePerRequestFilter
@@ -45,6 +42,7 @@ public class SiteStatusFilter extends OncePerRequestFilter
     private String redirectUrl = DEFAULT_REDIRECT_URL;
 
     /** 重定向URL */
+    @SuppressWarnings("unused")
     private String mobileRedirectUrl = "/mobile/mobileIndex.ct";
 
     @Override

@@ -1,14 +1,10 @@
 package com.sammyun.hibernate.command;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Restrictions;
 
 public class FieldCommandImpl implements CriteriaCommand
 {
-
-    private static Log logger = LogFactory.getLog(CriteriaCommand.class);
 
     private String property;
 
@@ -142,6 +138,7 @@ public class FieldCommandImpl implements CriteriaCommand
         return criteria;
     }
 
+    @SuppressWarnings("unchecked")
     public String getPartHql()
     {
         String propertys[] = property.split("[.]");

@@ -2,8 +2,6 @@ package com.sammyun.service.system;
 
 import java.util.List;
 
-import javax.annotation.Resource;
-
 import com.sammyun.entity.system.SystemDict;
 import com.sammyun.service.BaseService;
 

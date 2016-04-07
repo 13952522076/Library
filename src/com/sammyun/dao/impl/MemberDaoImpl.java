@@ -5,10 +5,8 @@
  */
 package com.sammyun.dao.impl;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Set;
 
 import javax.persistence.FlushModeType;
 import javax.persistence.NoResultException;
@@ -24,10 +22,8 @@ import com.sammyun.Page;
 import com.sammyun.Pageable;
 import com.sammyun.dao.MemberDao;
 import com.sammyun.entity.Member;
-import com.sammyun.entity.Tag;
 import com.sammyun.entity.Member.MemberType;
 import com.sammyun.entity.dict.DictSchool;
-import com.sammyun.entity.parenting.Parenting;
 
 /**
  * Dao - 会员
