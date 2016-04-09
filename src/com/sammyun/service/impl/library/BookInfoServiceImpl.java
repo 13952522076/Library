@@ -5,6 +5,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import com.sammyun.dao.library.BookInfoDao;
+import com.sammyun.entity.library.Book;
 import com.sammyun.entity.library.BookInfo;
 import com.sammyun.service.impl.BaseServiceImpl;
 import com.sammyun.service.library.BookInfoService;
@@ -22,6 +23,13 @@ public class BookInfoServiceImpl extends BaseServiceImpl<BookInfo, Long> impleme
     public void setBaseDao(BookInfoDao bookInfoDao)
     {
         super.setBaseDao(bookInfoDao);
+    }
+
+    @Override
+    public BookInfo findByBook(Book book)
+    {
+        // TODO Auto-generated method stub
+        return bookInfoDao.findByBook(book);
     }
 
 }
