@@ -16,6 +16,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.datamining.DataHelper;
 import com.sammyun.Page;
 import com.sammyun.Pageable;
 import com.sammyun.entity.Admin;
@@ -180,6 +181,25 @@ public class BookController extends BaseController
             e.printStackTrace();
         }
 
+    }
+    
+    
+    
+    
+    @RequestMapping(value = "/sync", method = RequestMethod.GET)
+    public void sync(ModelMap model, HttpServletResponse response)
+    {
+        DataHelper dataHelper = new DataHelper();
+        dataHelper.syncStatistics();
+        try
+        {
+            response.setContentType("text/html; charset=UTF-8");
+            JsonUtils.writeValue(response.getWriter(), "success");
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
     }
 
 }

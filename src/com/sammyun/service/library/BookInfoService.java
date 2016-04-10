@@ -1,7 +1,10 @@
 package com.sammyun.service.library;
 
+import java.util.List;
+
 import com.sammyun.entity.library.Book;
 import com.sammyun.entity.library.BookInfo;
+import com.sammyun.form.KeyValue;
 import com.sammyun.service.BaseService;
 
 /**
@@ -17,4 +20,7 @@ public interface BookInfoService extends BaseService<BookInfo, Long>
      * @see [类、类#方法、类#成员]
      */
     public BookInfo findByBook(Book book);
+    
+    /** 查找出评论最高的书 */
+    List<KeyValue> findTopMark(List<Book> books);
 }

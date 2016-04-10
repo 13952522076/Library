@@ -1,5 +1,19 @@
 [#assign shiro=JspTaglibs["/WEB-INF/tld/shiro.tld"] /]
 <!--  导航 -->
+<script>
+	function syncBookInfo(){
+		layer.msg('同步系统统计中', {icon: 16,shade:true});
+		$.ajax({
+			type: "GET",
+			url: "${base}/console/book/sync.ct",
+			dataType: "json",
+			success:function(){
+				layer.msg("系统统计信息更新成功！");
+			}
+		})
+				
+	}
+</script>
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
@@ -50,6 +64,7 @@
 		          	<ul class="dropdown-menu">
 			            <li><a href="${base}/console/book/list.ct?">图书管理</a></li>
 			            <li><a href="${base}/console/book/add.ct">新增图书</a></li>
+		             	<li><a href="#" onclick="syncBookInfo()">同步统计</a></li>
 		          	</ul>
 	        	</li>
 	      	</ul>

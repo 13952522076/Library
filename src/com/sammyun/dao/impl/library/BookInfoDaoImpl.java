@@ -7,7 +7,6 @@ import org.springframework.stereotype.Repository;
 
 import com.sammyun.dao.impl.BaseDaoImpl;
 import com.sammyun.dao.library.BookInfoDao;
-import com.sammyun.entity.attendance.TimeCard;
 import com.sammyun.entity.library.Book;
 import com.sammyun.entity.library.BookInfo;
 

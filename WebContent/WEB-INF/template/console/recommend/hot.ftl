@@ -34,10 +34,35 @@ $().ready(function() {
         	 		<div class="row">
         	 			[#list mostMarks as mostMark]
         	 				<div class="col-sm-2">
-	                        	<img alt="image" class="img-responsive" src="http://img2.imgtn.bdimg.com/it/u=2730523809,2825683527&fm=11&gp=0.jpg">
+        	 					<a href="${base}/console/book/detail.ct?id=${mostMark.key.id}">
+	                        		<img alt="image" class="img-responsive" src="http://img2.imgtn.bdimg.com/it/u=2730523809,2825683527&fm=11&gp=0.jpg">
+	                        	</a>	
 	                        	<center>
-	                        		${mostMark.key.name!}<br>
-	                        		<small>共${mostMark.value}条评论</small>
+	                        		《${mostMark.key.name!}》<br>
+	                        		<h6><small>共${mostMark.value}条评论</small></h6>
+                        		</center>
+	                        </div>
+        	 			[/#list]
+                    </div>
+            	 </div>
+            </div>
+            <!--end 评论最多-->
+            
+            <!--start 评分最高-->
+            <div class="col-sm-12">
+            	<div class="ibox-title">
+                    <h5>评分最高</h5>
+                </div>
+        	 	<div class="ibox-content">
+        	 		<div class="row">
+        	 			[#list topMarks as topMark]
+        	 				<div class="col-sm-2">
+        	 					<a href="${base}/console/book/detail.ct?id=${topMark.key.id}">
+	                        		<img alt="image" class="img-responsive" src="http://img2.imgtn.bdimg.com/it/u=2730523809,2825683527&fm=11&gp=0.jpg">
+	                        	</a>
+	                        	<center>
+	                        		《${topMark.key.name!}》<br>
+	                        		<h6><small>系统评分：${topMark.value}</small></h6>
                         		</center>
 	                        </div>
         	 			[/#list]
@@ -45,7 +70,8 @@ $().ready(function() {
                     </div>
             	 </div>
             </div>
-            <!--end 评论最多-->
+            <!--end 评分最高-->
+            
         </div>
 	 	<!--主体内容 end  -->
     </div>

@@ -3,8 +3,6 @@ package com.datamining;
 import java.util.List;
 import java.util.Set;
 
-import javax.annotation.Resource;
-
 import com.sammyun.entity.library.Book;
 import com.sammyun.entity.library.BookInfo;
 import com.sammyun.entity.library.Mark;
@@ -13,6 +11,7 @@ import com.sammyun.service.library.BookInfoService;
 import com.sammyun.service.library.BookService;
 import com.sammyun.service.library.MarkService;
 import com.sammyun.service.library.StatisticsService;
+import com.sammyun.util.SpringUtils;
 
 /**
  * 数据挖掘帮助类 <一句话功能简述> <功能详细描述>
@@ -24,17 +23,13 @@ import com.sammyun.service.library.StatisticsService;
  */
 public class DataHelper
 {
-    @Resource(name = "bookServiceImpl")
-    private BookService bookService;
+    BookService bookService = SpringUtils.getBean("bookServiceImpl", BookService.class);
 
-    @Resource(name = "bookInfoServiceImpl")
-    private BookInfoService bookInfoService;
+    BookInfoService bookInfoService = SpringUtils.getBean("bookInfoServiceImpl", BookInfoService.class);
 
-    @Resource(name = "markServiceImpl")
-    private MarkService markService;
+    MarkService markService = SpringUtils.getBean("markServiceImpl", MarkService.class);
 
-    @Resource(name = "statisticsServiceImpl")
-    private StatisticsService statisticsService;
+    StatisticsService statisticsService = SpringUtils.getBean("statisticsServiceImpl", StatisticsService.class);
 
     /**
      * 同步书本和书本信息 <功能详细描述>

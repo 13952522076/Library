@@ -14,9 +14,11 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.datamining.DataHelper;
 import com.sammyun.entity.library.Book;
 import com.sammyun.form.KeyValue;
 import com.sammyun.service.AdminService;
+import com.sammyun.service.library.BookInfoService;
 import com.sammyun.service.library.BookService;
 import com.sammyun.service.library.CollectionService;
 import com.sammyun.service.library.MarkService;
@@ -37,29 +39,35 @@ public class RecommendController extends BaseController
 
     @Resource(name = "markServiceImpl")
     private MarkService markService;
+    
+    @Resource(name = "bookInfoServiceImpl")
+    private BookInfoService bookInfoService;
 
     @Resource(name = "collectionServiceImpl")
     private CollectionService collectionService;
 
-    /** 
-     * 热门书籍 
-     * 评论最多，评分最高，收藏最多
-     * 最多5个
-     * */
+    DataHelper dataHelper = new DataHelper();
+
+    /**
+     * 热门书籍 评论最多，评分最高，收藏最多 最多5个
+     */
     @RequestMapping(value = "/hot", method = RequestMethod.GET)
     public String hot(ModelMap model)
     {
         // 评论最多，评分最高，收藏最多
         List<Book> books = bookService.findAll();
-        
+
         List<KeyValue> mostMarks = markService.findMostMark(books);
         model.addAttribute("mostMarks", mostMarks);
-        
-        
-        //评分最高
-        //S.t. 1,最多返回5个；2，超过10个的评分；
-        
-        
+
+        // 初始化一次就好
+        // dataHelper.syncStatistics();
+
+        // 评分最高
+        // S.t. 1,最多返回5个；
+        List<KeyValue> topMarks = bookInfoService.findTopMark(books);
+        model.addAttribute("topMarks", topMarks);
+
         return "/console/recommend/hot";
     }
 
