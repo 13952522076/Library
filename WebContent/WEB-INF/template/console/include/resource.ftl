@@ -1,7 +1,7 @@
-<link href="${base}/resources/console/css/bootstrap.min.css?v=1.7" rel="stylesheet">
-<link href="${base}/resources/console/font-awesome/css/font-awesome.css?v=1.7" rel="stylesheet">
+<link href="${base}/resources/console/css/bootstrap.min.css" rel="stylesheet">
+<link href="${base}/resources/console/font-awesome/css/font-awesome.css" rel="stylesheet">
 <script src="${base}/resources/console/js/jquery-2.1.1.min.js"></script>
-<script src="${base}/resources/console/js/bootstrap.min.js?v=1.7"></script>
+<script src="${base}/resources/console/js/bootstrap.min.js"></script>
 <script src="${base}/resources/console/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
 <!-- Custom and plugin javascript -->

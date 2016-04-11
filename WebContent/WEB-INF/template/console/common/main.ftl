@@ -3,156 +3,99 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${message("console.main.title")} -图书智能管理推荐系统</title>
+    <title>图书智能管理推荐系统</title>
     <meta name="keywords" content="图书智能管理推荐系统">
     <meta name="description" content="图书智能管理推荐系统">
     [#include "/console/include/resources.ftl" /]
+    <script type="text/javascript" src="${base}/resources/console/fullpage/jquery.fullPage.min.js"></script>
+    <link href="${base}/resources/console/fullpage/jquery.fullPage.css" rel="stylesheet" type="text/css" />
+    <style>
+    h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		margin:0;
+		padding:0;
+	}
+	h2{
+		font-size: 2em;
+		font-family: arial,helvetica;
+	}
+	.section{
+		text-align:center;
+	}
+	.section{
+		background-size: cover;
+	}
+	.slide{
+		background-size: cover;
+	}
+	#section0{
+		background-image: url(${base}/resources/console/images/book/book1.png);
+		padding: 10% 0 0 0;
+	}
+	#section2{
+		background-image: url(${base}/resources/console/images/book/book2.png);
+		padding: 6% 0 0 0;
+	}
+	#slide1{
+		background-image: url(${base}/resources/console/images/book/book3.png);
+		padding: 6% 0 0 0;
+	}
+	#slide2{
+		background-image: url(${base}/resources/console/images/book/book4.png);
+		padding: 6% 0 0 0;
+	}
+    </style>
+    
+    
+    
+    
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: false
+			});
+		});
+	</script>
+    
 </head>
-<body class="fixed-navigation">
-	<div id="wrapper">
-	
-	  <!-- start  导航 -->
-       [#include "/console/include/nav.ftl" /]
-       <!-- end 导航-->
-	
-	   <div id="page-wrapper" class="gray-bg dashbard-1">
-		   <!-- start 头部 -->
-	       [#include "/console/include/header.ftl" /]
-	       <!-- end 头部-->
-	       
-		       <!-- start 头部面包屑区域 -->
-		       <div class="row wrapper border-bottom white-bg page-heading">
-	                <div class="col-lg-10">
-	                    <h2>${message("console.index.title")} </h2>
-	                </div>
-	                <div class="col-lg-2">
-	
-	                </div>
-	            </div>
-		       <!-- end 头部面包屑区域 -->
-		       
-		        <div class="wrapper wrapper-content">
-		        <!--start横条幅-->
-		        <div class="row">
-                    <div class="col-lg-3">
-                        <div class="ibox float-e-margins">
-                            <div class="ibox-title">
-                                <span class="label label-success pull-right" style="background-color: #57C9FD;"><i class="fa fa-university"></i></span>
-                                <h5>校园名称</h5>
-                            </div>
-                            <div class="ibox-content" style="clear: none;">
-                                <div style="padding-bottom:10px;">${dictSchool.name}</div>
-                                <div class="stat-percent font-bold text-success" style="color:#57C9FD;">School <i class="fa fa-university"></i>
-                                </div>
-                                <small>校园</small>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="ibox float-e-margins">
-                            <div class="ibox-title">
-                                <span class="label label-info pull-right" style="background-color: #57C9FD;"><i class="fa fa-user"></i></span>
-                                <h5>校长</h5>
-                            </div>
-                            <div class="ibox-content" style="clear: none;">
-                             	<div style="padding-bottom:10px;">${dictSchool.kindergartenName}</div>
-                                <div class="stat-percent font-bold text-info" style="color:#57C9FD;">Master<i class="fa fa-user"></i>
-                                </div>
-                                <small>校长</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="ibox float-e-margins">
-                            <div class="ibox-title">
-                                <span class="label label-primary pull-right" style="background-color: #57C9FD;"><i class="fa fa-phone"></i></span>
-                                <h5>联系方式</h5>
-                            </div>
-                            <div class="ibox-content" style="clear: none;">
-                             	<div style="padding-bottom:10px;">${dictSchool.kindergartenPhone}</div>
-                                <div class="stat-percent font-bold text-navy" style="color:#57C9FD;">Mobile <i class="fa fa-phone"></i>
-                                </div>
-                                <small>联系方式</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="ibox float-e-margins">
-                            <div class="ibox-title">
-                                <span class="label label-danger pull-right" style="background-color: #57C9FD;"><i class="fa fa-home"></i></span>
-                                <h5>地址</h5>
-                            </div>
-                            <div class="ibox-content" style="clear: none;">
-                                <div style="padding-bottom:10px;">${dictSchool.name}</div>
-                                <div class="stat-percent font-bold text-danger" style="color:#57C9FD;">Address <i class="fa fa-home"></i>
-                                </div>
-                                <small>地址</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-		        <!--end  横条幅-->
-		        
-		        
-                <!--描述和统计start-->
-                <div class="row">
-                		<!--描述start-->
-                        <div class="col-lg-10">
-                            <div class="ibox float-e-margins">
-                                <div class="ibox-content" style="overflow-x: hidden;">
-									${description}
-                                </div>
-                            </div>
-                        </div>
-                        <!--描述 end -->
-                        <div class="col-lg-2">
-                            <div class="ibox float-e-margins">
-                                <div class="ibox-title">
-                                    <h5><span class="fa fa-list-ol"></span>校园数据统计</h5>
-                                </div>
-                                <div class="ibox-content">
-                                	<div class="row" style="padding-left: 10px;padding-right: 5px">
-                                        <label class="stats-label">学生人数</label>
-                                        <i class="fa fa-users pull-right"></i><br>
-                                        <h4>${studentNumber}/人</h4>
-                                    </div>
-                                </div>
-                                <div class="ibox-content">
-	                                <div class="row" style="padding-left: 10px;padding-right: 5px">
-                                        <label class="stats-label">老师人数</label>
-                                        <i class="fa fa-user-plus pull-right"></i><br>
-                                        <h4>${teacherNumber}/人</h4>
-                                    </div>
-                                </div>
-                                <div class="ibox-content">
-	                                <div class="row" style="padding-left: 10px;padding-right: 5px">
-                                        <label class="stats-label">家长人数</label>
-                                        <i class="fa fa-hand-o-right pull-right"></i><br>
-                                        <h4>${patriarchNumber}/人</h4>
-                                    </div>
-                                </div>
-                                <div class="ibox-content">
-                                	<div class="row" style="padding-left: 10px;padding-right: 5px">
-                                        <label class="stats-label">班级数目</label>
-                                        <i class="fa fa-tasks pull-right"></i><br>
-                                        <h4>${classNumber}/个班级</h4>
-                                    </div>
-                                </div>
-                                <div class="ibox-content">
-                                	<div class="row" style="padding-left: 10px;padding-right: 5px">
-                                        <a>共${newsNumber}条新闻</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+<body class="gray-bg">
 
-                    </div>
-                <!--描述和统计 end -->
+<!-- start  导航 -->
+[#include "/console/include/nav.ftl" /]
+<!-- end 导航-->
 
 
-	       [#include "/console/include/footer.ftl" /]
-      </div>
-    </div>
+<!--内容start-->
+<div id="fullpage">
+	<div class="section " id="section0">
+		<div class="row">
+			<h1>图书智能管理推荐系统</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-5">
+				<h2>Better mind,better life</h2>
+			</div>
+		</div>
+		<div class="row" style="padding-top:10%;text-align:left;">	
+			<div class="col-md-9 col-md-offset-3">		
+				<h2>AUTHOR:马旭</h2>	
+				<h2>EMAIL:maxu@sencloud.com.cn</h2>	
+				<h2>MOBILE:13952522076</h2>	
+			</div>		
+		</div>
+		
+		
+	</div>
+	<div class="section" id="section1">
+	    <div class="slide" id="slide1"><h1>Slide Backgrounds</h1></div>
+	    <div class="slide" id="slide2"><h1>Totally customizable</h1></div>
+	</div>
+	<div class="section" id="section2"><h1>Lovely images <br />for a lovely page</h1></div>
+	
+</div>
+<!--内容end  -->
+  	
+
 </body>
 </html>
