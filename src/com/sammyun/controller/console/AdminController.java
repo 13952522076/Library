@@ -6,7 +6,14 @@
 package com.sammyun.controller.console;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
@@ -26,6 +33,8 @@ import com.sammyun.entity.Admin;
 import com.sammyun.entity.BaseEntity.Save;
 import com.sammyun.entity.Role;
 import com.sammyun.entity.dict.DictSchool;
+import com.sammyun.entity.library.Collection;
+import com.sammyun.entity.library.Mark;
 import com.sammyun.service.AdminService;
 import com.sammyun.service.RoleService;
 import com.sammyun.service.dict.DictSchoolService;
@@ -33,9 +42,6 @@ import com.sammyun.util.JsonUtils;
 
 /**
  * Controller - 管理员
- * 
-
-
  */
 @Controller("adminAdminController")
 @RequestMapping("/console/admin")
@@ -50,10 +56,10 @@ public class AdminController extends BaseController
 
     @Resource(name = "dictSchoolServiceImpl")
     private DictSchoolService dictSchoolService;
-    
+
     /**
-     * 个人信息页面
-     * <功能详细描述>
+     * 个人信息页面 <功能详细描述>
+     * 
      * @param id
      * @param model
      * @return
@@ -63,12 +69,54 @@ public class AdminController extends BaseController
     public String info(Long id, ModelMap model)
     {
         Admin admin = adminService.getCurrent();
-        model.addAttribute("admin",admin);
-        model.addAttribute("menuId","Admin");
+        model.addAttribute("admin", admin);
+        model.addAttribute("menuId", "Admin");
+        // 获取个人动态
+        model.addAttribute("actions",personalAction(admin));
         return "/console/admin/info";
     }
-    
-    
+
+    /**
+     * 获取个人动态 <功能详细描述>
+     * 
+     * @param id
+     * @param model
+     * @return
+     * @see [类、类#方法、类#成员]
+     */
+    public List<Map<String, String>> personalAction(Admin admin)
+    {
+        Set<Mark> marks = admin.getMarks();
+        Set<Collection> collections = admin.getCollections();
+        List<Map<String, String>> actions = new ArrayList<Map<String, String>>();
+        for (Mark mark : marks)
+        {
+            Map<String, String> actionMap = new HashMap<String, String>();
+            actionMap.put("time", mark.getCreateDate().toString());
+            actionMap.put("action", "评论");
+            actionMap.put("bookId", mark.getBook().getId().toString());
+            actionMap.put("evaluation", mark.getEvaluation());
+            actionMap.put("bookName", mark.getBook().getName());
+            actions.add(actionMap);
+        }
+        for (Collection collection : collections)
+        {
+            Map<String, String> actionMap = new HashMap<String, String>();
+            actionMap.put("time", collection.getCreateDate().toString());
+            actionMap.put("action", "收藏");
+            actionMap.put("bookId", collection.getBook().getId().toString());
+            actionMap.put("bookName", collection.getBook().getName());
+            actions.add(actionMap);
+        }
+        Collections.sort(actions, new Comparator<Map<String, String>>()
+        {
+            public int compare(Map<String, String> action1, Map<String, String> action2)
+            {
+                return (action2.get("time")).compareTo(action1.get("time"));
+            }
+        });
+        return actions;
+    }
 
     /**
      * 检查用户名是否存在
@@ -107,8 +155,9 @@ public class AdminController extends BaseController
      * 保存
      */
     @RequestMapping(value = "/save", method = RequestMethod.POST)
-    public String save(Admin admin,Long dictSchoolId, Long[] roleIds, RedirectAttributes redirectAttributes, ModelMap model)
-    {   
+    public String save(Admin admin, Long dictSchoolId, Long[] roleIds, RedirectAttributes redirectAttributes,
+            ModelMap model)
+    {
         DictSchool dictSchool = dictSchoolService.find(dictSchoolId);
         admin.setDictSchool(dictSchool);
         admin.setRoles(new HashSet<Role>(roleService.findList(roleIds)));
@@ -126,7 +175,7 @@ public class AdminController extends BaseController
         adminService.save(admin);
         model.addAttribute("menuId", Admin.class.getSimpleName());
         addFlashMessage(redirectAttributes, SUCCESS_MESSAGE);
-        
+
         return "redirect:list.ct";
     }
 
@@ -147,9 +196,10 @@ public class AdminController extends BaseController
      * 更新
      */
     @RequestMapping(value = "/update", method = RequestMethod.POST)
-    public String update(Admin admin, Long dictSchoolId,Long[] roleIds, RedirectAttributes redirectAttributes, ModelMap model)
+    public String update(Admin admin, Long dictSchoolId, Long[] roleIds, RedirectAttributes redirectAttributes,
+            ModelMap model)
     {
-        DictSchool dictSchool =dictSchoolService.find(dictSchoolId);
+        DictSchool dictSchool = dictSchoolService.find(dictSchoolId);
         admin.setDictSchool(dictSchool);
         admin.setRoles(new HashSet<Role>(roleService.findList(roleIds)));
         if (!isValid(admin))
@@ -186,7 +236,6 @@ public class AdminController extends BaseController
         return "/console/admin/list";
     }
 
-    
     /**
      * 删除
      */
@@ -201,7 +250,7 @@ public class AdminController extends BaseController
         adminService.delete(ids);
         return SUCCESS_MESSAGE;
     }
-    
+
     /**
      * ajax修改用户名，邮箱 <功能详细描述>
      * 
@@ -210,8 +259,8 @@ public class AdminController extends BaseController
      * @see [类、类#方法、类#成员]
      */
     @RequestMapping(value = "/editInfo", method = RequestMethod.GET)
-    public void editInfo(Long id,String name,String email, HttpServletResponse response)
-    {   
+    public void editInfo(Long id, String name, String email, HttpServletResponse response)
+    {
         Admin admin = adminService.find(id);
         admin.setName(name);
         admin.setEmail(email);
@@ -226,8 +275,5 @@ public class AdminController extends BaseController
             e.printStackTrace();
         }
     }
-    
-    
-    
 
 }

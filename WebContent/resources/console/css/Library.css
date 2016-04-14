@@ -74,18 +74,20 @@ body {
 }
 
 .float-e-margins .btn {
-	margin-bottom:13px;
+	margin-bottom: 13px;
 	/*margin-left:35px;*/
-	margin-top:10px;
+	margin-top: 10px;
 }
 
 .ibox-content h1,.ibox-content h2,.ibox-content h3,.ibox-content h4,.ibox-content h5,.ibox-title h1,.ibox-title h2,.ibox-title h3,.ibox-title h4,.ibox-title h5
 	{
 	margin-top: 5px;
 }
+
 .m-t {
 	margin-top: 15px;
 }
+
 .form-control:focus {
 	border-color: #1ab394;
 }
@@ -113,11 +115,60 @@ body {
 .has-error .control-label {
 	color: #ed5565;
 }
+
 a {
 	cursor: pointer;
 	outline: none;
 }
+
 a:hover,a:focus {
 	text-decoration: none;
 	outline: none;
+}
+
+.feed-activity-list .feed-element {
+	border-bottom: 1px solid #e7eaec;
+}
+
+.feed-element:first-child {
+	margin-top: 0;
+}
+
+.feed-element {
+	padding-bottom: 15px;
+}
+
+.feed-element,.feed-element .media {
+	margin-top: 15px;
+}
+
+.feed-element,.media-body {
+	overflow: hidden;
+}
+
+.feed-element>.pull-left {
+	margin-right: 10px;
+}
+
+.feed-element img.img-circle,.dropdown-messages-box img.img-circle {
+	width: 38px;
+	height: 38px;
+}
+
+.feed-element .well {
+	border: 1px solid #e7eaec;
+	box-shadow: none;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	padding: 10px 20px;
+	font-size: 11px;
+	line-height: 16px;
+}
+
+.feed-element .actions {
+	margin-top: 10px;
+}
+
+.feed-element .photos {
+	margin: 10px 0;
 }

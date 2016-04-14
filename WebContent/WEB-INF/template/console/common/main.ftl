@@ -108,7 +108,6 @@
 	<div class="section" id="section2">
 		<h1>READING<br />Better mind,better life</h1>
 	</div>
-	
 </div>
 <!--内容end  -->
   	
