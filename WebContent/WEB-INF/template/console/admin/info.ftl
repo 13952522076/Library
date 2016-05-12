@@ -102,7 +102,14 @@ function editName(){
         </div>
 
         <div class="row">
-            <div class="col-sm-4">
+        	<!--个人信息统计start-->
+        	<div class="col-sm-5">
+        		 
+        	
+            </div>
+            <!--个人信息统计end  -->
+            <!--个人动态start-->
+            <div class="col-sm-7">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
                         <h5>最近动态</h5>
@@ -125,92 +132,8 @@ function editName(){
                     </div>
                 </div>
             </div>
-
-            <div class="col-sm-8">
-
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="ibox float-e-margins">
-                            <div class="ibox-title">
-                                <h5>用户项目列表</h5>
-                                <div class="ibox-tools">
-                                    <a class="collapse-link">
-                                        <i class="fa fa-chevron-up"></i>
-                                    </a>
-                                    <a class="close-link">
-                                        <i class="fa fa-times"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="ibox-content">
-                                <table class="table table-hover no-margins">
-                                    <thead>
-                                        <tr>
-                                            <th>状态</th>
-                                            <th>日期</th>
-                                            <th>用户</th>
-                                            <th>值</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><small>进行中...</small>
-                                            </td>
-                                            <td><i class="fa fa-clock-o"></i> 11:20</td>
-                                            <td>青衣5858</td>
-                                            <td class="text-navy"> <i class="fa fa-level-up"></i> 24%</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="label label-warning">已取消</span>
-                                            </td>
-                                            <td><i class="fa fa-clock-o"></i> 10:40</td>
-                                            <td>徐子崴</td>
-                                            <td class="text-navy"> <i class="fa fa-level-up"></i> 66%</td>
-                                        </tr>
-                                        <tr>
-                                            <td><small>进行中...</small>
-                                            </td>
-                                            <td><i class="fa fa-clock-o"></i> 01:30</td>
-                                            <td>姜岚昕</td>
-                                            <td class="text-navy"> <i class="fa fa-level-up"></i> 54%</td>
-                                        </tr>
-                                        <tr>
-                                            <td><small>进行中...</small>
-                                            </td>
-                                            <td><i class="fa fa-clock-o"></i> 02:20</td>
-                                            <td>武汉大兵哥</td>
-                                            <td class="text-navy"> <i class="fa fa-level-up"></i> 12%</td>
-                                        </tr>
-                                        <tr>
-                                            <td><small>进行中...</small>
-                                            </td>
-                                            <td><i class="fa fa-clock-o"></i> 09:40</td>
-                                            <td>荆莹儿</td>
-                                            <td class="text-navy"> <i class="fa fa-level-up"></i> 22%</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="label label-primary">已完成</span>
-                                            </td>
-                                            <td><i class="fa fa-clock-o"></i> 04:10</td>
-                                            <td>栾某某</td>
-                                            <td class="text-navy"> <i class="fa fa-level-up"></i> 66%</td>
-                                        </tr>
-                                        <tr>
-                                            <td><small>进行中...</small>
-                                            </td>
-                                            <td><i class="fa fa-clock-o"></i> 12:08</td>
-                                            <td>范范范二妮</td>
-                                            <td class="text-navy"> <i class="fa fa-level-up"></i> 23%</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-               
-            </div>
+ 			<!--个人动态end  -->
+            
         </div>
     </div>
 </div>

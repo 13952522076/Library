@@ -75,6 +75,23 @@ public class AdminController extends BaseController
         model.addAttribute("actions",personalAction(admin));
         return "/console/admin/info";
     }
+    
+    /**
+     * 获取个人收藏，评论排名
+     * <功能详细描述>
+     * @param admin
+     * @return
+     * @see [类、类#方法、类#成员]
+     */
+    public Map<String, Float> actionRank(Admin admin){
+        Map<String,Float> rankMap = new HashMap<String,Float>();
+        
+        
+        
+        
+        return  null;
+    }
+    
 
     /**
      * 获取个人动态 <功能详细描述>
