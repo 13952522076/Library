@@ -10,6 +10,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import com.sammyun.dao.library.MarkDao;
+import com.sammyun.entity.Admin;
 import com.sammyun.entity.library.Book;
 import com.sammyun.entity.library.Mark;
 import com.sammyun.form.KeyValue;
@@ -64,6 +65,13 @@ public class MarkServiceImpl extends BaseServiceImpl<Mark, Long> implements Mark
         // TODO Auto-generated method stub
         
         return null;
+    }
+
+    @Override
+    public List<Mark> findListByAdmin(Admin admin)
+    {
+        // TODO Auto-generated method stub
+        return markDao.findListByAdmin(admin);
     }
 
 }

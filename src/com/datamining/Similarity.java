@@ -13,6 +13,7 @@ public class Similarity
     /**
      * @param args
      */
+    /**
     public static void main(String[] args)
     {
         Similarity similarity1 = new Similarity();
@@ -25,7 +26,8 @@ public class Similarity
         similarity2.rating_map.put("3", 6d);
         System.out.println("" + similarity1.getsimilarity_bydim(similarity2));
     }
-
+    */
+    
     public double getsimilarity_bydim(Similarity u)
     {
         double sim = 0d;

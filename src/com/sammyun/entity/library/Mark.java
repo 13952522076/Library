@@ -6,6 +6,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.sammyun.entity.Admin;
 import com.sammyun.entity.BaseEntity;
 
@@ -43,6 +44,7 @@ public class Mark extends BaseEntity
     /** 评价 */
     private String evaluation;
 
+    @JsonProperty
     @ManyToOne(fetch = FetchType.LAZY)
     public Book getBook()
     {
@@ -65,6 +67,7 @@ public class Mark extends BaseEntity
         this.admin = admin;
     }
 
+    @JsonProperty
     public int getMark()
     {
         return mark;

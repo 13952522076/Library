@@ -3,13 +3,17 @@ package com.datamining;
 import java.util.List;
 import java.util.Set;
 
+import com.sammyun.entity.Admin;
 import com.sammyun.entity.library.Book;
 import com.sammyun.entity.library.BookInfo;
 import com.sammyun.entity.library.Mark;
+import com.sammyun.entity.library.SimilarForm;
 import com.sammyun.entity.library.Statistics;
+import com.sammyun.service.AdminService;
 import com.sammyun.service.library.BookInfoService;
 import com.sammyun.service.library.BookService;
 import com.sammyun.service.library.MarkService;
+import com.sammyun.service.library.SimilarFormService;
 import com.sammyun.service.library.StatisticsService;
 import com.sammyun.util.SpringUtils;
 
@@ -24,6 +28,10 @@ import com.sammyun.util.SpringUtils;
 public class DataHelper
 {
     BookService bookService = SpringUtils.getBean("bookServiceImpl", BookService.class);
+
+    AdminService adminService = SpringUtils.getBean("adminServiceImpl", AdminService.class);
+
+    SimilarFormService similarFormService = SpringUtils.getBean("similarFormServiceImpl", SimilarFormService.class);
 
     BookInfoService bookInfoService = SpringUtils.getBean("bookInfoServiceImpl", BookInfoService.class);
 
@@ -145,6 +153,59 @@ public class DataHelper
     }
 
     /**
+     * 同步相似度矩阵 <功能详细描述>
+     * 
+     * @see [类、类#方法、类#成员]
+     */
+    public void syncSimilarity()
+    {
+
+        List<Admin> admins = adminService.findAll();
+        // 清空相似度矩阵
+        List<SimilarForm> similarForms = similarFormService.findAll();
+        if (similarForms != null && similarForms.size() > 0)
+        {
+            for (SimilarForm similarForm : similarForms)
+            {
+                similarFormService.delete(similarForm);
+            }
+        }
+
+        // 遍历计算相似度保存
+        for (Admin admin : admins)
+        {
+            List<Admin> students = adminService.findAll();
+            students.remove(admin);
+
+            Set<Mark> adminMarks = admin.getMarks();
+            Similarity adminSimilarity = new Similarity();
+            for (Mark adminMark : adminMarks)
+            {
+                Double mark = (double) adminMark.getMark();
+                adminSimilarity.rating_map.put(adminMark.getBook().getId().toString(), mark);
+            }
+
+            for (Admin student : students)
+            {
+                Set<Mark> studentMarks = student.getMarks();
+                Similarity studentSimilarity = new Similarity();
+                for (Mark studentMark : studentMarks)
+                {
+                    Double mark = (double) studentMark.getMark();
+                    studentSimilarity.rating_map.put(studentMark.getBook().getId().toString(), mark);
+                }
+                double similarity = adminSimilarity.getsimilarity_bydim(studentSimilarity);
+
+                // 保存至similarForm
+                SimilarForm similarForm = new SimilarForm(admin.getId(), student.getId(), similarity);
+                similarFormService.save(similarForm);
+            }
+
+        }
+
+    }
+
+    /**
      * 一键同步所有 <功能详细描述>
      * 
      * @see [类、类#方法、类#成员]
@@ -154,6 +215,7 @@ public class DataHelper
         this.syncAverageScore();
         this.syncBookInfo();
         this.syncBookScore();
+        this.syncSimilarity();
     }
 
 }
