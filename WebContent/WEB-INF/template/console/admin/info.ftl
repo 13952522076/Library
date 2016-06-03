@@ -109,7 +109,7 @@ function editName(){
             </div>
             <!--个人信息统计end  -->
             <!--个人动态start-->
-            <div class="col-sm-7">
+            <div class="col-sm-8 col-md-offset-2">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
                         <h5>最近动态</h5>

@@ -60,6 +60,20 @@ public class BookController extends BaseController
         return "/console/book/list";
 
     }
+    
+    /**
+     * 列表
+     */
+    @RequestMapping(value = "/search", method = RequestMethod.POST)
+    public String search(Pageable pageable,String bookKeyword, ModelMap model)
+    {
+        List<Book> books = bookService.findByKeyword(bookKeyword);
+        model.addAttribute("books", books);
+        model.addAttribute("bookKeyword", bookKeyword);
+        return "/console/book/list";
+
+    }
+    
 
     /**
      * 下拉获取书本列表 <功能详细描述>

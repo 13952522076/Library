@@ -1,5 +1,7 @@
 package com.sammyun.service.impl.library;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
@@ -19,9 +21,16 @@ public class BookServiceImpl extends BaseServiceImpl<Book, Long> implements Book
     private BookDao bookDao;
 
     @Resource(name = "bookDaoImpl")
-    public void setBaseDao(BookDao bookDao){
+    public void setBaseDao(BookDao bookDao)
+    {
         super.setBaseDao(bookDao);
     }
 
+    @Override
+    public List<Book> findByKeyword(String keyword)
+    {
+        // TODO Auto-generated method stub
+        return bookDao.findByKeyword(keyword);
+    }
 
 }

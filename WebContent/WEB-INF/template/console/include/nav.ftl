@@ -1,4 +1,5 @@
 [#assign shiro=JspTaglibs["/WEB-INF/tld/shiro.tld"] /]
+<script type="text/javascript" src="${base}/resources/console/js/common.js"></script>
 <!--  导航 -->
 <script>
 	function syncBookInfo(){
@@ -13,6 +14,9 @@
 		})
 				
 	}
+	
+	
+	
 </script>
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container-fluid">
@@ -48,10 +52,9 @@
 			          	<span class="caret"></span>
 					</a>
 		          	<ul class="dropdown-menu">
-			            <li><a href="${base}/console/recommend/hot.ct">最热书籍</a></li>
-			            <li><a href="${base}/console/recommend/similar.ct">相似同学</a></li>
-			            <li><a href="#">历史推荐</a></li>
-			            <li><a href="#">所有书籍</a></li>
+			            <li><a href="${base}/console/recommend/hot.ct">最热书籍</a></li><!-- top250 -->
+			            <li><a href="${base}/console/recommend/similar.ct">相似同学</a></li><!-- 协同过滤 -->
+			            <li><a href="#${base}/console/recommend/history.ct">历史推荐</a></li><!-- 关联规则 -->
 		          	</ul>
 	        	</li>
 	        	
@@ -70,9 +73,9 @@
 	      	</ul>
 	      	
 	      	
-	      	<form class="navbar-form navbar-left" role="search">
+	      	<form class="navbar-form navbar-left" role="search"  action="${base}/console/book/search.ct" method="post">
 				<div class="form-group">
-	          		<input type="text" class="form-control" placeholder="查找书籍">
+	          		<input type="text" value="${bookKeyword}" name="bookKeyword" class="form-control" placeholder="查找书籍">
 	        	</div>
 	        	<button type="submit" class="btn btn-default">搜索</button>
 	      	</form>
